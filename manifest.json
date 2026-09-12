@@ -1,35 +1,28 @@
 {
-    "name": "ce_gatim_azi",
-    "short_name": "ce_gatim_azi",
+    "name": "Ce Gătim Azi?",
+    "short_name": "Ce Gătim?",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#ffffff",
+    "theme_color": "#ff9800",
+    "description": "Aplicație culinară premium cu peste 140 de rețete.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "icons/android-icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-512.png",
-            "sizes": "512x512",
+            "src": "icons/apple-icon-144x144.png",
+            "sizes": "144x144",
             "type": "image/png"
         },
         {
-            "src": "icons/Icon-maskable-192.png",
-            "sizes": "192x192",
-            "type": "image/png",
-            "purpose": "maskable"
-        },
-        {
-            "src": "icons/Icon-maskable-512.png",
-            "sizes": "512x512",
-            "type": "image/png",
-            "purpose": "maskable"
+            "src": "icons/apple-icon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
         }
     ]
 }
