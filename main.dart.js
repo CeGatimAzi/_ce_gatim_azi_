@@ -39954,9 +39954,9 @@ q.ag(new A.aga(q,s.b))
 s.c.ai(t.Pu).f.Ae(A.apj(r,r,r,B.mt,r,B.Z,r,A.dx('\ud83d\uded2 Toate ingredientele pentru "'+s.d+'" au fost ad\u0103ugate \xeen list\u0103!',r,r,r,r,r,r),r,B.ee,r,r,r,r,r,r,r,r,r,r))},
 $S:0}
 A.aga.prototype={
-$0(){var s,r,q,p,o=this.b.h(0,"cantitati").split("\n")
-for(s=o.length,r=this.a.w,q=0;q<s;++q){p=B.d.l0(o[q])
-if(p.length!==0&&!B.b.q(r,p))r.push(p)}},
+$0(){var s,r,q="cantitati",p=this.b,o=t.s,n=B.d.q(p.h(0,q),"\n")?A.b(p.h(0,q).split("\n"),o):A.b(p.h(0,q).split(","),o)
+for(p=n.length,o=this.a.w,s=0;s<n.length;n.length===p||(0,A.u)(n),++s){r=B.d.l0(n[s])
+if(r.length!==0&&!B.b.q(o,r))o.push(r)}},
 $S:0}
 A.agc.prototype={
 $0(){var s,r=this,q=r.a
