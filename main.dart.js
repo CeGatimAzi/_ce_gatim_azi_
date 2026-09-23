@@ -374,7 +374,7 @@ case 1:s=A.b(["canvaskit.js"],t.s)
 break
 case 2:s=A.b([r],t.s)
 break
-default:s=null}s=A.a_(s,t.N)
+default:s=null}s=A.Z(s,t.N)
 return s},
 aCc(){var s=A.cl().b,r=s==null?null:s.canvasKitVariant
 s=A.aEq(A.awR(B.EI,r==null?"auto":r))
@@ -589,7 +589,7 @@ return A.hI(s,t.X).bQ(new A.ahP(),t.m)},
 awo(a){var s=a.languages
 if(s==null)s=null
 else{s=B.b.i0(s,new A.Vn(),t.N)
-s=A.a_(s,s.$ti.j("ah.E"))}return s},
+s=A.Z(s,s.$ti.j("ah.E"))}return s},
 bH(a,b){var s=a.createElement(b)
 return s},
 aD(a){return A.iE($.af.CH(a,t.H,t.m))},
@@ -718,7 +718,7 @@ case 4:o.bK()
 m=m.a
 if(m==null)throw A.i(A.k7(u.u))
 m=J.oR(t.j.a(m),new A.ahX(),t.VW)
-n=A.a_(m,m.$ti.j("ah.E"))
+n=A.Z(m,m.$ti.j("ah.E"))
 q=new A.vm(n)
 s=1
 break
@@ -931,7 +931,7 @@ alk(a){var s,r
 if("computedStyleMap" in a){s=a.computedStyleMap().get("font-size")
 r=s==null?null:s.value}else r=null
 return r==null?A.Sl(A.uS(v.G.window,a).getPropertyValue("font-size")):r},
-auS(){var s=t.s5,r=A.a_(new A.on(v.G.document.querySelectorAll('[aria-modal="true"]'),s),s.j("B.E"))
+auS(){var s=t.s5,r=A.Z(new A.on(v.G.document.querySelectorAll('[aria-modal="true"]'),s),s.j("A.E"))
 if(r.length===0)return null
 return B.b.gad(r)},
 amd(a){var s=a===B.i1?"assertive":"polite",r=A.bH(v.G.document,"flt-announcement-"+s),q=r.style
@@ -978,7 +978,7 @@ if(!r)r=s!=null?b+"\n":b
 else r=""
 if(s!=null)r+=s
 return r.length!==0?r.charCodeAt(0)==0?r:r:null},
-aCi(a,b){var s=t.Ri,r=new A.b3(new A.bW(A.b([a,b],t.XS),s),new A.ahh(),s.j("b3<B.E>")).bi(0," ")
+aCi(a,b){var s=t.Ri,r=new A.b3(new A.bW(A.b([a,b],t.XS),s),new A.ahh(),s.j("b3<A.E>")).bi(0," ")
 return r.length!==0?r:null},
 azx(a){var s=new A.IC(B.j9,a),r=A.nV(s.bL(),a)
 s.a!==$&&A.aK()
@@ -1454,7 +1454,7 @@ if(n===1)q.E(0,m)
 else q.m(0,m,n-1)}return q.a===0},
 arX(a,b){if(a==b)return!0
 if(a==null||b==null)return!1
-return a.a===b.a&&A.aR(a.r).i(0,A.aR(b.r))&&a.Q===b.Q&&J.d(a.ay,b.ay)&&J.d(a.z,b.z)&&a.y==b.y&&a.d===b.d&&a.e===b.e&&a.c===b.c&&a.b===b.b},
+return a.a===b.a&&A.aS(a.r).i(0,A.aS(b.r))&&a.Q===b.Q&&J.d(a.ay,b.ay)&&J.d(a.z,b.z)&&a.y==b.y&&a.d===b.d&&a.e===b.e&&a.c===b.c&&a.b===b.b},
 ajB(a,b){var s=A.akM(a.h(0,b))
 return s==null?null:B.d.fp(s)},
 Zg(a,b){var s=A.akM(a.h(0,b))
@@ -1667,7 +1667,7 @@ p=q
 o=p.gpx()
 r=$.tr()
 n=o.r
-if(n!=null)n=A.aR(n.r)
+if(n!=null)n=A.aS(n.r)
 else{n=o.f
 n=n!=null?n:B.k}n=A.kK(A.Se(n.gt()))
 r.fillStyle=n
@@ -3596,7 +3596,7 @@ bZ:function bZ(a,b){this.a=a
 this.$ti=b},
 e1:function e1(a){this.a=a},
 Cw:function Cw(){},
-aiW(a,b,c){var s,r,q,p,o,n,m=A.l(a),l=A.i2(new A.aS(a,m.j("aS<1>")),!0,b),k=l.length,j=0
+aiW(a,b,c){var s,r,q,p,o,n,m=A.l(a),l=A.i2(new A.aR(a,m.j("aR<1>")),!0,b),k=l.length,j=0
 for(;;){if(!(j<k)){s=!0
 break}r=l[j]
 if(typeof r!="string"||"__proto__"===r){s=!1
@@ -4124,7 +4124,7 @@ ZM:function ZM(a,b){var _=this
 _.a=a
 _.b=b
 _.d=_.c=null},
-aS:function aS(a,b){this.a=a
+aR:function aR(a,b){this.a=a
 this.$ti=b},
 e4:function e4(a,b,c){var _=this
 _.a=a
@@ -5757,7 +5757,7 @@ for(s=J.bz(a);s.p();)r.push(s.gM())
 if(b)return r
 r.$flags=1
 return r},
-a_(a,b){var s,r
+Z(a,b){var s,r
 if(Array.isArray(a))return A.b(a.slice(0),b.j("x<0>"))
 s=A.b([],b.j("x<0>"))
 for(r=J.bz(a);r.p();)s.push(r.gM())
@@ -5780,7 +5780,7 @@ if(s)c=o
 return A.aoG(b>0||c<o?p.slice(b,c):p)}if(t.u9.b(a))return A.azT(a,b,c)
 if(r)a=J.amb(a,c)
 if(b>0)a=J.SD(a,b)
-s=A.a_(a,t.S)
+s=A.Z(a,t.S)
 return A.aoG(s)},
 ak6(a){return A.dH(a)},
 azT(a,b,c){var s=a.length
@@ -6591,7 +6591,7 @@ LV:function LV(a){this.a=a},
 eJ:function eJ(a,b,c){this.a=a
 this.b=b
 this.c=c},
-B:function B(){},
+A:function A(){},
 A3:function A3(a,b,c){this.a=a
 this.b=b
 this.$ti=c},
@@ -6758,7 +6758,7 @@ if(a>c)return c
 if(isNaN(a))return c
 return a},
 ark(a,b){return a.Tr(B.d.e0(a.gmp()*b,0,1))},
-aR(a){return new A.z((B.j.fK(a,24)&255)/255,(B.j.fK(a,16)&255)/255,(B.j.fK(a,8)&255)/255,(a&255)/255,B.f)},
+aS(a){return new A.z((B.j.fK(a,24)&255)/255,(B.j.fK(a,16)&255)/255,(B.j.fK(a,8)&255)/255,(a&255)/255,B.f)},
 aA(a,b,c,d){return new A.z((a&255)/255,(b&255)/255,(c&255)/255,(d&255)/255,B.f)},
 avE(a,b,c,d){return new A.z(d,(a&255)/255,(b&255)/255,(c&255)/255,B.f)},
 aiU(a){if(a<=0.03928)return a/12.92
@@ -7225,7 +7225,7 @@ _.d=d
 _.e=e},
 yt:function yt(a,b){this.a=a
 this.b=b},
-Z:function Z(a,b){this.a=a
+a_:function a_(a,b){this.a=a
 this.b=b},
 b7:function b7(a,b){this.a=a
 this.b=b},
@@ -7701,11 +7701,11 @@ if(a==b)return a
 if(a==null){s=b.a
 if(s==null)s=b
 else{r=A.a3(s).j("a5<1,z>")
-s=A.a_(new A.a5(s,new A.aaw(c),r),r.j("ah.E"))
+s=A.Z(new A.a5(s,new A.aaw(c),r),r.j("ah.E"))
 s=new A.hD(s)}return s}if(b==null){s=a.a
 if(s==null)s=a
 else{r=A.a3(s).j("a5<1,z>")
-s=A.a_(new A.a5(s,new A.aax(c),r),r.j("ah.E"))
+s=A.Z(new A.a5(s,new A.aax(c),r),r.j("ah.E"))
 s=new A.hD(s)}return s}s=A.b([],t.t_)
 for(r=b.a,q=a.a,p=0;p<r.length;++p){o=q==null?null:q[p]
 o=A.o(o,r[p],c)
@@ -8222,7 +8222,7 @@ _.e=c},
 x0:function x0(a){this.a=a
 this.b=0},
 azP(a){var s=t.ZK
-s=A.a_(new A.bW(new A.ek(new A.b3(A.b(B.c.lM(a).split("\n"),t.s),new A.a6P(),t.Hd),A.aF2(),t.C9),s),s.j("B.E"))
+s=A.Z(new A.bW(new A.ek(new A.b3(A.b(B.c.lM(a).split("\n"),t.s),new A.a6P(),t.Hd),A.aF2(),t.C9),s),s.j("A.E"))
 return s},
 azO(a){var s,r,q="<unknown>",p=$.at8().r9(a)
 if(p==null)return null
@@ -10100,151 +10100,151 @@ Uq(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,
 avF(d1,d2,d3,d4){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0=A.avG(d1,d4,B.Cj,0)
 if(d3==null){s=$.D5().aY(d0).d
 s===$&&A.a()
-s=A.aR(s)}else s=d3
+s=A.aS(s)}else s=d3
 if(d2==null){r=$.asz().aY(d0).d
 r===$&&A.a()
-r=A.aR(r)}else r=d2
+r=A.aS(r)}else r=d2
 q=$.D6().aY(d0).d
 q===$&&A.a()
-q=A.aR(q)
+q=A.aS(q)
 p=$.asA().aY(d0).d
 p===$&&A.a()
-p=A.aR(p)
+p=A.aS(p)
 o=$.D7().aY(d0).d
 o===$&&A.a()
-o=A.aR(o)
+o=A.aS(o)
 n=$.D8().aY(d0).d
 n===$&&A.a()
-n=A.aR(n)
+n=A.aS(n)
 m=$.asB().aY(d0).d
 m===$&&A.a()
-m=A.aR(m)
+m=A.aS(m)
 l=$.asC().aY(d0).d
 l===$&&A.a()
-l=A.aR(l)
+l=A.aS(l)
 k=$.Ss().aY(d0).d
 k===$&&A.a()
-k=A.aR(k)
+k=A.aS(k)
 j=$.asD().aY(d0).d
 j===$&&A.a()
-j=A.aR(j)
+j=A.aS(j)
 i=$.D9().aY(d0).d
 i===$&&A.a()
-i=A.aR(i)
+i=A.aS(i)
 h=$.asE().aY(d0).d
 h===$&&A.a()
-h=A.aR(h)
+h=A.aS(h)
 g=$.Da().aY(d0).d
 g===$&&A.a()
-g=A.aR(g)
+g=A.aS(g)
 f=$.Db().aY(d0).d
 f===$&&A.a()
-f=A.aR(f)
+f=A.aS(f)
 e=$.asF().aY(d0).d
 e===$&&A.a()
-e=A.aR(e)
+e=A.aS(e)
 d=$.asG().aY(d0).d
 d===$&&A.a()
-d=A.aR(d)
+d=A.aS(d)
 c=$.St().aY(d0).d
 c===$&&A.a()
-c=A.aR(c)
+c=A.aS(c)
 b=$.asJ().aY(d0).d
 b===$&&A.a()
-b=A.aR(b)
+b=A.aS(b)
 a=$.Dc().aY(d0).d
 a===$&&A.a()
-a=A.aR(a)
+a=A.aS(a)
 a0=$.asK().aY(d0).d
 a0===$&&A.a()
-a0=A.aR(a0)
+a0=A.aS(a0)
 a1=$.Dd().aY(d0).d
 a1===$&&A.a()
-a1=A.aR(a1)
+a1=A.aS(a1)
 a2=$.De().aY(d0).d
 a2===$&&A.a()
-a2=A.aR(a2)
+a2=A.aS(a2)
 a3=$.asL().aY(d0).d
 a3===$&&A.a()
-a3=A.aR(a3)
+a3=A.aS(a3)
 a4=$.asM().aY(d0).d
 a4===$&&A.a()
-a4=A.aR(a4)
+a4=A.aS(a4)
 a5=$.Sq().aY(d0).d
 a5===$&&A.a()
-a5=A.aR(a5)
+a5=A.aS(a5)
 a6=$.asx().aY(d0).d
 a6===$&&A.a()
-a6=A.aR(a6)
+a6=A.aS(a6)
 a7=$.Sr().aY(d0).d
 a7===$&&A.a()
-a7=A.aR(a7)
+a7=A.aS(a7)
 a8=$.asy().aY(d0).d
 a8===$&&A.a()
-a8=A.aR(a8)
+a8=A.aS(a8)
 a9=$.asN().aY(d0).d
 a9===$&&A.a()
-a9=A.aR(a9)
+a9=A.aS(a9)
 b0=$.asO().aY(d0).d
 b0===$&&A.a()
-b0=A.aR(b0)
+b0=A.aS(b0)
 b1=$.asR().aY(d0).d
 b1===$&&A.a()
-b1=A.aR(b1)
+b1=A.aS(b1)
 b2=$.alB().aY(d0).d
 b2===$&&A.a()
-b2=A.aR(b2)
+b2=A.aS(b2)
 b3=$.alA().aY(d0).d
 b3===$&&A.a()
-b3=A.aR(b3)
+b3=A.aS(b3)
 b4=$.asW().aY(d0).d
 b4===$&&A.a()
-b4=A.aR(b4)
+b4=A.aS(b4)
 b5=$.asV().aY(d0).d
 b5===$&&A.a()
-b5=A.aR(b5)
+b5=A.aS(b5)
 b6=$.asS().aY(d0).d
 b6===$&&A.a()
-b6=A.aR(b6)
+b6=A.aS(b6)
 b7=$.asT().aY(d0).d
 b7===$&&A.a()
-b7=A.aR(b7)
+b7=A.aS(b7)
 b8=$.asU().aY(d0).d
 b8===$&&A.a()
-b8=A.aR(b8)
+b8=A.aS(b8)
 b9=$.asH().aY(d0).d
 b9===$&&A.a()
-b9=A.aR(b9)
+b9=A.aS(b9)
 c0=$.asI().aY(d0).d
 c0===$&&A.a()
-c0=A.aR(c0)
+c0=A.aS(c0)
 c1=$.aip().aY(d0).d
 c1===$&&A.a()
-c1=A.aR(c1)
+c1=A.aS(c1)
 c2=$.asu().aY(d0).d
 c2===$&&A.a()
-c2=A.aR(c2)
+c2=A.aS(c2)
 c3=$.asv().aY(d0).d
 c3===$&&A.a()
-c3=A.aR(c3)
+c3=A.aS(c3)
 c4=$.asQ().aY(d0).d
 c4===$&&A.a()
-c4=A.aR(c4)
+c4=A.aS(c4)
 c5=$.asP().aY(d0).d
 c5===$&&A.a()
-c5=A.aR(c5)
+c5=A.aS(c5)
 c6=$.D5().aY(d0).d
 c6===$&&A.a()
-c6=A.aR(c6)
+c6=A.aS(c6)
 c7=$.alz().aY(d0).d
 c7===$&&A.a()
-c7=A.aR(c7)
+c7=A.aS(c7)
 c8=$.asw().aY(d0).d
 c8===$&&A.a()
-c8=A.aR(c8)
+c8=A.aS(c8)
 c9=$.asX().aY(d0).d
 c9===$&&A.a()
-c9=A.aR(c9)
+c9=A.aS(c9)
 return A.Uq(c7,d1,a5,a7,c3,c1,c8,a6,a8,c2,r,p,m,l,j,h,e,d,b9,c0,b,a0,a3,a4,a9,b0,s,q,o,n,c5,k,i,g,f,c4,b1,b3,b6,b7,b8,b5,b4,b2,c6,c9,c,a,a1,a2)},
 avH(d5,d6,d7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3,d4
 if(d5===d6)return d5
@@ -15000,7 +15000,7 @@ ach:function ach(a,b){this.a=a
 this.b=b},
 aN:function aN(){var _=this
 _.d=_.c=_.b=_.a=null},
-A:function A(){},
+B:function B(){},
 a3r:function a3r(a){this.a=a},
 d_:function d_(){},
 a3q:function a3q(a){this.a=a},
@@ -15774,9 +15774,9 @@ a=a4.gFk()
 a0=a4.gn2()
 a1=a4.gFD()
 s.ak(0,new A.a1y(r,A.ayr(j,k,m,g,f,a4.gw2(),0,n,!1,a0,o,l,h,i,d,a,b,c,e,a4.gpC(),a1,p,q).b1(a4.gby()),s))
-q=A.l(r).j("aS<1>")
-p=q.j("b3<B.E>")
-a2=A.a_(new A.b3(new A.aS(r,q),new A.a1z(s),p),p.j("B.E"))
+q=A.l(r).j("aR<1>")
+p=q.j("b3<A.E>")
+a2=A.Z(new A.b3(new A.aR(r,q),new A.a1z(s),p),p.j("A.E"))
 q=a4.gp7()
 p=a4.giJ()
 o=a4.gb9()
@@ -17078,7 +17078,7 @@ if(m===0){n.toString
 o.push(n)
 n=null}}B.b.iO(o)
 s=t.IX
-s=A.a_(new A.eg(o,new A.ahe(),s),s.j("B.E"))
+s=A.Z(new A.eg(o,new A.ahe(),s),s.j("A.E"))
 return s},
 e_(){return new A.cT(A.m(t._S,t.HT),A.m(t.I7,t.M),B.hd,new A.ch("",B.aj),new A.ch("",B.aj),new A.ch("",B.aj),new A.ch("",B.aj),new A.ch("",B.aj),B.eI,B.df,B.bI,B.k3,B.hc)},
 ahi(a,b,c,d){var s
@@ -17500,7 +17500,7 @@ ZB:function ZB(a,b,c){this.a=a
 this.b=b
 this.c=c},
 ZP(a){var s=A.l(a).j("eg<1,e>")
-return A.ds(new A.eg(a,new A.ZQ(),s),s.j("B.E"))},
+return A.ds(new A.eg(a,new A.ZQ(),s),s.j("A.E"))},
 ZC:function ZC(){},
 e:function e(a){this.a=a},
 ZQ:function ZQ(){},
@@ -17573,8 +17573,8 @@ ayW(a){var s,r,q,p,o={}
 o.a=null
 s=new A.a31(o,a).$0()
 r=$.alD().d
-q=A.l(r).j("aS<1>")
-p=A.ds(new A.aS(r,q),q.j("B.E")).u(0,s.giE())
+q=A.l(r).j("aR<1>")
+p=A.ds(new A.aR(r,q),q.j("A.E")).u(0,s.giE())
 q=a.h(0,"type")
 q.toString
 A.bo(q)
@@ -18815,7 +18815,7 @@ return A.aq4(A.hy(s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,b,!0,s,a,s,s,s,s,s,d),c)},
 aq4(a,b){var s,r=b.c
 if(r==null)r=null
 else{s=A.a3(r).j("a5<1,d9>")
-r=A.a_(new A.a5(r,new A.ad8(a),s),s.j("ah.E"))}s=b.a
+r=A.Z(new A.a5(r,new A.ad8(a),s),s.j("ah.E"))}s=b.a
 s=s==null?null:s.aF(a)
 if(s==null)s=a
 return A.de(r,b.y,b.e,b.f,b.r,b.d,b.x,b.w,b.z,s,b.b)},
@@ -19383,10 +19383,10 @@ aj5(a,b,c){var s=a.b
 return B.d.b3(Math.abs(b.b-s),Math.abs(c.b-s))},
 aj4(a,b,c){var s=a.a
 return B.d.b3(Math.abs(b.a-s),Math.abs(c.a-s))},
-an_(a,b){var s=A.a_(b,b.$ti.j("B.E"))
+an_(a,b){var s=A.Z(b,b.$ti.j("A.E"))
 A.k1(s,new A.Ve(a),t.mx)
 return s},
-amZ(a,b){var s=A.a_(b,b.$ti.j("B.E"))
+amZ(a,b){var s=A.Z(b,b.$ti.j("A.E"))
 A.k1(s,new A.Vd(a),t.mx)
 return s},
 an0(a,b){var s=J.SE(b)
@@ -19557,7 +19557,7 @@ q=b.as
 if(a.as!==q)return q?-1:1
 return 0},
 awH(a,b){var s=A.a3(b).j("a5<1,cO>")
-s=A.a_(new A.a5(b,new A.Wx(),s),s.j("ah.E"))
+s=A.Z(new A.a5(b,new A.Wx(),s),s.j("ah.E"))
 return A.aw4(!0,s,a,B.EZ,!0,B.BZ,null)},
 ajb(a){var s
 try{a.dO()}catch(s){a.Jr()}a.w=B.RN
@@ -22065,7 +22065,7 @@ return A.aq3(A.hy(s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,b,!0,s,a,s,s,s,s,s,d),c)},
 aq3(a,b){var s,r=b.c
 if(r==null)r=null
 else{s=A.a3(r).j("a5<1,d9>")
-r=A.a_(new A.a5(r,new A.ad7(a),s),s.j("ah.E"))}s=b.a
+r=A.Z(new A.a5(r,new A.ad7(a),s),s.j("ah.E"))}s=b.a
 s=s==null?null:s.aF(a)
 if(s==null)s=a
 return A.de(r,b.y,b.e,b.f,b.r,b.d,b.x,b.w,b.z,s,b.b)},
@@ -24404,7 +24404,7 @@ return A.E(s.a,s.b,s.c,s.d,s.f,s.r,s.w,s.ch,s.x,n,s.as,s.at,s.ax,s.ay,s.CW,s.cx,
 k(a){return this.iP(0)}}
 A.U5.prototype={
 $0(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this.a,c=d.a,b=d.b,a=d.c,a0=d.d,a1=d.e,a2=d.f,a3=d.w,a4=d.as,a5=d.at,a6=d.ax,a7=d.ay,a8=d.cx,a9=d.cy,b0=d.db,b1=d.dy,b2={}
-if(a8!=null){s=A.ti(A.aR(a8.r))
+if(a8!=null){s=A.ti(A.aS(a8.r))
 b2.backgroundColor=s}if(c!=null){s=A.ti(c)
 b2.color=s}if(b!=null){r=J.au($.b2.bc().NoDecoration)
 s=b.a
@@ -24430,7 +24430,7 @@ d.fr=p
 q=p}A.apb(b2,q)
 s=a2==null
 if(!s)b2.fontStyle=A.aln(a2,d.r)
-if(a9!=null){d=A.ti(A.aR(a9.r))
+if(a9!=null){d=A.ti(A.aS(a9.r))
 b2.foregroundColor=d}if(b0!=null){o=A.b([],t.O)
 for(d=b0.length,n=0;n<b0.length;b0.length===d||(0,A.t)(b0),++n){m=b0[n]
 l={}
@@ -24498,7 +24498,7 @@ cn(a){var s,r,q=this.a
 q===$&&A.a()
 s=q.a.getGlyphPositionAtCoordinate(a.a,a.b)
 r=B.ED[J.au(s.affinity.value)]
-return new A.Z(J.au(s.pos),r)},
+return new A.a_(J.au(s.pos),r)},
 G6(a){var s=this.a
 s===$&&A.a()
 s=s.a.getClosestGlyphInfoAtCoordinate(a.a,a.b)
@@ -25233,8 +25233,8 @@ if(s!=null){r.z=null
 s.hi()}}},
 a0L(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a
 if(a0.a===0)return A.b([],t.Qg)
-s=A.l(a0).j("aS<1>")
-r=A.a_(new A.aS(a0,s),s.j("B.E"))
+s=A.l(a0).j("aR<1>")
+r=A.Z(new A.aR(a0,s),s.j("A.E"))
 q=$.Y().gjR().glk()
 s=t.Te
 p=A.m(s,t.S)
@@ -25251,7 +25251,7 @@ n.D(0,e)}d=p.h(0,e)
 d.toString
 p.m(0,e,d+i)
 o.h(0,e).push(j)}}c=A.b([],t.Qg)
-for(s=n.$ti.c;n.a!==0;){m=A.a_(n,s)
+for(s=n.$ti.c;n.a!==0;){m=A.Z(n,s)
 b=this.a8r(m,p,q)
 c.push(b)
 a=o.h(0,b)
@@ -25445,7 +25445,7 @@ $1(a){var s,r
 t.a.a(a)
 s=A.bo(a.h(0,"family"))
 r=J.oR(t.j.a(a.h(0,"fonts")),new A.ahU(),t.zq)
-r=A.a_(r,r.$ti.j("ah.E"))
+r=A.Z(r,r.$ti.j("ah.E"))
 return new A.mG(s,r)},
 $S:288}
 A.ahU.prototype={
@@ -26407,7 +26407,7 @@ if(s!=null){l=$.bl
 s.prepend((l==null?$.bl=A.cY():l).d.a.gOr())}l=m.gcd().e
 m.a=new A.cz(l,A.l(l).j("cz<1>")).kh(new A.WZ(m))
 m.Z6()},
-l(){var s=this,r=$.am1(),q=r.a,p=A.l(q).j("aS<1>"),o=A.a_(new A.aS(q,p),p.j("B.E"))
+l(){var s=this,r=$.am1(),q=r.a,p=A.l(q).j("aR<1>"),o=A.Z(new A.aR(q,p),p.j("A.E"))
 B.b.ak(o,r.gYQ())
 r=s.k4
 if(r!=null)r.disconnect()
@@ -26436,8 +26436,8 @@ r===$&&A.a()
 r.aX()
 r=s.gcd()
 q=r.b
-p=A.l(q).j("aS<1>")
-q=A.a_(new A.aS(q,p),p.j("B.E"))
+p=A.l(q).j("aR<1>")
+q=A.Z(new A.aR(q,p),p.j("A.E"))
 B.b.ak(q,r.gadx())
 r.d.bK()
 r.e.bK()},
@@ -26492,11 +26492,11 @@ if(l==null)l=""
 k=A.eY(m.h(0,"primaryColor"))
 if(k==null)k=4278190080
 v.G.document.title=l
-A.as3(A.aR(k))
+A.as3(A.aS(k))
 a.eo(a3,B.P.bo([!0]))
 return
 case"SystemChrome.setSystemUIOverlayStyle":j=A.eY(t.xE.a(s.b).h(0,"statusBarColor"))
-A.as3(j==null?a0:A.aR(j))
+A.as3(j==null?a0:A.aS(j))
 a.eo(a3,B.P.bo([!0]))
 return
 case"SystemChrome.setPreferredOrientations":B.zM.tf(t.j.a(s.b)).bQ(new A.WV(a,a3),t.P)
@@ -27008,7 +27008,7 @@ s=A.b([],t.xj)
 r=A.b([],t.k_)
 q=A.m(t.sT,t.E9)
 p=t.SF
-p=A.a_(new A.bW(f.a,p),p.j("B.E"))
+p=A.Z(new A.bW(f.a,p),p.j("A.E"))
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){m=p[n]
@@ -27032,24 +27032,24 @@ c.toString
 p.a9V(c)
 if(c.op(p.x)){o=c.a
 n=t.SF
-m=n.j("B.E")
+m=n.j("A.E")
 l=0
-for(;;){k=A.a_(new A.bW(o,n),m)
+for(;;){k=A.Z(new A.bW(o,n),m)
 if(!(l<k.length))break
-k=A.a_(new A.bW(o,n),m)
+k=A.Z(new A.bW(o,n),m)
 k=k[l]
-j=A.a_(new A.bW(p.x.a,n),m)
+j=A.Z(new A.bW(p.x.a,n),m)
 k.c=j[l].c
-k=A.a_(new A.bW(p.x.a,n),m)
+k=A.Z(new A.bW(p.x.a,n),m)
 k[l].c=null;++l}}p.x=c
 o=t.SF
-c=A.a_(new A.bW(c.a,o),o.j("B.E"))
+c=A.Z(new A.bW(c.a,o),o.j("A.E"))
 o=A.a3(c).j("a5<1,hQ>")
-i=A.a_(new A.a5(c,new A.a2F(),o),o.j("ah.E"))
+i=A.Z(new A.a5(c,new A.a2F(),o),o.j("ah.E"))
 c=p.c.d
 c.toString
 o=A.a3(c).j("a5<1,a2q>")
-h=A.a_(new A.a5(c,new A.a2G(),o),o.j("ah.E"))
+h=A.Z(new A.a5(c,new A.a2G(),o),o.j("ah.E"))
 s=3
 return A.V(p.b.kq(i,h,a),$async$tn)
 case 3:for(c=h.length,g=0;g<h.length;h.length===c||(0,A.t)(h),++g)h[g].l()
@@ -27074,7 +27074,7 @@ PU(a){this.e.E(0,a)
 this.d.E(0,a)
 this.f.E(0,a)},
 a5w(a){var s,r,q,p,o,n,m,l=A.b([],t.EV),k=a.a,j=t.SF
-j=A.a_(new A.bW(k,j),j.j("B.E"))
+j=A.Z(new A.bW(k,j),j.j("A.E"))
 s=j.length
 if(s<=A.cl().gCP())return a
 r=s-A.cl().gCP()
@@ -27093,7 +27093,7 @@ a9V(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this
 if(a.op(d.x))return
 s=d.a1l(d.x,a)
 r=A.a3(s).j("b3<1>")
-q=A.a_(new A.b3(s,new A.a2D(),r),r.j("B.E"))
+q=A.Z(new A.b3(s,new A.a2D(),r),r.j("A.E"))
 p=A.arU(q)
 for(r=p.length,o=0;o<r;++o)p[o]=q[p[o]]
 for(n=d.b,o=0;o<d.x.a.length;++o){if(B.b.u(s,o))continue
@@ -27127,8 +27127,8 @@ break}if(p[r].op(o[l])&&!m.u(0,r)){q.push(r)
 if(p[r] instanceof A.cN)m.D(0,r)
 s=!0
 break}++r}if(!s)q.push(-1);++l}return q},
-l(){var s,r,q,p=this,o=p.e,n=A.l(o).j("aS<1>")
-n=A.a_(new A.aS(o,n),n.j("B.E"))
+l(){var s,r,q,p=this,o=p.e,n=A.l(o).j("aR<1>")
+n=A.Z(new A.aR(o,n),n.j("A.E"))
 B.b.ak(n,p.gPT())
 p.c=new A.v0(A.m(t.sT,t.Cc),A.b([],t.y8))
 p.d.U(0)
@@ -27137,7 +27137,7 @@ p.f.U(0)
 B.b.U(p.w)
 B.b.U(p.r)
 o=t.SF
-o=A.a_(new A.bW(p.x.a,o),o.j("B.E"))
+o=A.Z(new A.bW(p.x.a,o),o.j("A.E"))
 n=o.length
 s=0
 for(;s<o.length;o.length===n||(0,A.t)(o),++s){r=o[s]
@@ -29685,7 +29685,7 @@ if(i.c==null){h=h.y1.a
 h===$&&A.a()
 i.c=h
 i.b.append(h)}i.JA()},
-jv(){var s,r,q=this,p=q.e,o=A.l(p).j("aS<1>"),n=A.a_(new A.aS(p,o),o.j("B.E")),m=n.length
+jv(){var s,r,q=this,p=q.e,o=A.l(p).j("aR<1>"),n=A.Z(new A.aR(p,o),o.j("A.E")),m=n.length
 for(s=0;s<m;++s){r=p.h(0,n[s])
 if(r!=null)q.w.push(r)}q.JA()
 o=q.c
@@ -30505,7 +30505,7 @@ else{k=A.dp(j,"HTMLTextAreaElement")
 if(k)j.value=g
 else A.a8(A.bD("Unsupported DOM element type"))}}}},
 qv(){var s=this.b,r=A.b([],t.Up)
-new A.aS(s,A.l(s).j("aS<1>")).ak(0,new A.WJ(this,r))
+new A.aR(s,A.l(s).j("aR<1>")).ak(0,new A.WJ(this,r))
 return r},
 a8y(a,b){this.c.m(0,a,b.a)
 $.ak().fT("flutter/textinput",B.ax.hU(new A.fa(u.w,[0,A.r([a,b.T6()],t.N,t.z)])),A.CS())}}
@@ -31800,16 +31800,16 @@ r=m.a
 q=n.ax
 l=n.ay
 l===$&&A.a()
-if(m.c-r+q+l-l<0.001&&l<0.001)return new A.Z(n.c.b,B.i)
+if(m.c-r+q+l-l<0.001&&l<0.001)return new A.a_(n.c.b,B.i)
 k=r+q
 for(r=n.ch,q=r.length,m=a4.a,l=this.f,j=0,o=0;o<r.length;r.length===q||(0,A.t)(r),++o){i=r[o];++j
-if(i instanceof A.pA)return new A.Z(i.f.b,B.i)
-if(i instanceof A.ic)return new A.Z(i.f.b,B.i)
+if(i instanceof A.pA)return new A.a_(i.f.b,B.i)
+if(i instanceof A.ic)return new A.a_(i.f.b,B.i)
 h=i.gdl()
 if(i.gdl().c+k+0.001<m)continue
 else if(h.a+k-0.001>m){g=B.b.gV(r)
 s=g.f
-return(g.d&1)===0?new A.Z(s.a,B.i):new A.Z(s.b,B.O)}h=(i.d&1)===0
+return(g.d&1)===0?new A.a_(s.a,B.i):new A.a_(s.b,B.O)}h=(i.d&1)===0
 f=i.e
 e=h?f.a:f.b-1
 d=h?f.b:f.a-1
@@ -31817,11 +31817,11 @@ c=h?1:-1
 for(b=e;b!==d;b+=c){a=l[b]
 a0=a.gdl().a+k+i.glY()-0.001
 a1=a.gdl().c+k+i.glY()+0.001
-if(a0<=m&&a1>m){if(m<(a0+a1)/2)a2=h?new A.Z(a.gaS().a+a.ge9(),B.i):new A.Z(a.gaS().a+a.gjb(),B.O)
-else a2=h?new A.Z(a.gaS().a+a.gjb(),B.O):new A.Z(a.gaS().a+a.ge9(),B.i)
+if(a0<=m&&a1>m){if(m<(a0+a1)/2)a2=h?new A.a_(a.gaS().a+a.ge9(),B.i):new A.a_(a.gaS().a+a.gjb(),B.O)
+else a2=h?new A.a_(a.gaS().a+a.gjb(),B.O):new A.a_(a.gaS().a+a.ge9(),B.i)
 return a2}}}a3=B.b.gad(B.b.gad(s).ch)
 s=a3.f
-return(a3.d&1)===0?new A.Z(s.b,B.O):new A.Z(s.a,B.i)}return B.cz},
+return(a3.d&1)===0?new A.a_(s.b,B.O):new A.a_(s.a,B.i)}return B.cz},
 ni(a){var s,r,q,p,o,n,m,l,k,j,i,h,g=this.a,f=g.c.length
 if(f===0||a<0||a>=f)return null
 s=g.TG(a)
@@ -32172,13 +32172,13 @@ return b.a==s.a&&A.ev(b.b,s.b)&&b.c==s.c&&J.d(b.e,s.e)&&J.d(b.f,s.f)&&A.arX(b.r,
 gq(a){var s=this,r=null,q=s.b,p=s.x,o=s.db,n=q==null?r:A.ba(q),m=p==null?r:A.ba(p)
 return A.E(s.a,n,s.c,s.d,s.e,s.f,s.r,s.w,m,s.y,s.z,s.Q,s.as,s.at,s.ax,s.ay,s.ch,s.CW,s.cx,A.E(r,o==null?r:A.ba(o),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a))},
 TE(){var s=this.r
-if(s!=null)s=A.aR(s.r)
+if(s!=null)s=A.aS(s.r)
 else{s=this.f
 s=s!=null?s:B.k}return s},
 k(a){return this.iP(0)},
 R5(a){var s,r=this
 switch(a.a){case 0:s=r.w
-return s!=null&&A.aR(s.r).a!==0
+return s!=null&&A.aS(s.r).a!==0
 case 1:s=r.x
 return s!=null&&s.length!==0
 case 2:s=r.y
@@ -33091,7 +33091,7 @@ m(a,b,c){a.$flags&2&&A.ar(a)
 if(!(b>=0&&b<a.length))throw A.i(A.ahS(a,b))
 a[b]=c},
 G2(a,b){return new A.bW(a,b.j("bW<0>"))},
-S(a,b){var s=A.a_(a,A.a3(a).c)
+S(a,b){var s=A.Z(a,A.a3(a).c)
 this.P(s,b)
 return s},
 afJ(a,b,c){var s
@@ -33100,7 +33100,7 @@ for(s=c;s<a.length;++s)if(b.$1(a[s]))return s
 return-1},
 gdg(a){return A.bF(A.a3(a))},
 $iao:1,
-$iB:1,
+$iA:1,
 $iT:1}
 J.Ga.prototype={
 ajm(a){var s,r,q
@@ -33445,8 +33445,8 @@ jB(a,b){return this.yW(0,b)},
 i0(a,b,c){return new A.a5(this,b,A.l(this).j("@<ah.E>").bE(c).j("a5<1,2>"))},
 ic(a,b){return A.im(this,b,null,A.l(this).j("ah.E"))},
 dr(a,b){var s=A.l(this).j("ah.E")
-if(b)s=A.a_(this,s)
-else{s=A.a_(this,s)
+if(b)s=A.Z(this,s)
+else{s=A.Z(this,s)
 s.$flags=1
 s=s}return s},
 eI(a){return this.dr(0,!0)},
@@ -33737,7 +33737,7 @@ al(a){return this.kO().al(a)},
 h(a,b){return this.kO().h(0,b)},
 ak(a,b){this.kO().ak(0,b)},
 gbI(){var s=this.kO()
-return new A.aS(s,A.l(s).j("aS<1>"))},
+return new A.aR(s,A.l(s).j("aR<1>"))},
 gh0(){var s=this.kO()
 return new A.be(s,A.l(s).j("be<2>"))},
 gF(a){return this.kO().a}}
@@ -33879,7 +33879,7 @@ A.eM.prototype={
 gF(a){return this.a},
 ga0(a){return this.a===0},
 gbM(a){return this.a!==0},
-gbI(){return new A.aS(this,A.l(this).j("aS<1>"))},
+gbI(){return new A.aR(this,A.l(this).j("aR<1>"))},
 gh0(){return new A.be(this,A.l(this).j("be<2>"))},
 giu(){return new A.f9(this,A.l(this).j("f9<1,2>"))},
 al(a){var s,r
@@ -33891,7 +33891,7 @@ return r[a]!=null}else return this.afQ(a)},
 afQ(a){var s=this.d
 if(s==null)return!1
 return this.ro(this.JN(s,a),a)>=0},
-ac0(a){return new A.aS(this,A.l(this).j("aS<1>")).e_(0,new A.Zc(this,a))},
+ac0(a){return new A.aR(this,A.l(this).j("aR<1>")).e_(0,new A.Zc(this,a))},
 P(a,b){b.ak(0,new A.Zb(this))},
 h(a,b){var s,r,q,p,o=null
 if(typeof b=="string"){s=this.b
@@ -33992,7 +33992,7 @@ A.Zb.prototype={
 $2(a,b){this.a.m(0,a,b)},
 $S(){return A.l(this.a).j("~(1,2)")}}
 A.ZM.prototype={}
-A.aS.prototype={
+A.aR.prototype={
 gF(a){return this.a.a},
 ga0(a){return this.a.a===0},
 gW(a){var s=this.a
@@ -34256,7 +34256,7 @@ m(a,b,c){a.$flags&2&&A.ar(a)
 A.jY(b,a,a.length)
 a[b]=c},
 $iao:1,
-$iB:1,
+$iA:1,
 $iT:1}
 A.fd.prototype={
 m(a,b,c){a.$flags&2&&A.ar(a)
@@ -34267,7 +34267,7 @@ if(t.A3.b(d)){this.a8I(a,b,c,d,e)
 return}this.Vy(a,b,c,d,e)},
 kB(a,b,c,d){return this.f6(a,b,c,d,0)},
 $iao:1,
-$iB:1,
+$iA:1,
 $iT:1}
 A.wn.prototype={
 gdg(a){return B.Qv},
@@ -35498,13 +35498,13 @@ if(r.gF(a)===0)throw A.i(A.cc())
 s=r.h(a,r.gF(a)-1)
 r.sF(a,r.gF(a)-1)
 return s},
-S(a,b){var s=A.a_(a,A.dA(a).j("aE.E"))
+S(a,b){var s=A.Z(a,A.dA(a).j("aE.E"))
 B.b.P(s,b)
 return s},
 cS(a,b,c){var s,r=this.gF(a)
 if(c==null)c=r
 A.en(b,c,r,null,null)
-s=A.a_(this.t3(a,b,c),A.dA(a).j("aE.E"))
+s=A.Z(this.t3(a,b,c),A.dA(a).j("aE.E"))
 return s},
 fB(a,b){return this.cS(a,b,null)},
 t3(a,b,c){A.en(b,c,this.gF(a),null,null)
@@ -35525,7 +35525,7 @@ if(r<b)for(o=s-1;o>=0;--o)this.m(a,b+o,p.h(q,r+o))
 else for(o=0;o<s;++o)this.m(a,b+o,p.h(q,r+o))},
 k(a){return A.mV(a,"[","]")},
 $iao:1,
-$iB:1,
+$iA:1,
 $iT:1}
 A.bi.prototype={
 j7(a,b,c){var s=A.l(this)
@@ -35785,8 +35785,8 @@ ff(a){var s,r,q=this.i8(0)
 for(s=this.gW(this);s.p();){r=s.gM()
 if(a.u(0,r))q.E(0,r)}return q},
 dr(a,b){var s=A.l(this).c
-if(b)s=A.a_(this,s)
-else{s=A.a_(this,s)
+if(b)s=A.Z(this,s)
+else{s=A.Z(this,s)
 s.$flags=1
 s=s}return s},
 eI(a){return this.dr(0,!0)},
@@ -35811,7 +35811,7 @@ A.db(b,"index")
 s=this.gW(this)
 for(r=b;s.p();){if(r===0)return s.gM();--r}throw A.i(A.G5(b,b-r,this,null,"index"))},
 $iao:1,
-$iB:1,
+$iA:1,
 $iaT:1}
 A.rX.prototype={
 ff(a){var s,r,q=this.un()
@@ -35834,7 +35834,7 @@ gF(a){return this.b==null?this.c.a:this.nC().length},
 ga0(a){return this.gF(0)===0},
 gbM(a){return this.gF(0)>0},
 gbI(){if(this.b==null){var s=this.c
-return new A.aS(s,A.l(s).j("aS<1>"))}return new A.MM(this)},
+return new A.aR(s,A.l(s).j("aR<1>"))}return new A.MM(this)},
 gh0(){var s,r=this
 if(r.b==null){s=r.c
 return new A.be(s,A.l(s).j("be<2>"))}return A.a_0(r.nC(),new A.ack(r),t.N,t.z)},
@@ -36436,13 +36436,13 @@ j=f+36}l="..."}}else{j=m
 i=q
 k=""}return g+l+B.c.a1(e,i,j)+k+"\n"+B.c.a8(" ",f-i+l.length)+"^\n"}else return f!=null?g+(" (at offset "+A.k(f)+")"):g},
 $idn:1}
-A.B.prototype={
-fc(a,b){return A.u2(this,A.l(this).j("B.E"),b)},
+A.A.prototype={
+fc(a,b){return A.u2(this,A.l(this).j("A.E"),b)},
 aep(a,b){var s=this
-if(t.Ee.b(s))return A.axb(s,b,A.l(s).j("B.E"))
-return new A.mE(s,b,A.l(s).j("mE<B.E>"))},
-i0(a,b,c){return A.a_0(this,b,A.l(this).j("B.E"),c)},
-jB(a,b){return new A.b3(this,b,A.l(this).j("b3<B.E>"))},
+if(t.Ee.b(s))return A.axb(s,b,A.l(s).j("A.E"))
+return new A.mE(s,b,A.l(s).j("mE<A.E>"))},
+i0(a,b,c){return A.a_0(this,b,A.l(this).j("A.E"),c)},
+jB(a,b){return new A.b3(this,b,A.l(this).j("b3<A.E>"))},
 G2(a,b){return new A.bW(this,b.j("bW<0>"))},
 u(a,b){var s
 for(s=this.gW(this);s.p();)if(J.d(s.gM(),b))return!0
@@ -36462,20 +36462,20 @@ wT(a){return this.bi(0,"")},
 e_(a,b){var s
 for(s=this.gW(this);s.p();)if(b.$1(s.gM()))return!0
 return!1},
-dr(a,b){var s=A.l(this).j("B.E")
-if(b)s=A.a_(this,s)
-else{s=A.a_(this,s)
+dr(a,b){var s=A.l(this).j("A.E")
+if(b)s=A.Z(this,s)
+else{s=A.Z(this,s)
 s.$flags=1
 s=s}return s},
 eI(a){return this.dr(0,!0)},
-i8(a){return A.ds(this,A.l(this).j("B.E"))},
+i8(a){return A.ds(this,A.l(this).j("A.E"))},
 gF(a){var s,r=this.gW(this)
 for(s=0;r.p();)++s
 return s},
 ga0(a){return!this.gW(this).p()},
 gbM(a){return!this.ga0(this)},
-FB(a,b){return A.aA_(this,b,A.l(this).j("B.E"))},
-ic(a,b){return A.apd(this,b,A.l(this).j("B.E"))},
+FB(a,b){return A.aA_(this,b,A.l(this).j("A.E"))},
+ic(a,b){return A.apd(this,b,A.l(this).j("A.E"))},
 gV(a){var s=this.gW(this)
 if(!s.p())throw A.i(A.cc())
 return s.gM()},
@@ -37621,7 +37621,7 @@ l.m(0,m,s)
 this.ZP()
 return s}},
 ZP(){var s,r,q,p
-for(s=this.b,r=this.a,q=A.l(s).j("aS<1>");s.a>r;){p=new A.aS(s,q).gW(0)
+for(s=this.b,r=this.a,q=A.l(s).j("aR<1>");s.a>r;){p=new A.aR(s,q).gW(0)
 if(!p.p())A.a8(A.cc())
 s.E(0,p.gM())}}}
 A.c_.prototype={
@@ -37768,10 +37768,10 @@ k(a){var s=this
 return"TextBox.fromLTRBD("+B.d.a2(s.a,1)+", "+B.d.a2(s.b,1)+", "+B.d.a2(s.c,1)+", "+B.d.a2(s.d,1)+", "+s.e.k(0)+")"}}
 A.yt.prototype={
 H(){return"TextAffinity."+this.b}}
-A.Z.prototype={
+A.a_.prototype={
 i(a,b){if(b==null)return!1
 if(J.J(b)!==A.n(this))return!1
-return b instanceof A.Z&&b.a===this.a&&b.b===this.b},
+return b instanceof A.a_&&b.a===this.a&&b.b===this.b},
 gq(a){return A.E(this.a,this.b,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return A.n(this).k(0)+"(offset: "+this.a+", affinity: "+this.b.k(0)+")"}}
 A.b7.prototype={
@@ -37936,6 +37936,12 @@ A.vo.prototype={
 aj(){var s="https://unsplash.com",r="castraveti murati",q="Deserturi / Pr\u0103jituri",p=$.ad(),o=t.s,n=t.N,m=t.z
 return new A.Mj(new A.le(B.hp,p),new A.le(B.hp,p),A.b([],o),A.b([],o),A.b([],o),A.r(["Ciorba Radauteana Traditionala",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["pui","morcov","smantana","usturoi","ou","otel"],o),"cantitati","\u2022 600g pui, 400g sm\xe2nt\xe2n\u0103 20%, 4 g\u0103lbenu\u0219uri, 2 morcovi, 5 c\u0103\u021bei usturoi, 3 linguri o\u021bet.","pasi","1. Fierbe puiul cu legumele.\n2. Amestec\u0103 g\u0103lbenu\u0219urile cu sm\xe2nt\xe2na.\n3. Tempereaz\u0103 cu sup\u0103 fierbinte, toarn\u0103 \xeen oal\u0103 cu usturoiul pisat \u0219i o\u021betul.","secret","Scoate sm\xe2nt\xe2na cu o or\u0103 \xeenainte din frigider ca s\u0103 nu se str\xe2ng\u0103 \xeen cocoloase!"],n,m),"Supa Crema de Ciuperci",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["ciuperci","ceapa","usturoi","cartofi","smantana","unt"],o),"cantitati","\u2022 500g ciuperci, 1 ceap\u0103, 2 c\u0103\u021bei usturoi, 1 cartof, 50g unt, 200ml sm\xe2nt\xe2n\u0103 lichid\u0103.","pasi","1. C\u0103le\u0219te ceapa, usturoiul \u0219i ciupercile \xeen unt.\n2. Pune cartoful cuburi \u0219i 500ml ap\u0103 fierbinte. Fierbe 20 min.\n3. Blendeaz\u0103 totul, adaug\u0103 sm\xe2nt\xe2na lichid\u0103 \u0219i mai d\u0103 \xeentr-un clocot.","secret","Un singur cartof alb ad\u0103ugat ofer\u0103 o textur\u0103 cremoas\u0103 perfect\u0103, f\u0103r\u0103 s\u0103 ai nevoie de f\u0103in\u0103!"],n,m),"Ciorba de Burta ca la Restaurant",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["burta","oase","smantana","ou","usturoi","morcov","gogosari","otel"],o),"cantitati","\u2022 1 kg burt\u0103 de vit\u0103 prefiart\u0103\n\u2022 1.5 kg oase de vit\u0103 cu m\u0103duv\u0103\n\u2022 500g sm\xe2nt\xe2n\u0103 gras\u0103 (minim 20%)\n\u2022 5 g\u0103lbenu\u0219uri de ou\n\u2022 1 c\u0103p\u0103\u021b\xe2n\u0103 de usturoi\n\u2022 1 morcov mare ras fin, 1 ceap\u0103 \xeentreag\u0103\n\u2022 3-4 felii gogo\u0219ar \xeen o\u021bet\n\u2022 50ml o\u021bet, 2 linguri ulei, sare \u0219i boabe de piper.","pasi","1. Fierbe oasele de vit\u0103 \xeen 4L de ap\u0103 cu sare timp de 2 ore, spum\xe2nd des. Strecoar\u0103 supa \u0219i arunc\u0103 oasele.\n2. Pune \xeen supa curat\u0103 burta t\u0103iat\u0103 fidelu\u021b\u0103 \u0219i las-o s\u0103 fiarb\u0103 40 de minute \xeempreun\u0103 cu gogo\u0219arii t\u0103ia\u021bi m\u0103runt.\n3. C\u0103le\u0219te morcovul ras fin \xeen 2 linguri de ulei p\xe2n\u0103 \xee\u0219i las\u0103 culoarea galben\u0103, apoi strecoar\u0103 doar uleiul colorat \xeen oal\u0103 (pentru fa\u021ba ciorbei).\n4. \xcentr-un bol mare, amestec\u0103 g\u0103lbenu\u0219urile cu sm\xe2nt\xe2na \u0219i usturoiul pisat. Tempereaz\u0103 amestecul turn\xe2nd treptat 4-5 polonice de sup\u0103 fierbinte.\n5. Opre\u0219te focul oalei, toarn\u0103 amestecul de sm\xe2nt\xe2n\u0103, ad\u0103ug\u0103 o\u021betul \u0219i potrive\u0219te de sare.","secret","Pentru ca ciorba s\u0103 aib\u0103 acea culoare galben-aurie superb\u0103 ca la restaurant, nu pune morcovul direct \xeen ciorb\u0103! C\u0103le\u0219te-l separat \xeen ulei \u0219i toarn\u0103 doar uleiul strecurat. De asemenea, oprirea focului \xeenainte de a pune sm\xe2nt\xe2na previne t\u0103ierea ei."],n,m),"Ciorba de Vacuta Taraneasca",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["vita","cartofi","morcov","mazare","fasole verde","rosii","bors"],o),"cantitati","\u2022 500g pulp\u0103 de vit\u0103 (m\xe2nzat)\n\u2022 3 cartofi medii\n\u2022 2 morcovi, 1 ceap\u0103, 1 r\u0103d\u0103cin\u0103 p\u0103st\xe2rnac\n\u2022 100g maz\u0103re, 100g fasole verde teci\n\u2022 200g ro\u0219ii pasate (bulion)\n\u2022 1L bor\u0219 proasp\u0103t\n\u2022 1 leg\u0103tur\u0103 leu\u0219tean proasp\u0103t, sare.","pasi","1. Taie carnea de vit\u0103 \xeen cubule\u021be mici \u0219i pune-o la fiert \xeen 3L de ap\u0103 cu sare. Las-o la foc mic aproximativ 60-80 de minute p\xe2n\u0103 e moale.\n2. Adaug\u0103 morcovul, p\u0103st\xe2rnacul \u0219i ceapa t\u0103iate cubule\u021be. Las\u0103-le 15 minute.\n3. Pune cartofii, maz\u0103rea, fasolea verde \u0219i ro\u0219iile pasate. Fierbe \xeenc\u0103 15 minute.\n4. \xcentr-o oal\u0103 separat\u0103, d\u0103 bor\u0219ul \xeen clocot, apoi toarn\u0103-l peste ciorb\u0103.\n5. Mai las\u0103 s\u0103 dea \xeen clocot 2 minute, opre\u0219te focul \u0219i arunc\u0103 leu\u0219teanul tocat m\u0103runt.","secret","Carnea de vit\u0103 se fierbe \xeentotdeauna singur\u0103 la \xeenceput, la foc foarte mic, cu capac. Dac\u0103 pui legumele de la \xeenceput, ele se vor terciui p\xe2n\u0103 c\xe2nd carnea devine fraged\u0103."],n,m),"Supa de Pui cu Taitei de Casa",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["pui","morcov","telina","ou","faina","patrunjel"],o),"cantitati","\u2022 1 pui de \u021bar\u0103 (sau 1 kg pulpe/aripi)\n\u2022 2 morcovi mari, 1 p\u0103st\xe2rnac, 1 \u021belin\u0103 mic\u0103, 1 ceap\u0103\n\u2022 Pentru t\u0103i\u021bei: 1 ou \xeentreg, 100g f\u0103in\u0103, un praf de sare\n\u2022 1 leg\u0103tur\u0103 p\u0103trunjel proasp\u0103t, sare \u0219i piper boabe.","pasi","1. Fierbe puiul \xeen 4L de ap\u0103 rece cu sare. Spumeaz\u0103 intens p\xe2n\u0103 supa r\u0103m\xe2ne clar\u0103.\n2. Adaug\u0103 legumele \xeentregi sau t\u0103iate pe jum\u0103tate \u0219i las\u0103 totul la foc minim 45 de minute.\n3. Pentru t\u0103i\u021bei: bate oul cu sarea, adaug\u0103 f\u0103ina \u0219i fr\u0103m\xe2nt\u0103 un aluat foarte tare. \xcentinde o foaie sub\u021bire ca h\xe2rtia, las-o la uscat 15 minute, apoi ruleaz-o \u0219i tai-o f\xe2\u0219ii fine.\n4. Scoate legumele \u0219i carnea din sup\u0103. Pune t\u0103i\u021beii scutura\u021bi de f\u0103in\u0103 direct \xeen supa care fierbe \u0219i las\u0103-i 3-4 minute.\n5. Opre\u0219te focul, repune carnea \xeen oal\u0103 \u0219i presar\u0103 p\u0103trunjelul proasp\u0103t tocat.","secret","Secretul unei supe clare, aurii: NU l\u0103sa supa s\u0103 clocoteasc\u0103 puternic! Trebuie s\u0103 fiarb\u0103 la foc at\xe2t de mic \xeenc\xe2t abia s\u0103 scoat\u0103 bule (s\u0103 \u201ep\xe2lp\xe2ie\u201d). Altfel, gr\u0103simea se va emulsiona \xeen ap\u0103 \u0219i supa va deveni tulbure."],n,m),"Ciorba de Perisoare Clasica",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["porc","vita","orez","ou","ceapa","morcov","rosii","bors","leustean"],o),"cantitati","\u2022 400g carne tocat\u0103 amestec (porc + vit\u0103)\n\u2022 50g orez cu bob rotund\n\u2022 1 ou \xeentreg (pentru peri\u0219oare)\n\u2022 2 cepe, 2 morcovi, 1 ardei gras\n\u2022 250ml ro\u0219ii pasate\n\u2022 750ml bor\u0219\n\u2022 Sare, piper, leu\u0219tean proasp\u0103t.","pasi","1. Toac\u0103 o ceap\u0103 m\u0103runt \u0219i amestec-o cu carnea, oul, orezul sp\u0103lat bine, sare \u0219i piper. Formeaz\u0103 peri\u0219oare mici cu m\xe2inile umede.\n2. Pune la fiert \xeentr-o oal\u0103 cu 3L de ap\u0103 cealalt\u0103 ceap\u0103, morcovii \u0219i ardeiul t\u0103iate cuburi.\n3. C\xe2nd apa clocote\u0219te u\u0219or, d\u0103 focul la minim \u0219i las\u0103 peri\u0219oarele s\u0103 lunece una c\xe2te una \xeen oal\u0103. Nu amesteca cu lingura ca s\u0103 nu le spargi!\n4. Dup\u0103 20 de minute (c\xe2nd peri\u0219oarele se ridic\u0103 la suprafa\u021b\u0103), ad\u0103ug\u0103 ro\u0219iile pasate \u0219i bor\u0219ul fiert separat.\n5. Mai las\u0103 5 minute pe foc, apoi opre\u0219te \u0219i ad\u0103ug\u0103 leu\u0219teanul.","secret","Pentru peri\u0219oare extrem de pufoase \u0219i moi, orezul trebuie sp\u0103lat \xeen ap\u0103 fierbinte \xeenainte de a-l pune \xeen carne (pentru a porni pre-g\u0103tirea) \u0219i NU str\xe2nge peri\u0219oarele prea tare \xeen pumn c\xe2nd le formezi."],n,m),"Ciorba de Fasole cu Afumatura in Bol de Paine",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["fasole","ciolan","afumatura","ceapa","morcov","rosii","tarhon","bors"],o),"cantitati","\u2022 400g fasole boabe uscat\u0103\n\u2022 500g ciolan afumat sau costi\u021b\u0103\n\u2022 2 cepe mari, 2 morcovi, 1 ardei\n\u2022 2 linguri past\u0103 de ro\u0219ii\n\u2022 1 linguri\u021b\u0103 cimbru uscat, 1 lingur\u0103 tarhon \xeen o\u021bet\n\u2022 Sare, piper, m\u0103rar proasp\u0103t.","pasi","1. Pune fasolea la \xeenmuiat \xeen ap\u0103 rece cu 12 ore \xeenainte. Fierbe-o separat \xeen 3 ape diferite (schimb\u0103 apa dup\u0103 fiecare clocot de 5 minute pentru a elimina toxinele).\n2. Fierbe ciolanul afumat \xeentr-o oal\u0103 separat\u0103 p\xe2n\u0103 carnea pic\u0103 de pe oase. Taie carnea cuburi.\n3. Pune fasolea prefiat\u0103 \xeen supa de la afum\u0103tur\u0103, adaug\u0103 legumele tocate m\u0103runt \u0219i cimbrul. Las\u0103-le la fiert 30 de minute.\n4. Adaug\u0103 pasta de ro\u0219ii \u0219i carnea afumat\u0103. Pune tarhonul (care d\u0103 aroma specific\u0103).\n5. Las\u0103 s\u0103 scad\u0103 bine ciorba. Se serve\u0219te \xeen p\xe2ine rotund\u0103 c\u0103reia i s-a scos miezul.","secret","Tarhonul murat \xeen o\u021bet este secretul aromatic de top pentru ciorba de fasole. Acesta taie perfect gr\u0103simea afum\u0103turii \u0219i ofer\u0103 acel gust inconfundabil de han tradi\u021bional."],n,m),"Ciorba de Pui a la Grec",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["pui","orez","smantana","ou","lamaie","morcov","ceapa","marar"],o),"cantitati","\u2022 700g pui (pulpe sau aripi)\n\u2022 3 linguri orez cu bob rotund\n\u2022 300g sm\xe2nt\xe2n\u0103 fermentat\u0103 (minim 20%)\n\u2022 3 g\u0103lbenu\u0219uri de ou\n\u2022 Sucul de la 1 l\u0103m\xe2ie mare\n\u2022 1 morcov, 1 ceap\u0103, 1 ardei gras\n\u2022 1 leg\u0103tur\u0103 m\u0103rar proasp\u0103t, sare \u0219i piper.","pasi","1. Fierbe puiul \xeen 3L de ap\u0103 cu sare \u0219i spumeaz\u0103-l bine.\n2. Adaug\u0103 legumele tocate m\u0103runt \u0219i las\u0103-le la fiert 20 de minute, apoi pune \u0219i orezul sp\u0103lat.\n3. C\xe2nd orezul \u0219i carnea sunt fierte, opre\u0219te focul.\n4. \xcentr-un bol, bate g\u0103lbenu\u0219urile cu sm\xe2nt\xe2na \u0219i sucul de l\u0103m\xe2ie. Tempereaz\u0103 sosul cu 3-4 polonice de sup\u0103 fierbinte luate din oal\u0103.\n5. Toarn\u0103 compozi\u021bia \xeen ciorb\u0103 amestec\xe2nd continuu, apoi presar\u0103 m\u0103rarul tocat fin.","secret","Spre deosebire de Ciorba R\u0103d\u0103u\u021bean\u0103 care folose\u0219te usturoi \u0219i o\u021bet, cea \xe0 la Grec \xee\u0219i ia personalitatea din m\u0103rar proasp\u0103t \u0219i suc de l\u0103m\xe2ie stors pe loc. Nu folosi l\u0103m\xe2ie la sticl\u0103, va strica gustul fin al sm\xe2nt\xe2nii!"],n,m),"Ciorba de Peste ca-n Delta",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["peste","morcov","ceapa","ardei","rosii","otel","leustean"],o),"cantitati","\u2022 1.5 kg pe\u0219te proasp\u0103t divers (crap, somn, \u0219tiuc\u0103, caras)\n\u2022 2 cepe mari, 2 ardei gra\u0219i, 2 morcovi\n\u2022 3 ro\u0219ii mari zemoase (sau 200g ro\u0219ii pasate)\n\u2022 100ml o\u021bet de mere (sau bor\u0219)\n\u2022 1 leg\u0103tur\u0103 mare de leu\u0219tean, sare grunjoas\u0103.","pasi","1. Fierbe capetele, cozile de pe\u0219te \u0219i legumele t\u0103iate mari \xeen 4L de ap\u0103 cu o lingur\u0103 de sare timp de 25 de minute, apoi strecoar\u0103 supa \u0219i p\u0103streaz\u0103 doar lichidul.\n2. Pune supa strecurat\u0103 \xeenapoi pe foc, adaug\u0103 ro\u0219iile cubule\u021be \u0219i o\u021betul.\n3. C\xe2nd clocote\u0219te, pune buc\u0103\u021bile mari de pe\u0219te (trunchiul). Las\u0103-le la fiert exact 10-12 minute, la foc mediu, f\u0103r\u0103 s\u0103 amesteci cu lingura ca s\u0103 nu f\u0103r\xe2mi\u021bezi pe\u0219tele.\n4. Opre\u0219te focul \u0219i acoper\u0103 oala cu mult leu\u0219tean tocat.","secret","Secretul pescarilor din Delt\u0103: ciorba se face din minim 3-4 soiuri de pe\u0219te pentru o sup\u0103 gelatinoas\u0103 \u0219i gustoas\u0103. Pe\u0219tele se m\u0103n\xe2nc\u0103 tradi\u021bional separat, pe un platou cu mujdei, iar supa se bea cald\u0103 din boluri!"],n,m),"Supa cu Galuste de Gris ca la Bunica",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["pui","morcov","telina","ou","gris","patrunjel"],o),"cantitati","\u2022 1 kg spate/aripi de pui (pentru o sup\u0103 gras\u0103)\n\u2022 2 morcovi, 1 \u021belin\u0103, 1 ceap\u0103\n\u2022 Pentru g\u0103lu\u0219te: 1 ou mare (60g), 60g gri\u0219 calitativ, un praf de sare\n\u2022 P\u0103trunjel proasp\u0103t.","pasi","1. Fierbe puiul \u0219i legumele la foc foarte mic ca s\u0103 ob\u021bii o sup\u0103 clar\u0103 \u0219i aurie, apoi strecoar\u0103 lichidul.\n2. Pentru g\u0103lu\u0219te: bate albu\u0219ul spum\u0103 tare cu sarea, adaug\u0103 g\u0103lbenu\u0219ul, apoi \xeencorporeaz\u0103 gri\u0219ul \xeen ploaie, amestec\xe2nd u\u0219or cu furculi\u021ba. Las\u0103 compozi\u021bia pe mas\u0103 10 minute s\u0103 se umfle gri\u0219ul.\n3. Ia cu o lingur\u0103 \xeenmuiat\u0103 \xeen supa fierbinte din compozi\u021bie \u0219i d\u0103 drumul g\u0103lu\u0219telor \xeen oal\u0103 (focul trebuie s\u0103 fie la minim!).\n4. Toarn\u0103 50ml de ap\u0103 rece \xeen oal\u0103 (sperie g\u0103lu\u0219tele) \u0219i pune capacul. Las\u0103-le s\u0103 fiarb\u0103 10-12 minute p\xe2n\u0103 devin uria\u0219e \u0219i moi.\n5. Presar\u0103 p\u0103trunjelul la final.","secret","C\xe2nt\u0103re\u0219te oul! Greutatea gri\u0219ului trebuie s\u0103 fie fix egal\u0103 cu greutatea oului f\u0103r\u0103 coaj\u0103. Dac\u0103 pui prea mult gri\u0219, g\u0103lu\u0219tele vor fi tari ca cimentul, dac\u0103 pui prea pu\u021bin, se vor \xeempr\u0103\u0219tia \xeen sup\u0103."],n,m),"Ciorba de Cartofi cu Afumatura si Tarhon",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["cartofi","afumatura","costita","ceapa","morcov","tarhon","smantana"],o),"cantitati","\u2022 500g costi\u021b\u0103 sau ciolan afumat\n\u2022 5 cartofi mari roz\n\u2022 1 ceap\u0103, 1 morcov, 1 ardei\n\u2022 2 linguri tarhon \xeen o\u021bet\n\u2022 200g sm\xe2nt\xe2n\u0103 fermentat\u0103\n\u2022 Sare, piper \u0219i ulei.","pasi","1. Fierbe afum\u0103tura t\u0103iat\u0103 buc\u0103\u021bi p\xe2n\u0103 carnea e fraged\u0103, apoi scoate-o.\n2. \xcen acea sup\u0103 pune la fiert morcovul, ceapa \u0219i ardeiul tocate m\u0103runt.\n3. Dup\u0103 10 minute adaug\u0103 cartofii t\u0103ia\u021bi cuburi mari \u0219i carnea afumat\u0103.\n4. C\xe2nd cartofii sunt fier\u021bi, ad\u0103ug\u0103 tarhonul tocat fin \xeempreun\u0103 cu 2 linguri din o\u021betul \xeen care a stat.\n5. Opre\u0219te focul, drege ciorba cu sm\xe2nt\xe2na temperat\u0103 \u0219i serve\u0219te.","secret","Tarhonul pus \xeen ciorba de cartofi cu afum\u0103tur\u0103 d\u0103 acel gust specific ardelenesc. Merge perfect servit\u0103 cu ceap\u0103 ro\u0219ie spart\u0103 cu pumnul \u0219i pres\u0103rat\u0103 cu sare."],n,m),"Ciorba de Legume de Post (Greceneasca)",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["morcov","cartofi","dovlecel","mazare","ceapa","rosii","bors","leustean"],o),"cantitati","\u2022 2 morcovi, 1 dovlecel mic, 3 cartofi\n\u2022 100g maz\u0103re, 100g p\u0103st\u0103i fasole verde\n\u2022 1 conopid\u0103 mic\u0103 desf\u0103cut\u0103 buche\u021bele\n\u2022 1 ceap\u0103, 1 ardei gras, 3 linguri ulei de m\u0103sline\n\u2022 200g ro\u0219ii decojite \xeen sos, 500ml bor\u0219, leu\u0219tean.","pasi","1. \xcen\u0103bu\u0219\u0103 ceapa, morcovul \u0219i ardeiul tocate fin \xeen uleiul de m\u0103sline cu pu\u021bin\u0103 ap\u0103 timp de 5 minute.\n2. Toarn\u0103 2.5L de ap\u0103 fierbinte \u0219i adaug\u0103 cartofii, fasolea verde \u0219i maz\u0103rea. Las\u0103-le 15 minute.\n3. Pune dovlecelul cuburi, buche\u021belele de conopid\u0103 \u0219i ro\u0219iile pasate. Fierbe \xeenc\u0103 10 minute.\n4. Toarn\u0103 bor\u0219ul fiert separat \u0219i potrive\u0219te de sare.\n5. Las\u0103 s\u0103 mai dea un clocot scurt \u0219i stinge focul, apoi pune leu\u0219teanul din abunden\u021b\u0103.","secret","Pentru ca o ciorb\u0103 de post s\u0103 nu fie fad\u0103 \u0219i \u201elung\u0103\u201d, legumele trebuie neap\u0103rat \xeen\u0103bu\u0219ite la \xeenceput \xeen ulei calitativ, iar spre final ro\u0219iile pasate \xeei vor oferi consisten\u021b\u0103 \u0219i dulcea\u021b\u0103."],n,m),"Ciorba de Burta Vegetariana (Pleurotus)",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["ciuperci","pleurotus","smantana","ou","usturoi","morcov","gogosari","otel"],o),"cantitati","\u2022 500g ciuperci Pleurotus proaspete\n\u2022 300g sm\xe2nt\xe2n\u0103 gras\u0103 (minim 20%)\n\u2022 3 g\u0103lbenu\u0219uri de ou\n\u2022 1 c\u0103p\u0103\u021b\xe2n\u0103 de usturoi\n\u2022 1 morcov, 1 gogo\u0219ar \xeen o\u021bet\n\u2022 2 linguri ulei, sare, piper, o\u021bet.","pasi","1. Spal\u0103 ciupercile \u0219i taie-le f\xe2\u0219ii lungi (fidelu\u021b\u0103), exact ca pe burt\u0103.\n2. Pune-le la fiert \xeen 2.5L de ap\u0103 cu sare timp de 20 de minute \xeempreun\u0103 cu morcovul t\u0103iat pe jum\u0103tate.\n3. Scoate morcovul, paseaz\u0103-l \u0219i pune-l \xeenapoi \xeen oal\u0103. Ad\u0103ug\u0103 gogo\u0219arii toca\u021bi m\u0103runt.\n4. Amestec\u0103 g\u0103lbenu\u0219urile cu sm\xe2nt\xe2na \u0219i usturoiul pisat. Tempereaz\u0103 cu sup\u0103 fierbinte \u0219i toarn\u0103 \xeen oal\u0103 dup\u0103 ce ai oprit focul.\n5. Pune o\u021bet dup\u0103 gust.","secret","Ciupercile Pleurotus au exact aceea\u0219i textur\u0103 elastic\u0103 ca \u0219i burta de vit\u0103. Este ciorba ideal\u0103 de post sau vegetarian\u0103 care p\u0103streaz\u0103 100% gustul original de ciorb\u0103 de burt\u0103."],n,m),"Ciorba de Perisoare de Peste ca la Tulcea",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["peste","orez","ou","ceapa","morcov","bors","leustean"],o),"cantitati","\u2022 500g file de pe\u0219te alb (\u0219al\u0103u, \u0219tiuc\u0103 sau crap) tocat\n\u2022 50g orez, 1 ou (pentru peri\u0219oare)\n\u2022 2 linguri pesmet fin\n\u2022 1 ceap\u0103, 1 morcov, 1 ardei gras, 500ml bor\u0219\n\u2022 1 leg\u0103tur\u0103 leu\u0219tean, sare, piper.","pasi","1. Amestec\u0103 pe\u0219tele tocat cu orezul sp\u0103lat, oul, pesmetul, sare \u0219i piper. Formeaz\u0103 peri\u0219oare mici.\n2. Pune la fiert legumele tocate m\u0103runt \xeen 2.5L de ap\u0103 cu sare timp de 15 minute.\n3. Pune peri\u0219oarele u\u0219or \xeen supa care fierbe \xeencet. Las\u0103-le 15 minute p\xe2n\u0103 se ridic\u0103 singure la suprafa\u021b\u0103.\n4. Toarn\u0103 bor\u0219ul fiert separat \u0219i las\u0103 s\u0103 mai dea \xeen clocot 2 minute.\n5. Opre\u0219te focul \u0219i arunc\u0103 deasupra leu\u0219teanul proasp\u0103t.","secret","Ad\u0103ugarea pesmetului fin \xeen carnea de pe\u0219te re\u021bine sucurile la interior \u0219i face ca peri\u0219oarele s\u0103 nu devin\u0103 sf\u0103r\xe2micioase sau seci \xeen timpul fierberii."],n,m),"Ciorba de Loboda de Primavara",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["loboda","ceapa","morcov","orez","bors","ou","smantana"],o),"cantitati","\u2022 4-5 leg\u0103turi mari de lobod\u0103 ro\u0219ie sau verde\n\u2022 1 ceap\u0103 verde, 1 morcov, 2 linguri orez\n\u2022 500ml bor\u0219 proasp\u0103t\n\u2022 Optional: 200ml sm\xe2nt\xe2n\u0103 \u0219i 2 ou\u0103 b\u0103tute\n\u2022 Sare, leu\u0219tean proasp\u0103t.","pasi","1. Spal\u0103 bine frunzele de lobod\u0103 \u0219i taie-le f\xe2\u0219ii mari.\n2. C\u0103le\u0219te ceapa verde \u0219i morcovul ras \xeen pu\u021bin ulei, ad\u0103ug\u0103 2L de ap\u0103 \u0219i orezul. Fierbe-le 15 minute.\n3. Ad\u0103ug\u0103 loboda t\u0103iat\u0103 \u0219i las-o s\u0103 fiarb\u0103 doar 5 minute (se g\u0103te\u0219te imediat).\n4. Toarn\u0103 bor\u0219ul acrit \u0219i fiert \xeen prealabil.\n5. Opre\u0219te focul. Dac\u0103 o vrei \u201edreapt\u0103\u201d, toarn\u0103 ou\u0103le b\u0103tute zdren\u021be sau amestecul de sm\xe2nt\xe2n\u0103.","secret","Loboda nu trebuie fiart\u0103 mult! Dac\u0103 o la\u0219i pe foc mai mult de 5 minute, \xee\u0219i pierde toat\u0103 culoarea purpurie superb\u0103 \u0219i toate vitaminele."],n,m),"Supi Crema de Linte Rosie (Stil Turcesc)",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["linte","morcov","ceapa","cartofi","chimen","menta","lamaie"],o),"cantitati","\u2022 250g linte ro\u0219ie\n\u2022 1 ceap\u0103 mare, 1 morcov, 1 cartof mic\n\u2022 2 linguri ulei, 1 linguri\u021b\u0103 chimen m\u0103cinat\n\u2022 1 lingur\u0103 ment\u0103 uscat\u0103\n\u2022 Sare, piper, l\u0103m\xe2ie pentru servit.","pasi","1. Spal\u0103 lintea \xeen c\xe2teva ape p\xe2n\u0103 c\xe2nd apa r\u0103m\xe2ne curat\u0103.\n2. C\u0103le\u0219te ceapa, morcovul \u0219i cartoful t\u0103iate cuburi \xeen ulei timp de 5 minute.\n3. Ad\u0103ug\u0103 lintea ro\u0219ie \u0219i 1.5L de ap\u0103 fierbinte. Las\u0103 la fiert 25 de minute la foc mediu.\n4. C\xe2nd lintea s-a sf\u0103r\xe2mat complet, ia oala de pe foc \u0219i blendeaz\u0103 totul fin.\n5. Ad\u0103ug\u0103 chimenul, sarea \u0219i menta uscat\u0103. Se serve\u0219te obligatoriu fierbinte cu zeam\u0103 de l\u0103m\xe2ie stoars\u0103 direct \xeen farfurie.","secret","Menta uscat\u0103 \u0219i chimenul nu sunt op\u021bionale! Ele ofer\u0103 acel gust autentic oriental \u0219i ajut\u0103 enorm la digestie, elimin\xe2nd complet disconfortul gastric specific leguminoaselor."],n,m),"Ciorba de Miel Traditionala de Paste",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["miel","ceapa verde","usturoi verde","bors","ou","smantana","leustean"],o),"cantitati","\u2022 1 kg carne de miel (cap, g\xe2t, coaste)\n\u2022 2 leg\u0103turi ceap\u0103 verde, 2 leg\u0103turi usturoi verde\n\u2022 1 morcov, 1L bor\u0219 proasp\u0103t\n\u2022 200g sm\xe2nt\xe2n\u0103, 2 g\u0103lbenu\u0219uri\n\u2022 2 leg\u0103turi mari de leu\u0219tean, sare.","pasi","1. Fierbe carnea de miel \xeen 3.5L de ap\u0103 cu sare \u0219i spumeaz\u0103 intens p\xe2n\u0103 lichidul e curat.\n2. Ad\u0103ug\u0103 morcovul t\u0103iat m\u0103runt \u0219i las\u0103 la fiert 40 de minute p\xe2n\u0103 carnea e moale.\n3. Pune ceapa \u0219i usturoiul verde t\u0103iate rondele fine, \xeempreun\u0103 cu bor\u0219ul fiert separat.\n4. Las\u0103 s\u0103 clocoteasc\u0103 5 minute, apoi opre\u0219te focul.\n5. Drege ciorba cu g\u0103lbenu\u0219urile amestecate cu sm\xe2nt\xe2n\u0103 \u0219i acoper\u0103 oala cu leu\u0219tean.","secret","Ciorba de miel cere obligatoriu leu\u0219tean din abunden\u021b\u0103 \u0219i verde\u021buri proaspete de prim\u0103var\u0103 (usturoi verde). Acestea neutralizeaz\u0103 aroma puternic\u0103 a c\u0103rnii de miel."],n,m),"Ciorba de Fasole Verde cu Usturoi",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["fasole verde","rosii","ceapa","morcov","usturoi","smantana","marar"],o),"cantitati","\u2022 500g fasole verde teci (p\u0103st\u0103i proaspete sau congelate)\n\u2022 1 morcov, 1 ceap\u0103 medie, 1 ardei gras\n\u2022 3 ro\u0219ii mari zemoase (sau 200g ro\u0219ii pasate)\n\u2022 4 c\u0103\u021bei de usturoi\n\u2022 200g sm\xe2nt\xe2n\u0103 (op\u021bional, se poate l\u0103sa de post)\n\u2022 1 leg\u0103tur\u0103 m\u0103rar proasp\u0103t, sare.","pasi","1. \xcen\u0103bu\u0219\u0103 ceapa, morcovul \u0219i ardeiul t\u0103iate m\u0103runt \xeen 2 linguri de ulei cu pu\u021bin\u0103 sare timp de 5 minute.\n2. Toarn\u0103 2.5L de ap\u0103 fierbinte \u0219i adaug\u0103 p\u0103st\u0103ile de fasole verde rupte \xeen buc\u0103\u021bi potrivite. Las\u0103-le la fiert 20 de minute.\n3. Pune ro\u0219iile pasate \u0219i las\u0103 ciorba s\u0103 mai clocoteasc\u0103 \xeenc\u0103 10 minute p\xe2n\u0103 c\xe2nd fasolea este complet moale.\n4. Zdrobe\u0219te c\u0103\u021beii de usturoi \u0219i pune-i \xeen oal\u0103. Las\u0103 s\u0103 dea \xeentr-un singur clocot mic, apoi opre\u0219te focul.\n5. Dac\u0103 nu e\u0219ti \xeen post, drege-o cu sm\xe2nt\xe2n\u0103 temperat\u0103. Presar\u0103 m\u0103rarul tocat fin.","secret","M\u0103rarul proasp\u0103t \u0219i usturoiul pus la final sunt sfinte pentru fasolea verde! Ele transform\u0103 o ciorb\u0103 simpl\u0103 de gr\u0103din\u0103 \xeentr-o m\xe2ncare incredibil de aromat\u0103 care se poate m\xe2nca la fel de bine \u0219i cald\u0103, \u0219i rece de la frigider."],n,m),"Ciorba de Mazare cu Pui ca la Bunica",A.r(["categorie","Ciorbe / Supe","ingrediente",A.b(["mazare","pui","morcov","ceapa","rosii","bors","marar"],o),"cantitati","\u2022 400g maz\u0103re boabe (proasp\u0103t\u0103 sau congelat\u0103)\n\u2022 400g carne de pui (aripi, cioc\u0103nele sau spate pentru ciorb\u0103)\n\u2022 1 morcov, 1 ceap\u0103, 1 leg\u0103tur\u0103 ceap\u0103 verde\n\u2022 150g bulion sau ro\u0219ii decojite\n\u2022 500ml bor\u0219 proasp\u0103t (sau zeam\u0103 de l\u0103m\xe2ie)\n\u2022 M\u0103rar proasp\u0103t, sare \u0219i piper.","pasi","1. Fierbe puiul \xeen 2.5L de ap\u0103 cu pu\u021bin\u0103 sare \u0219i cur\u0103\u021b\u0103 spuma de la suprafa\u021b\u0103.\n2. C\xe2nd carnea s-a fiert pe jum\u0103tate, adaug\u0103 morcovul \u0219i ceapa t\u0103iate cubule\u021be mici. Las\u0103-le pe foc 15 minute.\n3. Adaug\u0103 maz\u0103rea boabe \u0219i bulionul. Las\u0103-le s\u0103 fiarb\u0103 \xeempreun\u0103 \xeenc\u0103 15 minute (maz\u0103rea congelat\u0103 se g\u0103te\u0219te foarte repede).\n4. Toarn\u0103 bor\u0219ul dat \xeen clocot separat \u0219i potrive\u0219te gustul de sare.\n5. Las\u0103 ciorba s\u0103 mai fiarb\u0103 2 minute, opre\u0219te focul \u0219i adaug\u0103 m\u0103rarul tocat din abunden\u021b\u0103.","secret","Maz\u0103rea este o legum\u0103 dulce, a\u0219a c\u0103 ciorba are nevoie de un contrast bun. Nu te zg\xe2rci cu bor\u0219ul sau l\u0103m\xe2ia \u2013 o ciorb\u0103 de maz\u0103re trebuie s\u0103 fie bine acrit\u0103 \u0219i plin\u0103 de m\u0103rar pentru a fi cu adev\u0103rat gustoas\u0103."],n,m),"Pui la Cuptor cu Usturoi",A.r(["categorie","Fel Principal","ingrediente",A.b(["pui","ulei","usturoi","boia","cimbru"],o),"cantitati","\u2022 800g pulpe de pui, 3 linguri ulei de m\u0103sline, 4 c\u0103\u021bei usturoi, 1 linguri\u021b\u0103 boia, cimbru.","pasi","1. \u0218terge puiul bine cu un \u0219erve\u021bel.\n2. Amestec\u0103 uleiul cu condimentele \u0219i usturoiul, apoi maseaz\u0103 carnea.\n3. Coace la 200\xb0C timp de 45 de minute \xeentr-o tav\u0103 acoperit\u0103 la \xeenceput.","secret","Uscarea perfect\u0103 a c\u0103rnii \xeenainte de condimentare este secretul pentru o crust\u0103 super crocant\u0103!"],n,m),"Sarmale Traditionale ca-n Moldova",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["porc","vita","orez","ceapa","varza","slanina","rosii","cimbru"],o),"cantitati","\u2022 700g carne tocat\u0103 amestec (porc gras + vit\u0103)\n\u2022 1 varz\u0103 murat\u0103 mare (cu frunze sub\u021biri)\n\u2022 80g orez cu bob rotund\n\u2022 3 cepe mari tocate fin\n\u2022 150g costi\u021b\u0103 sau sl\u0103nin\u0103 afumat\u0103\n\u2022 3 linguri past\u0103 de tomate + 200ml suc de ro\u0219ii\n\u2022 2 crengu\u021be de cimbru uscat, 2 foi de dafin, sare, piper, boia.","pasi","1. C\u0103le\u0219te ceapa \xeen 2 linguri de ulei cu pu\u021bin\u0103 sare p\xe2n\u0103 devine sticloas\u0103. Adaug\u0103 orezul sp\u0103lat bine \u0219i amestec\u0103 2 minute.\n2. Las\u0103 ceapa \u0219i orezul s\u0103 se r\u0103ceasc\u0103 complet, apoi amestec\u0103-le cu carnea tocat\u0103, piperul, boiaua dulce \u0219i un strop de ap\u0103 rece (pentru pufozitate).\n3. Desf\u0103 varza \xeen foi, taie cotoarele \u0219i \xeempacheteaz\u0103 sarmalele de dimensiuni medii.\n4. Pe fundul unei oale de lut, pune un strat de varz\u0103 tocat\u0103 fin \u0219i c\xe2teva felii de afum\u0103tur\u0103. A\u0219az\u0103 sarmalele \xeen straturi circulare, pun\xe2nd cimbru \u0219i dafin printre ele.\n5. Acoper\u0103 totul cu varz\u0103 tocat\u0103, toarn\u0103 sucul de ro\u0219ii \u0219i ap\u0103 cald\u0103 c\xe2t s\u0103 le acopere. Fierbe-le la foc foarte mic, sub capac, timp de minim 3 ore (sau la cuptor).","secret","Secretul sarmalelor topite \xeen gur\u0103: orezul \u0219i ceapa c\u0103lite NU se pun fierbin\u021bi peste carnea crud\u0103, altfel carnea se va pre-g\u0103ti \u0219i sarmalele vor ie\u0219i tari! De asemenea, apa rece fr\u0103m\xe2ntat\u0103 \xeen compozi\u021bie le va face incredibil de pufoase."],n,m),"Ardei Umpluti cu Sos de Rosii",A.r(["categorie","Fel Principal","ingrediente",A.b(["ardei","porc","vita","orez","ceapa","ou","rosii","smantana"],o),"cantitati","\u2022 8-10 ardei gra\u0219i potrivi\u021bi (galbeni)\n\u2022 500g carne tocat\u0103 amestec\n\u2022 60g orez cu bob rotund\n\u2022 2 cepe medii, 1 ou \xeentreg\n\u2022 500ml suc de ro\u0219ii concentrat\n\u2022 1 lingur\u0103 f\u0103in\u0103 (pentru \xeengro\u0219at sosul)\n\u2022 Sare, piper, 1 leg\u0103tur\u0103 m\u0103rar \u0219i p\u0103trunjel.","pasi","1. Spal\u0103 ardeii, taie-le c\u0103p\u0103celul cu codi\u021b\u0103 \u0219i cur\u0103\u021b\u0103-i de s\xe2mburi \u0219i nervuri la interior.\n2. C\u0103le\u0219te ceapa tocat\u0103 fin p\xe2n\u0103 devine translucid\u0103. Las-o s\u0103 se r\u0103ceasc\u0103, apoi amestec-o cu carnea tocat\u0103, orezul crud, oul, verdea\u021ba tocat\u0103, sarea \u0219i piperul.\n3. Umple ardeii cu aceast\u0103 compozi\u021bie (nu-i \xeendesa prea tare, orezul se va umfla!). Pune-le c\u0103p\u0103celul de ardei \xeenapoi sau o felie de ro\u0219ie.\n4. A\u0219az\u0103 ardeii \xeen picioare \xeentr-o crati\u021b\u0103 ad\xe2nc\u0103. Toarn\u0103 ap\u0103 cald\u0103 c\xe2t s\u0103-i acopere pe trei sferturi \u0219i las\u0103-i la fiert acoperi\u021bi timp de 45 de minute.\n5. Adaug\u0103 sucul de ro\u0219ii amestecat cu f\u0103ina desf\u0103cut\u0103 \xeen pu\u021bin\u0103 ap\u0103 rece. Mai las\u0103 la fiert \xeenc\u0103 15 minute la foc mic p\xe2n\u0103 c\xe2nd sosul scade \u0219i se \xeengroa\u0219\u0103 frumos.","secret","Ad\u0103ugarea unui ou \xeen compozi\u021bia de carne este secretul care leag\u0103 umplutura perfect, astfel \xeenc\xe2t carnea s\u0103 nu se sf\u0103r\xe2me \xeen farfurie atunci c\xe2nd tai ardeiul \xeen dou\u0103."],n,m),"Tochitura Moldoveneasca Traditionala",A.r(["categorie","Fel Principal","ingrediente",A.b(["porc","carnati","slanina","vin","usturoi","ou","mamaliga","branza"],o),"cantitati","\u2022 600g pulp\u0103 sau ceaf\u0103 de porc\n\u2022 200g c\xe2rna\u021bi afuma\u021bi de cas\u0103\n\u2022 100g sl\u0103nin\u0103 afumat\u0103 (pentru untur\u0103)\n\u2022 100ml vin alb sec\n\u2022 4 c\u0103\u021bei de usturoi\n\u2022 Pentru servit: m\u0103m\u0103lig\u0103 cald\u0103, ou\u0103 ochiuri, br\xe2nz\u0103 de burduf sau telemea ras\u0103\n\u2022 Sare, piper, boia.","pasi","1. Taie carnea de porc \u0219i c\xe2rna\u021bii \xeen buc\u0103\u021bi potrivite. Sl\u0103nina se taie cubule\u021be mici.\n2. Pune sl\u0103nina \xeentr-o tigaie ad\xe2nc\u0103 sau ceaun la foc mic p\xe2n\u0103 \xee\u0219i las\u0103 toat\u0103 gr\u0103simea (se tope\u0219te), apoi scoate jum\u0103rile formate.\n3. \xcen untura \xeencins\u0103, adaug\u0103 buc\u0103\u021bile de carne de porc. Pr\u0103je\u0219te-le la foc mediu p\xe2n\u0103 \xee\u0219i schimb\u0103 culoarea, apoi pune un capac \u0219i las\u0103-le s\u0103 se \xeen\u0103bu\u0219e \xeen sucul propriu 25 de minute.\n4. C\xe2nd apa a sc\u0103zut, adaug\u0103 c\xe2rna\u021bii \u0219i las\u0103 totul s\u0103 se rumeneasc\u0103 u\u0219or. Toarn\u0103 vinul alb \u0219i las\u0103 alcoolul s\u0103 se evapore timp de 5 minute.\n5. Opre\u0219te focul, adaug\u0103 usturoiul pisat m\u0103runt, sarea \u0219i piperul. Se serve\u0219te fierbinte, cu m\u0103m\u0103lig\u0103, un ou ochi pr\u0103jit deasupra \u0219i mult\u0103 br\xe2nz\u0103 ras\u0103.","secret","Adev\u0103rata tochitur\u0103 NU are sos de ro\u0219ii sau bulion! Sosul ei se formeaz\u0103 exclusiv din untura topit\u0103, sucurile l\u0103sate de carnea de porc, vinul alb sec \u0219i usturoiul pus obligatoriu dup\u0103 ce ai oprit focul."],n,m),"Ostropel de Pui cu Sos Catifelat",A.r(["categorie","Fel Principal","ingrediente",A.b(["pui","usturoi","ceapa","rosii","ulei","patrunjel"],o),"cantitati","\u2022 800g pulpe de pui (superioare sau inferioare)\n\u2022 1 c\u0103p\u0103\u021b\xe2n\u0103 \xeentreag\u0103 de usturoi\n\u2022 1 ceap\u0103 medie\n\u2022 400g ro\u0219ii pasate (sau ro\u0219ii decojite la conserv\u0103)\n\u2022 2 linguri ulei, 1 foaie de dafin\n\u2022 1 leg\u0103tur\u0103 p\u0103trunjel proasp\u0103t, sare, piper.","pasi","1. Cresteaz\u0103 u\u0219or pulpele de pui, d\u0103-le cu sare \u0219i pr\u0103je\u0219te-le \xeen ulei \xeentr-o tigaie ad\xe2nc\u0103 p\xe2n\u0103 devin aurii pe ambele p\u0103r\u021bi. Scoate-le pe o farfurie.\n2. \xcen aceea\u0219i tigaie, c\u0103le\u0219te ceapa tocat\u0103 foarte m\u0103runt p\xe2n\u0103 se \xeenmoaie (3-4 minute).\n3. Adaug\u0103 ro\u0219iile pasate, foaia de dafin, sare \u0219i piper. Pune pulpele de pui \xeenapoi \xeen sos, adaug\u0103 100ml de ap\u0103 cald\u0103 \u0219i las\u0103 la fiert sub capac timp de 25 de minute.\n4. Cur\u0103\u021b\u0103 usturoiul, piseaz\u0103-l bine \u0219i adaug\u0103-l \xeen sos cu 5 minute \xeenainte de a opri focul.\n5. Opre\u0219te focul, scoate foaia de dafin \u0219i presar\u0103 deasupra mult p\u0103trunjel proasp\u0103t tocat.","secret","Usturoiul nu trebuie ars la \xeenceput cu ceapa, altfel devine am\u0103rui \u0219i \xee\u0219i pierde toat\u0103 dulcea\u021ba! Ad\u0103ugarea lui spre finalul fierberii ofer\u0103 acel sos dulceag-aromat perfect care cere obligatoriu m\u0103m\u0103lig\u0103 cald\u0103."],n,m),"Musaca de Cartofi cu Carne Tocata",A.r(["categorie","Fel Principal","ingrediente",A.b(["cartofi","porc","vita","ceapa","ou","rosii","cascaval","smantana"],o),"cantitati","\u2022 1.2 kg cartofi (buni pentru fiert)\n\u2022 600g carne tocat\u0103 amestec\n\u2022 2 cepe mari, 200g sos de ro\u0219ii\n\u2022 3 ou\u0103 + 200g sm\xe2nt\xe2n\u0103 (pentru crust\u0103)\n\u2022 100g ca\u0219caval ras (op\u021bional)\n\u2022 Sare, piper, cimbru, 2 linguri ulei.","pasi","1. Fierbe cartofii \xeen coaj\u0103 \xeen ap\u0103 cu sare p\xe2n\u0103 intr\u0103 furculi\u021ba u\u0219or \xeen ei (dar nu-i l\u0103sa s\u0103 se sf\u0103r\xe2me!). Las\u0103-i s\u0103 se r\u0103ceasc\u0103, cur\u0103\u021b\u0103-i \u0219i taie-i \xeen felii rotunde groase de 1 cm.\n2. C\u0103le\u0219te ceapa tocat\u0103 m\u0103runt \xeen ulei, adaug\u0103 carnea tocat\u0103, cimbrul, sarea \u0219i piperul. G\u0103te\u0219te carnea 10-15 minute p\xe2n\u0103 \xee\u0219i schimb\u0103 culoarea, apoi adaug\u0103 sosul de ro\u0219ii \u0219i mai las\u0103 2 minute.\n3. Unge o tav\u0103 de cuptor cu pu\u021bin unt sau ulei. A\u0219az\u0103 un strat de felii de cartofi la baz\u0103, pun\xe2nd pu\u021bin\u0103 sare.\n4. Pune tot amestecul de carne tocat\u0103 \xeentr-un strat uniform, apoi acoper\u0103 cu un alt strat de felii de cartofi.\n5. Bate cele 3 ou\u0103 cu sm\xe2nt\xe2na \u0219i toarn\u0103 amestecul peste ultimul strat de cartofi. Presar\u0103 ca\u0219cavalul ras \u0219i coace la 180\xb0C timp de 35-40 de minute p\xe2n\u0103 se formeaz\u0103 o crust\u0103 rumen\u0103.","secret","Pre-g\u0103tirea cartofilor (fierberea lor \xeen coaj\u0103 pe jum\u0103tate) este secretul unei musacale perfecte. Dac\u0103 pui cartofii complet cruzi \xeen tav\u0103, carnea se va usca excesiv, sosul se va evapora, iar cartofii vor r\u0103m\xe2ne tari la mijloc."],n,m),"Ciulama de Pui cu Ciuperci",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["pui","ciuperci","faina","unt","smantana","usturoi"],o),"cantitati","\u2022 600g piept sau pulpe pui\n\u2022 300g ciuperci proaspete\n\u2022 50g unt, 2 linguri f\u0103in\u0103\n\u2022 200ml sm\xe2nt\xe2n\u0103 lichid\u0103 (minim 30%)\n\u2022 2 c\u0103\u021bei usturoi, sare, piper.","pasi","1. Fierbe puiul \xeen ap\u0103 cu sare, apoi taie-l cuburi \u0219i p\u0103streaz\u0103 supa.\n2. C\u0103le\u0219te ciupercile \xeen unt p\xe2n\u0103 scade apa.\n3. Adaug\u0103 f\u0103ina \xeen unt, amestec\u0103 rapid \u0219i stinge treptat cu supa de pui cald\u0103.\n4. Pune carnea, sm\xe2nt\xe2na lichid\u0103, usturoiul pisat \u0219i las\u0103 sosul s\u0103 se \xeengroa\u0219e 5 minute.","secret","Pentru un sos m\u0103t\u0103sos \u0219i f\u0103r\u0103 cocoloase, adaug\u0103 supa de pui treptat, la fel ca la sosul Bechamel, amestec\xe2nd continuu cu un tel."],n,m),"Varza Calita cu Ciolan Afumat",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["varza","ciolan","afumatura","ceapa","rosii","cimbru"],o),"cantitati","\u2022 1 varz\u0103 alb\u0103 mare (1.5 kg)\n\u2022 600g ciolan afumat dezosat\n\u2022 2 cepe mari, 200g ro\u0219ii pasate\n\u2022 1 linguri\u021b\u0103 cimbru, 2 foi dafin, sare, piper.","pasi","1. Fierbe ciolanul p\xe2n\u0103 carnea e fraged\u0103, apoi tai-o buc\u0103\u021bi.\n2. Toac\u0103 varza fidelu\u021b\u0103 \u0219i freac-o cu sare grunjoas\u0103 ca s\u0103 se \xeenmoaie.\n3. C\u0103le\u0219te ceapa, adaug\u0103 varza stoars\u0103, carnea, ro\u0219iile pasate \u0219i condimentele.\n4. Pune totul \xeentr-o tav\u0103 cu pu\u021bin\u0103 sup\u0103 de la ciolan \u0219i coace la 180\xb0C timp de 45 de minute.","secret","Frecarea verzei cu sare \xeenainte de g\u0103tire \xeei sparge fibrele, f\u0103c\xe2nd-o mult mai fraged\u0103 \u0219i reduc\xe2nd timpul de g\u0103tire la jum\u0103tate."],n,m),"Iahnie de Fasole cu Carnati",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["fasole","carnati","ceapa","morcov","rosii","cimbru"],o),"cantitati","\u2022 400g fasole boabe uscat\u0103\n\u2022 300g c\xe2rna\u021bi afuma\u021bi de cas\u0103\n\u2022 2 cepe mari, 1 morcov\n\u2022 3 linguri past\u0103 de ro\u0219ii, cimbru, dafin, sare, piper.","pasi","1. Fierbe fasolea \xeen 3 ape diferite pentru a elimina toxinele.\n2. Pr\u0103je\u0219te c\xe2rna\u021bii felii \xeen propria gr\u0103sime, apoi scoate-i.\n3. \xcen acea gr\u0103sime c\u0103le\u0219te ceapa \u0219i morcovul, adaug\u0103 fasolea prefiat\u0103, pasta de ro\u0219ii \u0219i condimentele.\n4. Pune c\xe2rna\u021bii \xeenapoi \u0219i las\u0103 m\xe2ncarea s\u0103 scad\u0103 la foc mic 20 de minute.","secret","O linguri\u021b\u0103 de zah\u0103r ad\u0103ugat\u0103 \xeen sosul de ro\u0219ii taie aciditatea bulionului \u0219i scoate \xeen eviden\u021b\u0103 aroma afum\u0103turii."],n,m),"Mancare de Mazare cu Pui",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["mazare","pui","ceapa","morcov","rosii","faina","marar"],o),"cantitati","\u2022 500g maz\u0103re (congelat\u0103 sau la borcan)\n\u2022 500g pulpe de pui\n\u2022 1 ceap\u0103, 1 morcov, 200g sos de ro\u0219ii\n\u2022 1 lingur\u0103 f\u0103in\u0103, m\u0103rar proasp\u0103t, sare.","pasi","1. Rume\u0219te puiul \xeen ulei pe ambele p\u0103r\u021bi, apoi scoate-l.\n2. C\u0103le\u0219te ceapa \u0219i morcovul tocate m\u0103runt \xeen aceea\u0219i tigaie.\n3. Adaug\u0103 ro\u0219iile pasate, maz\u0103rea, carnea \u0219i pu\u021bin\u0103 ap\u0103 cald\u0103. Fierbe 20 de minute.\n4. Desf\u0103 f\u0103ina \xeen pu\u021bin\u0103 ap\u0103, toarn-o ca s\u0103 \xeengroa\u0219i sosul, iar la final pune m\u0103rarul.","secret","M\u0103rarul proasp\u0103t se pune exclusiv dup\u0103 ce ai oprit focul. Dac\u0103 \xeel fierbi, \xee\u0219i pierde aroma proasp\u0103t\u0103 \u0219i culoarea verde viu."],n,m),"Gulas de Vita Unguresc",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["vita","ceapa","ardei","cartofi","boia","chimen"],o),"cantitati","\u2022 700g pulp\u0103 de vit\u0103\n\u2022 3 cepe mari (baza sosului), 2 ardei gra\u0219i\n\u2022 3 cartofi mari\n\u2022 2 linguri boia dulce de calitate, jum\u0103tate de linguri\u021b\u0103 chimen, sare.","pasi","1. C\u0103le\u0219te ceapa tocat\u0103 fin p\xe2n\u0103 devine aproape o past\u0103.\n2. Ia tigaia de pe foc, adaug\u0103 boiaua (s\u0103 nu se ard\u0103!) \u0219i carnea de vit\u0103 cuburi.\n3. Pune \xeenapoi pe foc, adaug\u0103 ardeiul, chimenul \u0219i pu\u021bin\u0103 ap\u0103. \xcen\u0103bu\u0219\u0103 carnea 90 de minute.\n4. Pune cartofii cuburi mari \u0219i las\u0103 sosul s\u0103 scad\u0103 p\xe2n\u0103 devine gros \u0219i legat.","secret","Cantitatea mare de ceap\u0103 c\u0103lit\u0103 lent este secretul unui gula\u0219 autentic; ea se tope\u0219te \xeen timpul fierberii lungi \u0219i \xeengroa\u0219\u0103 sosul natural, f\u0103r\u0103 f\u0103in\u0103."],n,m),"Tocanita de Ciuperci cu Mamaliguta",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["ciuperci","ceapa","usturoi","rosii","patrunjel"],o),"cantitati","\u2022 600g ciuperci Champignon mixte\n\u2022 2 cepe mari, 3 c\u0103\u021bei usturoi\n\u2022 200g ro\u0219ii decojite la conserv\u0103\n\u2022 1 leg\u0103tur\u0103 p\u0103trunjel, sare, piper, ulei.","pasi","1. C\u0103le\u0219te ceapa \xeen ulei p\xe2n\u0103 devine aurie.\n2. Adaug\u0103 ciupercile t\u0103iate sferturi \u0219i las\u0103-le s\u0103 \xee\u0219i lase apa \u0219i s\u0103 scad\u0103.\n3. Pune ro\u0219iile pasate \u0219i usturoiul pisat. Fierbe totul 15 minute.\n4. Opre\u0219te focul \u0219i presar\u0103 p\u0103trunjelul proasp\u0103t tocat.","secret","Nu sp\u0103la ciupercile \xeen mult\u0103 ap\u0103, ci \u0219terge-le cu un \u0219erve\u021bel umed. Ele absorb apa ca un burete, iar la g\u0103tit se vor \xeenmuia prea tare \xeen loc s\u0103 r\u0103m\xe2n\u0103 ferme."],n,m),"Chiftele Traditionale la Cuptor",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["porc","vita","ou","paine","usturoi","cartofi","marar"],o),"cantitati","\u2022 500g carne tocat\u0103 amestec\n\u2022 1 ou, 1 felie de p\xe2ine \xeenmuiat\u0103 \xeen lapte\n\u2022 4 c\u0103\u021bei usturoi, 1 cartof mic ras fin\n\u2022 1 leg\u0103tur\u0103 m\u0103rar \u0219i p\u0103trunjel, sare, piper.","pasi","1. Amestec\u0103 bine carnea cu oul, p\xe2inea stoars\u0103, usturoiul, cartoful ras \u0219i verdea\u021ba.\n2. Fr\u0103m\xe2nt\u0103 bine compozi\u021bia \u0219i formeaz\u0103 chiftele rotunde cu m\xe2inile umede.\n3. A\u0219az\u0103-le pe o tav\u0103 cu h\xe2rtie de copt \u0219i strope\u0219te-le cu pu\u021bin ulei.\n4. Coace la 190\xb0C timp de 30 de minute p\xe2n\u0103 sunt rumene \u0219i p\u0103trunse.","secret","Un cartof mic crud, ras fin pe r\u0103z\u0103toarea mic\u0103 \u0219i stors de zeam\u0103, pus \xeen compozi\u021bie, le va men\u021bine incredibil de suculente \u0219i pufoase la interior."],n,m),"Ardei Umpluti de Post cu Ciuperci",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["ardei","ciuperci","orez","ceapa","morcov","rosii"],o),"cantitati","\u2022 6-8 ardei gra\u0219i\n\u2022 300g ciuperci tocate m\u0103runt\n\u2022 80g orez, 2 cepe, 1 morcov ras\n\u2022 300ml suc de ro\u0219ii, sare, piper, p\u0103trunjel.","pasi","1. C\u0103le\u0219te ceapa, morcovul \u0219i ciupercile \xeen ulei timp de 7 minute.\n2. Adaug\u0103 orezul sp\u0103lat \u0219i amestec\u0103 \xeenc\u0103 2 minute, apoi pune verdea\u021ba.\n3. Umple ardeii cur\u0103\u021ba\u021bi cu acest amestec (las\u0103 un pic de spa\u021biu pentru orez).\n4. Pune-i \xeentr-o oal\u0103 cu sucul de ro\u0219ii \u0219i ap\u0103 cald\u0103, apoi fierbe-i sub capac 45 de minute.","secret","Ciupercile Champignon brune au o arom\u0103 mai intens\u0103 de p\u0103m\xe2nt \u0219i \xeenlocuiesc cu brio textura c\u0103rnii \xeen re\u021betele de post."],n,m),"Friptura de Porc la Tava cu Vin",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["porc","vin","usturoi","ulei","cimbru"],o),"cantitati","\u2022 1 kg ceaf\u0103 sau pulp\u0103 de porc\n\u2022 150ml vin alb sec\n\u2022 5 c\u0103\u021bei usturoi, 1 linguri\u021b\u0103 cimbru\n\u2022 3 linguri ulei, sare, piper picant.","pasi","1. Taie carnea \xeen felii groase \u0219i maseaz\u0103-le cu ulei, usturoi pisat, sare, piper \u0219i cimbru.\n2. A\u0219az\u0103 carnea \xeentr-o tav\u0103, toarn\u0103 vinul \u0219i 50ml de ap\u0103 \xeen tav\u0103.\n3. Acoper\u0103 str\xe2ns cu folie de aluminiu \u0219i d\u0103 la cuptor la 180\xb0C pentru 60 de minute.\n4. Scoate folia \u0219i mai las\u0103 15 minute la foc maxim p\xe2n\u0103 se rumene\u0219te superb.","secret","G\u0103tirea acoperit\u0103 la \xeenceput p\u0103streaz\u0103 aburul \xeen\u0103untru \u0219i face ca \u0219i cea mai tare bucat\u0103 de pulp\u0103 s\u0103 devin\u0103 moale ca untul."],n,m),"Mancare de Fasole Verde cu Usturoi (Scazuta)",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["fasole verde","ceapa","rosii","usturoi","marar"],o),"cantitati","\u2022 600g p\u0103st\u0103i de fasole verde\n\u2022 1 ceap\u0103 mare, 3 c\u0103\u021bei usturoi\n\u2022 250g ro\u0219ii pasate zemoase\n\u2022 M\u0103rar proasp\u0103t, sare, piper, 2 linguri ulei.","pasi","1. C\u0103le\u0219te ceapa tocat\u0103 fin \xeen ulei cu pu\u021bin\u0103 sare.\n2. Adaug\u0103 fasolea verde \u0219i 100ml ap\u0103 cald\u0103, l\u0103s\xe2nd s\u0103 se \xeen\u0103bu\u0219e 15 minute sub capac.\n3. Toarn\u0103 ro\u0219iile pasate \u0219i las\u0103 m\xe2ncarea s\u0103 scad\u0103 la foc mic p\xe2n\u0103 c\xe2nd sosul devine gros.\n4. Pune usturoiul pisat, mai las\u0103 1 minut, opre\u0219te focul \u0219i presar\u0103 m\u0103rarul.","secret","M\xe2ncarea de fasole verde trebuie s\u0103 scad\u0103 bine, iar usturoiul pus la final \xeei d\u0103 acea dulcea\u021b\u0103 \u0219i arom\u0103 specific\u0103 de var\u0103."],n,m),"Pilaf de Orez Cremos cu Pui",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["orez","pui","ceapa","morcov","unt"],o),"cantitati","\u2022 200g orez bob rotund, 500g pui, 1 ceapa, 1 morcov, 50g unt, patrunjel.","pasi","1. Fierbe puiul in apa cu sare si pastreaza supa calda.\n2. Caleste ceapa si morcovul in unt.\n3. Adauga orezul spalat si caleste-l 2 minute.\n4. Toarna treptat supa fierbinte, lasand orezul sa o absoarba la foc mic.","secret","Foloseste orez cu bob rotund si supa calda pusa treptat pentru un pilaf matasos, nu uscat."],n,m),"Mancare de Spanac cu Usturoi",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["spanac","usturoi","ceapa","faina","lapte","ou"],o),"cantitati","\u2022 1 kg spanac proaspat, 1 capatana usturoi, 1 ceapa, 1 lingura faina, 150ml lapte, oua.","pasi","1. Oparesti spanacul, scurge-l si toaca-l.\n2. Caleste ceapa, adauga faina si stinge cu laptele cald.\n3. Pune spanacul si fierbe-l 10 minute.\n4. Adauga usturoiul pisat la final si serveasca cu oua ochiuri.","secret","Pune jumatate din usturoi la inceput si jumatate cu 2 minute inainte de final pentru aroma maxima."],n,m),"Mancare Scazuta de Mazare",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["mazare","ceapa","morcov","rosii","marar"],o),"cantitati","\u2022 600g mazare, 2 cepe, 1 morcov ras, 250ml rosii pasate, marar din abundenta.","pasi","1. Caleste ceapa si morcovul in ulei.\n2. Adauga mazare, sucul de rosii si 100ml apa calda.\n3. Fiebe la foc mic 20 de minute pana scade sosul.\n4. Opreste focul si pune mararul tocat fin.","secret","Mararul proaspat se adauga doar dupa ce focul e oprit, altfel isi pierde culoarea si aroma."],n,m),"Piure de Cartofi ca la Restaurant",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["cartofi","unt","lapte","sare"],o),"cantitati","\u2022 1 kg cartofi albi, 150g unt (82% grasime), 150ml lapte cald, sare.","pasi","1. Fierbe cartofii cuburi in apa cu sare 25 de minute.\n2. Scurge apa si lasa cartofii in oala calda 2 minute sa se usuce.\n3. Zdrobesti-i manual si incorporeaza untul rece cubulete.\n4. Toarna laptele fierbinte si amesteca energic cu un tel.","secret","Foloseste doar unt gras si lapte fierbinte. Laptele rece va transforma piureul intr-o pasta cleioasa."],n,m),"Ciulama de Ciuperci de Padure",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["ciuperci","ceapa","faina","unt","smantana","patrunjel"],o),"cantitati","\u2022 600g ciuperci mixte, 2 cepe medii, 50g unt, 2 linguri faina, 200g smantana.","pasi","1. Caleste ceapa in unt pana devine sticloasa.\n2. Adauga ciupercile si lasa-le pana scade tot sucul lor.\n3. Presara faina, amesteca rapid si stinge treptat cu apa calda.\n4. Lasa sosul sa fiarba incet 5 minute, opre\u0219te focul si adauga smantana.","secret","Smantana nu se fierbe direct pe foc puternic, ci se pune la final, dupa ce ai stins focul oalei, ca sa nu se taie."],n,m),"Tocanita de Cartofi cu Afumatura",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["cartofi","afumatura","ceapa","morcov","rosii"],o),"cantitati","\u2022 1 kg cartofi, 400g costita afumata, 2 cepe, 1 morcov, 3 linguri bulion.","pasi","1. Rumente afumatura in cratita, apoi scoate-o.\n2. Caleste ceapa si morcovul, adauga cartofii cuburi si carnea inapoi.\n3. Pune apa calda si fierbe 20 de minute.\n4. Adauga bulionul si lasa sosul sa scada.","secret","Zdrobesti 2-3 cuburi de cartof fiert direct in sos la final ca sa il ingrosi natural, fara faina."],n,m),"Chiftele cu Sos de Rosii",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["porc","vita","ou","ceapa","usturoi","rosii"],o),"cantitati","\u2022 500g chiftele gata preparate, 400g rosii pasate, 1 ceapa, 2 catei usturoi, dafin.","pasi","1. Caleste ceapa si usturoiul in ulei.\n2. Toarna rosiile pasate, foaia de dafin, sare si piper. Fierbe 10 minute.\n3. Pune chiftelele direct in sos si adauga putina apa.\n4. Lasa-le sa dea in clocot la foc foarte mic timp de 15 minute.","secret","O lingurita de otet si una de zahar puse in sosul tomat ofera acel echilibru perfect de gust dulce-acrisor."],n,m),"Mancare de Ghiveci cu Legume",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["cartofi","morcov","dovlecel","vanata","ardei","rosii","ceapa"],o),"cantitati","\u2022 2 cartofi, 1 morcov, 1 dovlecel, 1 vanata, 2 ardei grasi, 2 cepe, 300g rosii pasate.","pasi","1. Taie toate legumele in cuburi de dimensiuni similare.\n2. Caleste ceapa si morcovul in ulei timp de 5 minute.\n3. Adauga ardeiul, vanata si cartofii. Lasa la inabusit sub capac 15 minute.\n4. Pune dovlecelul si ro\u0219iile pasate. Lasa mancarea la foc mic sa scada bine.","secret","Pentru ca vanata sa nu dea un gust amar, presar-o cu sare si las-o 15 minute intr-o sita sa isi lase zeama."],n,m),"Varza de Bruxelles cu Bacon",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["varza de bruxelles","bacon","ulei","usturoi"],o),"cantitati","\u2022 500g varza de Bruxelles, 150g bacon, 2 linguri ulei, 2 catei usturoi.","pasi","1. Curata verzi\u0219oarele si taie-le in jumatati egale.\n2. Caleste baconul fasii intr-o tigaie pana devine usor crocant.\n3. Pune verzi\u0219oarele intr-o tava cu baconul, uleiul si usturoiul pisat.\n4. Coace la 200\xb0C timp de 20-25 de minute pana sunt rumenite.","secret","Asezarea verzi\u0219oarelor cu partea taiata direct pe suprafata tavii este secretul caramelizarii perfecte."],n,m),"Mici Traditionali ca la Piata",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["porc","vita","bicarbonat","usturoi"],o),"cantitati","\u2022 500g carne tocata vita, 500g carne tocata porc grasa, 1 lingurita bicarbonat, 1 capatana usturoi, 200ml supa de oase.","pasi","1. Pune usturoiul pisat in supa calda sa faci un mujdei strecurat.\n2. Framanta carnea cu bicarbonatul, sarea, piperul si supa de usturoi timp de 15 minute.\n3. Lasa pasta la frigider o noapte intreaga.\n4. Formeaza micii cu mainile unse cu ulei si prajeste-i pe gratarul incins.","secret","Framantarea lunga si lasarea pastei la rece o noapte sunt secretele care fac micii zemoasi. Nu ii intepa pe gratar ca sa nu piarda sucul!"],n,m),"Snitele de Pui Crispy",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["pui","faina","ou","pesmet","ulei"],o),"cantitati","\u2022 600g piept de pui, 2 oua, 4 linguri faina, 100g pesmet (sau fulgi de porumb), sare, ulei.","pasi","1. Taie pieptul feliute subtiri si bate-le usor.\n2. Trece fiecare felie prin faina, apoi prin oul batut bine cu sare.\n3. Da-le la final prin pesmet, apasand bine.\n4. Prajeste-le in ulei incins la foc mediu pana sunt aurii.","secret","Pentru snitele extra crocante ca la fast-food, inlocuieste pesmetul simplu cu fulgi de porumb zdrobiti marunt."],n,m),"Tocanita de Pui cu Smantana",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["pui","ceapa","smantana","faina","marar"],o),"cantitati","\u2022 700g pulpe pui, 2 cepe, 300g smantana grasa (minim 20%), 1 lingura faina, marar, ulei.","pasi","1. Rumente puiul in ulei, apoi scoate-l.\n2. Caleste ceapa in aceeasi tigaie, adauga faina si stinge cu apa calda.\n3. Pune puiul inapoi si fierbe-l 20 de minute.\n4. Opreste focul si adauga smantana amestecata bine si mararul.","secret","Foloseste smantana fermentata de masa, nu lichida! Ofera acel gust acrisor traditional romanesc."],n,m),"Peste la Cuptor cu Legume",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["peste","rosii","ardei","lamaie","ulei"],o),"cantitati","\u2022 2 bucati peste intreg (pastrav sau dorada), 1 ardei, 2 rosii, 1 lamaie, cimbru, ulei.","pasi","1. Curata pestele, spala-l si sterge-l cu un servet.\n2. Cresteaza-l si pune in interior felii de lamaie si cimbru.\n3. Pune intr-o tava legumele felii si asaza pestele deasupra.\n4. Strope\u0219te totul cu ulei si coace la 200C timp de 25-30 de minute.","secret","Stergerea perfecta a pestelui inainte de coacere opreste lipirea pielii de tava sau de hartia de copt."],n,m),"Friptura de Miel la Cuptor cu Usturoi",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["miel","vin","usturoi","ulei","rozmarin"],o),"cantitati","\u2022 1.5 kg pulpa sau costite miel, 1 capatana usturoi, 150ml vin alb, rozmarin, ulei.","pasi","1. Fa mici incizii in carne si pune catei de usturoi in ele (imp\u0103nare).\n2. Unge carnea cu ulei, sare, piper si rozmarin.\n3. Pune-o in tava cu vinul si 100ml apa, apoi acopera strans cu folie.\n4. Coace la 160C timp de 2 ore, apoi scoate folia si lasa 20 de minute la foc mare.","secret","Gatirea la temperatura mica (160C) timp de 2 ore face ca grasimea de miel sa se topeasca si carnea sa pice de pe os."],n,m),"Ostropel de Vit\u0103 Fraged",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["vita","usturoi","ceapa","rosii","vin"],o),"cantitati","\u2022 700g pulpa vita, 1 capatana usturoi, 2 cepe, 400g rosii pasate, 100ml vin rosu.","pasi","1. Taie vita cuburi mari si rumente-o in ulei.\n2. Adauga ceapa si vinul, punand un capac. Inabus\u0103 carnea 60 de minute.\n3. Cand vita e moale, pune rosiile pasate si fierbe inca 15 minute.\n4. Pune usturoiul pisat cu 3 minute inainte de final.","secret","Vinul rosu adaugat la inabusit ajuta la fragezirea rapida a fibrelor dure din carnea de vita."],n,m),"Placinta cu Carne Tocata la Cuptor",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["porc","vita","foi placinta","ceapa","ou","smantana"],o),"cantitati","\u2022 1 pachet foi de placinta, 600g carne tocata amestec, 2 cepe, 3 oua, 200g smantana.","pasi","1. Caleste ceapa cu carnea tocata pana scade zeama, apoi las-o sa se raceasca.\n2. Amesteca carnea cu 2 oua si verdeata.\n3. Asaza jumatate din foi intr-o tava unsa cu unt, pune carnea si acopera cu restul foilor.\n4. Toarna deasupra 1 ou batut cu smantana si coace la 180C timp de 40 de minute.","secret","Inteapa placinta cu o furculita din loc in loc inainte de o baga la cuptor pentru a nu se umfla foile inestetic."],n,m),"Chiftele de Pui la Tigaie",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["pui","ou","usturoi","faina","patrunjel"],o),"cantitati","\u2022 500g carne tocata pui, 1 ou, 3 catei usturoi, 2 linguri faina, patrunjel proaspat.","pasi","1. Amesteca carnea de pui cu oul, usturoiul pisat, sarea, piperul si patrunjelul.\n2. Formeaza chiftele rotunde si aplatizeaza-le usor.\n3. Trece-le prin faina si prajeste-le in ulei incins cate 4 minute pe fiecare parte.","secret","Carnea de pui fiind foarte slaba, pune o lingura de ulei direct in compozitie ca sa iasa pufoase."],n,m),"Ardei Umpluti cu Orez si Ciuperci (Post)",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["ardei","orez","ciuperci","ceapa","morcov","rosii"],o),"cantitati","\u2022 6-8 ardei grasi, 300g ciuperci tocate, 80g orez, 2 cepe, 1 morcov, 300ml suc rosii.","pasi","1. Caleste ceapa, morcovul si ciupercile in ulei timp de 7 minute.\n2. Adauga orezul spalat, verdeata si umple ardeii curatati.\n3. Pune ardeii in oala cu sucul de rosii si apa calda.\n4. Fierbe sub capac timp de 45 de minute.","secret","Foloseste ciuperci Champignon brune, au o aroma mai intensa si inlocuiesc perfect carnea."],n,m),"Mancare de Mazare Scazuta cu Pui",A.r(["categorie","Fel Principal","imagine",s,"ingrediente",A.b(["mazare","pui","ceapa","morcov","rosii","marar"],o),"cantitati","\u2022 500g mazare, 500g pulpe pui, 1 ceapa, 1 morcov, 200g sos de rosii, marar.","pasi","1. Rumeneste puiul in ulei pe ambele parti, apoi scoate-l.\n2. Caleste ceapa si morcovul in aceeasi tigaie.\n3. Adauga rosiile pasate, mazarea, carnea si putina apa calda. Fierbe 20 de minute.\n4. Opre\u0219te focul si pune mararul proaspat.","secret","Daca mazarea este din conserva, adaug-o doar in ultimele 5 minute ca sa nu se sfarame."],n,m),"Cartofi Prajiti ca la Restaurant",A.r(["categorie","Garnituri","ingrediente",A.b(["cartofi","ulei","sare"],o),"cantitati","\u2022 1 kg cartofi roz, 1L ulei pentru pr\u0103jit, sare.","pasi","1. \u021aine cartofii t\u0103ia\u021bi \xeen ap\u0103 rece 30 de minute.\n2. Scurge-i \u0219i pr\u0103je\u0219te-i 5 min la foc mediu (s\u0103 fie moi).\n3. \xcenainte de servire, \xeencinge uleiul la maxim \u0219i mai pr\u0103je\u0219te-i 2-3 minute.","secret","Dubla pr\u0103jire este secretul restaurantelor pentru cartofi moi \xeen interior \u0219i crocan\u021bi la exterior."],n,m),"Piure de Cartofi Clasic",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["cartofi","unt","lapte"],o),"cantitati","\u2022 1 kg cartofi albi (fainosi)\n\u2022 150g unt gras (82%)\n\u2022 150ml lapte fierbinte\n\u2022 Sare dupa gust.","pasi","1. Fierbe cartofii cuburi in apa cu multa sare timp de 25 de minute.\n2. Scurge apa si lasa cartofii in oala fierbinte 2 minute ca sa se usuce.\n3. Zdrobeste-i manual (nu cu blenderul!) si incorporeaza untul rece.\n4. Toarna laptele fierbinte si bate energic cu un tel pana devine pufos.","secret","Laptele rece va transforma piureul intr-o pasta cleioasa si cenusie. Foloseste doar lapte fierbinte si unt foarte gras!"],n,m),"Cartofi la Cuptor cu Rozmarin",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["cartofi","ulei","rozmarin","usturoi"],o),"cantitati","\u2022 1 kg cartofi noi sau roz\n\u2022 4 linguri ulei de masline\n\u2022 1 lingurita rozmarin uscat, 3 catei usturoi, sare, piper.","pasi","1. Taie cartofii in sferturi mari si fierbe-i doar 5 minute in apa cu sare.\n2. Scurge-i bine si amesteca-i intr-un bol cu uleiul, usturoiul pisat, rozmarinul si sarea.\n3. Pune-i intr-o tava pe hartie de copt intr-un singur strat.\n4. Coace la 210C timp de 30 de minute pana sunt ultra-crocanti.","secret","Pre-fierberea de 5 minute creeaza un strat fin de amidon pe exteriorul cartofului, garantand o crusta extrem de crocanta la cuptor."],n,m),"Orez Sarbesc cu Legume",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["orez","ceapa","morcov","ardei","rosii"],o),"cantitati","\u2022 200g orez bob rotund, 1 ceapa, 1 morcov, 1 ardei, 2 linguri bulion, 600ml supa de legume calda.","pasi","1. Caleste ceapa, morcovul si ardeiul tocate marunt in ulei.\n2. Adauga orezul spalat si caleste-l pana devine sticlos.\n3. Pune bulionul si supa fierbinte. Pune sare dupa gust.\n4. Fierbe acoperit la foc foarte mic timp de 15 minute fara sa amesteci.","secret","Nu amesteca deloc in orez in timp ce fierbe! Altfel, boabele vor elibera amidon si se va transforma intr-un terci lipicios."],n,m),"Ciuperci Sotate cu Unt si Usturoi",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["ciuperci","unt","usturoi","patrunjel"],o),"cantitati","\u2022 500g ciuperci Champignon proaspete\n\u2022 50g unt, 2 linguri ulei, 3 catei usturoi\n\u2022 Patrunjel proaspat, sare, piper.","pasi","1. Sterge ciupercile si taie-le in jumatati.\n2. Incinge untul si uleiul intr-o tigaie mare la foc iute.\n3. Pune ciupercile si lasa-le nemiscate 3 minute pana se rumenesc, apoi intoarce-le.\n4. Pune usturoiul pisat cu 1 minut inainte de final si presara patrunjelul.","secret","Gateste-le la foc foarte iute fara sa agiti tigaia des! Daca focul e mic, ciupercile vor lasa apa si se vor fierbe in loc sa se rumeneasca."],n,m),"Legume la Gratar cu Otet Balzamic",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["dovlecel","vanata","ardei","ciuperci","ulei"],o),"cantitati","\u2022 1 dovlecel, 1 vanata mica, 2 ardei grasi culori diferite, 4 ciuperci mari, 2 linguri otet balzamic, ulei de masline.","pasi","1. Taie legumele in felii lungi groase de 1 cm.\n2. Unge fiecare felie cu ulei de masline si presara sare.\n3. Pune-le pe gratarul foarte bine incins cate 2-3 minute pe fiecare parte.\n4. Scoate-le intr-un bol si stropeste-le imediat cu otetul balzamic.","secret","Otetul balzamic pus peste legumele fierbinti de pe gratar este absorbit instantaneu si le ofera o dulceata incredibila."],n,m),"Macese / Iahnie Scazuta de Fasole (Garnitura)",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["fasole","ceapa","rosii","cimbru"],o),"cantitati","\u2022 1 conserva mare fasole boabe, 2 cepe mari, 2 linguri pasta rosii, cimbru, ulei.","pasi","1. Caleste ceapa taiata solzisori in mult ulei pana e foarte moale.\n2. Adauga pasta de tomate si cimbru.\n3. Pune fasolea boabe scursa bine si 50ml apa.\n4. Lasa sa scada la foc mic 10 minute pana sosul e foarte gros.","secret","Mancarea de fasole ca garnitura trebuie sa fie foarte scazuta si bine legata, ideala langa carnati sau fripturi."],n,m),"Sote de Mazare cu Unt",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["mazare","unt","marar"],o),"cantitati","\u2022 400g mazare boabe (congelata), 50g unt, un praf de zahar, sare, marar proaspat.","pasi","1. Pune untul la topit intr-o cratita mica.\n2. Adauga mazarea congelata direct in unt fara sa o decongelezi.\n3. Pune sarea si praful de zahar. Lasa la foc mic sub capac 8-10 minute.\n4. Opreste focul si presara mararul tocat.","secret","Un praf mic de zahar adaugat in sote pastreaza culoarea verde aprins a mazarii si ii intensifica gustul natural."],n,m),"Broccoli la Abur cu Sos de Unt si Usturoi",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["broccoli","unt","usturoi","lamaie"],o),"cantitati","\u2022 1 capatana broccoli, 40g unt, 1 catel usturoi, suc de lamaie, sare.","pasi","1. Desfa broccoli in buchetele mici si spala-le.\n2. Pune-le la gatit la abur (sau in apa clocotita) timp de fix 5 minute.\n3. Scoate-le imediat in apa foarte rece (cu gheata).\n4. Topeste untul cu usturoiul pisat intr-o tigaie si soteaza broccoli scurs timp de 1 minut.","secret","Socul termic in apa cu gheata opreste gatirea instantaneu, mentine broccoli crocant si pastreaza culoarea verde neon."],n,m),"Varza Alba Calita Simplu",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["varza","ceapa","rosii","cimbru"],o),"cantitati","\u2022 1 varza alba mica, 1 ceapa, 2 linguri ulei, 100g rosii pasate, cimbru, sare.","pasi","1. Toaca varza fideluta si freac-o cu sare.\n2. Caleste ceapa tocata in ulei.\n3. Adauga varza stoarsa bine de zeama si las-o la inabusit 20 de minute.\n4. Pune rosiile pasate si cimbrul, lasand sa scada bine pe foc.","secret","Ideala ca garnitura langa friptura de rata sau ciolan de porc la cuptor."],n,m),"Cartofi Natur cu Unt si Patrunjel",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["cartofi","unt","patrunjel"],o),"cantitati","\u2022 1 kg cartofi rotunzi mici (sau cartofi taiati cuburi mari), 50g unt, 1 legatura patrunjel, sare.","pasi","1. Fierbe cartofii intregi curatati in apa cu sare timp de 20 de minute (sa nu se sfarame!).\n2. Scurge apa si pune untul taiat bucatele peste cartofii fierbinti.\n3. Pune capacul pe oala si agit-o usor ca untul sa imbrace toti cartofii.\n4. Presara patrunjelul tocat fin inainte de servire.","secret","Nu folosi lingura ca sa amesteci cartofii natur, altfel ii vei rupe! Agitarea oalei cu capac este tehnica corecta."],n,m),"Orez Basmati Pufos",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["orez","unt","sare"],o),"cantitati","\u2022 200g orez Basmati calitativ\n\u2022 400ml apa clocotita\n\u2022 30g unt, un praf de sare.","pasi","1. Spal\u0103 orezul \xeen 4-5 ape reci p\xe2n\u0103 c\xe2nd apa r\u0103m\xe2ne complet curat\u0103 (f\u0103r\u0103 amidon).\n2. Pune orezul \xeentr-o crati\u021b\u0103, toarn\u0103 apa clocotit\u0103 \u0219i sarea, apoi pune capacul.\n3. G\u0103te\u0219te la foc minim timp de exact 12 minute, f\u0103r\u0103 s\u0103 ridici deloc capacul \u0219i f\u0103r\u0103 s\u0103 amesteci.\n4. Opre\u0219te focul, pune untul deasupra, a\u0219az\u0103 un \u0219ervet curat sub capac \u0219i mai las\u0103-l s\u0103 se odihneasc\u0103 10 minute.\n5. \xcenainte de servire, \xeenfoiaz\u0103 boabele cu o furculi\u021b\u0103.","secret","\u0218ervetul pus sub capac \xeen timpul odihnei va absorbi tot aburul \xeen exces, l\u0103s\xe2nd boabele de orez complet separate, aerate \u0219i extrem de pufoase."],n,m),"Mamaliga Cremoasa cu Unt",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["malai","unt","lapte"],o),"cantitati","\u2022 250g m\u0103lai extra, 500ml ap\u0103, 250ml lapte, 50g unt gras, 1 linguri\u021b\u0103 sare.","pasi","1. Pune la fiert apa, laptele \u0219i sarea \xeentr-un ceaun.\n2. C\xe2nd d\u0103 \xeen clocot, presar\u0103 un pumn mic de m\u0103lai \u0219i amestec\u0103 cu telul.\n3. Toarn\u0103 restul de m\u0103lai \xeen ploaie, amestec\xe2nd continuu cu telul ca s\u0103 nu fac\u0103 cocoloase.\n4. Las\u0103 s\u0103 fiarb\u0103 la foc mic 20 de minute, amestec\xe2nd periodic cu o lingur\u0103 de lemn.\n5. La final, adaug\u0103 untul \u0219i amestec\u0103 energic p\xe2n\u0103 se tope\u0219te complet.","secret","\xcenlocuirea unei p\u0103r\u021bi din ap\u0103 cu lapte \u0219i ad\u0103ugarea untului la final transform\u0103 m\u0103m\u0103liga dintr-una clasic\u0103 \xeentr-o garnitur\u0103 fin\u0103, cremoas\u0103, cu gust bogat."],n,m),"Sparanghel la Tigaie cu Unt si Lamaie",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["sparanghel","unt","usturoi","lamaie"],o),"cantitati","\u2022 1 leg\u0103tur\u0103 sparanghel proasp\u0103t, 30g unt, 1 lingur\u0103 ulei m\u0103sline, 2 c\u0103\u021bei usturoi, l\u0103m\xe2ie.","pasi","1. Rupe capetele lemnoase ale sparanghelului (se vor rupe natural de unde trebuie).\n2. \xcencinge untul \u0219i uleiul \xeentr-o tigaie mare.\n3. Pune sparanghelul \xeentr-un singur strat \u0219i soteaz\u0103-l la foc mediu timp de 5-7 minute, \xeentorc\xe2ndu-l des.\n4. Pune usturoiul felii sub\u021biri \xeen ultimele 2 minute.\n5. Scoate-l pe farfurie \u0219i strope\u0219te-l cu suc proasp\u0103t de l\u0103m\xe2ie.","secret","Sparanghelul trebuie s\u0103 r\u0103m\xe2n\u0103 crocant \u0219i de un verde aprins. Dac\u0103 \xeel g\u0103te\u0219ti prea mult, va deveni moale, a\u021bos \u0219i va prinde o culoare maronie inestetic\u0103."],n,m),"Legume Asiatice la Tigaie (Wok)",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["morcov","ardei","dovlecel","sos de soia","ghimbir"],o),"cantitati","\u2022 1 morcov, 1 ardei gras, 1 dovlecel, 100g ciuperci, 3 linguri sos de soia, 1 cm ghimbir ras, ulei.","pasi","1. Taie toate legumele \xeen f\xe2\u0219ii sub\u021biri (fidelu\u021b\u0103/julienne).\n2. \xcencinge foarte tare 2 linguri de ulei \xeentr-o tigaie mare sau wok.\n3. Pune morcovul \u0219i ardeiul, pr\u0103jindu-le la foc maxim timp de 2 minute amestec\xe2nd continuu.\n4. Adaug\u0103 dovlecelul, ciupercile \u0219i ghimbirul, mai las\u0103 3 minute. Legumele trebuie s\u0103 r\u0103m\xe2n\u0103 ferme.\n5. Toarn\u0103 sosul de soia, amestec\u0103 \xeenc\u0103 30 de secunde \u0219i opre\u0219te focul.","secret","Secretul buc\u0103t\u0103riei asiatice este g\u0103tirea ultra-rapid\u0103 la foc maxim (stir-fry). Legumele nu trebuie s\u0103 se \xeenmoaie, ci s\u0103 fie caramelizate rapid pe exterior \u0219i crocante \xeen interior."],n,m),"Cartofi Zdrobiti la Cuptor cu Usturoi (Smashed)",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["cartofi","ulei","usturoi","parmezan"],o),"cantitati","\u2022 800g cartofi mici rotunzi, 4 linguri ulei de m\u0103sline, 3 c\u0103\u021bei usturoi, 40g parmezan ras, sare.","pasi","1. Fierbe cartofii \xeentregi \xeen coaj\u0103 timp de 20 de minute p\xe2n\u0103 sunt moi.\n2. A\u0219az\u0103-i pe o tav\u0103 cu h\xe2rtie de copt \u0219i apas\u0103-i u\u0219or pe fiecare cu fundul unui pahar p\xe2n\u0103 se crap\u0103 \u0219i se aplatizeaz\u0103.\n3. Strope\u0219te-i din abunden\u021b\u0103 cu uleiul amestecat cu usturoiul pisat \u0219i sare.\n4. Coace la 220\xb0C timp de 20 de minute, apoi presar\u0103 parmezanul \u0219i mai las\u0103 5 minute p\xe2n\u0103 sunt super crocan\u021bi pe margini.","secret","Aplatizarea cartofilor le m\u0103re\u0219te suprafa\u021ba care intr\u0103 \xeen contact cu tava \xeencins\u0103, ob\u021bin\xe2nd cele mai crocante margini posibile din lume."],n,m),"Piure de Mazare cu Menta",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["mazare","unt","menta","smantana lichida"],o),"cantitati","\u2022 400g maz\u0103re (congelat\u0103), 40g unt, 2 linguri sm\xe2nt\xe2n\u0103 lichid\u0103, 4-5 frunze ment\u0103 proasp\u0103t\u0103, sare.","pasi","1. Fierbe maz\u0103rea \xeen ap\u0103 cu sare timp de fix 5 minute.\n2. Scurge apa \u0219i pune maz\u0103rea fierbinte \xeen blender \xeempreun\u0103 cu untul \u0219i sm\xe2nt\xe2na lichid\u0103.\n3. Adaug\u0103 frunzele de ment\u0103 proasp\u0103t\u0103 \u0219i un praf de piper.\n4. Blendeaz\u0103 la vitez\u0103 maxim\u0103 p\xe2n\u0103 ob\u021bii un piure fin de un verde spectaculos.","secret","Menta proasp\u0103t\u0103 t\u0103iat\u0103 fin ridic\u0103 maz\u0103rea la un alt nivel, oferind o garnitur\u0103 extrem de fresh, ideal\u0103 l\xe2ng\u0103 pe\u0219te sau carne de miel."],n,m),"Morcovi Glazurati la Tigaie",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["morcov","unt","miere"],o),"cantitati","\u2022 500g morcovi (tineri sau t\u0103ia\u021bi bastona\u0219e), 40g unt, 1 lingur\u0103 plin\u0103 de miere, sare, piper.","pasi","1. Fierbe morcovii timp de 5 minute \xeen ap\u0103 cu sare, apoi scurge-i.\n2. Topeste untul \xeentr-o tigaie \u0219i adaug\u0103 morcovii.\n3. Soteaz\u0103-i la foc mediu timp de 5 minute p\xe2n\u0103 \xeencep s\u0103 prind\u0103 o culoare aurie.\n4. Toarn\u0103 mierea deasupra, pune piperul \u0219i amestec\u0103 continuu timp de 2 minute p\xe2n\u0103 c\xe2nd sosul devine lipicios \u0219i \xeei \xeembrac\u0103 complet.","secret","Mierea se pune doar la final! Dac\u0103 o pui de la \xeenceput, zah\u0103rul din ea se va arde imediat \xeen tigaie \u0219i morcovii vor deveni negri \u0219i amari."],n,m),"Dovlecei Pane la Cuptor",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["dovlecel","ou","pesmet","parmezan"],o),"cantitati","\u2022 2 dovlecei medii, 2 ou\u0103, 4 linguri f\u0103in\u0103, 100g pesmet, 30g parmezan, sare, ulei.","pasi","1. Taie dovleceii rondele groase de 1 cm, presar\u0103 sare \u0219i las\u0103-i 10 minute s\u0103 elimine apa, apoi \u0219terge-i.\n2. Trece fiecare rondel\u0103 prin f\u0103in\u0103, apoi prin oul b\u0103tut.\n3. Amestec\u0103 pesmetul cu parmezanul \u0219i \xeembrac\u0103 dovleceii \xeen acest amestec.\n4. A\u0219az\u0103-i \xeen tav\u0103 pe h\xe2rtie de copt \u0219i coace-i la 200\xb0C timp de 20 de minute p\xe2n\u0103 sunt rumeni.","secret","\u0218tergerea apei l\u0103sate de dovlecel cu un \u0219erve\u021bel \xeenainte de pane este secretul ca crusta s\u0103 nu se dezlipeasc\u0103 \xeen timpul coacerii."],n,m),"Varza Rosie Calita cu Mere",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["varza rosie","ceapa","mar","otel","zahar"],o),"cantitati","\u2022 1 varz\u0103 ro\u0219ie medie, 1 ceap\u0103, 1 m\u0103r acri\u0219or ras, 2 linguri o\u021bet, 1 lingur\u0103 zah\u0103r, cimbru, ulei.","pasi","1. Toac\u0103 varza ro\u0219ie fidelu\u021b\u0103 \u0219i freac-o cu pu\u021bin\u0103 sare.\n2. C\u0103le\u0219te ceapa \xeen ulei, adaug\u0103 varza stoars\u0103 \u0219i m\u0103rul ras.\n3. Pune o\u021betul, zah\u0103rul, cimbrul \u0219i 100ml ap\u0103. Pune un capac \u0219i las\u0103 la \xeen\u0103bu\u0219it 30 de minute.\n4. Las\u0103 lichidul s\u0103 se evapore complet la final. Se serve\u0219te ideal l\xe2ng\u0103 ra\u021b\u0103 sau friptur\u0103 de porc.","secret","O\u021betul ad\u0103ugat de la \xeenceput este obligatoriu pentru varza ro\u0219ie! Acidul fixeaz\u0103 culoarea purpurie superb\u0103; altfel, varza va deveni gri-alb\u0103struie la g\u0103tit."],n,m),"Sote de Ciuperci Pleurotus cu Usturoi",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["ciuperci","pleurotus","ulei","usturoi","cimbru"],o),"cantitati","\u2022 500g ciuperci Pleurotus, 3 linguri ulei de m\u0103sline, 3 c\u0103\u021bei usturoi, cimbru proasp\u0103t, sare, piper.","pasi","1. Rupe ciupercile Pleurotus f\xe2\u0219ii lungi pe lungimea fibrei.\n2. \xcencinge uleiul foarte tare \xeentr-o tigaie ad\xe2nc\u0103.\n3. Pune ciupercile \u0219i las\u0103-le la foc iute 5-6 minute p\xe2n\u0103 devin aurii \u0219i \xee\u0219i reduc volumul.\n4. Adaug\u0103 usturoiul tocat feliu\u021be \u0219i cimbrul, mai soteaz\u0103 1 minut amestec\xe2nd des.\n5. Condimenteaz\u0103 cu sare \u0219i piper proasp\u0103t m\u0103cinat.","secret","Ruperea ciupercilor pleurotus cu m\xe2na \xeen loc de t\u0103ierea cu cu\u021bitul le p\u0103streaz\u0103 textura fibroas\u0103 excelent\u0103, asem\u0103n\u0103toare c\u0103rnii, perfect\u0103 pentru o garnitur\u0103 consistent\u0103."],n,m),"Cartofi Piure Usturoiati",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["cartofi","unt","lapte","usturoi"],o),"cantitati","\u2022 1 kg cartofi albi, 100g unt, 100ml lapte, 4 catei usturoi pisat, sare.","pasi","1. Fierbe cartofii cuburi in apa cu sare 25 de minute.\n2. Zdrobeste-i fierbinti cu untul rece si laptele cald.\n3. Pune usturoiul pisat foarte bine exact la final si amesteca energic cu telul.","secret","Usturoiul pus in piureul fierbinte se gateste instant de la caldura cartofilor, pierzand iutimea, dar lasand o aroma dulceata si fina."],n,m),"Varza Calita de Post",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["varza","ceapa","rosii","cimbru"],o),"cantitati","\u2022 1 varza alba medie, 2 cepe mari, 200g rosii pasate, cimbru uscat, sare, piper, ulei.","pasi","1. Toaca varza fin si freac-o cu sare grunjoasa.\n2. Caleste ceapa in 4 linguri de ulei, apoi pune varza stoarsa bine.\n3. Pune rosiile pasate si cimbrul, lasand sa scada la foc mic 30 de minute sub capac.","secret","Adauga o lingura de otet in varza spre final pentru a-i taie dulceata naturala si a o face mai aromata."],n,m),"Pilaf de Orez Simplu (de Post)",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["orez","ceapa","morcov","ardei"],o),"cantitati","\u2022 200g orez bob rotund, 1 ceapa, 1 morcov, 1 ardei gras, 3 linguri ulei, patrunjel, sare.","pasi","1. Caleste ceapa, morcovul si ardeiul tocate marunt in ulei.\n2. Pune orezul spalat si toarna 600ml apa fiarta.\n3. Lasa sa fiarba la foc minim, fara sa amesteci, timp de 15 minute pana cand orezul absoarbe toata apa.","secret","Pentru a fi pufos si bob cu bob, nu atinge orezul cu lingura in timpul fierberii; lasa aburul sa faca toata treaba."],n,m),"Conopida la Cuptor cu Parmezan",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["conopida","parmezan","ulei","usturoi"],o),"cantitati","\u2022 1 conopida medie, 50g parmezan ras, 3 linguri ulei masline, 1 lingurita boia dulce, sare.","pasi","1. Desfa conopida in buchetele mici si spala-le.\n2. Amesteca-le intr-un bol cu uleiul, boiaua, sarea si usturoiul pudra.\n3. Pune-le intr-o tava pe hartie de copt si coace la 200C timp de 20 de minute.\n4. Presara parmezanul si mai lasa 5 minute.","secret","Coacerea conopidei la temperatura mare o caramelizeaza, schimbandu-i complet gustul fad intr-unul crocant si delicios."],n,m),"Sote de Morcovi cu Mazare",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["morcov","mazare","unt","marar"],o),"cantitati","\u2022 2 morcovi, 200g mazare boabe, 40g unt, 1 lingurita zahar, marar proaspat, sare.","pasi","1. Taie morcovii rondele si fierbe-i 5 minute, apoi adauga mazarea inca 3 minute.\n2. Scurge apa si pune legumele intr-o tigaie cu untul topit.\n3. Pune sarea si zaharul, sotand totul la foc mediu timp de 3 minute, apoi opreste focul si pune mararul.","secret","Untul impreuna cu lingurita de zahar creeaza o pelicula stralucitoare (glazura) peste legume, facandu-le extrem de aspectuoase."],n,m),"Dovlecei la Gratar cu Usturoi",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["dovlecel","ulei","usturoi","patrunjel"],o),"cantitati","\u2022 2 dovlecei tineri, 2 linguri ulei de masline, 2 catei usturoi pisat, sare, patrunjel.","pasi","1. Taie dovleceii feliute lungi groase de jumatate de cm.\n2. Unge-i cu ulei si prajeste-i pe gratarul incins cate 2 minute pe fiecare parte.\n3. Pune-i intr-un bol, presara sarea, patrunjelul si usturoiul pisat cat sunt fierbinti.","secret","Pune usturoiul doar cand dovleceii sunt gata, direct in bol, pentru a nu-l arde pe gratar si a-l face amar."],n,m),"Piure Fin de Conopida",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["conopida","unt","smantana"],o),"cantitati","\u2022 1 conopida medie, 50g unt gras, 2 linguri smantana grasa, sare, un praf nucsoara.","pasi","1. Fierbe buchetelele de conopida in apa cu sare timp de 15 minute pana sunt foarte moi.\n2. Scurge apa extrem de bine (conopida tine multa apa).\n3. Pune-o in blender cu untul, smantana si nucsoara, mixand pana devine o crema fina.","secret","Scurgerea perfecta si folosirea unui blender vertical (nu zdrobitor manual) ofera o textura fina ca o catifea, ideala langa fripturi."],n,m),"Cartofi Copti Intregi in Folie",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["cartofi","unt","sare"],o),"cantitati","\u2022 4 cartofi mari roz, 50g unt, sare grunjoasa, folie de aluminiu.","pasi","1. Spala foarte bine cartofii in coaja si inteapa-i din loc in loc cu o furculita.\n2. Freaca-i cu sare si impacheteaza-i strans pe fiecare in folie de aluminiu.\n3. Coace-i la cuptor la 200C timp de 50-60 de minute.\n4. Taie-i pe jumatate, pune un cub de unt la mijloc si serveste.","secret","Inteparea cu furculita lasa aburul sa iasa si opreste craparea cartofului in interiorul foliei."],n,m),"Couscous Rapid cu Unt",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["couscous","unt","sare"],o),"cantitati","\u2022 150g couscous, 150ml apa fiarta sau supa, 30g unt, sare.","pasi","1. Pune couscous-ul uscat intr-un bol adanc cu sarea.\n2. Toarna apa clocotita deasupra, amesteca o data si acopera bolul strans cu o farfurie.\n3. Lasa-l nemiscat timp de 5 minute.\n4. Pune untul si desfa boabele cu o furculita pana e pufos.","secret","Couscous-ul NU se fierbe pe foc! Doar se hidrateaza in apa fiarta sub capac, altfel devine lipicios si se strica imediat."],n,m),"Ghiveci Rece de Legume (Garnitura)",A.r(["categorie","Garnituri","imagine",s,"ingrediente",A.b(["dovlecel","ardei","rosii","ceapa","ulei"],o),"cantitati","\u2022 1 dovlecel, 1 ardei, 2 cepe, 200g rosii pasate, cimbru, sare, ulei.","pasi","1. Caleste ceapa si ardeiul in ulei, apoi pune dovlecelul cuburi.\n2. Adauga rosiile pasate, sarea si cimbrul.\n3. Lasa sa fiarba inabusit 20 de minute pana scade. Se lasa la racit si se serveste rece langa fripturi.","secret","Aceasta garnitura se consuma cel mai bine rece, direct de la frigider, gusturile legumelor asezandu-se perfect dupa cateva ore."],n,m),"Salata de Vara",A.r(["categorie","Salate","ingrediente",A.b(["rosii","castraveti","ceapa","ulei","lamaie"],o),"cantitati","\u2022 3 ro\u0219ii, 2 castrave\u021bi, 1 ceap\u0103 ro\u0219ie, 2 linguri ulei de m\u0103sline, suc de l\u0103m\xe2ie.","pasi","1. Taie ro\u0219iile \u0219i castrave\u021bii cuburi, iar ceapa solzi.\n2. Amestec\u0103 uleiul cu sucul de l\u0103m\xe2ie \u0219i sarea.\n3. Toarn\u0103 sosul peste legume exact \xeenainte de servire.","secret","Nu pune sare cu mult timp \xeenainte, altfel ro\u0219iile \xee\u0219i las\u0103 toat\u0103 apa \u0219i legumele se \xeenmoaie."],n,m),"Salata de Rosii cu Telemea",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["rosii","castraveti","ceapa","branza"],o),"cantitati","\u2022 4 rosii mari zemoase, 2 castraveti, 1 ceapa rosie, 150g branza telemea, 2 linguri ulei masline, sare.","pasi","1. Spal\u0103 legumele \u0219i taie ro\u0219iile \u0219i castrave\u021bii cuburi mari.\n2. Taie ceapa ro\u0219ie f\xe2\u0219ii sub\u021biri (solzi).\n3. Pune totul \xeentr-un bol, adaug\u0103 uleiul de m\u0103sline \u0219i amestec\u0103 u\u0219or.\n4. Presar\u0103 deasupra br\xe2nza telemea t\u0103iat\u0103 cubule\u021be sau ras\u0103 fin.","secret","Adaug\u0103 br\xe2nza telemea doar deasupra, la final. Dac\u0103 o amesteci de la \xeenceput, br\xe2nza se va sf\u0103r\xe2ma \u0219i va tulbura sosul delicios format din ulei \u0219i zeama ro\u0219iilor."],n,m),"Salata de Varza Alba ca la Restaurant",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["varza","ulei","otel","marar"],o),"cantitati","\u2022 1 varz\u0103 alb\u0103 medie, 3 linguri ulei, 2 linguri o\u021bet, 1 leg\u0103tur\u0103 m\u0103rar, sare, un praf de zah\u0103r.","pasi","1. Toac\u0103 varza fidelu\u021b\u0103 c\xe2t mai fin posibil (sau d\u0103-o pe r\u0103z\u0103toare).\n2. Pune varza \xeentr-un bol mare, presar\u0103 o lingur\u0103 de sare \u0219i freac-o puternic cu m\xe2inile timp de 2-3 minute.\n3. Pune o\u021betul, uleiul \u0219i praful de zah\u0103r, apoi amestec\u0103 bine.\n4. Las-o s\u0103 se odihneasc\u0103 15 minute, apoi presar\u0103 m\u0103rarul tocat fin.","secret","Frecarea puternic\u0103 a verzei cu sare \xeenainte de a pune uleiul este secretul obligatoriu! Sarea sparge fibrele dure \u0219i las\u0103 varza extrem de moale \u0219i suculent\u0103, exact ca la terase."],n,m),"Salata Traditionala de Vinete",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["vinete","ceapa","ulei"],o),"cantitati","\u2022 1 kg vinete coapte \u0219i scarse, 1 ceap\u0103 galben\u0103 mic\u0103, 100ml ulei de floarea soarelui, sare.","pasi","1. Las\u0103 vinete coapte la scurs \xeentr-o sit\u0103 de plastic timp de minim 2 ore ca s\u0103 elimini sucul amar.\n2. Toac\u0103 vinetele m\u0103runt pe un toc\u0103tor de lemn folosind un cu\u021bit special de lemn sau plastic.\n3. Pune-le \xeentr-un bol \u0219i toarn\u0103 uleiul \xeen fir sub\u021bire, amestec\xe2nd energic cu o lingur\u0103 de lemn \xeentr-o singur\u0103 direc\u021bie.\n4. Ad\u0103ug\u0103 ceapa tocat\u0103 extrem de fin \u0219i sarea la final.","secret","Nu folosi niciodat\u0103 cu\u021bite sau boluri de metal pentru vinete! Metalul le oxideaz\u0103 instant, transform\xe2ndu-le dintr-un alb-crem frumos \xeentr-o culoare cenu\u0219ie-neagr\u0103 inestetic\u0103."],n,m),"Salata de Sfecla Rosie cu Hrean",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["sfecla rosie","hrean","ulei","otel"],o),"cantitati","\u2022 3 sfecle ro\u0219ii mari, 2 linguri hrean ras la borcan, 2 linguri o\u021bet, 1 lingur\u0103 ulei, sare.","pasi","1. Spal\u0103 sfecla \u0219i coace-o la cuptor \xeen folie de aluminiu timp de 1 or\u0103 (sau fierbe-o \xeen coaj\u0103).\n2. Las-o s\u0103 se r\u0103ceasc\u0103, cur\u0103\u021b-o de coaj\u0103 \u0219i d\u0103-o pe r\u0103z\u0103toarea mare.\n3. Amestec\u0103 sfecla ras\u0103 cu hreanul, uleiul, o\u021betul \u0219i sarea.\n4. Pune-o \xeentr-un borcan la frigider. Gustul devine ideal dup\u0103 24 de ore.","secret","Coacerea sfeclei la cuptor \xeen loc de fierbere \xeei p\u0103streaz\u0103 toat\u0103 dulcea\u021ba natural\u0103 \u0219i culoarea ro\u0219ie intens\u0103, ob\u021bin\xe2nd o salat\u0103 mult mai gustoas\u0103."],n,m),"Salata Boeuf de Sarbatoare",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["vita","pui","cartofi","morcov","mazare",r,"maioneza"],o),"cantitati","\u2022 300g carne (vit\u0103 sau pui), 3 cartofi, 2 morcovi, 100g maz\u0103re, 4 castrave\u021bi mura\u021bi, 200g maionez\u0103, 1 lingur\u0103 mu\u0219tar.","pasi","1. Fierbe carnea \u0219i legumele (morcovii, cartofii) \xeen ap\u0103 cu sare, apoi las\u0103-le s\u0103 se r\u0103ceasc\u0103 complet.\n2. Taie carnea, cartofii, morcovii \u0219i castrave\u021bii mura\u021bi \xeen cubule\u021be extrem de mici \u0219i egale.\n3. Scurge bine castrave\u021bii mura\u021bi \xeen m\xe2n\u0103 ca s\u0103 elimini zeama.\n4. Amestec\u0103 toate ingredientele cu maz\u0103rea fiart\u0103, mu\u0219tarul \u0219i 3 sferturi din maionez\u0103. Pune restul de maionez\u0103 deasupra pentru decor.","secret","Mu\u0219tarul clasic ad\u0103ugat \xeen compozi\u021bie taie grea\u021ba maionezei, iar stoarcerea perfect\u0103 a castrave\u021bilor mura\u021bi opre\u0219te l\u0103sarea apei \xeen bol dup\u0103 c\xe2teva ore."],n,m),"Salata Orientala Traditionala",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["cartofi","ou","ceapa","masline","ulei","otel"],o),"cantitati","\u2022 1 kg cartofi roz, 4 ou\u0103 fierte tari, 1 ceap\u0103 ro\u0219ie mare, 100g m\u0103sline negre, 3 linguri ulei, 2 linguri o\u021bet, sare.","pasi","1. Fierbe cartofii \xeen coaj\u0103, apoi cur\u0103\u021b\u0103-i calzi \u0219i taie-i \xeen cuburi mari.\n2. Taie ceapa ro\u0219ie solzi\u0219ori \u0219i ou\u0103le fierte \xeen sferturi.\n3. Pune cartofii calzi \xeentr-un bol, toarn\u0103 o\u021betul \u0219i uleiul deasupra (le vor absorbi imediat).\n4. Ad\u0103ug\u0103 ceapa, m\u0103slinele \u0219i sarea, amestec\xe2nd foarte u\u0219or ca s\u0103 nu sf\u0103r\xe2mi cartofii. Pune ou\u0103le deasupra.","secret","Toarn\u0103 sosul de ulei \u0219i o\u021bet peste cartofi c\xe2t timp ace\u0219tia sunt \xeenc\u0103 calzi! Cartofii calzi func\u021bioneaz\u0103 ca un burete \u0219i absorb aromele \xeen interior, pe c\xe2nd cei reci le vor l\u0103sa la suprafa\u021b\u0103."],n,m),"Salata de Ceapa Rosie pentru Fripturi",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["ceapa","ulei","otel"],o),"cantitati","\u2022 3 cepe ro\u0219ii mari, 2 linguri ulei, 2 linguri o\u021bet de mere, un praf de sare, m\u0103rar.","pasi","1. Taie ceapa ro\u0219ie \xeen f\xe2\u0219ii sub\u021biri (solzi).\n2. Pune-o \xeentr-o sit\u0103, presar\u0103 pu\u021bin\u0103 sare \u0219i las-o 5 minute.\n3. Pune ceapa \xeentr-un bol mic, ad\u0103ug\u0103 uleiul, o\u021betul \u0219i m\u0103rarul tocat.\n4. Amestec\u0103 bine \u0219i serve\u0219te-o obligatoriu l\xe2ng\u0103 m\xe2ncarea de fasole sau fripturi.","secret","L\u0103sarea cepei t\u0103iate cu sare timp de 5 minute \xeen sit\u0103 elimin\u0103 acidul puternic (iutimea), l\u0103s\xe2nd o salat\u0103 dulce, crocant\u0103 \u0219i bl\xe2nd\u0103 cu stomacul."],n,m),"Salata Coleslaw Americana",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["varza","morcov","maioneza","smantana"],o),"cantitati","\u2022 jum\u0103tate de varz\u0103 alb\u0103, 1 morcov mare, 3 linguri maionez\u0103, 2 linguri sm\xe2nt\xe2n\u0103 lichid\u0103, 1 linguri\u021b\u0103 o\u021bet, un praf zah\u0103r.","pasi","1. Toac\u0103 varza fidelu\u021b\u0103 m\u0103runt \u0219i d\u0103 morcovul pe r\u0103z\u0103toarea mic\u0103.\n2. \xcentr-un bol mic, prepar\u0103 sosul: amestec\u0103 maioneza, sm\xe2nt\xe2na, o\u021betul, zah\u0103rul \u0219i sarea.\n3. Toarn\u0103 sosul peste varz\u0103 \u0219i morcov.\n4. Amestec\u0103 bine \u0219i las\u0103 salata la frigider o or\u0103 \xeenainte de servire.","secret","Sm\xe2nt\xe2na lichid\u0103 \u0219i praful de zah\u0103r din sos ofer\u0103 acea cremozitate dulce-acri\u0219oar\u0103 perfect\u0103, specific\u0103 salatelor faimoase din lan\u021burile fast-food."],n,m),"Salata de Castraveti cu Smantana si Usturoi",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["castraveti","smantana","usturoi","marar"],o),"cantitati","\u2022 3 castrave\u021bi lungi, 200g sm\xe2nt\xe2n\u0103 fermentat\u0103 gras\u0103, 2 c\u0103\u021bei de usturoi, m\u0103rar proasp\u0103t, sare.","pasi","1. Spal\u0103 castrave\u021bii \u0219i taie-i \xeen rondele extrem de sub\u021biri.\n2. Presar\u0103 sare peste ei \u0219i las\u0103-i 10 minute \xeentr-o sit\u0103 s\u0103 \xee\u0219i lase apa, apoi stoarce-i bine \xeen m\xe2n\u0103.\n3. \xcentr-un bol, amestec\u0103 sm\xe2nt\xe2na cu usturoiul pisat foarte fin \u0219i m\u0103rarul.\n4. Pune castrave\u021bii stor\u0219i \xeen sos \u0219i amestec\u0103. Se serve\u0219te rece.","secret","Stoarcerea foarte bun\u0103 a castrave\u021bilor dup\u0103 ce au stat cu sare opre\u0219te lichefierea sm\xe2nt\xe2nii, iar salata va r\u0103m\xe2ne cremoas\u0103 \u0219i legat\u0103 chiar \u0219i a doua zi."],n,m),"Salata de Ardei Copti",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["ardei","ulei","otel","usturoi"],o),"cantitati","\u2022 6 ardei kapia mari sau ardei gra\u0219i ro\u0219ii, 2 linguri ulei, 2 linguri o\u021bet, 1 catel usturoi, sare.","pasi","1. Coace ardeii pe plit\u0103 sau \xeen tav\u0103 la cuptor p\xe2n\u0103 se \xeennegre\u0219te coaja.\n2. Pune-i \xeentr-un bol, presar\u0103 sare grunjoas\u0103 \u0219i acoper\u0103-i cu un capac 10 minute (aburul \xeei va decoji singur).\n3. Cur\u0103\u021b\u0103-i de coaj\u0103, cotor \u0219i s\xe2mburi (nu-i sp\u0103la cu ap\u0103!).\n4. Pune-i \xeentr-un bol lunguie\u021b cu tot cu sucul l\u0103sat de ei, ad\u0103ug\u0103 uleiul, o\u021betul \u0219i usturoiul feliu\u021be sub\u021biri.","secret","Nu sp\u0103la niciodat\u0103 ardeii cop\u021bi sub jetul de ap\u0103 de la robinet ca s\u0103 cure\u021bi mai repede coaja! Apa le va sp\u0103la tot gustul de fum \u0219i uleiurile esen\u021biale aromate l\u0103sate la copt."],n,m),"Salata de Vara cu Rosii si Castraveti",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["rosii","castraveti","ardei","ceapa","ulei"],o),"cantitati","\u2022 3 ro\u0219ii mari, 2 castrave\u021bi proaspe\u021bi, 1 ardei gras verde, 1 ceap\u0103 ro\u0219ie, 2 linguri ulei de floarea soarelui (sau m\u0103sline), sare, piper.","pasi","1. Spal\u0103 bine toate legumele.\n2. Taie ro\u0219iile \u0219i castrave\u021bii \xeen buc\u0103\u021bi potrivite, iar ardeiul gras \xeen f\xe2\u0219ii.\n3. Toac\u0103 ceapa ro\u0219ie pe jum\u0103tate \u0219i apoi felii sub\u021biri.\n4. Pune toate legumele \xeentr-un bol mare, adaug\u0103 uleiul, sarea \u0219i piperul, apoi amestec\u0103 u\u0219or din jos \xeen sus.","secret","Aceasta este cea mai m\xe2ncat\u0103 salat\u0103 din Rom\xe2nia! Secretul ei este simplitatea: nu cur\u0103\u021ba castrave\u021bii de coaj\u0103 dac\u0103 sunt tineri, pentru c\u0103 acolo se afl\u0103 toat\u0103 aroma proasp\u0103t\u0103 \u0219i textura crocant\u0103."],n,m),"Salata Greceasca (Horiatiki)",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["rosii","castraveti","branza","feta","masline","ceapa","oregano","ulei"],o),"cantitati","\u2022 3 ro\u0219ii, 1 castravete lung, 1 ceap\u0103 ro\u0219ie, 150g br\xe2nz\u0103 Feta (sau telemea de oaie), 100g m\u0103sline Kalamata, 3 linguri ulei de m\u0103sline, oregano uscat, sare.","pasi","1. Taie ro\u0219iile \xeen sferturi mari \u0219i castravetele \xeen rondele groase.\n2. Taie ceapa \xeen inele fine.\n3. Pune legumele \xeentr-un bol ad\xe2nc \xeempreun\u0103 cu m\u0103slinele \xeentregi.\n4. Toarn\u0103 uleiul de m\u0103sline \u0219i presar\u0103 un praf generos de oregano uscat.\n5. A\u0219az\u0103 deasupra o felie mare \u0219i \xeentreag\u0103 de br\xe2nz\u0103 Feta (nu o sf\u0103r\xe2ma!).","secret","Oregano uscat frecat \xeen palme chiar \xeenainte de a-l pres\u0103ra peste salat\u0103 \xee\u0219i va elibera imediat uleiurile aromatice. Este condimentul magic care ofer\u0103 gustul autentic de tavern\u0103 greceasc\u0103."],n,m),"Salata de Ton cu Porumb si Ceapa",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["ton","porumb","ceapa","lamaie","masline","ulei"],o),"cantitati","\u2022 2 conserve ton \xeen suc propriu sau ulei (scurs), 1 conserv\u0103 mic\u0103 porumb dulce, 1 ceap\u0103 ro\u0219ie, 50g m\u0103sline felii, sucul de la jum\u0103tate de l\u0103m\xe2ie, 1 lingur\u0103 ulei m\u0103sline, sare.","pasi","1. Scurge bine tonul din conserv\u0103 \u0219i m\u0103run\u021be\u0219te-l u\u0219or cu o furculi\u021b\u0103 \xeentr-un bol.\n2. Pune porumbul dulce scurs de zeam\u0103 \u0219i sp\u0103lat.\n3. Ad\u0103ug\u0103 ceapa ro\u0219ie t\u0103iat\u0103 cubule\u021be foarte mici \u0219i m\u0103slinele.\n4. \xcentr-un pahar, amestec\u0103 sucul de l\u0103m\xe2ie cu uleiul de m\u0103sline \u0219i sarea, apoi toarn\u0103 peste salat\u0103 \u0219i omogenizeaz\u0103.","secret Clyde","Dac\u0103 folose\u0219ti ton \xeen ulei, folose\u0219te chiar uleiul din conserv\u0103 \xeen loc s\u0103 \xeel arunci! Are o arom\u0103 intens\u0103 de pe\u0219te care va \xeembr\u0103ca boabele de porumb mult mai gustos."],n,m),"Salata Verde Simpla de Insotire",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["salata verde","ceapa verde","marar","ulei","lamaie"],o),"cantitati","\u2022 1 salat\u0103 verde mare (sau un pachet mix de frunze), 2 fire ceap\u0103 verde, jum\u0103tate de leg\u0103tur\u0103 m\u0103rar, 2 linguri ulei, 1 lingur\u0103 o\u021bet (sau l\u0103m\xe2ie), sare.","pasi","1. Spal\u0103 frunzele de salat\u0103 una c\xe2te una \xeen ap\u0103 rece \u0219i usuc\u0103-le foarte bine (sau folose\u0219te o centrifug\u0103 de salat\u0103).\n2. Rupe frunzele cu m\xe2na \xeen buc\u0103\u021bi potrivite (nu le t\u0103ia cu cu\u021bitul).\n3. Toac\u0103 ceapa verde rondele \u0219i m\u0103rarul fin, apoi adaug\u0103-le peste salat\u0103.\n4. Strope\u0219te cu ulei, o\u021bet \u0219i presar\u0103 sarea chiar \xeenainte de a o pune pe mas\u0103.","secret","Ruperea frunzelor de salat\u0103 cu m\xe2na \xeen loc de t\u0103ierea cu cu\u021bitul de metal opre\u0219te ruginirea (oxidarea) marginilor, men\u021bin\xe2nd salata proasp\u0103t\u0103 \u0219i crocant\u0103 mult mai mult timp."],n,m),"Salata de Ridichi cu Ceapa Verde",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["ridichi","ceapa verde","ulei","otel"],o),"cantitati","\u2022 2 leg\u0103turi de ridichi ro\u0219ii proaspete, 3 fire ceap\u0103 verde, 2 linguri ulei de floarea soarelui, 1 lingur\u0103 o\u021bet clasic, sare.","pasi","1. Cur\u0103\u021b\u0103 ridichile, spal\u0103-le bine \u0219i taie-le \xeen rondele foarte sub\u021biri.\n2. Toac\u0103 firele de ceap\u0103 verde cu tot cu frunze \xeen rondele sub\u021biri.\n3. Pune-le \xeempreun\u0103 \xeentr-un bol mic.\n4. Ad\u0103ug\u0103 uleiul, o\u021betul \u0219i sarea, amestec\xe2nd bine ca ridichile s\u0103 \xee\u0219i lase pu\u021bin\u0103 zeam\u0103 dulceag\u0103.","secret","Aceasta este salata perfect\u0103 de prim\u0103var\u0103 care merge la fix l\xe2ng\u0103 o omlet\u0103 cald\u0103 sau stufat de miel. Consum-o imediat dup\u0103 preparare, altfel ridichile \xee\u0219i pierd rigiditatea."],n,m),"Salata de Varza Rosie Simplu",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["varza rosie","ulei","otel"],o),"cantitati","\u2022 1 varz\u0103 ro\u0219ie mic\u0103, 3 linguri ulei, 2 linguri o\u021bet, sare, piper.","pasi","1. Toac\u0103 varza ro\u0219ie fidelu\u021b\u0103 c\xe2t mai fin.\n2. Presar\u0103 o lingur\u0103 de sare \u0219i freac-o puternic \xeen m\xe2ini p\xe2n\u0103 \xee\u0219i reduce volumul \u0219i las\u0103 un suc violet.\n3. Pune o\u021betul (culoarea va deveni imediat un roz-ro\u0219iatic aprins) \u0219i uleiul.\n4. Las-o la frigider 20 de minute \xeenainte de a o m\xe2nca l\xe2ng\u0103 gr\u0103tare.","secret","Varza ro\u0219ie este mult mai dur\u0103 dec\xe2t cea alb\u0103, a\u0219a c\u0103 necesit\u0103 o frecare cu sare de dou\u0103 ori mai lung\u0103 pentru a deveni moale \u0219i u\u0219or de mestecat."],n,m),"Salata de Macrou Afumat cu Cartofi (Pestat)",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["peste","macrou afumat","cartofi","ceapa","masline","ulei","lamaie"],o),"cantitati","\u2022 1 macrou afumat \xeentreg, 3 cartofi mari, 1 ceap\u0103 ro\u0219ie, 50g m\u0103sline negre, 2 linguri ulei, sucul de la o l\u0103m\xe2ie, sare.","pasi","1. Fierbe cartofii \xeen coaj\u0103, cur\u0103\u021b\u0103-i \u0219i taie-i cuburi potrivite.\n2. Cur\u0103\u021b\u0103 cu mare aten\u021bie macroul afumat de piele \u0219i de toate oasele, apoi rupe carnea \xeen buc\u0103\u021bi mici.\n3. Taie ceapa ro\u0219ie pe jum\u0103tate \u0219i apoi felii sub\u021biri.\n4. Pune cartofii calzi, pe\u0219tele, ceapa \u0219i m\u0103slinele \xeen bol. Toarn\u0103 uleiul, zeama de l\u0103m\xe2ie \u0219i amestec\u0103 foarte u\u0219or.","secret","Nu pune mult\u0103 sare de la \xeenceput! Macroul afumat este deja destul de s\u0103rat de la procesul de conservare, a\u0219a c\u0103 gust\u0103 salata la final \xeenainte de a mai ad\u0103uga sare."],n,m),"Salata de Pui cu Ciuperci si Maioneza",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["pui","ciuperci","maioneza","usturoi",r],o),"cantitati","\u2022 400g piept de pui fiert, 1 conserv\u0103 ciuperci feliate (400g), 150g maionez\u0103, 2 c\u0103\u021bei usturoi, 2 castrave\u021bi mura\u021bi, sare.","pasi","1. Taie pieptul de pui fiert \xeen cubule\u021be sau f\xe2\u0219ii mici.\n2. Scurge ciupercile bine din conserv\u0103 \u0219i taie-le dac\u0103 sunt prea mari.\n3. Toac\u0103 m\u0103runt castrave\u021bii mura\u021bi \u0219i stoarce-i bine \xeen pumn de zeam\u0103.\n4. \xcentr-un bol, amestec\u0103 puiul, ciupercile, castrave\u021bii, maioneza \u0219i usturoiul pisat fin. Las\u0103 la rece.","secret","O linguri\u021b\u0103 de mu\u0219cat iute pus\u0103 \xeen maionez\u0103 va ridica imediat gustul puiului \u0219i va face salata mult mai fin\u0103 \u0219i mai pu\u021bin gre\u021boas\u0103."],n,m),"Salata Taraneasca de Vara cu Branza si Ou",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["rosii","castraveti","ardei","ceapa","ou","branza","masline","ulei"],o),"cantitati","\u2022 2 ro\u0219ii, 1 castravete, 1 ardei gras, 1 ceap\u0103, 2 ou\u0103 fierte tari, 100g telemea ras\u0103, 50g m\u0103sline, 2 linguri ulei, sare.","pasi","1. Taie toate legumele (ro\u0219iile, castrave\u021bii, ardeiul) cuburi egale, iar ceapa m\u0103runt.\n2. Pune-le \xeentr-un bol cu m\u0103slinele \u0219i uleiul \u0219i amestec\u0103.\n3. Taie ou\u0103le fierte tari \xeen sferturi \u0219i a\u0219az\u0103-le deasupra legumelor.\n4. Presar\u0103 din abunden\u021b\u0103 telemeaua ras\u0103 pe r\u0103z\u0103toarea mare peste toat\u0103 salata.","secret","Este salata perfect\u0103 de pr\xe2nz \xeen zilele calde de var\u0103. Ou\u0103le fierte \u0219i br\xe2nza telemea ofer\u0103 destule proteine pentru a fi o mas\u0103 complet\u0103 \u0219i hr\u0103nitoare."],n,m),"Salata de Castraveti cu Otet si Marar (Simplu)",A.r(["categorie","Salate","imagine",s,"ingrediente",A.b(["castraveti","otel","ulei","marar"],o),"cantitati","\u2022 3 castrave\u021bi lungi de gr\u0103din\u0103, 2 linguri o\u021bet, 1 lingur\u0103 ulei, 1 linguri\u021b\u0103 zah\u0103r, mult m\u0103rar proasp\u0103t, sare.","pasi","1. Cur\u0103\u021b\u0103 castrave\u021bii de coaj\u0103 (op\u021bional) \u0219i taie-i \xeen rondele foarte sub\u021biri.\n2. \xcentr-un pahar, amestec\u0103 o\u021betul cu uleiul, sarea \u0219i linguri\u021ba de zah\u0103r p\xe2n\u0103 se dizolv\u0103 zah\u0103rul.\n3. Toarn\u0103 sosul dulce-acri\u0219or peste castrave\u021bi \u0219i ad\u0103ug\u0103 m\u0103rarul tocat fin.\n4. Amestec\u0103 bine \u0219i las-o la rece 10 minute \xeenainte de a o servi l\xe2ng\u0103 toc\u0103ni\u021be sau fripturi.","secret","Ad\u0103ugarea acelei linguri\u021be de zah\u0103r \xeen o\u021bet face toat\u0103 diferen\u021ba! Sosul va deveni o vinegret\u0103 fin\u0103 care taie din aciditatea o\u021betului \u0219i face castrave\u021bii extrem de buni."],n,m),"Chec Clasic Pufos in Doua Culori",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","ulei","cacao"],o),"cantitati","\u2022 5 oua mari, 200g zahar, 250g faina, 50ml ulei, 50ml lapte, 2 linguri cacao, 1 praf de copt, vanilie.","pasi","1. Separa ouale. Bate albusurile spuma tare cu zaharul pana devine bezea.\n2. Amesteca galbenusurile cu uleiul si laptele.\n3. Incorporeaza faina si praful de copt in albusuri, amestecand de jos in sus.\n4. Pune 3 sferturi din compozitie in tava, in restul pune cacao si toarna deasupra. Coace la 180C timp de 35-40 min.","secret","Cerne faina de doua ori si amesteca doar manual, lent, ca sa nu scoti aerul din albusuri!"],n,m),"Chec cu Visine si Vanilie",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","ulei","visine"],o),"cantitati","\u2022 4 oua, 180g zahar, 220g faina, 4 linguri ulei, 250g visine fara samburi, 1 praf de copt, esenta vanilie.","pasi","1. Bate ouale intregi cu zaharul 10 minute pana devin o crema tripla la volum.\n2. Toarna uleiul si vanilia, apoi incorporeaza faina cu praful de copt.\n3. Pune compozitia in tava si asaza deasupra visinele scurse bine.\n4. Coace la 180C timp de 35 de minute.","secret","Trece visinele scurse prin putina faina sau pesmet inainte de a le pune deasupra, ca sa nu cada pe fundul t\u0103vii!"],n,m),"Chec cu Lamai si Mac",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","unt","lamaie","mac"],o),"cantitati","\u2022 3 oua, 150g zahar, 200g faina, 100g unt topit, 50ml iaurt, 2 linguri mac boabe, sucul si coaja de la o lamaie.","pasi","1. Mixeaza ouale cu zaharul si coaja de lamaie pana se albesc.\n2. Adauga untul topit caldut, iaurtul si sucul de lamaie.\n3. Pune faina si macul boabe. Amesteca bine pana ai o compozitie omogena.\n4. Coace in tava de chec la 175C timp de 40 de minute. Dupa copt, poti turna deasupra o glazura din zahar pudra si lamaie.","secret","Iaurtul si untul gras sunt ingredientele magice care opresc uscarea checului, lasandu-l incredibil de umed si aromat zile la rand."],n,m),"Chec Aperitiv Salgat",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","faina","lapte","cascaval","bacon","masline"],o),"cantitati","\u2022 4 oua, 200g faina, 100ml lapte, 50ml ulei, 150g cascaval cuburi, 150g bacon prajit, 50g masline feliate, praf de copt.","pasi","1. Bate ouale cu sarea, laptele si uleiul intr-un bol.\n2. Pune faina amestecata cu praful de copt.\n3. Incorporeaza usor cascavalul, baconul pr\u0103jit si maslinele feliate.\n4. Pune totul in tava de chec si coace la 180C timp de 45 de minute.","secret","Trece cubule\u021bele de bacon \u0219i ca\u0219caval prin pu\u021bin\u0103 f\u0103in\u0103 \xeenainte de a le pune \xeen aluat, altfel vor cadea toate pe fundul t\u0103vii."],n,m),"Cozonac Traditional cu Multa Nuca",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","lapte","ou","unt","zahar","drojdie","nuca","cacao"],o),"cantitati","\u2022 Aluat: 1 kg faina, 500ml lapte cald, 250g zahar, 6 galbenusuri, 100g unt topit, 50g drojdie proaspata.\n\u2022 Crema: 400g nuca macinata, 4 albusuri, 3 linguri cacao, rom.","pasi","1. Fa o maia din drojdie, putin lapte si o lingura faina. Las-o sa creasca 15 minute.\n2. Framanta un aluat elastic din faina, oua, zahar si lapte timp de 30 de minute, adaugand untul treptat. Lasa la crescut 1.5 ore.\n3. Umplutura: bate albusurile cu zaharul, cacaoa, nuca si romul.\n4. Intinde aluatul, pune crema, ruleaza strans, impleteste-i si coace la 160C timp de 50 de minute.","secret","Toate ingredientele trebuie scoase in bucatarie de seara! Bucataria trebuie sa fie foarte calda si complet ferita de curent."],n,m),"Alba ca Zapada (Prajitura Lamaita)",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","ou","ulei","lapte","zahar","amoniac","unt","lamaie"],o),"cantitati","\u2022 Foi: 2 oua, 10 linguri ulei, 10 linguri lapte, 10 linguri zahar, amoniac, faina. Crema: 1L lapte, 8 linguri faina, 200g unt, 1 lamaie.","pasi","1. Framanta aluatul de foi, imparte-l in 3 si coace foile pe dosul t\u0103vii timp de 4-5 minute la 180C.\n2. Fierbe laptele cu faina si zaharul pana devine o budinca groasa. Las-o la racit.\n3. Incorporeaza budinca treptat in untul moale batut spuma, apoi pune sucul si coaja de lamaie.\n4. Pune crema intre foi si las-o sub o greutate in camara timp de 24 de ore.","secret","Pr\u0103jitura are nevoie de minim 24 de ore de stat la rece ca foile tari sa absoarba umiditatea din crema si sa se topeasca in gura!"],n,m),"Prajitura Tosca cu Mac si Biscuiti",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","mac","faina","lapte","unt","biscuiti","ciocolata"],o),"cantitati","\u2022 Blat: 6 albusuri, 150g zahar, 100g mac, 4 linguri faina. Crema: 6 galbenusuri, 400ml lapte, budinca vanilie, 200g unt. Biscuiti, ciocolata.","pasi","1. Blat: bate albusurile cu zaharul, pune macul si faina. Coace 20 min la 180C.\n2. Crema: fierbe galbenusurile cu laptele si praful de budinca, iar dupa racire incorporeaza untul.\n3. Pune crema peste blat, asaza deasupra biscuitii trecuti printr-o cafea calda.\n4. Toarna o glazura din ciocolata topita cu putin unt.","secret","Trecerea biscuitilor prin cafea trebuie sa fie de o singura secunda, altfel se vor sfarama in prajitura."],n,m),"Gogosi Pufoase ca la Gogoserie",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","lapte","ou","unt","zahar","drojdie"],o),"cantitati","\u2022 500g faina, 250ml lapte caldut, 1 ou, 50g unt topit, 3 linguri zahar, 25g drojdie proaspata, coaja portocala, ulei.","pasi","1. Dizolva drojdia si zaharul in lapte. Toarna peste faina, adauga oul, vanilia si untul topit. Framanta si lasa la crescut 1 ora.\n2. Intinde o foaie groasa de 1 cm si decupeaza gogosile cu un pahar. Mai lasa-le 15 minute pe masa.\n3. Prajeste-i in baie mare de ulei incins la foc mediu.","secret","Cand le pui in uleiul incins, asaza-le cu partea care a stat in sus pe masa in jos in tigaie si pune un capac in primele 30 de secunde!"],n,m),"Cornulete Fragede cu Untura",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","ou","branza","dulceata","zahar","unt"],o),"cantitati","\u2022 500g faina, 200g untura rece, 150ml iaurt gras, 1 ou, un praf de sare, gem de prune tare sau rahat, zahar pudra vanilat.","pasi","1. Amesteca faina cu sarea si untura rece pana obtii un aluat nisipos.\n2. Adauga oul si iaurtul, framantand rapid pana se leaga aluatul. Da-l la frigider 30 de minute.\n3. Intinde foi subtiri, taie-le in triunghiuri, pune o bucatica de gem sau rahat la baza si ruleaza strans.\n4. Coace la 185C timp de 15 minute pana sunt usor rumene pe fund, apoi da-le fierbinti prin zahar pudra.","secret","Folosirea unturii reci de la frigider si framantarea foarte scurta sunt secretele care fac cornuletele sa fie foietate si extrem de fragede."],n,m),"Amandine Traditionale ca la Cofetarie",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","unt","cacao","rom","ciocolata"],o),"cantitati","\u2022 Blat: 6 oua, 150g zahar, 4 faina, 3 cacao. Sirop: apa, zahar, rom. Crema: 3 oua, zahar, 250g unt moale, cacao. Glazura: 200g ciocolata.","pasi","1. Coace blatul de pandispan cu cacao si taie-l in doua. Fierbe siropul si pune rom la final.\n2. Crema: fierbe ouale cu zaharul pe baie de aburi pana se ingroasa, las-o sa se raceasca si amestec-o cu untul spuma.\n3. Insiropeaza blaturile, pune crema la mijloc si da la rece.\n4. Taie in cuburi mari si glazureaza-le cu ciocolata topita.","secret","Crema de oua trebuie sa fie COMPLET rece cand o amesteci cu untul, altfel untul se va topi si crema se va taia."],n,m),"Lava Cake cu Miez Curgator",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ciocolata","unt","ou","zahar","faina"],o),"cantitati","\u2022 100g ciocolata neagra, 80g unt, 2 oua + 2 galbenusuri, 50g zahar pudra, 40g faina.","pasi","1. Topeste ciocolata cu untul.\n2. Mixeaza ouale si galbenusurile cu zaharul pudra 5 minute pana devin o spuma cremoasa.\n3. Toarna ciocolata calduta, adauga faina cernuta si omogenizeaza.\n4. Pune in forme de briose si coace la 200C timp de FIX 10-12 minute.","secret","Timpul este totul! Marginea prajiturii trebuie sa fie ferma la atingere, iar mijlocul sa tremure usor ca o piftie."],n,m),"Negresa Extreem de Cremoasa",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["unt","zahar","cacao","ou","faina","nuca"],o),"cantitati","\u2022 150g unt, 200g zahar, 3 oua mari, 60g cacao, 100g faina, 100g nuca, vanilie.","pasi","1. Topeste untul, amesteca-l cu zaharul si cacaoa.\n2. Adauga ouale unul cate unul.\n3. Pune faina, vanilia, sarea si nucile.\n4. Coace la 175C timp de 20 de minute.","secret","O negresa umeda si cremoasa NU are voie sa aiba praf de copt in compozitie."],n,m),"Eclere de Casa cu Vanilie",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","unt","ou","lapte","zahar","amidon","ciocolata"],o),"cantitati","\u2022 Coji: 100ml apa, 100ml lapte, 80g unt, 120g faina, 4 oua.\n\u2022 Crema: 500ml lapte, 4 galbenusuri, 120g zahar, 40g amidon, vanilie, 50g unt.","pasi","1. Coji: fierbe apa, laptele, untul. Pune toata faina odata si amesteca rapid pana se desprinde de oala. Lasa sa se raceasca un pic si pune ouale unul cate unul. Coace 20 min la 200C (nu deschide cuptorul!).\n2. Crema: fierbe ouale cu laptele, zaharul si amidonul pana devine ca o budinca groasa. Pune untul si las-o la racit.\n3. Taie cojile pe jumatate, umple-le cu crema si decoreaza cu ciocolata topita.","secret","Nu deschide deloc usa cuptorului in primele 20 de minute de coacere a cojilor, altfel gogosile de ecler se vor desumfla instant!"],n,m),"Pandispan Pufos cu Visine",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","ulei","visine"],o),"cantitati","\u2022 6 oua mari, 180g zahar, 200g faina, 4 linguri ulei, 300g visine, vanilie.","pasi","1. Bate albu\u0219urile spuma tare cu zaharul pana devine o bezea densa.\n2. Amesteca galbenusurile cu uleiul si toarna-le peste albu\u0219uri.\n3. Pune faina cernuta si amesteca fin de jos in sus cu o spatula.\n4. Toarna in tava, asaza visinele deasupra din loc in loc si coace la 180C timp de 30 de minute.","secret","Trece visinele bine scurse prin putina faina inainte de a le pune in aluat, ca sa nu cada toate grele pe fundul t\u0103vii!"],n,m),"Prajitura Turnata cu Mere",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["mere","ou","zahar","faina","lapte","ulei","scortisoara"],o),"cantitati","\u2022 Aluat: 3 oua, 150g zahar, 150ml lapte, 150ml ulei, 300g faina, praf de copt. Mere: 1 kg mere rase, zahar, scortisoara.","pasi","1. Caleste merele rase cu zaharul si scortisoara pana scade zeama, apoi lasa-le sa se raceasca.\n2. Aluat: fa compozitia amestecand ouale, zaharul, laptele, uleiul si faina cu praful de copt.\n3. Toarna jumatate din aluat in tava si coace-l 10 minute la 180C pana prinzi o crusta usoara.\n4. Pune merele calite, toarna restul de aluat deasupra si mai coace inca 25 de minute.","secret","Coacerea separata a primei jumatati de aluat timp de 10 minute opreste scufundarea merelor si lasa prajitura perfect coapta la mijloc."],n,m),"Clatite Fine cu Finetti",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","lapte","ou","zahar","ulei","dulceata"],o),"cantitati","\u2022 250g faina, 300ml lapte, 200ml apa minerala carbogazoasa, 3 oua, 2 linguri ulei, zahar vanilat, finetti sau gem.","pasi","1. Bate ouale cu sarea si zaharul vanilat intr-un bol.\n2. Pune faina treptat, alternand cu laptele ca sa nu faca cocoloase.\n3. Toarna uleiul si apa minerala. Lasa aluatul sa se odihneasca pe masa 15 minute.\n4. Incinge tigaia bine, unge-o cu o picatura de ulei si coace clatitele subtiri si elastice.","secret","Apa minerala carbogazoasa face clatitele fine si dantelate. Lasa aluatul la odihnit 15 minute ca sa se relaxeze glutenul si sa nu se mai rupa la intors!"],n,m),"Salam de Biscuiti ca in Copilarie",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["biscuiti","lapte","unt","zahar","cacao","rom"],o),"cantitati","\u2022 500g biscuiti simpli (populari), 150ml lapte, 100g unt gras, 150g zahar, 3 linguri cacao, esenta de rom, 100g nuca sau stafide.","pasi","1. Rupe biscuitii in bucati mici cu mana intr-un bol mare.\n2. Fierbe laptele cu zaharul si cacaoa pana se dizolva zaharul, apoi adauga untul si lasa-l sa se topeasca. Pune romul.\n3. Toarna siropul cald peste biscuiti si nuca, amestecand bine pana compozitia absoarbe lichidul.\n4. Pune compozitia pe o folie de plastic, ruleaza strans in forma de salam si da la frigider 3 ore.","secret",'Nu zdrobi biscuitii la blender, trebuie rupti bucatele mici cu mana! Bucatile mai mari ofera acel aspect autentic de "mozaic" atunci cand tai felia.'],n,m),"Orez cu Lapte si Scortisoara",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["orez","lapte","zahar"],o),"cantitati","\u2022 200g orez cu bob rotund, 1L lapte integral, 4 linguri zahar, zahar vanilat, un praf de sare, scortisoara.","pasi","1. Spala orezul si fierbe-lo in 200ml apa cu un praf de sare pana apa scade complet.\n2. Toarna laptele fierbinte treptat si lasa sa fiarba la foc foarte mic timp de 20 de minute, amestecand des ca sa nu se lipeasca.\n3. Cand boabele sunt moi, adauga zaharul si mai lasa 2 minute pe foc.\n4. Pune-o in boluri si presara deasupra multa scortisoara.","secret","Pre-fierberea orezului in putina apa deschide bobul si scurteaza timpul in care laptele poate sa se afume sau sa se lipeasca de fundul oalei."],n,m),"Gris cu Lapte si Dulceata",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["lapte","gris","zahar","dulceata"],o),"cantitati","\u2022 500ml lapte, 50g gris calitativ, 2 linguri zahar, 1 plic zahar vanilat, un praf de sare, dulceata.","pasi","1. Pune laptele la fiert cu sarea si zaharul vanilat intr-o cratita mica.\n2. Cand laptele incepe sa dea in clocot, toarna grisul in ploaie foarte subtire, amestecand continuu cu un tel.\n3. Da focul la minim si fierbe timp de 5 minute amestecand neincetat pana se ingroasa.\n4. Pune zaharul la final, toarna in farfurii si serveste cu dulceata acrisoara.","secret","Turnarea in ploaie si folosirea telului in loc de lingura in primele 30 de secunde sunt secretele obligatorii ca grisul sa iasa fin si fara niciun cocolos."],n,m),"Tarta Rapida cu Capsuni",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","unt","amidon","lapte"],o),"cantitati","\u2022 Aluat: 200g faina, 100g unt rece, 1 ou, 2 linguri zahar. Crema: 400ml lapte, 3 galbenusuri, 100g zahar, 30g amidon. 300g capsuni.","pasi","1. Amesteca faina cu untul rece cuburi, oul si zaharul. Framanta rapid, intinde in forma de tarta si coace foaia 20 min la 180C.\n2. Crema: fierbe laptele cu galbenusurile, zaharul si amidonul pana devine o budinca. Lasa la racit.\n3. Pune crema rece in tarta coapta si asaza deasupra feliute proaspete de capsuni.\n4. Da la frigider 2 ore inainte de servire.","secret","Untul pentru aluatul de tarta trebuie sa fie extrem de rece, de la congelator! Altfel aluatul va deveni elastic si tarta va iesi tare dupa coacere."],n,m),"Prajitura cu Iaurt si Afine",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["iaurt","ou","zahar","faina","ulei","afine"],o),"cantitati","\u2022 300g iaurt grecesc gras, 3 oua, 200g zahar, 250g faina, 100ml ulei, praf de copt, 200g afine proaspete.","pasi","1. Mixeaza ouale cu zaharul pana devin o spuma deschisa.\n2. Adauga uleiul si iaurtul grecesc, amestecand usor.\n3. Incorporeaza faina si praful de copt cu o spatula.\n4. Toarna in tava, pune afinele deasupra si coace la 180C timp de 35 de minute.","secret","Iaurtul grecesc cu minim 10% grasime ofera pr\u0103jiturii o textura umeda si densa extraordinara, mult superioara iaurtului clasic slab."],n,m),"Chec Pufos cu Mere si Scortisoara",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["mere","ou","zahar","faina","ulei","scortisoara"],o),"cantitati","\u2022 4 oua, 150g zahar, 200g faina, 50ml ulei, 2 mere mari taiate cubulete mici, 1 lingurita scortisoara, praf de copt.","pasi","1. Amesteca cubule\u021bele de mere cu scortisoara intr-un bol.\n2. Bate ouale intregi cu zaharul pana isi tripleaza volumul, apoi adauga uleiul.\n3. Pune faina cernuta si praful de copt, iar la final incorporeaza merele cu scortisoara.\n4. Pune in tava si coace la 180C timp de 40 de minute.","secret","Taierea merelor in cuburi foarte mici impiedica lasarea lor pe fundul t\u0103vii si lasa fructul distribuit uniform in fiecare felie."],n,m),"Gogosi Turnate cu Lingura (Rapide)",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["iaurt","ou","faina","zahar"],o),"cantitati","\u2022 250g iaurt simplu, 2 oua, 200g faina, 3 linguri zahar, 1 lingurita bicarbonat, vanilie, ulei pentru prajit.","pasi","1. Bate ouale cu zaharul si vanilia, adauga iaurtul in care ai stins bicarbonatul.\n2. Pune faina treptat pana ai un aluat gros care curge greu din lingura.\n3. Ia compozitie cu o lingura si da-i drumul in baia de ulei bine incins.\n4. Prajeste-le pe ambele parti pana sunt aurii si pudreaza-le cu zahar.","secret","Nu ai nevoie de drojdie sau timp de crescut! Bicarbonatul reactioneaza imediat cu acidul din iaurt si gogosile se umfla instant in ulei."],n,m),"Prajitura Tavalita cu Cocos",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","unt","lapte","cacao","cocos"],o),"cantitati","\u2022 Blat: 4 oua, 200g zahar, 250g faina, 100ml lapte, praf de copt. Glazura: 150g unt, 150g zahar, 4 linguri cacao, 150ml lapte. 100g nuca de cocos.","pasi","1. Blat: mixeaza ouale cu zaharul, adauga laptele si faina cu praful de copt. Coace blatul la 180C timp de 25 min. Lasa-l sa se raceasca si taie-l cuburi.\n2. Glazura: fierbe untul, zaharul, laptele si cacaoa 3 minute pana se ingroasa usor.\n3. Trece fiecare cub de blat prin glazura calda (o secunda), apoi tavaleste-l imediat prin fulgii de cocos.","secret","Blatul trebuie sa fie complet rece, dar glazura de cacao trebuie sa fie calduta! Daca glazura e rece, nu va intra in blat si cocosul nu se va lipi."],n,m),"Clatite Americane Pufoase (Pancakes)",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","lapte","ou","zahar","unt"],o),"cantitati","\u2022 200g faina, 200ml lapte, 1 ou mare, 30g unt topit, 2 linguri zahar, 1 plic praf de copt, sare.","pasi","1. Amesteca faina, zah\u0103rul, sarea si praful de copt intr-un bol.\n2. In alt bol batul oul cu laptele si untul topit caldut.\n3. Toarna ingredientele lichide peste cele uscate si amesteca scurt cu un tel (aluatul trebuie sa aiba mici cocoloase).\n4. Coace intr-o tigaie incinsa fara ulei. Intoarce cand apar bule la suprafata.","secret","Nu amesteca excesiv aluatul! Daca mixezi pana devine perfect fin, pancakes-urile vor iesi gumate si plate in loc sa fie groase si pufoase ca niste pernute."],n,m),"Prajitura de Biscuiti cu Budinca",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["biscuiti","lapte","zahar","amidon"],o),"cantitati","\u2022 400g biscuiti simpli, 1L lapte, 2 plicuri budinca de vanilie sau ciocolata, 6 linguri zahar, 100g unt.","pasi","1. Fierbe budinca conform instructiunilor de pe pachet impreuna cu laptele si zaharul, iar la final incorporeaza untul moale.\n2. A\u0219aza un strat de biscuiti pe fundul unei tavi dreptunghiulare.\n3. Toarna un strat de budinca fierbinte, apoi pune iar biscuiti. Repeta pana termini ingredientele.\n4. Lasa pr\u0103jitura sa se raceasca si da-o la frigider pentru 4 ore pana biscuitii devin moi.","secret","Toarna budinca peste biscuiti cat timp este inca fierbinte! Caldura cremei va inmuia biscuitii perfect, fara sa mai fie nevoie sa ii treci prin lapte."],n,m),"Tiramisu Rapid fara Coacere",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["biscui\u021bi","cafea","ou","zah\u0103r","mascarpone","cacao"],o),"cantitati","\u2022 400g pi\u0219coturi calitative, 500g br\xe2nz\u0103 Mascarpone, 4 ou\u0103 proaspete, 5 linguri zah\u0103r, 300ml cafea neagr\u0103 tare, \xeendulcit\u0103, cacao pentru pudrat.","pasi","1. Separ\u0103 ou\u0103le. Mixeaz\u0103 g\u0103lbenu\u0219urile cu zah\u0103rul pe baie de aburi timp de 5 minute, las\u0103-le s\u0103 se r\u0103ceasc\u0103, apoi amestec\u0103-le cu mascarpone.\n2. Bate albu\u0219urile spum\u0103 tare \u0219i \xeencorporeaz\u0103-le u\u0219or \xeen crema de mascarpone.\n3. Trece pi\u0219coturile rapid prin cafeaua rece \u0219i a\u0219az\u0103 un strat la baza unei t\u0103vi.\n4. Pune jum\u0103tate din crem\u0103, \xeenc\u0103 un strat de pi\u0219coturi \xeensiropate, restul de crem\u0103 \u0219i pudreaz\u0103 cu mult\u0103 cacao. D\u0103 la frigider 4 ore.","secret","G\u0103tirea g\u0103lbenu\u0219urilor cu zah\u0103r pe baia de aburi (bain-marie) timp de c\xe2teva minute elimin\u0103 complet orice risc legat de ou\u0103le crude \u0219i ofer\u0103 o crem\u0103 mult mai stabil\u0103 \u0219i catifelat\u0103."],n,m),"Mousse Fin de Ciocolata",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ciocolat\u0103","unt","ou","frisc\u0103 lichid\u0103"],o),"cantitati","\u2022 200g ciocolat\u0103 neagr\u0103 (minim 60% cacao), 30g unt, 3 ou\u0103, 200ml fri\u0219c\u0103 lichid\u0103 rece (minim 30% gr\u0103sime), un praf de sare.","pasi","1. Topeste ciocolata cu untul pe baie de aburi \u0219i las\u0103-le s\u0103 devin\u0103 c\u0103ldu\u021be.\n2. Separ\u0103 ou\u0103le. Mixeaz\u0103 g\u0103lbenu\u0219urile \xeen ciocolata c\u0103ldu\u021b\u0103 unul c\xe2te unul.\n3. Bate albu\u0219urile spum\u0103 tare cu praful de sare, iar \xeen alt bol mixeaz\u0103 fri\u0219ca lichid\u0103 p\xe2n\u0103 devine ferm\u0103.\n4. \xcencorporeaz\u0103 spuma de albu\u0219uri \u0219i fri\u0219ca b\u0103tut\u0103 \xeen compozi\u021bia de ciocolat\u0103, folosind o spatul\u0103, cu mi\u0219c\u0103ri foarte u\u0219oare. Pune \xeen pahare \u0219i d\u0103 la rece 3 ore.","secret","Spatula \u0219i mi\u0219c\u0103rile circulare de jos \xeen sus sunt sfinte! Nu folosi mixerul la final, altfel vei scoate toate bulele de aer din albu\u0219uri \u0219i fri\u0219c\u0103, iar spuma de ciocolat\u0103 va deveni o crem\u0103 dens\u0103 \u0219i grea."],n,m),"Placinta cu Branza Dulce si Stafide",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["foi pl\u0103cint\u0103","br\xe2nz\u0103","ou","zah\u0103r","sm\xe2nt\xe2n\u0103","stafide"],o),"cantitati","\u2022 1 pachet foi de pl\u0103cint\u0103 fine, 600g br\xe2nz\u0103 de vaci scurs\u0103, 4 ou\u0103, 150g zah\u0103r, 100g sm\xe2nt\xe2n\u0103, 100g stafide hidrate \xeen rom, unt topit pentru uns foile.","pasi","1. Amestec\u0103 bine br\xe2nza de vaci cu 3 ou\u0103, zah\u0103rul, sm\xe2nt\xe2na, stafidele stoarse \u0219i vanilia.\n2. A\u0219az\u0103 4 foi de pl\u0103cint\u0103 \xeentr-o tav\u0103, unse fiecare cu unt topit.\n3. Pune jum\u0103tate din compozi\u021bia de br\xe2nz\u0103, adaug\u0103 alte 3 foi unse, restul de br\xe2nz\u0103 \u0219i acoper\u0103 cu ultimele foi unse.\n4. Por\u021bioneaz\u0103 pl\u0103cinta cu un cu\u021bit ascu\u021bit, toarn\u0103 deasupra un ou b\u0103tut cu 2 linguri de lapte \u0219i coace la 180C timp de 40 de minute.","secret","T\u0103ierea (por\u021bionarea) pl\u0103cintei \xeen tav\u0103 \xeenainte de a o b\u0103ga la cuptor este secretul pentru ca foile de deasupra s\u0103 nu se sf\u0103r\xe2me complet \xeen farfurie atunci c\xe2nd o vei servi."],n,m),"Galuste cu Prune (Gomboti)",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["cartofi","f\u0103in\u0103","ou","prune","pesmet","unt","zah\u0103r"],o),"cantitati","\u2022 500g cartofi albi, 150g f\u0103in\u0103, 1 ou, 10-12 prune mici, 100g pesmet, 50g unt, 4 linguri zah\u0103r, 1 linguri\u021b\u0103 scor\u021bi\u0219oar\u0103.","pasi","1. Fierbe cartofii \xeen coaj\u0103, cur\u0103\u021b\u0103-i calzi \u0219i zdrobe\u0219te-i ca pentru piure. Las\u0103-i s\u0103 se r\u0103ceasc\u0103 complet.\n2. C\u0103le\u0219te pesmetul \xeen unt \xeentr-o tigaie p\xe2n\u0103 devine auriu, opre\u0219te focul \u0219i amestec\u0103-l cu zah\u0103rul \u0219i scor\u021bi\u0219oara.\n3. Amestec\u0103 cartofii reci cu oul \u0219i f\u0103ina p\xe2n\u0103 ob\u021bii un aluat moale. \xcenvele\u0219te fiecare prun\u0103 despicat\u0103 \xeentr-o buc\u0103\u021bic\u0103 de aluat, form\xe2nd g\u0103lu\u0219te rotunde.\n4. Pune g\u0103lu\u0219tele \xeen ap\u0103 clocotit\u0103 cu sare. C\xe2nd se ridic\u0103 la suprafa\u021b\u0103, mai las\u0103-le 2 minute, scoate-le \u0219i t\u0103v\u0103le\u0219te-le imediat prin pesmetul cu zah\u0103r.","secret","Cartofii trebuie s\u0103 fie complet reci \xeenainte de a ad\u0103uga f\u0103ina! Dac\u0103 adaugi f\u0103ina \xeen cartofii calzi, aluatul va deveni extrem de lipicios, va cere mult\u0103 f\u0103in\u0103 \xeen plus \u0219i g\u0103lu\u0219tele vor ie\u0219i tari ca guma."],n,m),"Prajitura Ecler la Tava",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["biscui\u021bi","lapte","ou","zah\u0103r","amidon","frisc\u0103","ciocolat\u0103"],o),"cantitati","\u2022 300g biscui\u021bi simpli, 1L lapte, 4 galbenusuri, 150g zahar, 80g amidon, vanilie, 200ml fri\u0219c\u0103 b\u0103tut\u0103, 150g ciocolat\u0103 topit\u0103.","pasi","1. Fierbe g\u0103lbenu\u0219urile cu laptele, zah\u0103rul \u0219i amidonul p\xe2n\u0103 devine o budinc\u0103 groas\u0103, apoi las-o s\u0103 se r\u0103ceasc\u0103.\n2. A\u0219az\u0103 un strat de biscui\u021bi \xeen tav\u0103, pune toat\u0103 crema de vanilie rece peste ei.\n3. \xcentinde un strat uniform de fri\u0219c\u0103 b\u0103tut\u0103 peste crema de vanilie.\n4. Pune \xeenc\u0103 un strat de biscui\u021bi deasupra \u0219i toarn\u0103 ciocolata topit\u0103 c\u0103ldu\u021b\u0103. Las\u0103 la frigider peste noapte.","secret","Nu ai nevoie de coji greu de f\u0103cut ca la eclere! Biscui\u021bii simpli vor absorbi umiditatea din crem\u0103 \xeen frigider, oferind exact textura \u0219i gustul perfect de eclair de cofet\u0103rie."],n,m),"Budinca de Macaroane la Cuptor",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["paste","br\xe2nz\u0103","ou","zah\u0103r","sm\xe2nt\xe2n\u0103"],o),"cantitati","\u2022 300g macaroane sau paste scurte, 400g br\xe2nz\u0103 de vaci, 4 ou\u0103, 150g zah\u0103r, 200g sm\xe2nt\xe2n\u0103, vanilie, unt pentru uns tava.","pasi","1. Fierbe pastele conform instruc\u021biunilor de pe pachet \xeen ap\u0103 cu sare, apoi scurge-le \u0219i cl\u0103te\u0219te-le cu ap\u0103 rece.\n2. \xcentr-un bol mare, amestec\u0103 ou\u0103le b\u0103tute cu zah\u0103rul, sm\xe2nt\xe2na, br\xe2nza de vaci bine m\u0103run\u021bit\u0103 \u0219i esen\u021ba de vanilie.\n3. Pune pastele scurse peste compozi\u021bia de br\xe2nz\u0103 \u0219i omogenizeaz\u0103 u\u0219or.\n4. Toarn\u0103 totul \xeentr-o tav\u0103 unsa bine cu unt \u0219i coace la 180C timp de 35 de minute p\xe2n\u0103 c\xe2nd prinde o crust\u0103 aurie deasupra.","secret","Cl\u0103tirea pastelor cu ap\u0103 rece dup\u0103 fierbere opre\u0219te procesul de g\u0103tire \u0219i elimin\u0103 excesul de amidon, \xeempiedic\xe2nd pastele s\u0103 devin\u0103 un bloc compact \u0219i tare \xeen budinc\u0103."],n,m),"Panna Cotta cu Sos de Fructe",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["frisc\u0103 lichid\u0103","lapte","gelatin\u0103","zah\u0103r","fructe"],o),"cantitati","\u2022 400ml fri\u0219c\u0103 lichid\u0103, 100ml lapte, 10g gelatin\u0103 granule, 4 linguri zah\u0103r, vanilie. Sos: 200g fructe de p\u0103dure, 2 linguri zah\u0103r.","pasi","1. Pune gelatina la hidratat \xeen 50ml ap\u0103 rece timp de 10 minute.\n2. \xcentr-o crati\u021b\u0103, \xeenc\u0103lze\u0219te fri\u0219ca lichid\u0103, laptele \u0219i zah\u0103rul p\xe2n\u0103 aproape de fierbere (NU le l\u0103sa s\u0103 dea \xeen clocot!), apoi opre\u0219te focul.\n3. Adaug\u0103 gelatina hidratat\u0103 \xeen lichidul cald \u0219i amestec\u0103 p\xe2n\u0103 se dizolv\u0103 complet. Toarn\u0103 \xeen forme sau pahare \u0219i d\u0103 la frigider 4 ore.\n4. Sosul: fierbe fructele de p\u0103dure cu zah\u0103rul 5 minute p\xe2n\u0103 scade un pic, las\u0103-l s\u0103 se r\u0103ceasc\u0103 \u0219i toarn\u0103-l peste Panna Cotta ferm\u0103.","secret","Gelatina nu trebuie fierb\u0103 niciodat\u0103! Dac\u0103 lichidul d\u0103 \xeen clocot dup\u0103 ce ai pus gelatina, propriet\u0103\u021bile ei de \xeenchegare sunt distruse complet \u0219i panna cotta va r\u0103m\xe2ne lichid\u0103."],n,m),"Briose Pufoase cu Ciocolata",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["f\u0103in\u0103","zah\u0103r","cacao","ou","lapte","unt","ciocolat\u0103"],o),"cantitati","\u2022 250g f\u0103in\u0103, 150g zah\u0103r, 3 linguri cacao, 1 plic praf de copt, 2 ou\u0103, 150ml lapte, 100g unt topit, 100g b\u0103ncu\u021be de ciocolat\u0103.","pasi","1. \xcentr-un bol amestec\u0103 ingredientele uscate: f\u0103ina, zah\u0103rul, cacaoa \u0219i praful de copt.\n2. \xcen alt bol mixeaz\u0103 ingredientele lichide: ou\u0103le, laptele \u0219i untul topit c\u0103ldu\u021b.\n3. Toarn\u0103 lichidele peste ingredientele uscate \u0219i amestec\u0103 scurt cu o lingur\u0103 (aluatul trebuie s\u0103 aib\u0103 cocoloase, nu trebuie s\u0103 fie fin).\n4. Pune \xeen formele de brio\u0219e, presar\u0103 buc\u0103\u021belele de ciocolat\u0103 deasupra \u0219i coace la 190C timp de 20 de minute.","secret","La brio\u0219e, amestecarea excesiv\u0103 dezvolt\u0103 glutenul \u0219i le face dense \u0219i gumate. Regula de aur: amestec\u0103 doar de 10-12 ori cu o lingur\u0103, c\xe2t s\u0103 se umezeasc\u0103 f\u0103ina, \u0219i brio\u0219ele vor cre\u0219te uria\u0219e \u0219i aerate!"],n,m),"Minitarte cu Crema de Vanilie",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["f\u0103in\u0103","unt","zah\u0103r","ou","lapte","amidon","fructe"],o),"cantitati","\u2022 Aluat: 200g f\u0103in\u0103, 100g unt rece, 1 ou, 2 linguri zah\u0103r. Crema: 300ml lapte, 2 g\u0103lbenu\u0219uri, 3 linguri zah\u0103r, 20g amidon, fructe pentru decor.","pasi","1. Aluat: amestec\u0103 f\u0103ina cu untul rece, oul \u0219i zah\u0103rul. Formeaz\u0103 o bil\u0103 de aluat, \xeentinde-l \xeen forme mici de minitarte \u0219i coace-le 12-15 minute la 180C.\n2. Crema: fierbe laptele cu g\u0103lbenu\u0219urile, zah\u0103rul \u0219i amidonul p\xe2n\u0103 se \xeengroa\u0219\u0103 ca o budinc\u0103, apoi las-o s\u0103 se r\u0103ceasc\u0103.\n3. Umple minitartele coapte \u0219i r\u0103cite cu crema de vanilie.\n4. Decoreaz\u0103 deasupra cu boabe de zmeur\u0103, afine sau feliu\u021be de kiwi \u0219i d\u0103 la rece.","secret","\xcenainte de a b\u0103ga minitartele la cuptor, \xeen\u021beap\u0103 bine aluatul de pe fundul formelor cu o furculi\u021b\u0103! Astfel, aburul va ie\u0219i \u0219i aluatul nu se va umfla \xeen mijloc \xeen timpul coptului."],n,m),"Prajitura Pavlova cu Frunze de Ment\u0103",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","amidon","frisca","capsuni","fructe"],o),"cantitati","\u2022 Bezea: 4 albu\u0219uri de ou (la temperatura camerei)\n\u2022 220g zah\u0103r tos fin (sau zah\u0103r pudr\u0103)\n\u2022 1 linguri\u021b\u0103 amidon de porumb\n\u2022 1 linguri\u021b\u0103 o\u021bet alb sau suc de l\u0103m\xe2ie\n\u2022 Crema: 250ml fri\u0219c\u0103 lichid\u0103 rece (minim 30% gr\u0103sime), 1 lingur\u0103 zah\u0103r pudra\n\u2022 Decor: 200g c\u0103p\u0219uni, zmeur\u0103 sau fructe de p\u0103dure proaspete.","pasi","1. Bate albu\u0219urile spum\u0103 tare cu un praf de sare. Adaug\u0103 zah\u0103rul treptat, c\xe2te o lingur\u0103, mix\xe2nd la vitez\u0103 maxim\u0103 timp de 10 minute, p\xe2n\u0103 c\xe2nd zah\u0103rul s-a dizolvat complet \u0219i ob\u021bii o bezea lucioas\u0103 \u0219i foarte ferm\u0103.\n2. Ad\u0103ug\u0103 amidonul \u0219i o\u021betul alb, apoi mai mixeaz\u0103 10 secunde (amidonul \u0219i acidul men\u021bin interiorul moale ca o guma de mestecat).\n3. Deseneaz\u0103 un cerc de 20cm pe o h\xe2rtie de copt, pune-o \xeen tav\u0103 \u0219i modeleaz\u0103 bezeaua \xeen interiorul cercului sub form\u0103 de cuib (mai \xeenalt\u0103 pe margini).\n4. Coace la 110\xb0C timp de 90 de minute, apoi opre\u0219te cuptorul \u0219i las\u0103 bezeaua s\u0103 se r\u0103ceasc\u0103 \xeen\u0103untru cu u\u0219a \xeentredeschis\u0103.\n5. Bate fri\u0219ca cu zah\u0103rul pudr\u0103, pune-o \xeen mijlocul cuibului de bezea complet rece \u0219i decoreaz\u0103 cu fructele proaspete.","secret","Secretul unei Pavlova perfecte: NU deschide cuptorul \xeen timpul coacerii \u0219i nu scoate bezeaua cald\u0103 afar\u0103! \u0218ocul termic o va face s\u0103 se crape \u0219i s\u0103 se pr\u0103bu\u0219easc\u0103 instant. L\u0103sarea ei la r\u0103cit lent \xeen cuptor o p\u0103streaz\u0103 perfect\u0103."],n,m),"Tort Diplomat Racinat cu Fructe",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","lapte","gelatina","frisca","portocale","ananas","biscui\u021bi"],o),"cantitati","\u2022 5 ou\u0103, 200g zah\u0103r, 500ml lapte, 20g gelatin\u0103 granule, 500ml fri\u0219c\u0103 lichid\u0103 batut\u0103 (35% gr\u0103sime), 1 conserv\u0103 ananas buc\u0103\u021bi, 2 portocale, 10-12 pi\u0219coturi.","pasi","1. Pune gelatina la hidratat \xeen 100ml ap\u0103 rece timp de 10 minute.\n2. Mixeaz\u0103 g\u0103lbenu\u0219urile cu zah\u0103rul \u0219i laptele, apoi pune-le pe baie de aburi amestec\xe2nd continuu p\xe2n\u0103 se \xeengroa\u0219\u0103 ca un sos sub\u021bire. Opre\u0219te focul \u0219i dizolv\u0103 gelatina hidratat\u0103 \xeen acest sos cald. Las\u0103 s\u0103 se r\u0103ceasc\u0103 complet (s\u0103 devin\u0103 c\u0103ldu\u021b).\n3. Bate albu\u0219urile spum\u0103 tare, iar fri\u0219ca separat. \xcencorporeaz\u0103 sosul de g\u0103lbenu\u0219uri \xeen fri\u0219ca b\u0103tut\u0103, apoi adaug\u0103 albu\u0219urile spum\u0103 \u0219i fructele t\u0103iate cuburi mici.\n4. Tapeteaz\u0103 o form\u0103 de tort cu folie de plastic, pune compozi\u021bia cremoas\u0103, iar deasupra a\u0219az\u0103 un strat de pi\u0219coturi trecute rapid prin sucul din conserva de ananas. D\u0103 la frigider pentru minim 6 ore, apoi r\u0103stoarn\u0103 tortul invers pe un platou.","secret","Sosul de lapte \u0219i g\u0103lbenu\u0219uri trebuie s\u0103 fie complet r\u0103cit (la temperatura camerei) \xeenainte de a-l amesteca cu fri\u0219ca b\u0103tut\u0103. Dac\u0103 este cald, va topi fri\u0219ca instant \u0219i tortul se va lichefia, refuz\xe2nd s\u0103 se mai \xeenchege \xeen frigider!"],n,m),"Tort de Ciocolata cu Ganache Intens",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","faina","unt","cacao","ciocolat\u0103","frisca"],o),"cantitati","\u2022 Blat: 6 ou\u0103, 150g zah\u0103r, 120g f\u0103in\u0103, 30g cacao, 30g unt topit.\n\u2022 Crema Ganache: 400g ciocolat\u0103 neagr\u0103 (55-60% cacao), 400ml fri\u0219c\u0103 lichid\u0103 calitativ\u0103.\n\u2022 Sirop: 200ml ap\u0103, 100g zah\u0103r, esen\u021b\u0103 de rom.","pasi","1. Blat: bate albu\u0219urile spum\u0103 cu zah\u0103rul, \xeencorporeaz\u0103 g\u0103lbenu\u0219urile, f\u0103ina \u0219i cacaoa cernute, iar la final untul topit caldu\u021b. Coace la 180C timp de 30 de minute \xeentr-o form\u0103 rotund\u0103 (22cm). Lasa la r\u0103cit \u0219i taie blatul \xeen 3 foi.\n2. Crema: \xeencinge fri\u0219ca lichid\u0103 p\xe2n\u0103 aproape de fierbere, opre\u0219te focul \u0219i ad\u0103ug\u0103 ciocolata rupt\u0103 buc\u0103\u021bi. Las-o 2 minute, apoi amestec\u0103 bine p\xe2n\u0103 ai un sos lucios. D\u0103 sosul la frigider pentru 4 ore, apoi mixeaz\u0103-l 2 minute p\xe2n\u0103 devine o crem\u0103 pufoas\u0103.\n3. Sirop: fierbe apa cu zah\u0103rul 3 minute, las\u0103 la r\u0103cit \u0219i pune romul.\n4. Asamblare: \xeensiropeaz\u0103 foile de blat, pune straturi generoase de crem\u0103 \xeentre ele \u0219i \xeembrac\u0103 tortul la exterior cu restul de ganache.","secret","Mixarea sosului Ganache dup\u0103 ce a stat la frigider trebuie s\u0103 dureze maximum 2 minute la vitez\u0103 medie! Dac\u0103 \xeel mixezi prea mult, gr\u0103simea din fri\u0219c\u0103 \u0219i ciocolat\u0103 se va separa (se va t\u0103ia crema) \u0219i \xee\u0219i va pierde textura m\u0103t\u0103soas\u0103."],n,m),"Tort Medovik Rusesc cu Miere",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["ou","zahar","miere","unt","bicarbonat","faina","smantana"],o),"cantitati","\u2022 Foi: 2 ou\u0103, 100g zah\u0103r, 3 linguri pline de miere natural\u0103, 80g unt, 1 linguri\u021b\u0103 bicarbonat, 400g f\u0103in\u0103.\n\u2022 Crema: 600g sm\xe2nt\xe2n\u0103 gras\u0103 fermentat\u0103 (minim 25-30% gr\u0103sime), 150g zah\u0103r pudra vanilat.","pasi","1. Foi: Pune \xeentr-o crati\u021b\u0103 pe foc mic oalele, zah\u0103rul, mierea \u0219i untul. Amestec\u0103 p\xe2n\u0103 se topesc. Ad\u0103ug\u0103 bicarbonatul (compozi\u021bia va face spum\u0103 \u0219i se va \xeeng\u0103lbeni). Ia de pe foc, ad\u0103ug\u0103 f\u0103ina \u0219i fr\u0103m\xe2nt\u0103 un aluat moale.\n2. \xcemparte aluatul \xeen 6-8 bile. \xcentinde foi foarte sub\u021biri direct pe h\xe2rtia de copt \u0219i coace-le separat la 180C timp de fix 3-4 minute p\xe2n\u0103 devin ar\u0103mii. Decupeaz\u0103-le rotunde c\xe2t sunt fierbin\u021bi.\n3. Crema: mixeaz\u0103 scurt sm\xe2nt\xe2na rece de la frigider cu zah\u0103rul pudr\u0103 p\xe2n\u0103 devine ferm\u0103 \u0219i aerat\u0103.\n4. Asamblare: pune crem\u0103 din abunden\u021b\u0103 \xeentre foile cu miere. \xcembrac\u0103 tortul, iar pe margini presar\u0103 f\u0103r\xe2miturile r\u0103mase de la decuparea foilor. Las\u0103-l \xeen frigider 24 de ore.","secret","Foile scoase din cuptor sunt tari ca ni\u0219te biscui\u021bi, dar secretul magiei st\u0103 \xeen sm\xe2nt\xe2na fermentat\u0103 acri\u0219oar\u0103! \xcen cele 24 de ore de stat la frigider, foile trag toat\u0103 umiditatea \u0219i tortul devine at\xe2t de fraged \xeenc\xe2t se tope\u0219te pe limb\u0103."],n,m),"Tort de Biscuiti si Banane fara Coacere",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["biscui\u021bi","lapte","unt","zahar","cacao","banane"],o),"cantitati","\u2022 500g biscui\u021bi simpli, 3-4 banane bine coapte, 500ml lapte, 100g unt, 150g zah\u0103r, 4 linguri cacao, vanilie.","pasi","1. Fierbe laptele cu zah\u0103rul \u0219i cacaoa p\xe2n\u0103 se dizolv\u0103 zah\u0103rul, apoi pune untul \u0219i las\u0103-l s\u0103 se topeasc\u0103 complet. Pune esen\u021ba de vanilie.\n2. Rupe biscui\u021bii \xeen buc\u0103\u021bele \xeentr-un bol mare \u0219i toarn\u0103 sosul de ciocolat\u0103 c\u0103ldu\u021b peste ei. Amestec\u0103 bine.\n3. Tapeteaz\u0103 o form\u0103 rotund\u0103 cu folie de plastic. Pune jum\u0103tate din compozi\u021bia de biscui\u021bi \u0219i apas\u0103 bine cu o lingur\u0103.\n4. A\u0219az\u0103 bananele cur\u0103\u021bate \xeentregi sau t\u0103iate pe jum\u0103tate (pe lungime), apoi acoper\u0103-le cu restul de compozi\u021bie de biscui\u021bi.\n5. Presar\u0103 deasupra pu\u021bin\u0103 nuc\u0103 sau ciocolat\u0103 ras\u0103 \u0219i d\u0103 la frigider 4 ore \xeenainte de a-l felia.","secret","Folose\u0219te banane bine coapte (cele cu coaja u\u0219or pic\u0103\u021bic\u0103)! Ele sunt extrem de dulci, moi \u0219i parfumate, cre\xe2nd un contrast perfect cu textura dens\u0103 \u0219i ciocolatoas\u0103 a biscui\u021bilor."],n,m),"Tort Red Velvet Catifea Rosie",A.r(["categorie",q,"imagine",s,"ingrediente",A.b(["faina","zahar","cacao","bicarbonat","ou","ulei","iaurt","colorant rosu","mascarpone","unt"],o),"cantitati","\u2022 Blat: 250g f\u0103in\u0103, 250g zah\u0103r, 1 linguri\u021b\u0103 cacao, 1 linguri\u021b\u0103 bicarbonat, 2 ou\u0103, 150ml ulei, 200ml iaurt gras sau b\u0103tut, 1 lingur\u0103 colorant alimentar ro\u0219u (gel).\n\u2022 Crema: 400g br\xe2nz\u0103 Mascarpone, 100g unt moale, 120g zah\u0103r pudr\u0103, vanilie.","pasi","1. Blat: mixeaz\u0103 ou\u0103le cu zah\u0103rul \u0219i uleiul. Ad\u0103ug\u0103 iaurtul amestecat cu colorantul ro\u0219u puternic. Pune f\u0103ina, cacaoa \u0219i bicarbonatul stins \xeen pu\u021bin o\u021bet. Coace compozi\u021bia la 175C timp de 35 de minute, apoi las\u0103 la r\u0103cit \u0219i taie blatul \xeen 3 foi ro\u0219ii.\n2. Crema: mixeaz\u0103 untul moale cu zah\u0103rul pudr\u0103 p\xe2n\u0103 devine o crem\u0103 alb\u0103, apoi \xeencorporeaz\u0103 mascarponele rece lingur\u0103 cu lingur\u0103.\n3. Asamblare: Pune crema \xeentre foile ro\u0219ii de blat \u0219i \xeembrac\u0103 tortul la exterior.\n4. Pentru un decor spectaculos, opre\u0219te c\xe2teva f\u0103r\xe2mituri ro\u0219ii din blat \u0219i presar\u0103-le deasupra peste crema alb\u0103.","secret","Reac\u021bia chimic\u0103 dintre iaurtul acid (sau laptele b\u0103tut), bicarbonatul de sodiu \u0219i praful de cacao ofer\u0103 blatului acea textur\u0103 aerat\u0103, extrem de fin\u0103 \u0219i catifelat\u0103. Folose\u0219te colorant sub form\u0103 de gel, nu lichid, ca s\u0103 nu schimbi consisten\u021ba aluatului."],n,m)],n,t.a))}}
 A.Mj.prototype={
+aA(){var s,r
+this.aV()
+s=this.z
+r=A.l(s).j("aR<1>")
+s=A.Z(new A.aR(s,r),r.j("A.E"))
+this.r=s},
 O(a){var s=null,r=A.anH(s,new A.fM(4,A.Tr(15),B.o),s,s,s,s,s,s,!0,s,s,s,s,s,s,B.k,!0,s,s,s,s,s,s,s,s,s,s,s,s,s,s,"Caut\u0103 dup\u0103 ingrediente sau nume...",s,s,s,s,s,s,s,s,s,!0,!0,!1,s,B.D4,s,s,s,s,s,s,s,s,s,s,s,s),q=t.J
 return new A.xv(new A.tJ(B.Q4,B.lH,!0,new A.Of(s,s,1/0,56),s),new A.G6(0,A.b([A.aiV(A.b([new A.em(B.Cq,new A.yy(r,B.Mx,B.LK,B.LL,new A.abH(this),!0,s),s),B.LI],q),B.cf,B.ct,B.rC)],q),s),B.Ar,s)}}
 A.abH.prototype={
@@ -37943,8 +37949,8 @@ $1(a){var s=this.a
 s.ar(new A.abG(s,a))},
 $S:58}
 A.abG.prototype={
-$0(){var s=this.a,r=s.z,q=A.l(r).j("aS<1>"),p=q.j("b3<B.E>")
-r=A.a_(new A.b3(new A.aS(r,q),new A.abF(s,this.b),p),p.j("B.E"))
+$0(){var s=this.a,r=s.z,q=A.l(r).j("aR<1>"),p=q.j("b3<A.E>")
+r=A.Z(new A.b3(new A.aR(r,q),new A.abF(s,this.b),p),p.j("A.E"))
 s.r=r},
 $S:0}
 A.abF.prototype={
@@ -39584,7 +39590,7 @@ l(){var s=this.d
 s===$&&A.a()
 s.l()
 this.Y4()},
-O(a){var s,r,q,p=this,o=null,n=B.fh.cc(a),m=A.p5(A.amR(A.kx(A.kh(o,o,o,new A.MQ(n,!0,o),B.xm),!0,o),p.ga3f()),1,1),l=A.p5(A.amR(A.kx(A.kh(o,o,o,new A.P5(n,!1,o),B.xm),!0,o),p.ga2U()),1,1),k=p.a.e,j=A.a3(k).j("a5<1,mc>"),i=A.a_(new A.a5(k,new A.aaI(),j),j.j("ah.E"))
+O(a){var s,r,q,p=this,o=null,n=B.fh.cc(a),m=A.p5(A.amR(A.kx(A.kh(o,o,o,new A.MQ(n,!0,o),B.xm),!0,o),p.ga3f()),1,1),l=A.p5(A.amR(A.kx(A.kh(o,o,o,new A.P5(n,!1,o),B.xm),!0,o),p.ga2U()),1,1),k=p.a.e,j=A.a3(k).j("a5<1,mc>"),i=A.Z(new A.a5(k,new A.aaI(),j),j.j("ah.E"))
 k=p.a
 j=k.c
 s=k.d
@@ -41087,7 +41093,7 @@ return n}}
 A.akx.prototype={}
 A.wO.prototype={
 k(a){var s,r=this.a,q=A.dA(r).j("a5<aE.E,G>")
-r=A.a_(new A.a5(r,new A.a2U(),q),q.j("ah.E"))
+r=A.Z(new A.a5(r,new A.a2U(),q),q.j("ah.E"))
 s=A.mV(r,"[","]")
 r=this.b
 r===$&&A.a()
@@ -41487,7 +41493,7 @@ r.y=null
 r.qg(s)
 $.dY.b7$.aiA(s.b)}r.II()},
 II(){var s=this.z,r=A.l(s).j("be<2>")
-s=A.a_(new A.be(s,r),r.j("B.E"))
+s=A.Z(new A.be(s,r),r.j("A.E"))
 B.b.ak(s,this.ga7C())},
 MY(){var s=this.x
 if(s!=null){s.aX()
@@ -41560,7 +41566,7 @@ hK(a){this.tm(a.gb9(),a.gby())},
 rd(a){this.a5(B.a9)},
 hI(a){},
 hs(a){},
-a5(a){var s,r,q=this.f,p=A.a_(new A.be(q,A.l(q).j("be<2>")),t.E)
+a5(a){var s,r,q=this.f,p=A.Z(new A.be(q,A.l(q).j("be<2>")),t.E)
 q.U(0)
 for(q=p.length,s=0;s<p.length;p.length===q||(0,A.t)(p),++s){r=p[s]
 r.a.nT(r.b,r.c,a)}},
@@ -44139,7 +44145,7 @@ A.lv.prototype={
 H(){return"_HighlightType."+this.b}}
 A.Ac.prototype={
 gafB(){var s=this.r,r=A.l(s).j("be<2>")
-return!new A.b3(new A.be(s,r),new A.ac1(),r.j("b3<B.E>")).ga0(0)},
+return!new A.b3(new A.be(s,r),new A.ac1(),r.j("b3<A.E>")).ga0(0)},
 ES(a,b){var s,r=this.y,q=r.a,p=q.length
 if(b){r.b=!0
 q.push(a)}else r.E(0,a)
@@ -44913,7 +44919,7 @@ if(r.h(0,B.bi)!=null){r=r.h(0,B.bi)
 r.toString
 a.$1(r)}},
 a_r(a,b,c){var s,r,q,p,o,n,m,l,k,j,i,h=null,g=this.eZ$,f=g.h(0,B.bi)
-A:{if(f instanceof A.A){f=new A.aa(c.$2(f,a),b.$2(f,a))
+A:{if(f instanceof A.B){f=new A.aa(c.$2(f,a),b.$2(f,a))
 break A}if(f==null){f=B.Jy
 break A}f=h}s=f.a
 r=h
@@ -46325,7 +46331,7 @@ $3(a,b,c){return new A.lK(b,this.a,!1,c,null)},
 $S:133}
 A.H7.prototype={
 Ze(a){var s=t.Tr
-s=A.a_(new A.a5(B.EM,new A.a2h(a),s),s.j("ah.E"))
+s=A.Z(new A.a5(B.EM,new A.a2h(a),s),s.j("ah.E"))
 return s},
 i(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -46945,7 +46951,7 @@ s=k.a.f
 k.pG(f,new A.fy(new A.al(0,1/0,0,e),new A.vb(1,e,e,e,j,j,s,j),j),B.hN,!0,!1,!1,!1)
 i.a=!1
 i.b=null
-if(k.ax!=null||k.at.length!==0){e=A.a_(k.at,t.l7)
+if(k.ax!=null||k.at.length!==0){e=A.Z(k.at,t.l7)
 s=k.ax
 s=s==null?j:s.a
 if(s!=null)e.push(s)
@@ -48360,7 +48366,7 @@ i(a,b){var s=this
 if(b==null)return!1
 if(J.J(b)!==A.n(s))return!1
 return b instanceof A.fQ&&A.tj(b.d,s.d)&&b.a===s.a&&A.tj(b.c,s.c)&&b.e.i(0,s.e)&&b.f===s.f&&b.r.i(0,s.r)&&b.w===s.w&&b.x.i(0,s.x)&&b.y===s.y&&b.Q.i(0,s.Q)&&b.as.i(0,s.as)&&b.at.i(0,s.at)&&b.ax.i(0,s.ax)&&b.ay.i(0,s.ay)&&b.ch.i(0,s.ch)&&b.CW.i(0,s.CW)&&b.cx.i(0,s.cx)&&b.cy.i(0,s.cy)&&b.db.i(0,s.db)&&b.dx.i(0,s.dx)&&b.dy.i(0,s.dy)&&b.fr.i(0,s.fr)&&b.fx.i(0,s.fx)&&b.fy.i(0,s.fy)&&b.go.i(0,s.go)&&b.id.i(0,s.id)&&b.k1.i(0,s.k1)&&b.k2.i(0,s.k2)&&b.k3.i(0,s.k3)&&b.k4.i(0,s.k4)&&b.ok.i(0,s.ok)&&b.p1.i(0,s.p1)&&J.d(b.p2,s.p2)&&b.p3.i(0,s.p3)&&b.p4.i(0,s.p4)&&b.R8.i(0,s.R8)&&b.RG.i(0,s.RG)&&b.rx.i(0,s.rx)&&b.ry.i(0,s.ry)&&b.to.i(0,s.to)&&b.x1.i(0,s.x1)&&b.x2.i(0,s.x2)&&b.xr.i(0,s.xr)&&b.y1.i(0,s.y1)&&b.y2.i(0,s.y2)&&b.aw.i(0,s.aw)&&b.L.i(0,s.L)&&b.n.i(0,s.n)&&b.N.i(0,s.N)&&b.R.i(0,s.R)&&b.a4.i(0,s.a4)&&b.aa.i(0,s.aa)&&b.ae.i(0,s.ae)&&b.a_.i(0,s.a_)&&b.ac.i(0,s.ac)&&b.b7.i(0,s.b7)&&b.bp.i(0,s.bp)&&b.aU.i(0,s.aU)&&b.bg.i(0,s.bg)&&b.d9.i(0,s.d9)&&b.ck.i(0,s.ck)&&b.be.i(0,s.be)&&b.br.i(0,s.br)&&b.ab.i(0,s.ab)&&b.bB.i(0,s.bB)&&b.bq.i(0,s.bq)&&b.dE.i(0,s.dE)&&b.c_.i(0,s.c_)&&b.ag.i(0,s.ag)&&b.de.i(0,s.de)&&b.C.i(0,s.C)&&b.df.i(0,s.df)&&b.cV.i(0,s.cV)&&b.fh.i(0,s.fh)&&b.a6.i(0,s.a6)&&b.v.i(0,s.v)&&b.J.i(0,s.J)&&b.Y.i(0,s.Y)&&b.b8.i(0,s.b8)&&b.bV.i(0,s.bV)&&b.bC.i(0,s.bC)},
-gq(a){var s=this,r=s.d,q=A.l(r),p=A.a_(new A.aS(r,q.j("aS<1>")),t.X)
+gq(a){var s=this,r=s.d,q=A.l(r),p=A.Z(new A.aR(r,q.j("aR<1>")),t.X)
 B.b.P(p,new A.be(r,q.j("be<2>")))
 p.push(s.a)
 p.push(s.b)
@@ -48478,7 +48484,7 @@ return b instanceof A.rw&&b.a===this.a&&b.b===this.b}}
 A.LZ.prototype={
 bx(a,b){var s,r=this.a,q=r.h(0,a)
 if(q!=null)return q
-if(r.a===this.b)r.E(0,new A.aS(r,A.l(r).j("aS<1>")).gV(0))
+if(r.a===this.b)r.E(0,new A.aR(r,A.l(r).j("aR<1>")).gV(0))
 s=b.$0()
 r.m(0,a,s)
 return s}}
@@ -48859,7 +48865,7 @@ if(!p){s=this.a
 r=c?B.b.gad(s):B.b.gV(s)
 q=r.hJ(0,b,c)
 if(q==null)q=b.hJ(0,r,!c)
-if(q!=null){p=A.a_(s,t.RY)
+if(q!=null){p=A.Z(s,t.RY)
 p[c?p.length-1:0]=q
 return new A.fU(p)}}s=A.b([],t.N_)
 if(c)B.b.P(s,this.a)
@@ -48869,7 +48875,7 @@ if(!c)B.b.P(s,this.a)
 return new A.fU(s)},
 D(a,b){return this.hJ(0,b,!1)},
 aH(a){var s=this.a,r=A.a3(s).j("a5<1,bx>")
-s=A.a_(new A.a5(s,new A.aae(a),r),r.j("ah.E"))
+s=A.Z(new A.a5(s,new A.aae(a),r),r.j("ah.E"))
 return new A.fU(s)},
 cG(a,b){return A.apS(a,this,b)},
 cH(a,b){return A.apS(this,a,b)},
@@ -49711,9 +49717,9 @@ r=p.b.a
 if(r!=null)s.r=r.gt()}s=p.b
 r=s.d
 if(r!=null){if(p.w==null){p.w=r.length
-q=A.a_(new A.a5(r,new A.afs(),A.a3(r).j("a5<1,H8>")),t.Q2)
-p.z=q}if(s.e.geF()){r=A.a_(new A.a5(r,new A.aft(a),A.a3(r).j("a5<1,u>")),t.YT)
-p.x=r}else{r=A.a_(new A.a5(r,new A.afu(p,a,b),A.a3(r).j("a5<1,Hc>")),t.ke)
+q=A.Z(new A.a5(r,new A.afs(),A.a3(r).j("a5<1,H8>")),t.Q2)
+p.z=q}if(s.e.geF()){r=A.Z(new A.a5(r,new A.aft(a),A.a3(r).j("a5<1,u>")),t.YT)
+p.x=r}else{r=A.Z(new A.a5(r,new A.afu(p,a,b),A.a3(r).j("a5<1,Hc>")),t.ke)
 p.y=r}}r=s.e
 if(!r.geF())q=p.r!=null||p.w!=null
 else q=!1
@@ -49984,7 +49990,7 @@ break A}s=null}return s}}
 A.a81.prototype={
 H(){return"TextWidthBasis."+this.b}}
 A.re.prototype={
-ph(a){return this.b.er(new A.Z(Math.max(a,0),B.i))},
+ph(a){return this.b.er(new A.a_(Math.max(a,0),B.i))},
 a_b(a){var s,r=this.a,q=r.mw(0,a)
 if(q==null)return null
 s=q&64512
@@ -50132,7 +50138,7 @@ r=p.e
 if(r==null)r=p.e=p.a.c.rZ()
 if(s.i(0,B.h))return r
 q=A.a3(r).j("a5<1,dd>")
-q=A.a_(new A.a5(r,new A.a7X(s),q),q.j("ah.E"))
+q=A.Z(new A.a5(r,new A.a7X(s),q),q.j("ah.E"))
 q.$flags=1
 return q},
 h6(a){if(a==null||a.length===0||A.c1(a,this.ay))return
@@ -50271,8 +50277,8 @@ h=g}a0=new A.f(0,-i)
 return a0.i(0,B.h)?h:new A.Aj(a0.S(0,h.a),h.b,h.c)}f=j.b
 r=f.a
 o=f.b
-if(r===o)return c.tK(new A.Z(n+1,B.i))
-if(m&&r!==n)return c.tK(new A.Z(o,B.i))
+if(r===o)return c.tK(new A.a_(n+1,B.i))
+if(m&&r!==n)return c.tK(new A.a_(o,B.i))
 e=a0.c.yg(r,o,B.l_)
 switch(j.c.a){case 1:a0=m
 break
@@ -50288,7 +50294,7 @@ if(!isFinite(p.a)||!isFinite(p.b))return A.b([],t.Lx)
 s=q.a.c.t_(a.a,a.b,b,c)
 if(p.i(0,B.h))r=s
 else{r=A.a3(s).j("a5<1,dd>")
-r=A.a_(new A.a5(s,new A.a7W(p),r),r.j("ah.E"))
+r=A.Z(new A.a5(s,new A.a7W(p),r),r.j("ah.E"))
 r.$flags=1
 r=r}return r},
 lS(a){return this.lT(a,B.eM,B.ca)},
@@ -50303,7 +50309,7 @@ s=q.f
 if(s==null){s=q.a.c.ob()
 q.f=s}if(p.i(0,B.h))r=s
 else{r=A.a3(s).j("a5<1,kG>")
-r=A.a_(new A.a5(s,new A.a7V(p),r),r.j("ah.E"))
+r=A.Z(new A.a5(s,new A.a7V(p),r),r.j("ah.E"))
 r.$flags=1
 r=r}return r},
 l(){var s=this,r=s.ch
@@ -50990,7 +50996,7 @@ A.ach.prototype={
 $0(){return this.a.$1(this.b)},
 $S:82}
 A.aN.prototype={}
-A.A.prototype={
+A.B.prototype={
 hv(a){if(!(a.b instanceof A.eA))a.b=new A.eA(B.h)},
 a_p(a,b,c){var s=a.kk(this.dy,b,c)
 return s},
@@ -51399,10 +51405,10 @@ s=m.ab
 q=m.v
 p=m.mM
 p===$&&A.a()
-o=s.jF(new A.Z(q.a,q.e),p)
+o=s.jF(new A.a_(q.a,q.e),p)
 m.be.st(r.c2(0.5).u(0,o.S(0,a)))
 p=m.v
-n=s.jF(new A.Z(p.b,p.e),m.mM)
+n=s.jF(new A.a_(p.b,p.e),m.mM)
 m.br.st(r.c2(0.5).u(0,n.S(0,a)))},
 kX(a,b){var s,r
 if(a.gbk()){s=this.ck.a.c.a.a.length
@@ -51524,7 +51530,7 @@ q.il()
 s=q.ae
 s=q.ab.lT(a,s.y,s.z)
 r=A.a3(s).j("a5<1,dd>")
-s=A.a_(new A.a5(s,new A.a3w(q),r),r.j("ah.E"))
+s=A.Z(new A.a5(s,new A.a3w(q),r),r.j("ah.E"))
 return s},
 dA(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this
 e.jL(a)
@@ -51625,7 +51631,7 @@ a6.ag=a6.ag.Db(b6)}a9=A.c5()
 b6=b2.E_
 e=b6==null?b3:b6.a!==0
 if(e===!0){b6.toString
-b0=new A.aS(b6,A.l(b6).j("aS<1>")).gW(0)
+b0=new A.aR(b6,A.l(b6).j("aR<1>")).gW(0)
 if(!b0.p())A.a8(A.cc())
 b6=b6.E(0,b0.gM())
 b6.toString
@@ -51663,13 +51669,13 @@ if(p==null)return
 s=a?r.v.c:p.a
 r.kX(A.bJ(B.i,s,p.a,!1),B.a3)},
 JW(a){var s,r,q
-for(s=this.ab;;){r=s.b.a.c.er(new A.Z(a,B.i))
+for(s=this.ab;;){r=s.b.a.c.er(new A.a_(a,B.i))
 q=r.a
 if(!(q>=0&&r.b>=0)||q===r.b)return null
 if(!this.Lo(r))return r
 a=r.b}},
 K3(a){var s,r,q
-for(s=this.ab;a>=0;){r=s.b.a.c.er(new A.Z(a,B.i))
+for(s=this.ab;a>=0;){r=s.b.a.c.er(new A.a_(a,B.i))
 q=r.a
 if(!(q>=0&&r.b>=0)||q===r.b)return null
 if(!this.Lo(r))return r
@@ -51825,7 +51831,7 @@ return this.LC(a)},
 fM(a){this.il()
 return this.ab.b.a.kx(a)},
 ke(a){return!0},
-cD(a,b){var s,r=b.T(0,this.geb()),q=this.ab,p=q.G5(r),o=p!=null&&p.a.u(0,r)?q.e.Gj(new A.Z(p.b.a,B.i)):null
+cD(a,b){var s,r=b.T(0,this.geb()),q=this.ab,p=q.G5(r),o=p!=null&&p.a.u(0,r)?q.e.Gj(new A.a_(p.b.a,B.i)):null
 q=t.zE.b(o)
 s=q?o:null
 if(q){a.D(0,new A.fE(s,t.AL))
@@ -51861,7 +51867,7 @@ m=n?o.gd7().a:o.gl3().a
 l.kX(A.bJ(q.e,s,m,!1),a)},
 jH(a,b){return this.tb(a,b,null)},
 Go(a){var s,r,q,p,o=this,n=a.a,m=o.ab
-if(n>=m.glx().length)return A.lg(new A.Z(m.glx().length,B.O))
+if(n>=m.glx().length)return A.lg(new A.a_(m.glx().length,B.O))
 s=m.b.a.c.er(a)
 switch(a.b.a){case 0:r=n-1
 break
@@ -52601,7 +52607,7 @@ s=this.r
 if(s!=null)s.qr(a)},
 pT(a){var s,r,q=this.a
 if(q.a===0)return
-q=A.a_(new A.be(q,A.l(q).j("be<2>")),t.M)
+q=A.Z(new A.be(q,A.l(q).j("be<2>")),t.M)
 s=q.length
 r=0
 for(;r<q.length;q.length===s||(0,A.t)(q),++r)q[r].$0()},
@@ -53030,8 +53036,8 @@ return this.KM(this.a.$2(s,q))},
 Kh(a){var s,r
 A.axZ(a)
 s=a.b
-r=A.l(s).j("aS<1>")
-this.b.aez(a.gir(),a.d,A.a_0(new A.aS(s,r),new A.a1A(),r.j("B.E"),t.Pb))},
+r=A.l(s).j("aR<1>")
+this.b.aez(a.gir(),a.d,A.a_0(new A.aR(s,r),new A.a1A(),r.j("A.E"),t.Pb))},
 ajt(a,b){var s,r,q,p,o,n=this
 if(a.gcb()!==B.b3&&a.gcb()!==B.aB)return
 if(t.ks.b(a))return
@@ -53253,7 +53259,7 @@ Qx(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0=
 if(b0.at==null)return
 try{b=b0.ch
 a=A.l(b).j("b3<1>")
-a0=A.a_(new A.b3(b,new A.a2v(b0),a),a.j("B.E"))
+a0=A.Z(new A.b3(b,new A.a2v(b0),a),a.j("A.E"))
 B.b.eL(a0,new A.a2w())
 s=a0
 b.U(0)
@@ -53261,7 +53267,7 @@ for(b=s,a=b.length,a1=0;a1<b.length;b.length===a||(0,A.t)(b),++a1){r=b[a1]
 if(r.gbt().gi4())continue
 r.gbt().y8()}b=b0.CW
 a=A.l(b).j("b3<1>")
-a2=A.a_(new A.b3(b,new A.a2x(b0),a),a.j("B.E"))
+a2=A.Z(new A.b3(b,new A.a2x(b0),a),a.j("A.E"))
 q=a2
 b.U(0)
 for(b=q,a=b.length,a3=t.Zw,a4=t.ju,a1=0;a1<b.length;b.length===a||(0,A.t)(b),++a1){p=b[a1]
@@ -53295,7 +53301,7 @@ j.gbt().D0(l)
 if(j.gbt().CW!=null){a3=j.gbt().CW
 a3.toString
 J.ew(k,a3)}}b=k
-b=A.a_(b,A.l(b).c)
+b=A.Z(b,A.l(b).c)
 B.b.eL(b,new A.a2y())
 a=b.length
 a1=0
@@ -54002,7 +54008,7 @@ EU(a){this.c=a},
 NE(a){var s,r,q,p,o,n,m,l,k=this,j=k.at
 for(s=k.y,r=s.length,q=j.c,p=j.b,o=0;o<s.length;s.length===r||(0,A.t)(s),++o){n=s[o]
 if(a&&!n.glR())continue
-n.NU(A.akF(n,k,q,p,null))}for(s=k.z,r=t.b7,r=new A.hU(new A.bW(new A.eg(s,new A.aeo(),A.a3(s).j("eg<1,cL>")),r).gW(0),new A.aep(),B.dy,r.j("hU<B.E,dy>")),s=j.a,m=t.ju;r.p();){l=r.d
+n.NU(A.akF(n,k,q,p,null))}for(s=k.z,r=t.b7,r=new A.hU(new A.bW(new A.eg(s,new A.aeo(),A.a3(s).j("eg<1,cL>")),r).gW(0),new A.aep(),B.dy,r.j("hU<A.E,dy>")),s=j.a,m=t.ju;r.p();){l=r.d
 if(l==null)l=m.a(l)
 if(a&&!l.glR())continue
 l.NU(A.akF(l,k,q,p,s))}},
@@ -54041,7 +54047,7 @@ r.w=o.c
 k.a5r(a)
 k.Ii(a)
 i.push(p)
-if(!(k.ax.gcM().x1&&s.a!==0))B.b.P(i,new A.aS(s,A.l(s).j("aS<1>")))
+if(!(k.ax.gcM().x1&&s.a!==0))B.b.P(i,new A.aR(s,A.l(s).j("aR<1>")))
 k.f=!0}i=k.r
 i.toString
 for(s=k.w,r=s.length,n=t.g3,q=0;q<s.length;s.length===r||(0,A.t)(s),++q){p=s[q]
@@ -54075,7 +54081,7 @@ k=A.e_()
 k.r=k.x1=k.a=!0
 i=A.b([l],i)
 r=j.Q
-B.b.P(i,new A.aS(r,A.l(r).j("aS<1>")))
+B.b.P(i,new A.aR(r,A.l(r).j("aR<1>")))
 s.lO(i,k)}else m.o6(s,r.gcM(),h)}else s.lO(h,r.gcM())},
 a_I(){var s,r,q
 if(this.gaG()==null){s=this.b
@@ -54086,7 +54092,7 @@ q=new A.bC(null,0,s.gtl(),B.L,q.x1,q.w,q.x2,q.x,B.hc,q.xr,q.L,q.n,q.N,q.R,q.a4,q
 q.an(r)
 return q}return A.xS(null,this.b.gtl())},
 a5r(a5){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=this,a4=null
-for(s=a3.z,r=s.length,q=t.QF,p=t.z_,o=a3.Q,n=t.wW,m=t.X5,l=m.j("eg<B.E,cJ>"),k=l.j("B.E"),j=a3.b.gtl(),i=0;i<s.length;s.length===r||(0,A.t)(s),++i){h=s[i]
+for(s=a3.z,r=s.length,q=t.QF,p=t.z_,o=a3.Q,n=t.wW,m=t.X5,l=m.j("eg<A.E,cJ>"),k=l.j("A.E"),j=a3.b.gtl(),i=0;i<s.length;s.length===r||(0,A.t)(s),++i){h=s[i]
 g=A.b([],p)
 for(f=J.cA(h),e=f.gW(h),d=a4,c=d;e.p();){b=e.gM()
 if(b instanceof A.dy){if(b.ghw()){g.push(b)
@@ -54469,7 +54475,7 @@ return r.b.a.c.gb4()},
 bv(a){return this.IT(a)},
 bm(a){return this.IT(a)},
 ke(a){return!0},
-cD(a,b){var s,r=this.n,q=r.G5(b),p=q!=null&&q.a.u(0,b)?r.e.Gj(new A.Z(q.b.a,B.i)):null
+cD(a,b){var s,r=this.n,q=r.G5(b),p=q!=null&&q.a.u(0,b)?r.e.Gj(new A.a_(q.b.a,B.i)):null
 r=t.zE.b(p)
 s=r?p:null
 if(r){a.D(0,new A.fE(s,t.AL))
@@ -54676,7 +54682,7 @@ else b6=!1
 a6.ag=a6.ag.Db(b6)}b6=b2.be
 e=b6==null?b3:b6.a!==0
 if(e===!0){b6.toString
-a9=new A.aS(b6,A.l(b6).j("aS<1>")).gW(0)
+a9=new A.aR(b6,A.l(b6).j("aR<1>")).gW(0)
 if(!a9.p())A.a8(A.cc())
 b6=b6.E(0,a9.gM())
 b6.toString
@@ -54824,7 +54830,7 @@ r.fd(r)
 q=A.b6(r,a)
 if(j.ghd().ga0(0)){p=A.xO(j.ghd(),q)
 s=j.a
-s=p===B.r?new A.Z(s.b,B.i):new A.Z(s.a,B.O)
+s=p===B.r?new A.a_(s.b,B.i):new A.a_(s.a,B.O)
 if(c)j.e=s
 else j.d=s
 return p}o=j.ghd()
@@ -54855,7 +54861,7 @@ r.fd(r)
 q=A.b6(r,a)
 if(l.ghd().ga0(0)){p=A.xO(l.ghd(),q)
 s=l.a
-s=p===B.r?new A.Z(s.b,B.i):new A.Z(s.a,B.O)
+s=p===B.r?new A.a_(s.b,B.i):new A.a_(s.a,B.O)
 if(b)l.e=s
 else l.d=s
 return p}o=l.ghd()
@@ -54874,7 +54880,7 @@ if(f.f&&d!=null&&e!=null){s=e.a
 r=s>=d.a
 if(b){q=f.c
 p=a.$2(c,q)
-o=a.$2(r?new A.Z(s-1,e.b):e,q)
+o=a.$2(r?new A.a_(s-1,e.b):e,q)
 n=r?o.a.a:o.b.a
 s=c.a
 q=s>n
@@ -54897,7 +54903,7 @@ if(l<s)return B.x}else{s=p.a.a
 q=o.a.a
 if(s<=q)return B.A
 if(s>q)return B.r}}else{i=f.dN(c)
-s=r?new A.Z(s-1,e.b):e
+s=r?new A.a_(s-1,e.b):e
 o=a.$2(s,f.c)
 if(r&&i.a===f.a.a){f.d=i
 return B.x}s=!r
@@ -54919,13 +54925,13 @@ q=s.a
 l=f.a
 k=l.a
 j=q<k
-if(j&&p.a.a<k){f.d=new A.Z(k,B.i)
+if(j&&p.a.a<k){f.d=new A.a_(k,B.i)
 return B.x}l=l.b
-if(q>l&&p.a.a>l){f.d=new A.Z(l,B.i)
+if(q>l&&p.a.a>l){f.d=new A.a_(l,B.i)
 return B.r}if(g){s=p.a
 q=s.a
 if(q<=l){f.d=f.dN(s)
-return B.A}if(q>l){f.d=new A.Z(l,B.i)
+return B.A}if(q>l){f.d=new A.a_(l,B.i)
 return B.r}}else{f.d=f.dN(s)
 if(j)return B.x
 if(q>=k)return B.A}}}return null},
@@ -54935,7 +54941,7 @@ r=d.a
 q=s>=r
 if(b){s=f.c
 p=a.$2(c,s)
-o=a.$2(q?d:new A.Z(r-1,d.b),s)
+o=a.$2(q?d:new A.a_(r-1,d.b),s)
 n=q?o.b.a:o.a.a
 s=c.a
 r=s<n
@@ -54958,7 +54964,7 @@ if(s<=r)return B.A
 if(s>r)return B.r}else{s=o.b.a
 if(l>=s)return B.A
 if(l<s)return B.x}}else{i=f.dN(c)
-s=q?d:new A.Z(r-1,d.b)
+s=q?d:new A.a_(r-1,d.b)
 o=a.$2(s,f.c)
 if(q&&i.a===f.a.a){f.d=f.dN(o.a)
 f.e=i
@@ -54980,15 +54986,15 @@ r=s.a
 l=f.a
 k=l.a
 j=r<k
-if(j&&p.a.a<k){f.e=new A.Z(k,B.i)
+if(j&&p.a.a<k){f.e=new A.a_(k,B.i)
 return B.x}l=l.b
-if(r>l&&p.a.a>l){f.e=new A.Z(l,B.i)
+if(r>l&&p.a.a>l){f.e=new A.a_(l,B.i)
 return B.r}if(g){f.e=f.dN(s)
 if(j)return B.x
 if(r>=k)return B.A}else{s=p.a
 r=s.a
 if(r<=l){f.e=f.dN(s)
-return B.A}if(r>l){f.e=new A.Z(l,B.i)
+return B.A}if(r>l){f.e=new A.a_(l,B.i)
 return B.r}}}}return null},
 aaq(a6,a7,a8,a9,b0,b1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=this,a5=null
 if(a4.f&&b0!=null&&b1!=null){s=b1.a>=b0.a
@@ -55029,13 +55035,13 @@ q.toString
 c=r.cn(A.xN(new A.u(0,0,0+n.a,0+n.b),o,q))
 q=a4.kP(r).a
 n=q+$.tp()
-if(s&&c.a<=q){a4.d=new A.Z(a4.a.a,B.i)
+if(s&&c.a<=q){a4.d=new A.a_(a4.a.a,B.i)
 return B.x}f=!s
-if(f&&c.a>=n){a4.d=new A.Z(a4.a.b,B.i)
+if(f&&c.a>=n){a4.d=new A.a_(a4.a.b,B.i)
 return B.r}if(s&&c.a>=n){a4.e=b0
-a4.d=new A.Z(a4.a.b,B.i)
+a4.d=new A.a_(a4.a.b,B.i)
 return B.r}if(f&&c.a<=q){a4.e=b0
-a4.d=new A.Z(a4.a.a,B.i)
+a4.d=new A.a_(a4.a.a,B.i)
 return B.x}}}else{if(a8)return a4.Cb(a6,!0,a9,b0,b1)
 if(b1!=null){b=a4.K1(a7)
 if(b==null)return a5
@@ -55052,12 +55058,12 @@ q=a4.kP(a).a
 n=q+$.tp()
 f=a3.b.a
 e=f<q
-if(e&&a3.a.a<q){a4.d=new A.Z(a4.a.a,B.i)
-return B.x}if(f>n&&a3.a.a>n){a4.d=new A.Z(a4.a.b,B.i)
-return B.r}if(a2){if(a3.a.a<=n){a4.d=new A.Z(a4.a.b,B.i)
-return B.A}a4.d=new A.Z(a4.a.b,B.i)
-return B.r}else{if(f>=q){a4.d=new A.Z(a4.a.a,B.i)
-return B.A}if(e){a4.d=new A.Z(a4.a.a,B.i)
+if(e&&a3.a.a<q){a4.d=new A.a_(a4.a.a,B.i)
+return B.x}if(f>n&&a3.a.a>n){a4.d=new A.a_(a4.a.b,B.i)
+return B.r}if(a2){if(a3.a.a<=n){a4.d=new A.a_(a4.a.b,B.i)
+return B.A}a4.d=new A.a_(a4.a.b,B.i)
+return B.r}else{if(f>=q){a4.d=new A.a_(a4.a.a,B.i)
+return B.A}if(e){a4.d=new A.a_(a4.a.a,B.i)
 return B.x}}}}return a5},
 aan(a6,a7,a8,a9,b0,b1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=this,a5=null
 if(a4.f&&b0!=null&&b1!=null){s=b1.a>=b0.a
@@ -55099,12 +55105,12 @@ c=r.cn(A.xN(new A.u(0,0,0+n.a,0+n.b),o,q))
 q=a4.kP(r).a
 n=q+$.tp()
 if(s&&c.a<=q){a4.d=b1
-a4.e=new A.Z(a4.a.a,B.i)
+a4.e=new A.a_(a4.a.a,B.i)
 return B.x}f=!s
 if(f&&c.a>=n){a4.d=b1
-a4.e=new A.Z(a4.a.b,B.i)
-return B.r}if(s&&c.a>=n){a4.e=new A.Z(a4.a.b,B.i)
-return B.r}if(f&&c.a<=q){a4.e=new A.Z(a4.a.a,B.i)
+a4.e=new A.a_(a4.a.b,B.i)
+return B.r}if(s&&c.a>=n){a4.e=new A.a_(a4.a.b,B.i)
+return B.r}if(f&&c.a<=q){a4.e=new A.a_(a4.a.a,B.i)
 return B.x}}}else{if(a8)return a4.Ca(a6,!0,a9,b0,b1)
 if(b0!=null){b=a4.K1(a7)
 if(b==null)return a5
@@ -55121,12 +55127,12 @@ q=a4.kP(a).a
 n=q+$.tp()
 f=a3.b.a
 e=f<q
-if(e&&a3.a.a<q){a4.e=new A.Z(a4.a.a,B.i)
-return B.x}if(f>n&&a3.a.a>n){a4.e=new A.Z(a4.a.b,B.i)
-return B.r}if(a2){if(f>=q){a4.e=new A.Z(a4.a.a,B.i)
-return B.A}if(e){a4.e=new A.Z(a4.a.a,B.i)
-return B.x}}else{if(a3.a.a<=n){a4.e=new A.Z(a4.a.b,B.i)
-return B.A}a4.e=new A.Z(a4.a.b,B.i)
+if(e&&a3.a.a<q){a4.e=new A.a_(a4.a.a,B.i)
+return B.x}if(f>n&&a3.a.a>n){a4.e=new A.a_(a4.a.b,B.i)
+return B.r}if(a2){if(f>=q){a4.e=new A.a_(a4.a.a,B.i)
+return B.A}if(e){a4.e=new A.a_(a4.a.a,B.i)
+return B.x}}else{if(a3.a.a<=n){a4.e=new A.a_(a4.a.b,B.i)
+return B.A}a4.e=new A.a_(a4.a.b,B.i)
 return B.r}}}return a5},
 aal(a,b,c,a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=this,e=f.d,d=f.e
 if(a0)f.e=null
@@ -55137,7 +55143,7 @@ r.fd(r)
 q=A.b6(r,a)
 if(f.ghd().ga0(0)){p=A.xO(f.ghd(),q)
 s=f.a
-s=p===B.r?new A.Z(s.b,B.i):new A.Z(s.a,B.O)
+s=p===B.r?new A.a_(s.b,B.i):new A.a_(s.a,B.O)
 if(a0)f.e=s
 else f.d=s
 return p}o=f.ghd()
@@ -55197,13 +55203,13 @@ return!1},
 dN(a){var s,r=a.a,q=this.a,p=q.b
 if(r<=p)s=r===p&&a.b===B.i
 else s=!0
-if(s)return new A.Z(p,B.O)
+if(s)return new A.a_(p,B.O)
 q=q.a
-if(r<q)return new A.Z(q,B.i)
+if(r<q)return new A.a_(q,B.i)
 return a},
 Ky(){var s=this.a
-this.d=new A.Z(s.a,B.i)
-this.e=new A.Z(s.b,B.O)
+this.d=new A.a_(s.a,B.i)
+this.e=new A.a_(s.b,B.O)
 return B.en},
 a3q(a){var s=this,r=a.b,q=r.a,p=s.a,o=p.a
 if(q<o&&a.a.a<=o)return B.x
@@ -55213,10 +55219,10 @@ s.e=a.a
 s.f=!0
 return B.A},
 zd(a,b){var s=A.c5(),r=A.c5(),q=b.a,p=a.b
-if(q>p){q=new A.Z(q,B.i)
+if(q>p){q=new A.a_(q,B.i)
 r.sdF(q)
-s.sdF(q)}else{s.sdF(new A.Z(a.a,B.i))
-r.sdF(new A.Z(p,B.O))}q=s.aW()
+s.sdF(q)}else{s.sdF(new A.a_(a.a,B.i))
+r.sdF(new A.a_(p,B.O))}q=s.aW()
 return new A.Ou(r.aW(),q)},
 a3r(a){var s=this,r=s.b,q=r.cn(r.da(a))
 if(s.a7h(q)&&!J.d(s.d,s.e))return B.A
@@ -55253,7 +55259,7 @@ p=q.a
 o=q.b
 break
 case B.h4:case B.h5:n=l.e
-if(n==null){n=new A.Z(l.a.b,B.O)
+if(n==null){n=new A.a_(l.a.b,B.O)
 l.e=n
 r=n}else r=n
 n=l.d
@@ -55268,7 +55274,7 @@ else l.d=p
 return o},
 a2u(a,b,c){var s,r,q,p,o,n,m=this,l=m.e
 if(l==null){l=m.a
-l=a?new A.Z(l.a,B.i):new A.Z(l.b,B.O)
+l=a?new A.a_(l.a,B.i):new A.a_(l.b,B.O)
 m.e=l
 s=l}else s=l
 l=m.d
@@ -55309,7 +55315,7 @@ return p},
 ul(a,b,c){var s,r=a.a
 if(b){r=c.e8(r)
 s=r==null?this.a.b:r}else{r=c.e7(r-1)
-s=r==null?this.a.a:r}return new A.Z(s,B.i)},
+s=r==null?this.a.a:r}return new A.a_(s,B.i)},
 a5B(a,b,c){var s,r,q,p,o=this
 switch(a.b.a){case 0:s=a.a
 if(s<1&&!b)return B.cz
@@ -55322,12 +55328,12 @@ case 1:q=a.a
 break
 default:q=null}if(b){s=c.e8(q)
 p=s==null?o.a.b:s}else{s=c.e7(q)
-p=s==null?o.a.a:s}return new A.Z(p,B.i)},
+p=s==null?o.a.a:s}return new A.a_(p,B.i)},
 a4u(a,b,c){var s,r,q,p,o,n=this,m=n.b,l=m.n.ob(),k=m.jF(a,B.L),j=l.length,i=j-1
 for(s=k.b,r=0;r<l.length;l.length===j||(0,A.t)(l),++r){q=l[r]
 if(q.ghM()>s){i=q.gwW()
-break}}if(b&&i===l.length-1)p=new A.Z(n.a.b,B.O)
-else if(!b&&i===0)p=new A.Z(n.a.a,B.i)
+break}}if(b&&i===l.length-1)p=new A.a_(n.a.b,B.O)
+else if(!b&&i===0)p=new A.a_(n.a.a,B.i)
 else p=n.dN(m.cn(new A.f(c,l[b?i+1:i-1].ghM())))
 m=p.a
 j=n.a
@@ -55355,7 +55361,7 @@ p=s.yh(A.bJ(B.i,q,r.b,!1),B.i3)
 r=t.AO
 if(p.length!==0){l.y=A.b([],r)
 for(s=p.length,o=0;o<p.length;p.length===s||(0,A.t)(p),++o){n=p[o]
-l.y.push(new A.u(n.a,n.b,n.c,n.d))}}else{m=s.pW(new A.Z(q,B.i))
+l.y.push(new A.u(n.a,n.b,n.c,n.d))}}else{m=s.pW(new A.a_(q,B.i))
 l.y=A.b([A.nD(m,new A.f(m.a+0,m.b+-s.n.bZ().gb4()))],r)}}s=l.y
 s.toString
 return s},
@@ -55368,7 +55374,7 @@ if(q.length!==0){l=B.b.gV(q)
 p=new A.u(l.a,l.b,l.c,l.d)
 for(l=q.length,o=1;o<l;++o){s=q[o]
 p=p.eX(new A.u(s.a,s.b,s.c,s.d))}m.z=p
-l=p}else{n=l.pW(new A.Z(r,B.i))
+l=p}else{n=l.pW(new A.a_(r,B.i))
 l=A.nD(n,new A.f(n.a+0,n.b+-l.n.bZ().gb4()))
 m.z=l}}return l},
 ai0(a,b){var s,r,q,p,o,n,m,l,k=this,j=k.d
@@ -56852,7 +56858,7 @@ B.b.E(s,a)
 if(s.length===0){s=$.ak()
 s.dy=null
 s.fr=$.af}},
-a0z(a){var s,r,q,p,o,n,m,l,k,j=this.fr$,i=A.a_(j,t.xt)
+a0z(a){var s,r,q,p,o,n,m,l,k,j=this.fr$,i=A.Z(j,t.xt)
 for(o=i.length,n=0;n<i.length;i.length===o||(0,A.t)(i),++n){s=i[n]
 try{if(B.b.u(j,s))s.$1(a)}catch(m){r=A.ac(m)
 q=A.aw(m)
@@ -56972,7 +56978,7 @@ $.ak()}},
 QP(){var s,r,q,p,o,n,m,l,k,j=this
 try{j.p3$=B.dd
 p=t.zv
-o=A.a_(j.k4$,p)
+o=A.Z(j.k4$,p)
 n=o.length
 m=0
 for(;m<o.length;o.length===n||(0,A.t)(o),++m){s=o[m]
@@ -56980,7 +56986,7 @@ l=j.to$
 l.toString
 j.KV(s,l)}j.p3$=B.jV
 o=j.ok$
-k=A.a_(o,p)
+k=A.Z(o,p)
 r=k
 B.b.U(o)
 try{for(p=r,o=p.length,m=0;m<p.length;p.length===o||(0,A.t)(p),++m){q=p[m]
@@ -57155,7 +57161,7 @@ S(a,b){var s,r,q,p,o,n,m,l=this.a,k=l.length
 if(k===0)return b
 s=b.a
 if(s.length===0)return this
-r=A.a_(this.b,t.Vc)
+r=A.Z(this.b,t.Vc)
 q=b.b
 p=q.length
 if(p!==0)for(o=0;o<q.length;q.length===p||(0,A.t)(q),++o){n=q[o]
@@ -57373,7 +57379,7 @@ a3=b7.cx
 a4=b7.cy
 a5=b7.db
 a6=b7.dx
-a7=A.a_(q,q.$ti.c)
+a7=A.Z(q,q.$ti.c)
 B.b.iO(a7)
 a8=b7.dy
 a9=b7.fr
@@ -57391,7 +57397,7 @@ a8u(){var s=this.as
 if(s==null)return B.fD
 return s},
 a_2(){var s=this.a8u(),r=A.a3(s).j("bZ<1>"),q=r.j("a5<ah.E,y>")
-r=A.a_(new A.a5(new A.bZ(s,r),new A.a63(),q),q.j("ah.E"))
+r=A.Z(new A.a5(new A.bZ(s,r),new A.a63(),q),q.j("ah.E"))
 return new Int32Array(A.k_(r))},
 Z9(a6,a7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4=this,a5=a4.TS()
 if(!a4.gafp()||a4.Q){s=$.at6()
@@ -57430,7 +57436,7 @@ if(a1==null)a1=$.alE()
 a2=o==null?$.at7():o
 a3=a5.k1
 if(a3==null)a3=null
-else a3=A.a_(a3,A.l(a3).c)
+else a3=A.Z(a3,A.l(a3).c)
 a0=A.tm(a0.a)
 A.tm(a1.a)
 a6.a.push(new A.IG(q,a5.a,a5.b,c,e,-1,0,0,k,d,b,a,a5.fr,a5.c,p.a,p.b,f.a,f.b,i.a,i.b,h.a,h.b,g.a,g.b,a5.z,a5.as,a0,s,r,a2,a5.Q,"",a5.id,a3,a5.k2,a5.k3,a5.k4,a5.ok,"",""))
@@ -57456,7 +57462,7 @@ B.b.P(q,p)
 B.b.U(p)}p.push(new A.oF(m,l,n))}if(o!=null)B.b.iO(p)
 B.b.P(q,p)
 s=t.rB
-s=A.a_(new A.a5(q,new A.a64(),s),s.j("ah.E"))
+s=A.Z(new A.a5(q,new A.a64(),s),s.j("ah.E"))
 return s},
 Uc(a){if(this.ay==null)return
 B.dx.lW(a.xV(this.b)).cv(new A.a6b(),new A.a6c(this,a),t.P)},
@@ -57557,8 +57563,8 @@ if(l===0){m.toString
 n.push(m)
 m=null}}B.b.iO(n)
 if(r===B.aa){s=t.o_
-n=A.a_(new A.bZ(n,s),s.j("ah.E"))}s=A.a3(n).j("eg<1,bC>")
-s=A.a_(new A.eg(n,new A.afq(),s),s.j("B.E"))
+n=A.Z(new A.bZ(n,s),s.j("ah.E"))}s=A.a3(n).j("eg<1,bC>")
+s=A.Z(new A.eg(n,new A.afq(),s),s.j("A.E"))
 return s},
 UM(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=this.c,a4=a3.length
 if(a4<=1)return a3
@@ -57586,9 +57592,9 @@ a2=A.b(a3.slice(0),A.a3(a3))
 B.b.eL(a2,new A.afm())
 new A.a5(a2,new A.afn(),A.a3(a2).j("a5<1,y>")).ak(0,new A.afp(A.as(s),q,a1))
 a3=t.qn
-a3=A.a_(new A.a5(a1,new A.afo(r),a3),a3.j("ah.E"))
+a3=A.Z(new A.a5(a1,new A.afo(r),a3),a3.j("ah.E"))
 a4=A.a3(a3).j("bZ<1>")
-a3=A.a_(new A.bZ(a3,a4),a4.j("ah.E"))
+a3=A.Z(new A.bZ(a3,a4),a4.j("ah.E"))
 return a3}}
 A.afq.prototype={
 $1(a){return a.UM()},
@@ -57639,7 +57645,7 @@ Ud(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=e.b
 if(d.a===0)return
 s=A.as(t.S)
 r=A.b([],t.QF)
-for(q=e.f,p=e.e,o=e.d,n=A.l(d).j("b3<1>"),m=n.j("B.E");d.a!==0;){l=A.a_(new A.b3(d,new A.a6e(e),n),m)
+for(q=e.f,p=e.e,o=e.d,n=A.l(d).j("b3<1>"),m=n.j("A.E");d.a!==0;){l=A.Z(new A.b3(d,new A.a6e(e),n),m)
 d.U(0)
 o.U(0)
 B.b.eL(l,new A.a6f())
@@ -57966,7 +57972,7 @@ xV(a){var s=A.r(["type",this.a,"data",this.pb()],t.N,t.z)
 if(a!=null)s.m(0,"nodeId",a)
 return s},
 aj8(){return this.xV(null)},
-k(a){var s,r,q=A.b([],t.s),p=this.pb(),o=p.gbI(),n=A.a_(o,A.l(o).j("B.E"))
+k(a){var s,r,q=A.b([],t.s),p=this.pb(),o=p.gbI(),n=A.Z(o,A.l(o).j("A.E"))
 B.b.iO(n)
 for(o=n.length,s=0;s<n.length;n.length===o||(0,A.t)(n),++s){r=n[s]
 q.push(r+": "+A.k(p.h(0,r)))}return"SemanticsEvent("+B.b.bi(q,", ")+")"}}
@@ -58281,8 +58287,8 @@ return A.Q($async$Eb,r)},
 a_u(a){return B.jk},
 a_w(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=null,c=a0.c,b=c.giE(),a=c.gEQ()
 c=e.b.a
-s=A.l(c).j("aS<1>")
-r=A.ds(new A.aS(c,s),s.j("B.E"))
+s=A.l(c).j("aR<1>")
+r=A.ds(new A.aR(c,s),s.j("A.E"))
 q=A.b([],t.K0)
 p=c.h(0,b)
 o=$.d0.ry$
@@ -58293,11 +58299,11 @@ if(a0 instanceof A.kU)if(p==null){l=new A.j4(b,a,n,o,!1)
 r.D(0,b)}else l=A.anT(n,m,p,b,o)
 else if(p==null)l=d
 else{l=A.anU(m,p,b,!1,o)
-r.E(0,b)}for(s=e.c.d,k=A.l(s).j("aS<1>"),j=k.j("B.E"),i=r.ff(A.ds(new A.aS(s,k),j)),i=i.gW(i),h=e.e;i.p();){g=i.gM()
+r.E(0,b)}for(s=e.c.d,k=A.l(s).j("aR<1>"),j=k.j("A.E"),i=r.ff(A.ds(new A.aR(s,k),j)),i=i.gW(i),h=e.e;i.p();){g=i.gM()
 if(g.i(0,b))q.push(new A.mY(g,a,d,o,!0))
 else{f=c.h(0,g)
 f.toString
-h.push(new A.mY(g,f,d,o,!0))}}for(c=A.ds(new A.aS(s,k),j).ff(r),c=c.gW(c);c.p();){k=c.gM()
+h.push(new A.mY(g,f,d,o,!0))}}for(c=A.ds(new A.aR(s,k),j).ff(r),c=c.gW(c);c.p();){k=c.gM()
 j=s.h(0,k)
 j.toString
 h.push(new A.j4(k,j,d,o,!0))}if(l!=null)h.push(l)
@@ -58816,7 +58822,7 @@ if(a instanceof A.kU){o=a.c
 h.d.m(0,o.giE(),o.gEQ())}else if(a instanceof A.qn)h.d.E(0,a.c.giE())
 h.a9g(a)
 o=h.a
-n=A.a_(o,t.iS)
+n=A.Z(o,t.iS)
 m=n.length
 l=0
 for(;l<n.length;n.length===m||(0,A.t)(n),++l){s=n[l]
@@ -58826,7 +58832,7 @@ p=null
 j=A.aB("while processing a raw key listener")
 i=$.co
 if(i!=null)i.$1(new A.aO(r,q,"services library",j,p,!1))}}return!1},
-a9g(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=a1.c,f=g.gagY(),e=t.v3,d=A.m(e,t.C),c=A.as(e),b=this.d,a=A.ds(new A.aS(b,A.l(b).j("aS<1>")),e),a0=a1 instanceof A.kU
+a9g(a1){var s,r,q,p,o,n,m,l,k,j,i,h,g=a1.c,f=g.gagY(),e=t.v3,d=A.m(e,t.C),c=A.as(e),b=this.d,a=A.ds(new A.aR(b,A.l(b).j("aR<1>")),e),a0=a1 instanceof A.kU
 if(a0)a.D(0,g.giE())
 for(s=g.a,r=null,q=0;q<9;++q){p=B.mJ[q]
 o=$.at0()
@@ -59013,8 +59019,8 @@ return}s.Jz(a)
 s.nM()},
 Jz(a){this.f.m(0,a.e,a)
 this.gqe().m(0,a.e,a.a)},
-Om(a,b){var s=this.f,r=this.r,q=A.l(r).j("be<2>"),p=new A.be(s,A.l(s).j("be<2>")).aep(0,new A.eg(new A.be(r,q),new A.a4e(),q.j("eg<B.E,cI>")))
-if(b){s=A.a_(p,A.l(p).j("B.E"))
+Om(a,b){var s=this.f,r=this.r,q=A.l(r).j("be<2>"),p=new A.be(s,A.l(s).j("be<2>")).aep(0,new A.eg(new A.be(r,q),new A.a4e(),q.j("eg<A.E,cI>")))
+if(b){s=A.Z(p,A.l(p).j("A.E"))
 s.$flags=1
 p=s}J.aiC(p,a)},
 Ol(a){return this.Om(a,!1)},
@@ -59133,7 +59139,7 @@ if(s!==r.c)s=new A.b7(s,s+r.gM().length)
 else{q=p.e8(a)
 s=new A.b7(s,q==null?-1:q)}return s}}
 A.pR.prototype={
-ph(a){return this.a.pe(new A.Z(Math.max(a,0),B.i))}}
+ph(a){return this.a.pe(new A.a_(Math.max(a,0),B.i))}}
 A.kM.prototype={
 e7(a){var s,r,q
 if(a<0||this.a.length===0)return null
@@ -59157,11 +59163,11 @@ A.es.prototype={
 gl3(){var s,r=this
 if(!r.gbk()||r.c===r.d)s=r.e
 else s=r.c<r.d?B.i:B.O
-return new A.Z(r.c,s)},
+return new A.a_(r.c,s)},
 gd7(){var s,r=this
 if(!r.gbk()||r.c===r.d)s=r.e
 else s=r.c<r.d?B.O:B.i
-return new A.Z(r.d,s)},
+return new A.a_(r.d,s)},
 k(a){var s,r,q=this,p=", isDirectional: "
 if(!q.gbk())return"TextSelection.invalid"
 s=""+q.c
@@ -59428,11 +59434,11 @@ m.a.ajr()}s=1
 break A
 case"TextInputClient.requestElementsInRect":n=J.SA(t.j.a(a.b),t.Ci)
 m=n.$ti.j("a5<aE.E,M>")
-o=A.a_(new A.a5(n,new A.a7M(),m),m.j("ah.E"))
+o=A.Z(new A.a5(n,new A.a7M(),m),m.j("ah.E"))
 n=p.r
-m=A.l(n).j("aS<1>")
-l=m.j("ek<B.E,T<@>>")
-n=A.a_(new A.ek(new A.b3(new A.aS(n,m),new A.a7N(p,o),m.j("b3<B.E>")),new A.a7O(p),l),l.j("B.E"))
+m=A.l(n).j("aR<1>")
+l=m.j("ek<A.E,T<@>>")
+n=A.Z(new A.ek(new A.b3(new A.aR(n,m),new A.a7N(p,o),m.j("b3<A.E>")),new A.a7O(p),l),l.j("A.E"))
 q=n
 s=1
 break A
@@ -59611,7 +59617,7 @@ q.ca("TextInput.setCaretRect",A.r(["width",a.c-s,"height",a.d-r,"x",s,"y",r],t.N
 Uo(a){var s,r=$.bG().c
 r===$&&A.a()
 s=A.a3(a).j("a5<1,T<dB>>")
-s=A.a_(new A.a5(a,new A.adr(),s),s.j("ah.E"))
+s=A.Z(new A.a5(a,new A.adr(),s),s.j("ah.E"))
 r.ca("TextInput.setSelectionRects",s,t.H).cv(new A.ads(),new A.adt(),t.P)},
 ajs(a){var s=$.bG().c
 s===$&&A.a()
@@ -59711,7 +59717,7 @@ if(n)return A.dX(null,t.H)
 $.d0.c_$=o
 o.b.U(0)
 for(n=b.length,r=0;r<n;++r);n=A.a3(b).j("a5<1,b5<G,@>>")
-q=A.a_(new A.a5(b,new A.a7d(),n),n.j("ah.E"))
+q=A.Z(new A.a5(b,new A.a7d(),n),n.j("ah.E"))
 o.c=a
 o.d=b
 $.o2=o
@@ -59853,7 +59859,7 @@ s=q.d
 r=q.a.c
 return new A.R7(s,new A.i3(new A.agZ(q),r,s,null),null)}}
 A.agZ.prototype={
-$2(a,b){var s=A.Gs(this.a.d.a,t.nL),r=A.a3(s).j("a5<1,aF>"),q=A.a_(new A.a5(s,new A.agY(a),r),r.j("ah.E"))
+$2(a,b){var s=A.Gs(this.a.d.a,t.nL),r=A.a3(s).j("a5<1,aF>"),q=A.Z(new A.a5(s,new A.agY(a),r),r.j("ah.E"))
 if(A.lm(a)==null)return A.apK(q)
 s=q.length!==0?A.apK(q):null
 b.toString
@@ -59945,7 +59951,7 @@ A.ze.prototype={
 aA(){this.aV()
 this.Ny()},
 a1C(a){this.ar(new A.a92(this))},
-Ny(){var s,r=this,q=r.a.d,p=A.l(q).j("be<2>"),o=A.ds(new A.be(q,p),p.j("B.E")),n=r.d.ff(o)
+Ny(){var s,r=this,q=r.a.d,p=A.l(q).j("be<2>"),o=A.ds(new A.be(q,p),p.j("A.E")),n=r.d.ff(o)
 p=r.d
 p.toString
 s=o.ff(p)
@@ -60860,7 +60866,7 @@ return B.b.E(this.J$,a)},
 wA(){var s=0,r=A.R(t.s1),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$wA=A.S(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:g=!1
-f=A.a_(n.J$,t.T)
+f=A.Z(n.J$,t.T)
 e=f.length
 d=0
 case 3:if(!(d<f.length)){s=5
@@ -60893,7 +60899,7 @@ case 1:return A.P(q,r)
 case 2:return A.O(o.at(-1),r)}})
 return A.Q($async$wA,r)},
 aeK(){this.adw($.ak().c.f)},
-adw(a){var s,r,q,p,o,n,m=A.a_(this.J$,t.T),l=m.length,k=0
+adw(a){var s,r,q,p,o,n,m=A.Z(this.J$,t.T),l=m.length,k=0
 for(;k<m.length;m.length===l||(0,A.t)(m),++k){s=m[k]
 try{s.PG(a)}catch(p){r=A.ac(p)
 q=A.aw(p)
@@ -60903,7 +60909,7 @@ if(n!=null)n.$1(new A.aO(r,q,"widgets library",o,null,!1))}}},
 AD(a){return this.a41(a)},
 a41(a){var s=0,r=A.R(t.H),q=this,p,o,n,m,l,k,j,i,h
 var $async$AD=A.S(function(b,c){if(b===1)return A.O(c,r)
-for(;;)switch(s){case 0:j=A.a_(q.J$,t.T)
+for(;;)switch(s){case 0:j=A.Z(q.J$,t.T)
 i=j.length
 h=0
 for(;h<j.length;j.length===i||(0,A.t)(j),++h){p=j[h]
@@ -60916,7 +60922,7 @@ if(k!=null)k.$1(m)}}return A.P(null,r)}})
 return A.Q($async$AD,r)},
 re(){var s=0,r=A.R(t.y),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d
 var $async$re=A.S(function(a,b){if(a===1){o.push(b)
-s=p}for(;;)switch(s){case 0:g=A.a_(n.J$,t.T)
+s=p}for(;;)switch(s){case 0:g=A.Z(n.J$,t.T)
 f=g.length
 e=0
 case 3:if(!(e<g.length)){s=5
@@ -60953,7 +60959,7 @@ return A.Q($async$re,r)},
 a3T(a){var s,r,q,p,o,n,m,l,k,j,i=this.Y$
 B.b.U(i)
 s=A.aoC(a)
-o=A.a_(this.J$,t.T)
+o=A.Z(this.J$,t.T)
 n=o.length
 m=0
 for(;m<o.length;o.length===n||(0,A.t)(o),++m){r=o[m]
@@ -60999,7 +61005,7 @@ wz(a){return this.aeY(a)},
 aeY(a){var s=0,r=A.R(t.y),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$wz=A.S(function(b,a0){if(b===1){o.push(a0)
 s=p}for(;;)switch(s){case 0:g=new A.l1(A.iu(a),null)
-f=A.a_(n.J$,t.T)
+f=A.Z(n.J$,t.T)
 e=f.length
 d=0
 case 3:if(!(d<f.length)){s=5
@@ -61036,7 +61042,7 @@ u5(a){return this.a3g(a)},
 a3g(a){var s=0,r=A.R(t.y),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$u5=A.S(function(b,a0){if(b===1){o.push(a0)
 s=p}for(;;)switch(s){case 0:g=new A.l1(A.iu(A.bo(a.h(0,"location"))),a.h(0,"state"))
-f=A.a_(n.J$,t.T)
+f=A.Z(n.J$,t.T)
 e=f.length
 d=0
 case 3:if(!(d<f.length)){s=5
@@ -61302,7 +61308,7 @@ l.v$=s
 l.fi$=A.aE2()},
 E6(){var s,r,q,p,o,n,m,l,k
 this.Wl()
-p=A.a_(this.J$,t.T)
+p=A.Z(this.J$,t.T)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){s=p[n]
@@ -61313,7 +61319,7 @@ k=$.co
 if(k!=null)k.$1(new A.aO(r,q,"widgets library",l,null,!1))}}},
 Ee(){var s,r,q,p,o,n,m,l,k
 this.Wn()
-p=A.a_(this.J$,t.T)
+p=A.Z(this.J$,t.T)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){s=p[n]
@@ -61324,7 +61330,7 @@ k=$.co
 if(k!=null)k.$1(new A.aO(r,q,"widgets library",l,null,!1))}}},
 E9(){var s,r,q,p,o,n,m,l,k
 this.Wm()
-p=A.a_(this.J$,t.T)
+p=A.Z(this.J$,t.T)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){s=p[n]
@@ -61335,7 +61341,7 @@ k=$.co
 if(k!=null)k.$1(new A.aO(r,q,"widgets library",l,null,!1))}}},
 wt(){var s,r,q,p,o,n,m,l,k
 this.WL()
-p=A.a_(this.J$,t.T)
+p=A.Z(this.J$,t.T)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){s=p[n]
@@ -61346,7 +61352,7 @@ k=$.co
 if(k!=null)k.$1(new A.aO(r,q,"widgets library",l,null,!1))}}},
 E1(a){var s,r,q,p,o,n,m,l,k
 this.WE(a)
-p=A.a_(this.J$,t.T)
+p=A.Z(this.J$,t.T)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){s=p[n]
@@ -61357,7 +61363,7 @@ k=$.co
 if(k!=null)k.$1(new A.aO(r,q,"widgets library",l,null,!1))}}},
 Eg(a){var s,r,q,p,o,n,m,l,k
 this.WO(a)
-p=A.a_(this.J$,t.T)
+p=A.Z(this.J$,t.T)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){s=p[n]
@@ -61368,7 +61374,7 @@ k=$.co
 if(k!=null)k.$1(new A.aO(r,q,"widgets library",l,null,!1))}}},
 rb(){var s,r,q,p,o,n,m,l,k
 this.XW()
-p=A.a_(this.J$,t.T)
+p=A.Z(this.J$,t.T)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.t)(p),++n){s=p[n]
@@ -62070,7 +62076,7 @@ q=j==null
 if(!q){p=j.a
 o=j.b}else{j=l.ga3()
 r=j.v
-o=new A.Z(r.c,r.e)
+o=new A.a_(r.c,r.e)
 p=j.iL(o).gaP()}l.p1=p
 j=l.ga3()
 r=l.p1
@@ -62513,7 +62519,7 @@ p.aap()
 s=p.a.c.a.c
 r=p.ga3()
 q=r.pg(s)
-if(q==null)q=r.iL(new A.Z(s.gbk()?s.a:0,B.i))
+if(q==null)q=r.iL(new A.a_(s.gbk()?s.a:0,B.i))
 p.z.yB(q)
 p.a9Q()
 $.bn.ok$.push(p.ga88())},
@@ -62568,7 +62574,7 @@ $.bG().a8K(j)}},
 aap(){return this.O5(!1)},
 a9Q(){var s,r=this.ga3(),q=r.v,p=q.gbk()
 if(!p)return
-s=r.iL(new A.Z(q.a,B.i))
+s=r.iL(new A.a_(q.a,B.i))
 this.z.yA(s)},
 gzY(){this.a.toString
 var s=this.c.au(t.I).w
@@ -62689,7 +62695,7 @@ return r?new A.VU(s,a):null},
 a5y(a,b,c){var s,r=a.a
 if(b){r=c.e8(r)
 s=r==null?this.a.c.a.a.length:r}else{r=c.e7(r-1)
-s=r==null?0:r}return new A.Z(s,B.i)},
+s=r==null?0:r}return new A.a_(s,B.i)},
 a5A(a,b,c){var s,r
 switch(a.b.a){case 0:s=a.a
 if(s<1&&!b)return B.cz
@@ -62698,8 +62704,8 @@ break
 case 1:r=a.a
 break
 default:r=null}if(b){s=c.e8(r)
-s=new A.Z(s==null?this.a.c.a.a.length:s,B.O)}else{s=c.e7(r)
-s=new A.Z(s==null?0:s,B.i)}return s},
+s=new A.a_(s==null?this.a.c.a.a.length:s,B.O)}else{s=c.e7(r)
+s=new A.a_(s==null?0:s,B.i)}return s},
 Ip(){var s=this.a.c.a
 return new A.p6(s.a)},
 a5K(){var s,r
@@ -62730,7 +62736,7 @@ p.fq(new A.ce(B.c.a1(o,0,r.b)+new A.e0(r.gM()).gad(0)+new A.e0(r.gM()).gV(0)+B.c
 M_(a){var s=this.a.c.a,r=a.a.Fx(a.c,a.b)
 this.fq(r,a.d)
 if(r.i(0,s))this.Jc()},
-a8i(a){if(a.a)this.iq(new A.Z(this.a.c.a.a.length,B.i))
+a8i(a){if(a.a)this.iq(new A.a_(this.a.c.a.a.length,B.i))
 else this.iq(B.cz)},
 a8g(a){var s,r,q,p,o,n,m,l=this
 if(a.b!==B.h2)return
@@ -63385,11 +63391,11 @@ return A.iL(b,new A.fR(h,A.jA(B.i,a.a?s:i),B.a3),t.gU)}q=g.gd7()
 if(a.d){i=a.a
 h=!1
 if(i){s=j.ga3().pe(q).b
-if(new A.Z(s,B.O).i(0,q)){h=j.a.c.a.a
-h=s!==h.length&&h.charCodeAt(q.a)!==10}}if(h)q=new A.Z(q.a,B.i)
+if(new A.a_(s,B.O).i(0,q)){h=j.a.c.a.a
+h=s!==h.length&&h.charCodeAt(q.a)!==10}}if(h)q=new A.a_(q.a,B.i)
 else{if(!i){i=j.ga3().pe(q).a
-i=new A.Z(i,B.i).i(0,q)&&i!==0&&j.a.c.a.a.charCodeAt(q.a-1)!==10}else i=!1
-if(i)q=new A.Z(q.a,B.O)}}i=k.r
+i=new A.a_(i,B.i).i(0,q)&&i!==0&&j.a.c.a.a.charCodeAt(q.a-1)!==10}else i=!1
+if(i)q=new A.a_(q.a,B.O)}}i=k.r
 if(i){h=g.c
 s=g.d
 p=a.a?h>s:h<s}else p=!1
@@ -63431,7 +63437,7 @@ q=new A.a8C(n.b,n.a,p,o,r,A.m(t.S,t.tO))}if(a instanceof A.iY){r=a.a
 p=r?1:-1
 m=q.agZ(p*h.ga3().gA().b)}else{r=a.a
 m=r?q.p():q.S2()}if(m)l=q.c
-else l=r?new A.Z(s.a.length,B.i):B.cz
+else l=r?new A.a_(s.a.length,B.i):B.cz
 k=i?A.lg(l):g.Qa(l)
 b.toString
 A.iL(b,new A.fR(s,k,B.a3),t.gU)
@@ -63767,7 +63773,7 @@ $ia4:1}
 A.Mn.prototype={
 av(){var s,r,q,p,o,n,m,l,k,j=this,i=j.f
 if(i.a.a===0)return
-o=A.a_(i,t.Su)
+o=A.Z(i,t.Su)
 for(i=o.length,n=0;n<o.length;o.length===i||(0,A.t)(o),++n){s=o[n]
 try{if(j.f.a.al(s)){m=j.b
 if(m==null)m=A.A9()
@@ -64323,7 +64329,7 @@ $2(a,b){return B.d.b3(a.b.b,b.b.b)},
 $S:163}
 A.a3m.prototype={
 $2(a,b){var s=a.b,r=A.a3(b).j("b3<1>")
-s=A.a_(new A.b3(b,new A.a3n(new A.u(-1/0,s.b,1/0,s.d)),r),r.j("B.E"))
+s=A.Z(new A.b3(b,new A.a3n(new A.u(-1/0,s.b,1/0,s.d)),r),r.j("A.E"))
 return s},
 $S:368}
 A.a3n.prototype={
@@ -64441,7 +64447,7 @@ bL(){return A.ay0(this)}}
 A.oo.prototype={
 H(){return"_ElementLifecycle."+this.b}}
 A.MB.prototype={
-a9M(){var s,r=this.b,q=A.a_(r,A.l(r).c)
+a9M(){var s,r=this.b,q=A.Z(r,A.l(r).c)
 B.b.eL(q,A.ala())
 s=q
 r.U(0)
@@ -64672,7 +64678,7 @@ if(q instanceof A.hc){r=s.f.x
 if(J.d(r.h(0,q),s))r.E(0,q)}s.z=s.e=null
 s.w=B.yd},
 gA(){var s=this.gX()
-if(s instanceof A.A)return s.gA()
+if(s instanceof A.B)return s.gA()
 return null},
 mA(a,b){var s=this.z;(s==null?this.z=A.cw(t.IS):s).D(0,a)
 a.Tl(this,b)
@@ -65296,8 +65302,8 @@ A.Fj(this)
 if(o.a.get(this).cy.a)return
 o=this.b
 s=A.l(o).j("be<2>")
-r=s.j("b3<B.E>")
-o=A.a_(new A.b3(new A.be(o,s),new A.YG(),r),r.j("B.E"))
+r=s.j("b3<A.E>")
+o=A.Z(new A.b3(new A.be(o,s),new A.YG(),r),r.j("A.E"))
 o.$flags=1
 q=o
 for(o=q.length,p=0;p<q.length;q.length===o||(0,A.t)(q),++p)q[p].ajQ(B.R)},
@@ -65339,7 +65345,7 @@ if(r)q=d
 else{p=s.d
 p===$&&A.a()
 q=p.gI()}if(r||q==null)return
-if(!(s.c.gX() instanceof A.A))return
+if(!(s.c.gX() instanceof A.B))return
 o=$.X.a6$.x.h(0,a.ry)
 n=o!=null?A.anx(o,a0,s):B.rG
 m=$.X.a6$.x.h(0,b.ry)
@@ -66496,7 +66502,7 @@ o.a.toString
 B.jP.hn("selectSingleEntryHistory",t.H)
 $.d0.bB$.Z(o.gLK())
 o.e.Z(o.gKo())},
-a7x(){var s=this.e,r=A.hd(new A.b3(s,A.iG(),A.l(s).j("b3<B.E>")))
+a7x(){var s=this.e,r=A.hd(new A.b3(s,A.iG(),A.l(s).j("b3<A.E>")))
 if(r!=null)r.w=$.d0.bB$.a},
 iG(a,b){var s,r,q,p,o,n,m,l=this
 l.lC(l.at,"id")
@@ -66839,7 +66845,7 @@ In(){if($.bn.p3$===B.cx){var s=this.d
 s===$&&A.a()
 s=$.X.a6$.x.h(0,s)
 this.ar(new A.a1P(s==null?null:s.ow(t.CZ)))}s=this.db
-s=A.a_(s,A.l(s).c)
+s=A.Z(s,A.l(s).c)
 B.b.ak(s,$.X.gabB())},
 JD(a){var s,r,q
 for(s=this.e.a,r=A.a3(s),s=new J.c9(s,s.length,r.j("c9<1>")),r=r.c;s.p();){q=s.d
@@ -67157,7 +67163,7 @@ o=o.b
 q=!o}else if(o.c)m.push(new A.jS(o,n,!1,o.r))}s=m.length
 r=n.a.d
 o=t.MV
-o=A.a_(new A.bZ(m,o),o.j("ah.E"))
+o=A.Z(new A.bZ(m,o),o.j("ah.E"))
 o.$flags=1
 return new A.BX(s-p,r,!1,o,null)}}
 A.a2d.prototype={
@@ -68276,7 +68282,7 @@ this.BC(this.a.f)},
 a2I(a){var s,r,q,p
 this.y.D(0,a.gir())
 s=A.a3($.nC).j("b3<1>")
-r=A.a_(new A.b3($.nC,new A.a3g(),s),s.j("B.E"))
+r=A.Z(new A.b3($.nC,new A.a3g(),s),s.j("A.E"))
 for(s=r.length,q=0;p=r.length,q<p;r.length===s||(0,A.t)(r),++q)r[q].BB()
 this.Mj(p!==0?B.y:this.a.e)},
 a2J(a){var s=this.y
@@ -68460,7 +68466,7 @@ MG(a,b){var s,r=this,q=r.bb$
 if(a==q)return!1
 r.bb$=a
 if(!b){if(a!=null){s=r.fN$
-new A.aS(s,A.l(s).j("aS<1>")).ak(0,r.gaad())}r.Dx(q)}return!0},
+new A.aR(s,A.l(s).j("aR<1>")).ak(0,r.gaad())}r.Dx(q)}return!0},
 C8(a){var s,r=a.glf(),q=this.bb$
 if(r){if(q!=null){r=a.b
 r.toString
@@ -69027,7 +69033,7 @@ r.mu()},
 ia(){var s=0,r=A.R(t.oj),q,p=this,o,n,m
 var $async$ia=A.S(function(a,b){if(a===1)return A.O(b,r)
 for(;;)switch(s){case 0:p.rx.gI()
-o=A.a_(p.R8,t.Ev)
+o=A.Z(p.R8,t.Ev)
 n=o.length
 m=0
 case 3:if(!(m<o.length)){s=5
@@ -69319,7 +69325,7 @@ s=2
 return A.V(A.mJ(n,t.H),$async$jV)
 case 2:return A.P(null,r)}})
 return A.Q($async$jV,r)},
-el(a){var s=A.a_(this.f,t.gt),r=s.length,q=0
+el(a){var s=A.Z(this.f,t.gt),r=s.length,q=0
 for(;q<s.length;s.length===r||(0,A.t)(s),++q)s[q].el(a)},
 an(a){this.f.push(a)
 a.Z(this.gen())},
@@ -69417,7 +69423,7 @@ q.Nw(A.l(r).j("fK.E").a(r))
 return}}},
 Lg(a){var s,r,q,p,o,n,m,l,k=this.d
 if(k.b===0)return
-p=A.a_(k,t.Sx)
+p=A.Z(k,t.Sx)
 for(k=p.length,o=0;o<p.length;p.length===k||(0,A.t)(p),++o){s=p[o]
 try{if(s.hW$!=null)s.agv(a)}catch(n){r=A.ac(n)
 q=A.aw(n)
@@ -70176,7 +70182,7 @@ Ms(a){var s,r,q,p=$.d0.be$
 p===$&&A.a()
 p=p.a
 s=A.l(p).j("be<2>")
-r=A.ds(new A.be(p,s),s.j("B.E"))
+r=A.ds(new A.be(p,s),s.j("A.E"))
 p=this.w
 p===$&&A.a()
 p=p.gxz()
@@ -71543,7 +71549,7 @@ s=new A.a1G(this)
 r=$.bn
 if(r.p3$===B.jV)A.ec(s)
 else r.ok$.push(s)}},
-a0O(){var s,r,q,p,o,n,m,l,k=this,j=k.Q,i=A.a_(j,A.l(j).c)
+a0O(){var s,r,q,p,o,n,m,l,k=this,j=k.Q,i=A.Z(j,A.l(j).c)
 B.b.eL(i,k.gqD())
 s=k.b
 k.b=A.b([],t.D1)
@@ -71604,7 +71610,7 @@ h=A.b([],t.AO)
 g=c.gafs()?new A.u(0,0,0+c.gPi().a,0+c.gPi().b):b
 for(f=c.d;f<=c.c;++f){e=c.b[f].gt().d
 a=new A.a5(e,new A.a1H(c,f,g),A.a3(e).j("a5<1,u>")).yW(0,new A.a1I())
-d=A.a_(a,a.$ti.j("B.E"))
+d=A.Z(a,a.$ti.j("A.E"))
 B.b.P(h,d)}return new A.l3(m,i,!s.i(0,l)?B.k0:s.c,h,!0)},
 I2(a,b){var s=b>a
 for(;;){if(!(a!==b&&this.b[a].gt().c!==B.k0))break
@@ -71925,7 +71931,7 @@ q.a=p
 n.d.ak(0,q.gaaU())}s=r?null:s.at
 r=n.a.e
 if(!J.d(s,r==null?null:r.at)){s=n.d
-s=A.a_(s,A.l(s).c)
+s=A.Z(s,A.l(s).c)
 s.$flags=1
 s=s
 r=s.length
@@ -72008,7 +72014,7 @@ gKO(){var s=this.c
 return s==null?this.c=A.azF(this.b):s},
 a0F(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=a.b,e=this.gKO().h(0,f)
 if(e==null)e=A.b([],t.Na)
-e=A.a_(e,t.JX)
+e=A.Z(e,t.JX)
 s=this.gKO().h(0,null)
 B.b.P(e,s==null?A.b([],t.Na):s)
 s=e.length
@@ -72017,7 +72023,7 @@ q=a instanceof A.mX
 p=t.en
 o=b.a
 n=A.l(o).j("be<2>")
-m=n.j("B.E")
+m=n.j("A.E")
 l=0
 for(;l<e.length;e.length===s||(0,A.t)(e),++l){k=e[l]
 j=k.a
@@ -72356,7 +72362,7 @@ if(o.a.d.length!==0){s=A.i4(a,B.y2,t.Uh)
 s.toString
 r=o.a.d
 q=A.a3(r).j("a5<1,dZ>")
-p=A.a_(new A.a5(r,new A.afG(s),q),q.j("ah.E"))
+p=A.Z(new A.a5(r,new A.afG(s),q),q.j("ah.E"))
 s=o.d
 s===$&&A.a()
 s.UF(o.a.c,p)}return B.al}}
@@ -72445,7 +72451,7 @@ n=A.as(n)
 for(o=m.a,o=o.gW(o),s=this.bf,r=m.$ti.y[1];o.p();){q=s.h(0,r.a(o.gM()).eY)
 q.toString
 n.P(0,q)}o=A.l(p).j("b3<1>")
-p=A.a_(new A.b3(p,new A.a42(n),o),o.j("B.E"))
+p=A.Z(new A.b3(p,new A.a42(n),o),o.j("A.E"))
 return new A.Ow(n,p)},
 kc(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=t.pY.b(a)
 if(!g&&!t.e.b(a))return
@@ -72878,7 +72884,7 @@ q=p.x
 q.n$=r
 q.L$=0
 o.f0()},
-iU(a,b,c){var s=c.pe(a),r=c.iL(new A.Z(s.c,B.i)),q=r.a,p=c.iL(new A.Z(s.d,B.O)),o=p.a,n=A.nD(new A.f(q+(r.c-q)/2,r.b),new A.f(o+(p.c-o)/2,p.d)),m=t.Qv.a(A.H5(this.a,!0).c.gX()),l=c.aE(m),k=A.dF(l,n),j=A.dF(l,c.iL(a)),i=m==null?null:m.da(b)
+iU(a,b,c){var s=c.pe(a),r=c.iL(new A.a_(s.c,B.i)),q=r.a,p=c.iL(new A.a_(s.d,B.O)),o=p.a,n=A.nD(new A.f(q+(r.c-q)/2,r.b),new A.f(o+(p.c-o)/2,p.d)),m=t.Qv.a(A.H5(this.a,!0).c.gX()),l=c.aE(m),k=A.dF(l,n),j=A.dF(l,c.iL(a)),i=m==null?null:m.da(b)
 if(i==null)i=b
 r=c.gA()
 return new A.j7(i,k,j,A.dF(l,new A.u(0,0,0+r.a,0+r.b)))},
@@ -73336,7 +73342,7 @@ ahO(){var s,r=$.d0.be$
 r===$&&A.a()
 r=r.a
 s=A.l(r).j("be<2>")
-s=A.ds(new A.be(r,s),s.j("B.E")).kf(A.bL([B.c0,B.cn],t.C))
+s=A.ds(new A.be(r,s),s.j("A.E")).kf(A.bL([B.c0,B.cn],t.C))
 this.d=s.gbM(s)},
 ahM(){this.d=!1},
 ahK(a){var s,r,q=this,p=q.a,o=p.a.L
@@ -73458,7 +73464,7 @@ n.gI().ga3().eJ(B.aU,s)
 s=n.gI().ga3().da(s)
 r=n.gI().a.c.a.b
 q=n.gI().a.c.a.b
-n.gI().y9(new A.ql(B.h,new A.aa(s,new A.Z(r.c,q.e)),B.mf))}break
+n.gI().y9(new A.ql(B.h,new A.aa(s,new A.a_(r.c,q.e)),B.mf))}break
 case 0:case 1:case 3:case 5:n=o.y
 s=n.gI().ga3()
 r=s.e3
@@ -75524,7 +75530,7 @@ s=A.us.prototype
 s.Ve=s.aev
 s=A.BM.prototype
 s.XM=s.bK
-s=A.B.prototype
+s=A.A.prototype
 s.yW=s.jB
 s=A.L.prototype
 s.nv=s.i
@@ -75652,7 +75658,7 @@ s=A.al.prototype
 s.V4=s.i
 s=A.eA.prototype
 s.tq=s.k
-s=A.A.prototype
+s=A.B.prototype
 s.VZ=s.d3
 s.yZ=s.fM
 s.m5=s.a7
@@ -76051,7 +76057,7 @@ s(A,"aE_","aEv",102)
 q(A,"aDY","aAD",120)
 p(A,"aDZ","aBS",470)
 s(A,"arz","aDu",471)
-l(A.B.prototype,"gl9","u",23)
+l(A.A.prototype,"gl9","u",23)
 r(A,"tn",3,null,["$3"],["a6G"],472,0)
 r(A,"to",3,null,["$3"],["N"],473,0)
 r(A,"bs",3,null,["$3"],["o"],474,0)
@@ -76190,7 +76196,7 @@ q(A,"aDI","aAZ",75)
 n(j=A.xm.prototype,"ga4x","a4y",5)
 n(j,"ga2X","a2Y",5)
 o(A.zk.prototype,"gc7","l",0)
-n(j=A.A.prototype,"gcr","bw",1)
+n(j=A.B.prototype,"gcr","bw",1)
 n(j,"gc6","bn",1)
 n(j,"gcq","bv",1)
 n(j,"gci","bm",1)
@@ -76585,7 +76591,7 @@ s(A,"th","avt",36)
 r(A,"h2",3,null,["$3"],["avs"],157,0)
 r(A,"alg",3,null,["$3"],["avr"],157,0)})();(function inheritance(){var s=hunkHelpers.mixin,r=hunkHelpers.mixinHard,q=hunkHelpers.inherit,p=hunkHelpers.inheritMany
 q(A.L,null)
-p(A.L,[A.Dq,A.SZ,A.kc,A.T6,A.u6,A.E1,A.IQ,A.nE,A.z2,A.mF,A.a6H,A.md,A.E2,A.of,A.pp,A.me,A.pb,A.U3,A.U4,A.pc,A.mf,A.xl,A.a6A,A.a73,A.ub,A.pd,A.uc,A.E3,A.u9,A.U2,A.a8P,A.ui,A.uk,A.ab4,A.v3,A.u_,A.pm,A.mj,A.EX,A.a30,A.ra,A.hQ,A.HV,A.jx,A.XB,A.Vi,A.a4G,A.FL,A.YK,A.FK,A.vt,A.F_,A.uR,A.ls,A.B,A.EZ,A.Fk,A.XW,A.QS,A.pI,A.mG,A.vm,A.bO,A.tM,A.mI,A.Y3,A.Gg,A.hW,A.Zq,A.dE,A.ZF,A.ZG,A.ZH,A.Y_,A.Em,A.Gm,A.wl,A.Uw,A.a1w,A.a1M,A.Ty,A.fe,A.pG,A.a22,A.nl,A.q9,A.a21,A.a2B,A.a8E,A.wL,A.a1O,A.T4,A.GF,A.ou,A.JK,A.a2H,A.Hl,A.hh,A.xy,A.v0,A.a2J,A.a4r,A.a2K,A.E6,A.a2T,A.Gt,A.a9s,A.agM,A.iA,A.ri,A.rM,A.abJ,A.a2L,A.pD,A.el,A.bT,A.Es,A.Eo,A.Dx,A.Dy,A.ey,A.iM,A.k3,A.dj,A.oW,A.IJ,A.Dp,A.pj,A.bg,A.ajS,A.a32,A.SF,A.xP,A.eQ,A.lZ,A.ZD,A.v2,A.II,A.IG,A.nY,A.X2,A.X3,A.a61,A.a5Y,A.Ls,A.aE,A.fa,A.Hk,A.a71,A.Z6,A.Z8,A.a6R,A.a6V,A.a8Y,A.HA,A.n0,A.pE,A.Tv,A.El,A.WO,A.WP,A.yv,A.pB,A.v8,A.Ta,A.qS,A.h9,A.Z2,A.a7y,A.a7s,A.FM,A.Wt,A.F5,A.Gx,A.k9,A.j8,A.EU,A.EY,A.Vm,A.UL,A.Fw,A.Fp,A.Yt,A.m4,A.SW,A.a8M,A.a7R,A.afK,A.fT,A.n_,A.Jm,A.z7,A.a6w,A.f0,A.b7,A.JO,A.a8O,A.qK,A.a82,A.acs,A.iT,A.JM,A.r8,A.ajz,J.bP,A.xu,J.c9,A.DY,A.bi,A.a6s,A.bh,A.pY,A.rb,A.hU,A.J7,A.IR,A.IS,A.F7,A.Fr,A.hC,A.va,A.JE,A.e1,A.rP,A.w4,A.po,A.ly,A.il,A.vK,A.a8l,A.GV,A.v5,A.BG,A.ZM,A.e4,A.cq,A.Gr,A.Gb,A.rC,A.a93,A.qH,A.PM,A.KG,A.abW,A.QU,A.hp,A.Mh,A.C_,A.afC,A.w0,A.BY,A.Kn,A.hF,A.cW,A.jw,A.jJ,A.lp,A.KL,A.ix,A.aP,A.Ko,A.BJ,A.Kp,A.Lv,A.aaZ,A.AI,A.rp,A.PJ,A.ah0,A.rv,A.eU,A.act,A.lz,A.rA,A.fK,A.N0,A.QT,A.zP,A.LE,A.MS,A.J2,A.Eg,A.us,A.a9q,A.TF,A.E0,A.PD,A.acm,A.aab,A.afB,A.QX,A.Cc,A.oI,A.ki,A.aQ,A.H3,A.yd,A.LV,A.eJ,A.bm,A.bj,A.PN,A.J_,A.c4,A.C9,A.a8u,A.fX,A.v6,A.l8,A.GU,A.Fa,A.aa8,A.BI,A.jM,A.TU,A.GX,A.u,A.ai,A.rN,A.eN,A.z,A.w5,A.abU,A.zu,A.ad9,A.afv,A.ajt,A.l9,A.kr,A.n4,A.l7,A.r9,A.fN,A.wN,A.aag,A.Ol,A.adT,A.akz,A.AN,A.adQ,A.c_,A.xR,A.a6q,A.eI,A.hX,A.ks,A.o5,A.yz,A.dd,A.Z,A.kN,A.TH,A.vn,A.FA,A.T8,A.Tx,A.Tz,A.FF,A.a7q,A.Lx,A.PI,A.yf,A.hL,A.m3,A.EJ,A.lG,A.rB,A.n7,A.EH,A.FG,A.a4,A.a6B,A.Kf,A.tF,A.wI,A.tD,A.tC,A.m1,A.k5,A.av,A.qZ,A.MK,A.L6,A.a7Z,A.MA,A.ej,A.EI,A.zB,A.Lp,A.DP,A.ia,A.OP,A.Le,A.BW,A.nk,A.Lh,A.Lf,A.cO,A.M5,A.DJ,A.ee,A.acX,A.W,A.fA,A.fH,A.fJ,A.wJ,A.agt,A.a8X,A.x0,A.ht,A.dc,A.cp,A.Fx,A.rt,A.Yd,A.aeM,A.vp,A.LG,A.LI,A.LJ,A.LH,A.NP,A.d1,A.JY,A.KO,A.KY,A.KT,A.KR,A.KS,A.KQ,A.KU,A.L1,A.Bd,A.L_,A.L0,A.KZ,A.KW,A.KX,A.KV,A.KP,A.Mf,A.pw,A.fE,A.t1,A.kt,A.MZ,A.MY,A.MX,A.jX,A.akx,A.wO,A.Gp,A.L3,A.rY,A.a2P,A.a2S,A.du,A.AS,A.PX,A.Q2,A.yr,A.PY,A.Q0,A.Q_,A.Q1,A.PZ,A.BO,A.fm,A.ll,A.AK,A.hB,A.K0,A.Im,A.a6C,A.Ki,A.jO,A.Ks,A.N1,A.Kx,A.Ky,A.Kz,A.KB,A.KC,A.Nf,A.KD,A.KE,A.KF,A.KH,A.KI,A.KK,A.Lj,A.Ll,A.Ly,A.LD,A.LK,A.LL,A.LS,A.jP,A.LX,A.M_,A.Xy,A.Xb,A.Xa,A.Xx,A.M3,A.Mz,A.kz,A.pN,A.bx,A.Fo,A.Ln,A.ae7,A.G8,A.MG,A.MT,A.EK,A.Nb,A.N9,A.Na,A.Nm,A.Nn,A.No,A.Ny,A.P8,A.GB,A.ND,A.t6,A.Oc,A.Og,A.On,A.a4t,A.I9,A.ke,A.a1E,A.K1,A.Pg,A.Ph,A.Pi,A.Pj,A.PG,A.PH,A.PP,A.PW,A.Q4,A.Jo,A.Qa,A.Qj,A.Ql,A.aiZ,A.rw,A.LZ,A.QZ,A.Qn,A.Qp,A.Qs,A.QO,A.m0,A.Jb,A.a2j,A.tR,A.Kw,A.U8,A.FD,A.Kt,A.a9w,A.cQ,A.YU,A.vy,A.Dm,A.j2,A.Ok,A.PO,A.qf,A.fk,A.ag1,A.Q8,A.Aj,A.yD,A.a7Y,A.fV,A.zv,A.Qi,A.a6N,A.aah,A.ad2,A.agw,A.yR,A.xm,A.NF,A.da,A.ab1,A.a9u,A.aN,A.d_,A.UQ,A.o8,A.a8C,A.acr,A.YV,A.tI,A.Dv,A.MP,A.Gl,A.vT,A.Ng,A.Rm,A.aI,A.a3J,A.eB,A.aJ,A.qp,A.ID,A.BA,A.afj,A.cL,A.Pu,A.cJ,A.HN,A.RF,A.dJ,A.x3,A.dv,A.Ix,A.a5_,A.Pp,A.Pq,A.x1,A.z4,A.a4i,A.rs,A.a2o,A.ik,A.qW,A.oc,A.yK,A.xQ,A.a60,A.p8,A.DZ,A.ch,A.Ps,A.Pv,A.oj,A.jW,A.oF,A.cT,A.Pw,A.a5Z,A.DA,A.oZ,A.Tp,A.xV,A.a7b,A.Tw,A.ph,A.MN,A.Yz,A.vQ,A.Gf,A.ZB,A.MO,A.hg,A.wM,A.wg,A.a72,A.Z7,A.Z9,A.a6S,A.a6W,A.a1x,A.wh,A.k8,A.wf,A.kR,A.qj,A.UU,A.Oo,A.Op,A.a34,A.cu,A.cI,A.qL,A.IW,A.T5,A.PV,A.Q5,A.o7,A.Nk,A.afL,A.is,A.Jj,A.ql,A.ce,A.a8_,A.a7x,A.nU,A.Q7,A.a7z,A.Ji,A.yA,A.Ro,A.PQ,A.dZ,A.Jz,A.a8q,A.a8W,A.MJ,A.K_,A.rJ,A.Kl,A.GT,A.p_,A.cs,A.JU,A.cC,A.Er,A.Jv,A.eV,A.qw,A.afb,A.Kr,A.XL,A.M9,A.M7,A.Mn,A.rr,A.Me,A.ro,A.LA,A.V5,A.Rs,A.Rr,A.MB,A.DT,A.TC,A.a2_,A.acY,A.a4j,A.ky,A.mL,A.a6_,A.ni,A.hY,A.DX,A.dI,A.rL,A.EO,A.j7,A.a7T,A.n6,A.pX,A.wd,A.agA,A.ij,A.a4o,A.Jw,A.lC,A.P_,A.kL,A.lD,A.a29,A.BH,A.a2f,A.a1m,A.a2C,A.qX,A.hn,A.l1,A.Gv,A.Il,A.a4M,A.ah_,A.Iq,A.M2,A.z6,A.Iu,A.Is,A.VE,A.PE,A.Rc,A.Pz,A.PC,A.hs,A.lb,A.zM,A.y9,A.ei,A.Jp,A.Iw,A.hx,A.yH,A.eR,A.df,A.yM,A.KN,A.r4,A.QR,A.ln,A.Re,A.MR,A.Ai,A.c0,A.R1,A.bt,A.uX,A.cX,A.eC,A.dO,A.TI,A.f5,A.a8K,A.od,A.Zi,A.a7o,A.bf,A.fS,A.jF])
+p(A.L,[A.Dq,A.SZ,A.kc,A.T6,A.u6,A.E1,A.IQ,A.nE,A.z2,A.mF,A.a6H,A.md,A.E2,A.of,A.pp,A.me,A.pb,A.U3,A.U4,A.pc,A.mf,A.xl,A.a6A,A.a73,A.ub,A.pd,A.uc,A.E3,A.u9,A.U2,A.a8P,A.ui,A.uk,A.ab4,A.v3,A.u_,A.pm,A.mj,A.EX,A.a30,A.ra,A.hQ,A.HV,A.jx,A.XB,A.Vi,A.a4G,A.FL,A.YK,A.FK,A.vt,A.F_,A.uR,A.ls,A.A,A.EZ,A.Fk,A.XW,A.QS,A.pI,A.mG,A.vm,A.bO,A.tM,A.mI,A.Y3,A.Gg,A.hW,A.Zq,A.dE,A.ZF,A.ZG,A.ZH,A.Y_,A.Em,A.Gm,A.wl,A.Uw,A.a1w,A.a1M,A.Ty,A.fe,A.pG,A.a22,A.nl,A.q9,A.a21,A.a2B,A.a8E,A.wL,A.a1O,A.T4,A.GF,A.ou,A.JK,A.a2H,A.Hl,A.hh,A.xy,A.v0,A.a2J,A.a4r,A.a2K,A.E6,A.a2T,A.Gt,A.a9s,A.agM,A.iA,A.ri,A.rM,A.abJ,A.a2L,A.pD,A.el,A.bT,A.Es,A.Eo,A.Dx,A.Dy,A.ey,A.iM,A.k3,A.dj,A.oW,A.IJ,A.Dp,A.pj,A.bg,A.ajS,A.a32,A.SF,A.xP,A.eQ,A.lZ,A.ZD,A.v2,A.II,A.IG,A.nY,A.X2,A.X3,A.a61,A.a5Y,A.Ls,A.aE,A.fa,A.Hk,A.a71,A.Z6,A.Z8,A.a6R,A.a6V,A.a8Y,A.HA,A.n0,A.pE,A.Tv,A.El,A.WO,A.WP,A.yv,A.pB,A.v8,A.Ta,A.qS,A.h9,A.Z2,A.a7y,A.a7s,A.FM,A.Wt,A.F5,A.Gx,A.k9,A.j8,A.EU,A.EY,A.Vm,A.UL,A.Fw,A.Fp,A.Yt,A.m4,A.SW,A.a8M,A.a7R,A.afK,A.fT,A.n_,A.Jm,A.z7,A.a6w,A.f0,A.b7,A.JO,A.a8O,A.qK,A.a82,A.acs,A.iT,A.JM,A.r8,A.ajz,J.bP,A.xu,J.c9,A.DY,A.bi,A.a6s,A.bh,A.pY,A.rb,A.hU,A.J7,A.IR,A.IS,A.F7,A.Fr,A.hC,A.va,A.JE,A.e1,A.rP,A.w4,A.po,A.ly,A.il,A.vK,A.a8l,A.GV,A.v5,A.BG,A.ZM,A.e4,A.cq,A.Gr,A.Gb,A.rC,A.a93,A.qH,A.PM,A.KG,A.abW,A.QU,A.hp,A.Mh,A.C_,A.afC,A.w0,A.BY,A.Kn,A.hF,A.cW,A.jw,A.jJ,A.lp,A.KL,A.ix,A.aP,A.Ko,A.BJ,A.Kp,A.Lv,A.aaZ,A.AI,A.rp,A.PJ,A.ah0,A.rv,A.eU,A.act,A.lz,A.rA,A.fK,A.N0,A.QT,A.zP,A.LE,A.MS,A.J2,A.Eg,A.us,A.a9q,A.TF,A.E0,A.PD,A.acm,A.aab,A.afB,A.QX,A.Cc,A.oI,A.ki,A.aQ,A.H3,A.yd,A.LV,A.eJ,A.bm,A.bj,A.PN,A.J_,A.c4,A.C9,A.a8u,A.fX,A.v6,A.l8,A.GU,A.Fa,A.aa8,A.BI,A.jM,A.TU,A.GX,A.u,A.ai,A.rN,A.eN,A.z,A.w5,A.abU,A.zu,A.ad9,A.afv,A.ajt,A.l9,A.kr,A.n4,A.l7,A.r9,A.fN,A.wN,A.aag,A.Ol,A.adT,A.akz,A.AN,A.adQ,A.c_,A.xR,A.a6q,A.eI,A.hX,A.ks,A.o5,A.yz,A.dd,A.a_,A.kN,A.TH,A.vn,A.FA,A.T8,A.Tx,A.Tz,A.FF,A.a7q,A.Lx,A.PI,A.yf,A.hL,A.m3,A.EJ,A.lG,A.rB,A.n7,A.EH,A.FG,A.a4,A.a6B,A.Kf,A.tF,A.wI,A.tD,A.tC,A.m1,A.k5,A.av,A.qZ,A.MK,A.L6,A.a7Z,A.MA,A.ej,A.EI,A.zB,A.Lp,A.DP,A.ia,A.OP,A.Le,A.BW,A.nk,A.Lh,A.Lf,A.cO,A.M5,A.DJ,A.ee,A.acX,A.W,A.fA,A.fH,A.fJ,A.wJ,A.agt,A.a8X,A.x0,A.ht,A.dc,A.cp,A.Fx,A.rt,A.Yd,A.aeM,A.vp,A.LG,A.LI,A.LJ,A.LH,A.NP,A.d1,A.JY,A.KO,A.KY,A.KT,A.KR,A.KS,A.KQ,A.KU,A.L1,A.Bd,A.L_,A.L0,A.KZ,A.KW,A.KX,A.KV,A.KP,A.Mf,A.pw,A.fE,A.t1,A.kt,A.MZ,A.MY,A.MX,A.jX,A.akx,A.wO,A.Gp,A.L3,A.rY,A.a2P,A.a2S,A.du,A.AS,A.PX,A.Q2,A.yr,A.PY,A.Q0,A.Q_,A.Q1,A.PZ,A.BO,A.fm,A.ll,A.AK,A.hB,A.K0,A.Im,A.a6C,A.Ki,A.jO,A.Ks,A.N1,A.Kx,A.Ky,A.Kz,A.KB,A.KC,A.Nf,A.KD,A.KE,A.KF,A.KH,A.KI,A.KK,A.Lj,A.Ll,A.Ly,A.LD,A.LK,A.LL,A.LS,A.jP,A.LX,A.M_,A.Xy,A.Xb,A.Xa,A.Xx,A.M3,A.Mz,A.kz,A.pN,A.bx,A.Fo,A.Ln,A.ae7,A.G8,A.MG,A.MT,A.EK,A.Nb,A.N9,A.Na,A.Nm,A.Nn,A.No,A.Ny,A.P8,A.GB,A.ND,A.t6,A.Oc,A.Og,A.On,A.a4t,A.I9,A.ke,A.a1E,A.K1,A.Pg,A.Ph,A.Pi,A.Pj,A.PG,A.PH,A.PP,A.PW,A.Q4,A.Jo,A.Qa,A.Qj,A.Ql,A.aiZ,A.rw,A.LZ,A.QZ,A.Qn,A.Qp,A.Qs,A.QO,A.m0,A.Jb,A.a2j,A.tR,A.Kw,A.U8,A.FD,A.Kt,A.a9w,A.cQ,A.YU,A.vy,A.Dm,A.j2,A.Ok,A.PO,A.qf,A.fk,A.ag1,A.Q8,A.Aj,A.yD,A.a7Y,A.fV,A.zv,A.Qi,A.a6N,A.aah,A.ad2,A.agw,A.yR,A.xm,A.NF,A.da,A.ab1,A.a9u,A.aN,A.d_,A.UQ,A.o8,A.a8C,A.acr,A.YV,A.tI,A.Dv,A.MP,A.Gl,A.vT,A.Ng,A.Rm,A.aI,A.a3J,A.eB,A.aJ,A.qp,A.ID,A.BA,A.afj,A.cL,A.Pu,A.cJ,A.HN,A.RF,A.dJ,A.x3,A.dv,A.Ix,A.a5_,A.Pp,A.Pq,A.x1,A.z4,A.a4i,A.rs,A.a2o,A.ik,A.qW,A.oc,A.yK,A.xQ,A.a60,A.p8,A.DZ,A.ch,A.Ps,A.Pv,A.oj,A.jW,A.oF,A.cT,A.Pw,A.a5Z,A.DA,A.oZ,A.Tp,A.xV,A.a7b,A.Tw,A.ph,A.MN,A.Yz,A.vQ,A.Gf,A.ZB,A.MO,A.hg,A.wM,A.wg,A.a72,A.Z7,A.Z9,A.a6S,A.a6W,A.a1x,A.wh,A.k8,A.wf,A.kR,A.qj,A.UU,A.Oo,A.Op,A.a34,A.cu,A.cI,A.qL,A.IW,A.T5,A.PV,A.Q5,A.o7,A.Nk,A.afL,A.is,A.Jj,A.ql,A.ce,A.a8_,A.a7x,A.nU,A.Q7,A.a7z,A.Ji,A.yA,A.Ro,A.PQ,A.dZ,A.Jz,A.a8q,A.a8W,A.MJ,A.K_,A.rJ,A.Kl,A.GT,A.p_,A.cs,A.JU,A.cC,A.Er,A.Jv,A.eV,A.qw,A.afb,A.Kr,A.XL,A.M9,A.M7,A.Mn,A.rr,A.Me,A.ro,A.LA,A.V5,A.Rs,A.Rr,A.MB,A.DT,A.TC,A.a2_,A.acY,A.a4j,A.ky,A.mL,A.a6_,A.ni,A.hY,A.DX,A.dI,A.rL,A.EO,A.j7,A.a7T,A.n6,A.pX,A.wd,A.agA,A.ij,A.a4o,A.Jw,A.lC,A.P_,A.kL,A.lD,A.a29,A.BH,A.a2f,A.a1m,A.a2C,A.qX,A.hn,A.l1,A.Gv,A.Il,A.a4M,A.ah_,A.Iq,A.M2,A.z6,A.Iu,A.Is,A.VE,A.PE,A.Rc,A.Pz,A.PC,A.hs,A.lb,A.zM,A.y9,A.ei,A.Jp,A.Iw,A.hx,A.yH,A.eR,A.df,A.yM,A.KN,A.r4,A.QR,A.ln,A.Re,A.MR,A.Ai,A.c0,A.R1,A.bt,A.uX,A.cX,A.eC,A.dO,A.TI,A.f5,A.a8K,A.od,A.Zi,A.a7o,A.bf,A.fS,A.jF])
 p(A.kc,[A.Ee,A.T3,A.T_,A.T0,A.T1,A.TX,A.ahd,A.TY,A.a6K,A.U0,A.aaa,A.aa9,A.U6,A.TZ,A.U1,A.TL,A.TM,A.ahf,A.Uj,A.Uk,A.Uf,A.Ug,A.Uh,A.Ui,A.TO,A.Vk,A.ahP,A.Vn,A.aij,A.Vo,A.ab0,A.Vl,A.Vj,A.Ef,A.ahI,A.aim,A.ail,A.Xp,A.Xj,A.Xi,A.Xh,A.Xe,A.Xn,A.Xo,A.ahV,A.ahW,A.ahX,A.ahU,A.Y0,A.XA,A.XC,A.Xz,A.UM,A.ahr,A.ahs,A.aht,A.ahu,A.ahv,A.ahw,A.ahx,A.ahy,A.Zm,A.Zn,A.Zo,A.Zp,A.Zw,A.ZA,A.aif,A.a1N,A.a8t,A.a1F,A.a6D,A.a6E,A.WZ,A.WY,A.WU,A.WV,A.WW,A.WQ,A.WX,A.X1,A.WR,A.a9z,A.a9y,A.a9A,A.a1i,A.a8G,A.a8H,A.a8I,A.a8J,A.a2F,A.a2G,A.a2D,A.a4s,A.a9t,A.agN,A.adB,A.adE,A.adF,A.adG,A.adH,A.adI,A.adJ,A.adK,A.adL,A.WM,A.WN,A.a36,A.SJ,A.SK,A.a5i,A.a5j,A.ahh,A.a5s,A.a5o,A.a5z,A.a5E,A.a5F,A.a5y,A.X4,A.V1,A.a1q,A.a7n,A.a5M,A.a5N,A.a5O,A.WJ,A.WK,A.UX,A.UY,A.UZ,A.YQ,A.YO,A.Xs,A.a7u,A.YM,A.VG,A.UJ,A.a8L,A.a8F,A.TS,A.TP,A.G9,A.Ja,A.Zc,A.ai0,A.ai2,A.afD,A.a9m,A.a9l,A.ah8,A.afE,A.afF,A.Ya,A.abw,A.abD,A.a6Z,A.aeT,A.aeS,A.abM,A.aaL,A.ZZ,A.ack,A.agG,A.ai8,A.aig,A.aih,A.ahQ,A.Zk,A.agp,A.ags,A.agq,A.ago,A.ahL,A.TB,A.YC,A.YA,A.abH,A.abF,A.aal,A.aak,A.aar,A.aaj,A.aai,A.aaw,A.aax,A.aaz,A.aaI,A.aaJ,A.ae2,A.ae3,A.ae1,A.ae4,A.ae5,A.UH,A.a1W,A.aaK,A.XF,A.XG,A.XH,A.ahR,A.YD,A.a6P,A.a74,A.abI,A.a2M,A.a2N,A.a2U,A.Tb,A.Tc,A.Td,A.Um,A.Un,A.Uo,A.Vz,A.VA,A.VB,A.WG,A.WH,A.WI,A.ST,A.SU,A.SV,A.acx,A.a1a,A.aa3,A.aa4,A.aa5,A.a9F,A.a9G,A.a9H,A.a9S,A.a9W,A.a9X,A.a9Y,A.a9Z,A.aa_,A.aa0,A.aa1,A.a9I,A.a9J,A.a9U,A.a9D,A.a9V,A.a9C,A.a9K,A.a9L,A.a9M,A.a9N,A.a9O,A.a9P,A.a9Q,A.a9R,A.a9T,A.abR,A.abS,A.ab7,A.ab8,A.ab9,A.aba,A.abb,A.abc,A.acZ,A.ad_,A.ad0,A.ad1,A.ac1,A.abZ,A.abN,A.aeb,A.ae8,A.aca,A.ac7,A.ac5,A.acc,A.acd,A.ace,A.acb,A.ac8,A.ac9,A.ac6,A.a7U,A.acN,A.acy,A.acz,A.acA,A.acB,A.ah3,A.ah4,A.ab5,A.ab6,A.Xc,A.Xd,A.a9_,A.a90,A.a2h,A.a2V,A.a4w,A.abQ,A.acG,A.acD,A.acF,A.acE,A.acC,A.afH,A.afJ,A.afI,A.ag_,A.ag0,A.ahC,A.aez,A.aeA,A.aeB,A.aeC,A.aeE,A.aeF,A.a9h,A.a84,A.a8a,A.aae,A.aad,A.aaf,A.U9,A.Ua,A.Ub,A.Z1,A.Z0,A.afs,A.aft,A.afu,A.a7X,A.a7W,A.a7V,A.Y6,A.a4a,A.a44,A.a46,A.Tu,A.a3r,A.a3w,A.a3v,A.a3z,A.a3y,A.a1A,A.a1z,A.a2v,A.a2x,A.a3M,A.a3N,A.a3O,A.a3K,A.a3o,A.afk,A.aeq,A.aer,A.aes,A.aet,A.aeu,A.aev,A.aew,A.ael,A.aej,A.aek,A.aeo,A.aep,A.aei,A.aem,A.aen,A.a3T,A.a3V,A.a3U,A.a41,A.a4_,A.a40,A.a3Z,A.a4A,A.a4z,A.a89,A.a67,A.a69,A.a63,A.a64,A.a6b,A.afq,A.afp,A.afn,A.afo,A.ahe,A.a6e,A.a6h,A.a6d,A.a5Q,A.a5U,A.a5S,A.a5V,A.a5T,A.a5W,A.a5X,A.a2A,A.a6u,A.aaN,A.ZQ,A.To,A.a1n,A.a4f,A.a4g,A.a4e,A.a78,A.Xq,A.a7v,A.a7M,A.a7N,A.a7O,A.adb,A.add,A.adw,A.adp,A.adu,A.adf,A.adn,A.adl,A.adj,A.adr,A.ads,A.ady,A.adh,A.a7d,A.a8r,A.a8V,A.agY,A.aho,A.SN,A.SR,A.SP,A.SQ,A.SS,A.abq,A.abn,A.abl,A.abm,A.abp,A.agP,A.agQ,A.agv,A.agu,A.Ue,A.agU,A.agW,A.agX,A.agT,A.Uy,A.UW,A.Wj,A.VP,A.VW,A.VK,A.Wk,A.Wm,A.Wn,A.Wo,A.Wp,A.VR,A.Wl,A.VV,A.VO,A.W6,A.W_,A.W5,A.W2,A.W1,A.W3,A.afc,A.ad8,A.XO,A.XN,A.ahm,A.XS,A.XU,A.XT,A.adZ,A.V6,A.V7,A.V8,A.V9,A.Va,A.adW,A.adX,A.adU,A.a3n,A.abV,A.WA,A.Wy,A.Wx,A.WB,A.WD,A.Wv,A.Wu,A.Wz,A.Ww,A.a2n,A.Yk,A.Ym,A.Yo,A.Yq,A.Ys,A.aaR,A.aaS,A.aaT,A.aaW,A.aaX,A.aaY,A.YI,A.YG,A.YF,A.YS,A.YY,A.YX,A.YW,A.a9a,A.a9b,A.a9c,A.a9d,A.a9e,A.a9f,A.a95,A.a94,A.a96,A.a97,A.a98,A.a99,A.YZ,A.Z_,A.ahz,A.ahA,A.ahB,A.acv,A.acw,A.ZW,A.ZY,A.a1l,A.a1k,A.a4q,A.a4p,A.a1U,A.aeX,A.aeV,A.af_,A.a1R,A.a1T,A.a1Q,A.a1S,A.a27,A.aeL,A.aeJ,A.aeK,A.aeI,A.a28,A.aeG,A.aee,A.aef,A.aeh,A.a2g,A.a3g,A.aeO,A.af3,A.af1,A.a8k,A.a8h,A.a8g,A.acV,A.acU,A.acR,A.a1t,A.a4J,A.a4K,A.a4L,A.a4O,A.a4P,A.a4Q,A.a4W,A.a4T,A.a4V,A.afd,A.a3a,A.a3e,A.a3f,A.a6X,A.a6Y,A.a1G,A.a1H,A.a1I,A.afG,A.a42,A.ad7,A.a54,A.a52,A.a53,A.a55,A.a51,A.a50,A.afi,A.a80,A.ag7,A.ag9,A.agb,A.agd,A.agf,A.a8p,A.ahH,A.a8R,A.a_2,A.a_3,A.a_j,A.a_k,A.a_i,A.a0W,A.a0X,A.a0S,A.a0T,A.a0G,A.a0H,A.a0O,A.a0P,A.a0M,A.a0N,A.a0Q,A.a0R,A.a0I,A.a0J,A.a0K,A.a0L,A.a_V,A.a_W,A.a0U,A.a0V,A.a_T,A.a_U,A.a_g,A.a_h,A.a_b,A.a_c,A.a_a,A.a0c,A.a0d,A.a0a,A.a0b,A.a0E,A.a0F,A.a0q,A.a0r,A.a0n,A.a0o,A.a0p,A.a_D,A.a_E,A.a_C,A.a0e,A.a0f,A.a0g,A.a_s,A.a_t,A.a_r,A.a_e,A.a_f,A.a_d,A.a0B,A.a0C,A.a0D,A.a_R,A.a_S,A.a_Q,A.a0s,A.a0t,A.a0u,A.a_G,A.a_H,A.a_F,A.a16,A.a17,A.a18,A.a08,A.a09,A.a07,A.a0Y,A.a0Z,A.a1_,A.a_Y,A.a_Z,A.a_X,A.a_7,A.a_8,A.a_9,A.a_p,A.a_q,A.a_o,A.a_4,A.a_5,A.a_6,A.a_m,A.a_n,A.a_l,A.a0k,A.a0l,A.a0m,A.a0h,A.a0i,A.a0j,A.a_z,A.a_B,A.a_y,A.a_A,A.a_v,A.a_x,A.a_u,A.a_w,A.a0y,A.a0z,A.a0A,A.a0v,A.a0w,A.a0x,A.a_N,A.a_P,A.a_M,A.a_O,A.a_J,A.a_L,A.a_I,A.a_K,A.a13,A.a14,A.a15,A.a10,A.a11,A.a12,A.a04,A.a06,A.a03,A.a05,A.a00,A.a02,A.a0_,A.a01])
 p(A.Ee,[A.T2,A.a6I,A.a6J,A.TN,A.U5,A.a1K,A.a24,A.a25,A.Xk,A.Xl,A.Xm,A.Xg,A.Y1,A.Y2,A.ai5,A.XD,A.ahc,A.Zx,A.Zy,A.Zz,A.Zs,A.Zt,A.Zu,A.Y4,A.Y5,A.a2i,A.X_,A.X0,A.ai7,A.a1j,A.a2I,A.adC,A.adD,A.abK,A.a33,A.a35,A.SG,A.SH,A.SI,A.a5A,A.a4n,A.a5D,A.a5x,A.X7,A.X6,A.X5,A.a1r,A.a5P,A.YP,A.a7t,A.XJ,A.XK,A.ahp,A.a8N,A.a8Q,A.WL,A.TR,A.aie,A.a2Y,A.a9n,A.a9o,A.agk,A.agj,A.Y9,A.Y8,A.abr,A.abz,A.aby,A.abv,A.abt,A.abs,A.abC,A.abB,A.abA,A.a7_,A.afx,A.afw,A.a9B,A.ada,A.aeR,A.ahF,A.agJ,A.agI,A.TV,A.TW,A.ahM,A.TA,A.YB,A.abG,A.aan,A.aao,A.aam,A.aap,A.aaq,A.aat,A.aau,A.aaD,A.aaC,A.aaB,A.UD,A.UC,A.UE,A.UF,A.aaA,A.aaH,A.aaF,A.aaG,A.aaE,A.XE,A.Tq,A.TT,A.Yf,A.Ye,A.Yg,A.Yh,A.XZ,A.XX,A.XY,A.ZU,A.ZT,A.ZS,A.Vr,A.Vw,A.Vx,A.Vs,A.Vt,A.Vu,A.Vv,A.a2R,A.a2X,A.a7g,A.a7h,A.a7j,A.a7k,A.a7l,A.a7i,A.Tm,A.Tn,A.Tk,A.Tl,A.Ti,A.Tj,A.Th,A.a8A,A.a8B,A.a91,A.a9k,A.a19,A.aa6,A.aa2,A.a9E,A.ahn,A.abY,A.ac0,A.ac2,A.abX,A.ac_,A.abO,A.ae9,A.acf,A.ag4,A.ag3,A.ag5,A.adN,A.adO,A.adM,A.abd,A.a4v,A.a4u,A.acM,A.acL,A.acK,A.acI,A.acJ,A.acH,A.afM,A.afO,A.afN,A.afP,A.afS,A.afT,A.afU,A.afV,A.afW,A.afX,A.afR,A.afQ,A.agh,A.agg,A.a85,A.a87,A.ag2,A.a3p,A.a48,A.a49,A.ab2,A.a9v,A.ach,A.a3s,A.ZI,A.ZJ,A.a1D,A.a1C,A.a1B,A.a2m,A.a2l,A.a2k,A.a3L,A.a3P,A.a3Q,A.a4C,A.a4D,A.a4E,A.a4F,A.a6a,A.a6j,A.a6t,A.a31,A.a4c,A.a4d,A.a4b,A.a7a,A.a76,A.a7P,A.a7Q,A.a92,A.abo,A.abj,A.abk,A.abi,A.agV,A.a8U,A.a4k,A.a4l,A.VL,A.W7,A.W8,A.W9,A.Wa,A.Wb,A.Wc,A.Wd,A.We,A.Wf,A.Wg,A.Wh,A.Wi,A.VY,A.VM,A.VN,A.VH,A.VJ,A.Wq,A.Wr,A.Ws,A.VS,A.VT,A.VU,A.VZ,A.abe,A.abf,A.abg,A.abh,A.TD,A.Ut,A.Uu,A.Yj,A.Yl,A.Yn,A.Yp,A.Yr,A.aaV,A.aaU,A.akv,A.SY,A.aco,A.acp,A.acq,A.acu,A.acO,A.a1s,A.aeZ,A.aeW,A.aeU,A.a1P,A.ad3,A.a2d,A.a2c,A.a2e,A.a2b,A.a2a,A.ad4,A.ad6,A.ad5,A.abL,A.afy,A.afz,A.a3h,A.aeN,A.a4h,A.af6,A.af7,A.af5,A.af0,A.af4,A.af2,A.a8i,A.a8j,A.acP,A.a1v,A.a1u,A.a4N,A.a4S,A.a4U,A.a3d,A.a3b,A.a3c,A.a37,A.a38,A.a39,A.a6x,A.a6z,A.a6F,A.a7e,A.afh,A.ag6,A.ag8,A.aga,A.agc,A.age,A.a9g,A.ahG,A.Zj,A.aib,A.aia])
 q(A.ua,A.E1)
@@ -76607,7 +76613,7 @@ q(A.nF,A.hQ)
 p(A.jx,[A.GW,A.GZ])
 q(A.Fb,A.Vi)
 p(A.Ef,[A.ahO,A.Xf,A.ai4,A.UO,A.UN,A.Zv,A.Zr,A.WS,A.WT,A.a2E,A.a6U,A.aik,A.YN,A.UK,A.a7S,A.TQ,A.Uv,A.Zb,A.ai1,A.ah9,A.ahJ,A.Yb,A.abx,A.abE,A.aeQ,A.ZN,A.a__,A.acn,A.a1Y,A.agF,A.a8v,A.agE,A.agD,A.UB,A.ae6,A.ae0,A.a2Q,A.a_1,A.aeg,A.aed,A.aec,A.aea,A.ah1,A.ah2,A.adP,A.a4x,A.af9,A.afY,A.afZ,A.ah7,A.agi,A.aeD,A.a83,A.a8c,A.aac,A.a47,A.a45,A.a3q,A.a3x,A.a3u,A.a3t,A.a3A,A.a3E,A.a3C,A.a3D,A.a3B,A.a1y,A.a2t,A.a2s,A.a2u,A.a2w,A.a2y,A.a3I,A.a3S,A.a3R,A.a3W,A.a3X,A.a43,A.a3G,A.a3F,A.a3Y,A.a3H,A.a4B,A.a66,A.a68,A.a6c,A.afm,A.a6f,A.a6g,A.a6i,A.a6k,A.a5R,A.aaO,A.a6T,A.a79,A.adc,A.ade,A.adx,A.adq,A.adv,A.adg,A.ado,A.adm,A.adk,A.adt,A.adz,A.adi,A.a8s,A.V4,A.agZ,A.agR,A.agS,A.a8T,A.VQ,A.VX,A.VI,A.W0,A.W4,A.Vh,A.Ve,A.Vd,A.Vf,A.Vg,A.Vb,A.Vc,A.adY,A.adV,A.a3l,A.a3m,A.WC,A.YH,A.aeY,A.abP,A.acW,A.aeH,A.afA,A.ah5,A.ah6,A.acT,A.acS,A.acQ,A.afg,A.afe,A.aff,A.a4R,A.a6y,A.a3i,A.aey,A.aex,A.a7p])
-p(A.B,[A.on,A.q5,A.iw,A.ao,A.ek,A.b3,A.eg,A.o3,A.jv,A.y1,A.mE,A.bW,A.ot,A.PL,A.fq,A.n2,A.uT,A.e0,A.aY,A.dD,A.Rj])
+p(A.A,[A.on,A.q5,A.iw,A.ao,A.ek,A.b3,A.eg,A.o3,A.jv,A.y1,A.mE,A.bW,A.ot,A.PL,A.fq,A.n2,A.uT,A.e0,A.aY,A.dD,A.Rj])
 p(A.bO,[A.eH,A.he,A.jC,A.Gc,A.JC,A.I7,A.LU,A.vN,A.m2,A.ft,A.GS,A.z3,A.JB,A.eq,A.En,A.M6])
 p(A.eH,[A.Fs,A.vk,A.vl])
 p(A.dE,[A.ur,A.ib])
@@ -76656,7 +76662,7 @@ q(A.zp,A.Cw)
 q(A.dm,A.zp)
 p(A.bi,[A.ma,A.eM,A.jQ,A.ML])
 q(A.mg,A.r5)
-p(A.ao,[A.ah,A.f3,A.aS,A.be,A.f9,A.or,A.Am])
+p(A.ao,[A.ah,A.f3,A.aR,A.be,A.f9,A.or,A.Am])
 p(A.ah,[A.hw,A.a5,A.bZ,A.vY,A.MM,A.A3])
 q(A.ms,A.ek)
 q(A.uZ,A.o3)
@@ -76770,8 +76776,8 @@ q(A.Ex,A.La)
 p(A.aj,[A.b_,A.zJ,A.BF,A.eO,A.Go,A.iK,A.rI,A.AR])
 p(A.b_,[A.Ld,A.Kj,A.MH,A.ME,A.Qg,A.K8,A.tG,A.H_,A.DE,A.uC,A.pg,A.E8,A.pf,A.He,A.Hf,A.jB,A.pl,A.Ek,A.Ft,A.em,A.k4,A.iQ,A.ju,A.fy,A.Gq,A.GY,A.Pr,A.Gu,A.wi,A.ih,A.kw,A.Dl,A.GI,A.DK,A.km,A.Ei,A.EC,A.KM,A.Ml,A.N_,A.Lt,A.IL,A.IV,A.J9,A.ys,A.cZ,A.Kq])
 q(A.D,A.OP)
-p(A.D,[A.A,A.OX])
-p(A.A,[A.Bc,A.CI,A.Ru,A.B9,A.RC,A.AZ,A.B0,A.OJ,A.xb,A.OM,A.B7,A.OU,A.CJ,A.RB])
+p(A.D,[A.B,A.OX])
+p(A.B,[A.Bc,A.CI,A.Ru,A.B9,A.RC,A.AZ,A.B0,A.OJ,A.xb,A.OM,A.B7,A.OU,A.CJ,A.RB])
 q(A.nH,A.Bc)
 p(A.nH,[A.OH,A.HC,A.B4,A.xi,A.xa])
 q(A.zI,A.Cz)
@@ -77593,12 +77599,12 @@ r(A.RB,A.aI)
 s(A.R3,A.ln)
 s(A.R1,A.W)
 s(A.Re,A.ln)})()
-var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{y:"int",M:"double",dB:"num",G:"String",I:"bool",bj:"Null",T:"List",L:"Object",b5:"Map",az:"JSObject"},mangledNames:{},types:["~()","M(M)","~(az)","M(cX)","od(cX)","~(aQ)","uX(cX)","bj(~)","~(hK)","z(aT<bK>)","~(D)","~(L,hu)","~(aW)","~(np,f)","~(I)","I(m8,f)","~(L?)","dO(cX)","T<cO>()","~(px)","h(a1)","~(aZ)","~(d6?)","I(L?)","bj(L,hu)","I(cb)","aC<M>(@)","~(y)","M(A)","I(hW)","~(cT)","ay<~>()","I(G)","~(qN)","I(aW)","y(cb,cb)","H(A,al)","~(eG)","I(fe)","~(f2)","I()","~(@)","~(kQ)","~(cH<L?>,~())","bj()","M(A,M)","q(aT<bK>)","I(bC)","bj(az)","I(eo)","fk()","~(kP)","bj(@)","I(fp)","~(jg)","I(eK)","I(y)","~(~())","~(G)","hY(a1)","G(n8)","y(y)","ay<@>(hg)","G()","bA<z?>?(bb?)","~(qO)","f(f)","az(L?)","~(ni)","~(dv)","~(ym)","fw(@)","y(D,D)","~(mH)","h(a1)?(oT?)","~(ak1)","I(d9)","cZ(a1,c2<M>,h?)","I(D)","~(M)","bA<H?>?(bb?)","~(l7)","M()","y(bC,bC)","h(a1,h?)","ay<~>(hg)","bj(L)","z(z)","I(mD)","~(eS)","eS()","cR(aT<bK>)","az()","y(L?)","~(L?,L?)","@(@)","dd(dd)","G(y)","bj(I)","y()","az?(y)","I(eN)","I(L?,L?)","ay<~>(@)","lJ(a1,c2<M>,h?)","@()","~(G,@)","L?(L?)","jM()","~(L?,G,G)","az([az?])","~([aG?])","bj(L?)","ay<az>([az?])","bj(G)","eN()","~(L)","z?(z?)","~(r9)","~(h3)","G(G)","~(T<az>,az)","wO?()","T<az>()","G(L?)","~(eo)","bA<M?>?(bb?)","z?(aT<bK>)","h(a1,aT<bK>,h?)?(bb?)","~(kp)","p8(T<cT>)","aV(aT<bK>)","bf(M)","lK(a1,c2<M>,h?)","m_(a1)","I(fE<ae>)","~(mK)","I(nY)","M?(+(al,ld))","al(A)","cL(cT)","~(iB)","+boundaryEnd,boundaryStart(Z,Z)(Z)","~(T<kr>)","~(bC)","I(L,bC)","I(L,aT<bC>)","y(bC)","T<bC>(jW)","ay<d6?>(d6?)","~(cI)","b5<L?,L?>()","I(L)","I(ja)","ay<I>()","i0(cb,fI)","G(M,M,G)","M?(A,al,ld)","~([aQ?])","Z(Z,I,fk)","y(dv,dv)","d9(d9)","@(G)","y(d2,d2)","u(bf,u)","hf()","~(hf)","f6()","~(f6)","hk()","~(hk)","aC<@>?(aC<@>?,@,aC<@>(@))","A(y)","hB(aZ)","I(qv)","~(iS)","~(e5)","I(dv,M)","I(dv)","~(yp)","~(pU)","~(w3)","~(pT)","~(yo)","~(yq)","~(yn)","I(G?)","M(A,al)","~(Ju)","fQ()","aQ?(bb?)","I?(bb?)","m0?(bb?)","pN?(bb?)","ay<az>()","~(cN,y)","~(az,T<fN>)","aV?(aT<bK>)","u()","u()?(A)","~(aG?)","~(~)","I(kA?)","z(lv)","l6(a1)","G(G,z)","~({allowPlatformDefault:I})","~(A?)","I(cJ)","T<cT>()","ri()","~({allowPlatformDefault!I})","a2?(a1,n6,bV<j7>)","I(f8)","rM()","~(Te)","nZ(@)","~(j9)","nf()","~(pD)","kw(a1,c2<M>,h?)","ia?(eT)","h(a1,jT,kR?,kR?)","jB(a1,h?)","q3(a1,h?)","ay<~>([az?])","nn()","~(y,I(hW))","I(aT<bK>)","M(aT<bK>)","~(es,fO?)","mS(a1,h?)","l6(a1,h?)","ob(@)","k6()","~(T<L?>)","bm<L,it<@>>(L,it<@>)","I(bm<L,it<@>>)","f(qX)","cZ(a1,c2<M>)","cQ(cQ,bx)","bx(bx)","I(bx)","G(bx)","bj(x<L?>,az)","H8(dl)","u(dl)","Hc(dl)","I(y,I)","ks?()","mn(cC)","kG(kG)","I(y,y)","kt(f,y)","H()","M?()","H(al)","ay<~>(~)","~(es)","I(j2)","u(u?,dd)","ki()","T<ib>()","cR(i7)","~(i7,bf)","I(i7)","~(@,L?)","~(G,pB)","y(dy,dy)","~({curve:eD,descendant:D?,duration:aQ,rect:u?})","~(h9?,qS?)","~(T<cL>{isMergeUp:I})","cT?(cL)","mc(h)","T<cL>(T<cL>)","T<dy>(dy)","aT<cJ>?(cL)","aT<cJ>(aT<cJ>)","aW(y)","I(iB)","~(Gk)","+boundaryEnd,boundaryStart(Z,Z)(Z,G)","~(G?)","dq()","~(y,rs)","M(@)","~(T<cT>)","~(G,G?)","mG(@)","G?(G)","pF(G)","pI(@)","bC(oF)","nF()","nE?(iO,G,G)","bC(y)","aT<bC>()","~(cJ)","~(c_,~(L?))","d6(d6?)","jw<fJ>()","ay<G?>(G?)","m4(az)","ay<~>(d6?,~(d6?))","ay<b5<G,@>>(@)","~(jl)","aT<e>(e)","oc({from:M?})","wZ()","ay<+(G,eH?)>()","G(cp)","rt()","T<cI>()","T<cI>(T<cI>)","M(dB)","T<@>(G)","T<dB>(nU)","b5<G,@>(dZ)","rd(a1,h?)","~(wN)","aF(ako)","y(fT,fT)","r1()","~(aL<aG>)","~(H?)","M?(y)","cy<@>?(ij)","cy<@>(ij)","ay<l8>(G,b5<G,G>)","I(fN)","n5(a1,h?)","d1?(fN)","pf(a1)","G(M)","ay<I>(hg)","kj(a1)","~(dr)","~(rY)","b5<~(aZ),bf?>()","pa(no)","~(lh)","~(hm)","~(jr)","~(dK)","~(fR)","L?(eF)","ce(ce,o7)","~(~(aZ),bf?)","qT(a1)","~(jj)","~(ce)","I(ce?,ce)","ce(ce)","ay<~>(fe)","pl(a1,jG)","y(az)","~([cb?])","@(@,G)","I(vQ)","~(rr)","I(ro)","I(M?,M)","I(li)","aT<fC>(d2)","~(y,y,y)","T<fC>(a1)","u(d2)","bj(dq,dq)","T<d2>(d2,B<d2>)","I(d2)","hP<aW>(aW)","aW?(aW)","L?(y,aW?)","h8()","~(h8)","kg(cC)","pv(cC)","ou()","q_(u?,u?)","~(dq)","i5<0^>(ij,h(a1))<L?>","~(ji)","~(jo)","~(hv,L)","I(apZ)","mR(a1)","~(yr)","oa(@)","m5(@)","t5(y)","~(ke)","ay<@>(rL)","b5<fl,@>(T<@>)","b5<fl,@>(b5<fl,@>)","bj(b5<fl,@>)","kJ(a1)","I(cy<@>?)","ay<bj>(@)","I(kL)","bm<y,G>(bm<G,G>)","p9(nm)","fp(cy<@>)","bm<G?,T<L>>(@,@)","rH(a1)","oD()","hQ(cN)","~(al)","pg(a1,h?)","h(a1,+(H,bf,H))","I(jm)","bj(cI?)","~(cH<L?>)","dc<I>(I)","I(lB)","l0(a1,h?)","kw(a1,h?)","mP(aZ)","pW(aZ)","M(jO)","0^?(0^?(bb?))<L?>","bj(T<~>)","0^?(bA<0^>?(bb?))<L?>","z?()","fn()","~(fn)","~(yi,@)","~(G,L?)","~(f1)","lw()","lI()","iC()","~(iC)","~(jh)","bj(~())","bA<q?>?(bb?)","u(u)","I(u)","~(qD,aG)","T<lo>()","aL<aG>?()","dZ(ei)","I(kZ)","lE(a1)","ay<bj>()","bj(@,hu)","a2q(a2r)","bA<cQ?>?(bb?)","iO(L?)","bA<aV?>?(bb?)","bA<cx?>?(bb?)","cR?(aT<bK>)","cR?(bb?)","ip()","~(ip)","iq()","~(iq)","hb()","~(hb)","~(lj)","~(kW)","oH(a1,jd)","~(y,@)","y(fe,fe)","aT<0^>()<L?>","~(@,@)","y(f5,f5)","G(G,G)","az(y{params:L?})","0&(G,y?)","y(@,@)","T<G>()","T<G>(G,T<G>)","H?(H?,H?,M)","M?(dB?,dB?,M)","z?(z?,z?,M)","h(a1,f,f,h)","~(aO{forceReport:I})","cO(G)","ht?(G)","M(M,M,M)","z?(bb?)","h(a1,c2<M>)","I?(I?,I?,M)","h(a1,kl)","h(a1,h)","cx?(cx?,cx?,M)","cQ?(cQ?,cQ?,M)","q?(q?,q?,M)","y(BP<@>,BP<@>)","I({priority!y,scheduler!ik})","T<fJ>(G)","~(cb{alignment:M?,alignmentPolicy:nO?,curve:eD?,duration:aQ?})","y(aW,aW)","cF(cF?,cF?,M)","h?(a1,n6,bV<j7>)","T<cy<@>>(hi,G)","jH?(bb?)","n9?(bb?)","0^(0^,0^)<dB>","y(iy,iy)","axm?()"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.aa&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.Ou&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.Ov&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.AT&&a.b(c.a)&&b.b(c.b),"2;inside,outside":(a,b)=>c=>c instanceof A.Ow&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.Ox&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.Oy&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.Oz&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.iz&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.OA&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.OB&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.AU&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.AV&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.OC&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.OD&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.AW&&A.arY(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.AX&&A.arY(a,b.a)}}
-A.aBM(v.typeUniverse,JSON.parse('{"dq":"kF","Hj":"kF","jE":"kF","aGP":"q6","pc":{"a2q":[]},"p9":{"a26":[]},"pa":{"wC":[],"hQ":[]},"nm":{"u_":["az"]},"no":{"u_":["az"]},"cN":{"mj":[]},"nf":{"ra":[]},"nn":{"ra":[]},"nF":{"hQ":[]},"wC":{"hQ":[]},"eH":{"bO":[]},"ap3":{"dE":[]},"ib":{"dE":[]},"ZE":{"a2r":[]},"yw":{"fT":[]},"wK":{"fT":[]},"iT":{"XI":[]},"u6":{"Gk":[]},"E1":{"i1":[]},"ua":{"i1":[]},"md":{"Te":[]},"E2":{"i1":[]},"u7":{"i1":[]},"zr":{"i1":[]},"zt":{"i1":[]},"zs":{"i1":[]},"ud":{"of":["1"]},"u8":{"pp":["1","2"]},"me":{"H8":[]},"mf":{"ZE":[],"a2r":[]},"u9":{"kG":[]},"v3":{"i1":[]},"GW":{"jx":["a26","nm"],"jx.C":"a26"},"GZ":{"jx":["wC","no"],"jx.C":"wC"},"FL":{"any":[]},"FK":{"dn":[]},"vt":{"dn":[]},"on":{"B":["1"],"B.E":"1"},"Fs":{"eH":[],"bO":[]},"vk":{"eH":[],"bO":[]},"vl":{"eH":[],"bO":[]},"ur":{"dE":[]},"I3":{"dE":[]},"DF":{"dE":[],"amj":[]},"E7":{"dE":[],"amz":[]},"Ea":{"dE":[],"amC":[]},"E9":{"dE":[],"amA":[]},"H0":{"dE":[],"aoo":[]},"yW":{"dE":[],"aki":[]},"wz":{"dE":[],"aki":[],"aom":[]},"G3":{"dE":[],"anC":[]},"q5":{"B":["hh"],"B.E":"hh"},"Hh":{"xy":[]},"el":{"cd":[]},"bT":{"cd":[]},"Es":{"cd":[]},"Eo":{"cd":[]},"Dx":{"cd":[]},"Dy":{"cd":[]},"ey":{"cd":[]},"iM":{"cd":[]},"k3":{"cd":[]},"dj":{"cd":[]},"oW":{"cd":[]},"IJ":{"cd":[]},"Dp":{"cd":[]},"pj":{"cd":[]},"bg":{"Hc":[],"amE":[]},"qz":{"eQ":[]},"u3":{"eQ":[]},"p3":{"eQ":[]},"Fi":{"eQ":[]},"mC":{"eQ":[]},"Gi":{"eQ":[]},"kH":{"eQ":[]},"I0":{"eQ":[]},"IC":{"l5":[]},"Iz":{"l5":[]},"Iy":{"l5":[]},"nL":{"eQ":[]},"II":{"ak1":[]},"ir":{"eQ":[]},"t2":{"aE":["1"],"T":["1"],"ao":["1"],"B":["1"]},"MI":{"t2":["y"],"aE":["y"],"T":["y"],"ao":["y"],"B":["y"]},"Jx":{"t2":["y"],"aE":["y"],"T":["y"],"ao":["y"],"B":["y"],"aE.E":"y"},"Hk":{"dn":[]},"pE":{"kG":[]},"F6":{"fT":[]},"jz":{"n_":[]},"ic":{"n_":[]},"pA":{"jz":[],"n_":[]},"nr":{"qe":[]},"o9":{"qe":[]},"E_":{"qK":[]},"I4":{"qK":[]},"LT":{"iT":[],"XI":[]},"pC":{"iT":[],"XI":[]},"x":{"T":["1"],"ao":["1"],"bP":[],"az":[],"B":["1"]},"vJ":{"bP":[],"I":[],"bU":[]},"pP":{"bP":[],"bj":[],"bU":[]},"vM":{"bP":[],"az":[]},"kF":{"bP":[],"az":[]},"kD":{"bP":[]},"kE":{"bP":[]},"Ga":{"xu":[]},"Za":{"x":["1"],"T":["1"],"ao":["1"],"bP":[],"az":[],"B":["1"]},"kC":{"M":[],"dB":[],"bP":[]},"pO":{"M":[],"y":[],"dB":[],"bP":[],"bU":[]},"vL":{"M":[],"dB":[],"bP":[],"bU":[]},"j3":{"G":[],"bP":[],"bU":[]},"iw":{"B":["2"]},"m9":{"iw":["1","2"],"B":["2"],"B.E":"2"},"zY":{"m9":["1","2"],"iw":["1","2"],"ao":["2"],"B":["2"],"B.E":"2"},"zp":{"aE":["2"],"T":["2"],"iw":["1","2"],"ao":["2"],"B":["2"]},"dm":{"zp":["1","2"],"aE":["2"],"T":["2"],"iw":["1","2"],"ao":["2"],"B":["2"],"aE.E":"2","B.E":"2"},"mb":{"aT":["2"],"iw":["1","2"],"ao":["2"],"B":["2"],"B.E":"2"},"ma":{"bi":["3","4"],"b5":["3","4"],"bi.V":"4","bi.K":"3"},"he":{"bO":[]},"mg":{"aE":["y"],"T":["y"],"ao":["y"],"B":["y"],"aE.E":"y"},"ao":{"B":["1"]},"ah":{"ao":["1"],"B":["1"]},"hw":{"ah":["1"],"ao":["1"],"B":["1"],"B.E":"1","ah.E":"1"},"ek":{"B":["2"],"B.E":"2"},"ms":{"ek":["1","2"],"ao":["2"],"B":["2"],"B.E":"2"},"a5":{"ah":["2"],"ao":["2"],"B":["2"],"B.E":"2","ah.E":"2"},"b3":{"B":["1"],"B.E":"1"},"eg":{"B":["2"],"B.E":"2"},"o3":{"B":["1"],"B.E":"1"},"uZ":{"o3":["1"],"ao":["1"],"B":["1"],"B.E":"1"},"jv":{"B":["1"],"B.E":"1"},"pz":{"jv":["1"],"ao":["1"],"B":["1"],"B.E":"1"},"y1":{"B":["1"],"B.E":"1"},"f3":{"ao":["1"],"B":["1"],"B.E":"1"},"mE":{"B":["1"],"B.E":"1"},"bW":{"B":["1"],"B.E":"1"},"r5":{"aE":["1"],"T":["1"],"ao":["1"],"B":["1"]},"bZ":{"ah":["1"],"ao":["1"],"B":["1"],"B.E":"1","ah.E":"1"},"e1":{"yi":[]},"mk":{"og":["1","2"],"b5":["1","2"]},"po":{"b5":["1","2"]},"bB":{"po":["1","2"],"b5":["1","2"]},"ot":{"B":["1"],"B.E":"1"},"cE":{"po":["1","2"],"b5":["1","2"]},"up":{"il":["1"],"aT":["1"],"ao":["1"],"B":["1"]},"fx":{"il":["1"],"aT":["1"],"ao":["1"],"B":["1"]},"eh":{"il":["1"],"aT":["1"],"ao":["1"],"B":["1"]},"G9":{"j0":[]},"pM":{"j0":[]},"wx":{"jC":[],"bO":[]},"Gc":{"bO":[]},"JC":{"bO":[]},"GV":{"dn":[]},"BG":{"hu":[]},"kc":{"j0":[]},"Ee":{"j0":[]},"Ef":{"j0":[]},"Ja":{"j0":[]},"IZ":{"j0":[]},"p1":{"j0":[]},"I7":{"bO":[]},"eM":{"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"aS":{"ao":["1"],"B":["1"],"B.E":"1"},"be":{"ao":["1"],"B":["1"],"B.E":"1"},"f9":{"ao":["bm<1,2>"],"B":["bm<1,2>"],"B.E":"bm<1,2>"},"mW":{"eM":["1","2"],"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"rC":{"ajV":[],"w6":[]},"qH":{"w6":[]},"PL":{"B":["w6"],"B.E":"w6"},"j9":{"fd":[],"r1":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"],"bU":[],"aE.E":"y"},"q6":{"bP":[],"az":[],"iO":[],"bU":[]},"nh":{"bP":[],"az":[],"iO":[],"bU":[]},"wr":{"bP":[],"az":[]},"QU":{"iO":[]},"wm":{"d6":[],"bP":[],"az":[],"bU":[]},"q7":{"f7":["1"],"bP":[],"az":[]},"wq":{"aE":["M"],"T":["M"],"f7":["M"],"ao":["M"],"bP":[],"az":[],"B":["M"]},"fd":{"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"]},"wn":{"Xv":[],"aE":["M"],"T":["M"],"f7":["M"],"ao":["M"],"bP":[],"az":[],"B":["M"],"bU":[],"aE.E":"M"},"wo":{"Xw":[],"aE":["M"],"T":["M"],"f7":["M"],"ao":["M"],"bP":[],"az":[],"B":["M"],"bU":[],"aE.E":"M"},"GM":{"fd":[],"Z3":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"],"bU":[],"aE.E":"y"},"wp":{"fd":[],"Z4":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"],"bU":[],"aE.E":"y"},"GN":{"fd":[],"Z5":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"],"bU":[],"aE.E":"y"},"ws":{"fd":[],"a8n":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"],"bU":[],"aE.E":"y"},"GO":{"fd":[],"r0":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"],"bU":[],"aE.E":"y"},"q8":{"fd":[],"a8o":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"B":["y"],"bU":[],"aE.E":"y"},"C_":{"fl":[]},"LU":{"bO":[]},"C0":{"jC":[],"bO":[]},"jJ":{"qG":["1"]},"BY":{"Ju":[]},"fq":{"B":["1"],"B.E":"1"},"cW":{"bO":[]},"cz":{"lr":["1"],"jw":["1"]},"rh":{"jJ":["1"],"qG":["1"]},"BN":{"lp":["1"]},"zi":{"lp":["1"]},"cf":{"KL":["1"]},"aP":{"ay":["1"]},"rg":{"BJ":["1"]},"lr":{"jw":["1"]},"rk":{"jJ":["1"],"qG":["1"]},"BK":{"jw":["1"]},"rp":{"qG":["1"]},"jQ":{"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"lx":{"jQ":["1","2"],"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"zK":{"jQ":["1","2"],"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"or":{"ao":["1"],"B":["1"],"B.E":"1"},"lu":{"rX":["1"],"il":["1"],"aT":["1"],"ao":["1"],"B":["1"]},"eW":{"rX":["1"],"il":["1"],"axE":["1"],"aT":["1"],"ao":["1"],"B":["1"]},"n2":{"B":["1"],"B.E":"1"},"aE":{"T":["1"],"ao":["1"],"B":["1"]},"bi":{"b5":["1","2"]},"Am":{"ao":["2"],"B":["2"],"B.E":"2"},"w4":{"b5":["1","2"]},"og":{"b5":["1","2"]},"zO":{"zP":["1"],"an7":["1"]},"zQ":{"zP":["1"]},"uT":{"ao":["1"],"B":["1"],"B.E":"1"},"vY":{"ah":["1"],"ao":["1"],"B":["1"],"B.E":"1","ah.E":"1"},"il":{"aT":["1"],"ao":["1"],"B":["1"]},"rX":{"il":["1"],"aT":["1"],"ao":["1"],"B":["1"]},"ML":{"bi":["G","@"],"b5":["G","@"],"bi.V":"@","bi.K":"G"},"MM":{"ah":["G"],"ao":["G"],"B":["G"],"B.E":"G","ah.E":"G"},"vN":{"bO":[]},"Gd":{"bO":[]},"M":{"dB":[]},"y":{"dB":[]},"T":{"ao":["1"],"B":["1"]},"ajV":{"w6":[]},"aT":{"ao":["1"],"B":["1"]},"m2":{"bO":[]},"jC":{"bO":[]},"ft":{"bO":[]},"wY":{"bO":[]},"vA":{"bO":[]},"GS":{"bO":[]},"z3":{"bO":[]},"JB":{"bO":[]},"eq":{"bO":[]},"En":{"bO":[]},"H3":{"bO":[]},"yd":{"bO":[]},"LV":{"dn":[]},"eJ":{"dn":[]},"A3":{"ah":["1"],"ao":["1"],"B":["1"],"B.E":"1","ah.E":"1"},"PN":{"hu":[]},"C9":{"JF":[]},"fX":{"JF":[]},"Lk":{"JF":[]},"GU":{"dn":[]},"Z5":{"T":["y"],"ao":["y"],"B":["y"]},"r1":{"T":["y"],"ao":["y"],"B":["y"]},"a8o":{"T":["y"],"ao":["y"],"B":["y"]},"Z3":{"T":["y"],"ao":["y"],"B":["y"]},"a8n":{"T":["y"],"ao":["y"],"B":["y"]},"Z4":{"T":["y"],"ao":["y"],"B":["y"]},"r0":{"T":["y"],"ao":["y"],"B":["y"]},"Xv":{"T":["M"],"ao":["M"],"B":["M"]},"Xw":{"T":["M"],"ao":["M"],"B":["M"]},"ie":{"rN":["ie"]},"nB":{"rN":["nB"]},"vo":{"a2":[],"h":[]},"Mj":{"a7":["vo"]},"e0":{"B":["G"],"B.E":"G"},"r6":{"lG":["1","B<1>"],"lG.E":"1"},"qC":{"lG":["1","aT<1>"],"lG.E":"1"},"c2":{"a4":[]},"oY":{"c2":["M"],"a4":[]},"K2":{"c2":["M"],"a4":[]},"K3":{"c2":["M"],"a4":[]},"qk":{"c2":["M"],"a4":[]},"ho":{"c2":["M"],"a4":[]},"uz":{"c2":["M"],"a4":[]},"oe":{"c2":["M"],"a4":[]},"pn":{"c2":["1"],"a4":[]},"tE":{"c2":["1"],"a4":[]},"Ak":{"eD":[]},"fG":{"eD":[]},"Jt":{"eD":[]},"e3":{"eD":[]},"yJ":{"eD":[]},"mz":{"eD":[]},"Lm":{"eD":[]},"aC":{"av":["1"],"av.T":"1","aC.T":"1"},"fw":{"aC":["z?"],"av":["z?"],"av.T":"z?","aC.T":"z?"},"at":{"c2":["1"],"a4":[]},"jL":{"av":["1"],"av.T":"1"},"IM":{"aC":["H?"],"av":["H?"],"av.T":"H?","aC.T":"H?"},"HB":{"aC":["u?"],"av":["u?"],"av.T":"u?","aC.T":"u?"},"mT":{"aC":["y"],"av":["y"],"av.T":"y","aC.T":"y"},"iP":{"av":["M"],"av.T":"M"},"z_":{"av":["1"],"av.T":"1"},"ut":{"a2":[],"h":[]},"zC":{"a7":["ut"]},"c3":{"z":[]},"L5":{"hx":[]},"Et":{"aF":[],"h":[]},"mn":{"a2":[],"h":[]},"zD":{"a7":["mn"]},"Eu":{"cF":[]},"avT":{"aX":[],"aM":[],"h":[]},"L8":{"ej":["uu"],"ej.T":"uu"},"EI":{"uu":[]},"uw":{"a2":[],"h":[]},"zF":{"a7":["uw"]},"Ev":{"aF":[],"h":[]},"uv":{"a2":[],"h":[]},"rm":{"a2":[],"h":[]},"L9":{"a7":["uv"]},"rn":{"a7":["rm<1>"]},"hD":{"h7":[]},"Ew":{"ia":[]},"pq":{"a2":[],"h":[]},"zE":{"ig":["pq"],"a7":["pq"]},"Lb":{"a4":[]},"Ex":{"hx":[]},"zH":{"a2":[],"h":[]},"Ey":{"aF":[],"h":[]},"Ld":{"b_":[],"aj":[],"h":[]},"OH":{"A":[],"aI":["A"],"D":[],"ae":[]},"zI":{"a7":["zH"]},"MQ":{"a4":[]},"P5":{"a4":[]},"L4":{"a4":[]},"zJ":{"aj":[],"h":[]},"Lc":{"aH":[],"aW":[],"a1":[]},"oB":{"d_":["A","e6"],"A":[],"aJ":["A","e6"],"D":[],"ae":[],"aJ.1":"e6","d_.1":"e6","aJ.0":"A"},"kg":{"a2":[],"h":[]},"zG":{"a7":["kg"]},"MU":{"a4":[]},"vB":{"cG":[],"aX":[],"aM":[],"h":[]},"uy":{"aF":[],"h":[]},"lt":{"cO":[]},"pF":{"lt":[],"cO":[]},"Fe":{"lt":[],"cO":[]},"Fd":{"lt":[],"cO":[]},"pH":{"m2":[],"bO":[]},"ES":{"cO":[]},"M4":{"cO":[]},"ee":{"a4":[]},"bV":{"a4":[]},"ov":{"a4":[]},"hP":{"cO":[]},"uH":{"cO":[]},"ER":{"cO":[]},"uI":{"cO":[]},"Gw":{"fH":[]},"lk":{"fH":[]},"iv":{"fH":[]},"vW":{"fJ":[]},"aY":{"B":["1"],"B.E":"1"},"dD":{"B":["1"],"B.E":"1"},"dc":{"ay":["1"]},"vf":{"aO":[]},"d1":{"aZ":[]},"jh":{"aZ":[]},"kP":{"aZ":[]},"kQ":{"aZ":[]},"jg":{"aZ":[]},"jj":{"aZ":[]},"e5":{"aZ":[]},"ji":{"aZ":[]},"JY":{"aZ":[]},"QC":{"aZ":[]},"ns":{"aZ":[]},"Qy":{"ns":[],"aZ":[]},"nx":{"aZ":[]},"QJ":{"nx":[],"aZ":[]},"QE":{"jh":[],"aZ":[]},"QB":{"kP":[],"aZ":[]},"QD":{"kQ":[],"aZ":[]},"QA":{"jg":[],"aZ":[]},"nu":{"aZ":[]},"QF":{"nu":[],"aZ":[]},"QN":{"jj":[],"aZ":[]},"ny":{"e5":[],"aZ":[]},"QL":{"ny":[],"e5":[],"aZ":[]},"nz":{"e5":[],"aZ":[]},"QM":{"nz":[],"e5":[],"aZ":[]},"Hm":{"e5":[],"aZ":[]},"QK":{"e5":[],"aZ":[]},"QH":{"ji":[],"aZ":[]},"nw":{"aZ":[]},"QI":{"nw":[],"aZ":[]},"nv":{"aZ":[]},"QG":{"nv":[],"aZ":[]},"nt":{"aZ":[]},"Qz":{"nt":[],"aZ":[]},"hb":{"ck":[],"cp":[]},"N7":{"t1":[]},"Nw":{"t1":[]},"hf":{"ck":[],"cp":[]},"f1":{"ck":[],"cp":[]},"fn":{"f1":[],"ck":[],"cp":[]},"f6":{"f1":[],"ck":[],"cp":[]},"hk":{"f1":[],"ck":[],"cp":[]},"h8":{"ck":[],"cp":[]},"ck":{"cp":[]},"wB":{"ck":[],"cp":[]},"qi":{"ck":[],"cp":[]},"eS":{"ck":[],"cp":[]},"DH":{"ck":[],"cp":[]},"ip":{"ck":[],"cp":[]},"iq":{"ck":[],"cp":[]},"tP":{"ck":[],"cp":[]},"mP":{"hB":[]},"pW":{"hB":[]},"JZ":{"aF":[],"h":[]},"oh":{"aF":[],"h":[]},"DD":{"aF":[],"h":[]},"DC":{"aF":[],"h":[]},"Ed":{"aF":[],"h":[]},"Ec":{"aF":[],"h":[]},"F2":{"aF":[],"h":[]},"F1":{"aF":[],"h":[]},"F9":{"aF":[],"h":[]},"F8":{"aF":[],"h":[]},"auT":{"cG":[],"aX":[],"aM":[],"h":[]},"Do":{"aF":[],"h":[]},"w9":{"a2":[],"h":[]},"An":{"a7":["w9"]},"tJ":{"a2":[],"h":[]},"Of":{"H":[]},"zh":{"a7":["tJ"]},"Kj":{"b_":[],"aj":[],"h":[]},"OF":{"A":[],"aI":["A"],"D":[],"ae":[]},"av2":{"cG":[],"aX":[],"aM":[],"h":[]},"q_":{"aC":["u?"],"av":["u?"],"av.T":"u?","aC.T":"u?"},"wb":{"aC":["f"],"av":["f"],"av.T":"f","aC.T":"f"},"axO":{"cG":[],"aX":[],"aM":[],"h":[]},"tZ":{"a2":[],"h":[]},"zn":{"a7":["tZ"]},"Ne":{"cR":[],"bA":["cR"]},"MH":{"b_":[],"aj":[],"h":[]},"B4":{"A":[],"aI":["A"],"D":[],"ae":[]},"pZ":{"kd":["y"],"z":[],"kd.T":"y"},"Lw":{"hx":[]},"EP":{"aF":[],"h":[]},"pv":{"aF":[],"h":[]},"vb":{"aX":[],"aM":[],"h":[]},"zg":{"c2":["1"],"a4":[]},"Bv":{"a2":[],"h":[]},"vv":{"aF":[],"h":[]},"Pl":{"a7":["Bv"]},"My":{"a2":[],"h":[]},"Mx":{"bb":[]},"M0":{"bb":[]},"M1":{"bb":[]},"Nz":{"bb":[]},"vw":{"cG":[],"aX":[],"aM":[],"h":[]},"kA":{"mU":[],"kz":[]},"vE":{"mU":[],"kz":[]},"mU":{"kz":[]},"AH":{"aX":[],"aM":[],"h":[]},"Ad":{"a2":[],"h":[]},"vD":{"aF":[],"h":[]},"Ac":{"a7":["Ad"],"aky":[]},"G7":{"aF":[],"h":[]},"fF":{"bx":[]},"hz":{"fF":[],"bx":[]},"fM":{"fF":[],"bx":[]},"zm":{"a2":[],"h":[]},"A7":{"a2":[],"h":[]},"mS":{"a2":[],"h":[]},"axs":{"cG":[],"aX":[],"aM":[],"h":[]},"Ae":{"a4":[]},"Af":{"aC":["fF"],"av":["fF"],"av.T":"fF","aC.T":"fF"},"MF":{"a4":[]},"Kv":{"a7":["zm"]},"A8":{"a7":["A7"]},"B_":{"A":[],"lb":["dQ","A"],"D":[],"ae":[]},"Lq":{"hs":["dQ","A"],"aj":[],"h":[],"hs.0":"dQ","hs.1":"A"},"Ag":{"a7":["mS"]},"yB":{"a2":[],"h":[]},"BS":{"a7":["yB"]},"Gy":{"aF":[],"h":[]},"w7":{"a2":[],"h":[]},"B3":{"A":[],"aI":["A"],"D":[],"ae":[]},"nZ":{"aC":["bx?"],"av":["bx?"],"av.T":"bx?","aC.T":"bx?"},"Ao":{"a2":[],"h":[]},"N5":{"a7":["w7"]},"ME":{"b_":[],"aj":[],"h":[]},"N2":{"a7":["Ao"]},"BB":{"aF":[],"h":[]},"BC":{"a4":[]},"N3":{"ej":["n8"],"ej.T":"n8"},"EK":{"n8":[]},"i5":{"GB":["1"],"wH":["1"],"fb":["1"],"e7":["1"],"cy":["1"]},"lJ":{"a2":[],"h":[]},"lK":{"a2":[],"h":[]},"rK":{"a2":[],"h":[]},"Rb":{"aF":[],"h":[]},"R9":{"a7":["lJ"]},"Ra":{"a7":["lK"]},"LY":{"aF":[],"h":[]},"JX":{"ia":[]},"AG":{"a7":["rK<1>"]},"Cr":{"a4":[]},"Cs":{"a4":[]},"AL":{"a2":[],"h":[]},"AM":{"a2":[],"h":[]},"Ho":{"ia":[]},"Od":{"a7":["AL"],"cs":[]},"Oe":{"a7":["AM"]},"xw":{"a2":[],"h":[]},"Bi":{"aX":[],"aM":[],"h":[]},"zZ":{"a2":[],"h":[]},"xv":{"a2":[],"h":[]},"xx":{"a7":["xv"],"cs":[]},"aBx":{"a2":[],"h":[]},"Ia":{"a7":["xw"]},"Pa":{"a4":[]},"zl":{"al":[],"ke":[]},"Ku":{"aF":[],"h":[]},"A_":{"a7":["zZ"]},"LB":{"aL":["eF"],"aL.T":"eF"},"Pb":{"aX":[],"aM":[],"h":[]},"Mq":{"aF":[],"h":[]},"rD":{"a2":[],"h":[]},"It":{"aF":[],"h":[]},"N4":{"ig":["rD"],"a7":["rD"]},"azm":{"cG":[],"aX":[],"aM":[],"h":[]},"azM":{"cG":[],"aX":[],"aM":[],"h":[]},"Jc":{"a2":[],"h":[]},"Q3":{"bb":[]},"aA2":{"cG":[],"aX":[],"aM":[],"h":[]},"yy":{"a2":[],"h":[]},"BQ":{"a7":["yy"]},"GC":{"hx":[]},"Q9":{"a4":[]},"aAa":{"cG":[],"aX":[],"aM":[],"h":[]},"BV":{"a2":[],"h":[]},"Jq":{"aF":[],"h":[]},"Qf":{"a7":["BV"]},"Qg":{"b_":[],"aj":[],"h":[]},"Qh":{"A":[],"aI":["A"],"D":[],"ae":[]},"Qc":{"eO":[],"aj":[],"h":[]},"Qd":{"aH":[],"aW":[],"a1":[]},"OW":{"A":[],"aJ":["A","e6"],"D":[],"ae":[],"aJ.1":"e6","aJ.0":"A"},"Qb":{"aF":[],"h":[]},"Qe":{"aF":[],"h":[]},"Js":{"aF":[],"h":[]},"Ab":{"cG":[],"aX":[],"aM":[],"h":[]},"ob":{"aC":["fQ"],"av":["fQ"],"av.T":"fQ","aC.T":"fQ"},"tA":{"a2":[],"h":[]},"yI":{"aF":[],"h":[]},"Ka":{"a7":["tA"]},"yT":{"a2":[],"h":[]},"yU":{"a7":["yT"]},"Qq":{"aF":[],"h":[]},"aAu":{"cG":[],"aX":[],"aM":[],"h":[]},"PT":{"a4":[]},"cx":{"bx":[]},"fU":{"bx":[]},"DO":{"bx":[]},"dk":{"bx":[]},"dT":{"bx":[]},"fv":{"h7":[]},"dl":{"l9":[]},"cM":{"cx":[],"bx":[]},"kd":{"z":[]},"b9":{"cQ":[]},"d7":{"cQ":[]},"lA":{"cQ":[]},"Hi":{"d9":[]},"cS":{"cx":[],"bx":[]},"ii":{"cx":[],"bx":[]},"rU":{"dR":["cS"],"cx":[],"bx":[],"dR.T":"cS"},"rV":{"dR":["ii"],"cx":[],"bx":[],"dR.T":"ii"},"dR":{"cx":[],"bx":[]},"hr":{"h7":[]},"ep":{"cx":[],"bx":[]},"e9":{"cx":[],"bx":[]},"ea":{"cx":[],"bx":[]},"re":{"fk":[]},"QV":{"fk":[]},"dM":{"d9":[],"i7":[],"ae":[]},"x4":{"A":[],"aI":["A"],"D":[],"ae":[]},"zk":{"a4":[]},"Lr":{"jd":[]},"P1":{"l_":[],"aI":["A"],"D":[],"ae":[]},"al":{"ke":[]},"m8":{"kt":[]},"A":{"D":[],"ae":[]},"m7":{"fE":["A"]},"eA":{"da":[]},"uq":{"eA":[],"eB":["1"],"da":[]},"fL":{"eA":[],"eB":["A"],"da":[]},"x8":{"d_":["A","fL"],"A":[],"aJ":["A","fL"],"D":[],"ae":[],"aJ.1":"fL","d_.1":"fL","aJ.0":"A"},"EA":{"a4":[]},"x9":{"A":[],"aI":["A"],"D":[],"ae":[]},"kX":{"a4":[]},"nG":{"A":[],"aJ":["A","fP"],"D":[],"ae":[],"aJ.1":"fP","aJ.0":"A"},"OJ":{"A":[],"D":[],"ae":[]},"BR":{"kX":[],"a4":[]},"zo":{"kX":[],"a4":[]},"rj":{"kX":[],"a4":[]},"xb":{"A":[],"D":[],"ae":[]},"hV":{"eA":[],"eB":["A"],"da":[]},"xc":{"d_":["A","hV"],"A":[],"aJ":["A","hV"],"D":[],"ae":[],"aJ.1":"hV","d_.1":"hV","aJ.0":"A"},"dV":{"dr":[]},"uh":{"dV":[],"dr":[]},"uf":{"dV":[],"dr":[]},"qY":{"hj":[],"dV":[],"dr":[]},"H1":{"hj":[],"dV":[],"dr":[]},"vV":{"dV":[],"dr":[]},"tH":{"dV":[],"dr":[]},"Hg":{"dr":[]},"hj":{"dV":[],"dr":[]},"ug":{"dV":[],"dr":[]},"vz":{"hj":[],"dV":[],"dr":[]},"tN":{"dV":[],"dr":[]},"vj":{"dV":[],"dr":[]},"GK":{"a4":[]},"D":{"ae":[]},"eB":{"da":[]},"dy":{"cL":[]},"Aa":{"cL":[]},"je":{"cJ":[]},"fP":{"eB":["A"],"da":[]},"iB":{"dv":[],"a4":[]},"kY":{"A":[],"aJ":["A","fP"],"D":[],"ae":[],"aJ.1":"fP","aJ.0":"A"},"la":{"a4":[]},"x2":{"A":[],"aI":["A"],"D":[],"ae":[]},"jo":{"A":[],"aI":["A"],"D":[],"ae":[]},"HU":{"A":[],"aI":["A"],"D":[],"ae":[]},"xk":{"A":[],"aI":["A"],"D":[],"ae":[]},"x7":{"A":[],"aI":["A"],"D":[],"ae":[]},"HP":{"A":[],"aI":["A"],"D":[],"ae":[]},"HQ":{"A":[],"aI":["A"],"D":[],"ae":[]},"HD":{"A":[],"aI":["A"],"D":[],"ae":[]},"HE":{"A":[],"aI":["A"],"D":[],"ae":[]},"uA":{"a4":[]},"rQ":{"A":[],"aI":["A"],"D":[],"ae":[]},"HI":{"A":[],"aI":["A"],"D":[],"ae":[]},"HH":{"A":[],"aI":["A"],"D":[],"ae":[]},"HG":{"A":[],"aI":["A"],"D":[],"ae":[]},"B8":{"A":[],"aI":["A"],"D":[],"ae":[]},"HR":{"A":[],"aI":["A"],"D":[],"ae":[]},"HS":{"A":[],"aI":["A"],"D":[],"ae":[]},"HJ":{"A":[],"aI":["A"],"D":[],"ae":[]},"HY":{"A":[],"aI":["A"],"D":[],"ae":[]},"HM":{"A":[],"aI":["A"],"D":[],"ae":[]},"HT":{"A":[],"aI":["A"],"D":[],"ae":[]},"xg":{"A":[],"aI":["A"],"D":[],"i7":[],"ae":[]},"HW":{"A":[],"aI":["A"],"D":[],"ae":[]},"xd":{"A":[],"aI":["A"],"D":[],"ae":[]},"xh":{"A":[],"aI":["A"],"D":[],"ae":[]},"xf":{"A":[],"aI":["A"],"D":[],"ae":[]},"HX":{"A":[],"aI":["A"],"D":[],"ae":[]},"HF":{"A":[],"aI":["A"],"D":[],"ae":[]},"HK":{"A":[],"aI":["A"],"D":[],"ae":[]},"HO":{"A":[],"aI":["A"],"D":[],"ae":[]},"HL":{"A":[],"aI":["A"],"D":[],"ae":[]},"x5":{"A":[],"aI":["A"],"D":[],"ae":[]},"dv":{"a4":[]},"nH":{"A":[],"aI":["A"],"D":[],"ae":[]},"xi":{"A":[],"aI":["A"],"D":[],"ae":[]},"HC":{"A":[],"aI":["A"],"D":[],"ae":[]},"xj":{"A":[],"aI":["A"],"D":[],"ae":[]},"xa":{"A":[],"aI":["A"],"D":[],"ae":[]},"cU":{"eA":[],"eB":["A"],"da":[]},"qr":{"d_":["A","cU"],"A":[],"aJ":["A","cU"],"D":[],"ae":[],"aJ.1":"cU","d_.1":"cU","aJ.0":"A"},"xe":{"d_":["A","cU"],"A":[],"aJ":["A","cU"],"D":[],"ae":[],"aJ.1":"cU","d_.1":"cU","aJ.0":"A"},"l_":{"aI":["A"],"D":[],"ae":[]},"jG":{"a4":[]},"oc":{"ay":["~"]},"yK":{"dn":[]},"Pt":{"cO":[]},"xT":{"a4":[]},"j4":{"fI":[]},"mY":{"fI":[]},"mX":{"fI":[]},"wM":{"dn":[]},"wg":{"dn":[]},"Lu":{"cR":[]},"PU":{"wh":[]},"lc":{"cR":[]},"kU":{"jl":[]},"qn":{"jl":[]},"xp":{"a4":[]},"p6":{"fk":[]},"pR":{"fk":[]},"kM":{"fk":[]},"uP":{"fk":[]},"Jf":{"lf":[]},"Je":{"lf":[]},"Jg":{"lf":[]},"qR":{"lf":[]},"Fm":{"o7":[]},"NG":{"yA":[]},"FP":{"dZ":[]},"FQ":{"dZ":[]},"FT":{"dZ":[]},"FV":{"dZ":[]},"FS":{"dZ":[]},"FU":{"dZ":[]},"FW":{"dZ":[]},"FR":{"dZ":[]},"rd":{"eL":["Cq"],"aX":[],"aM":[],"h":[],"eL.T":"Cq"},"zc":{"a2":[],"h":[]},"ET":{"aF":[],"h":[]},"JW":{"a4":[]},"R7":{"aX":[],"aM":[],"h":[]},"R6":{"a7":["zc"]},"m_":{"a2":[],"h":[]},"zd":{"aX":[],"aM":[],"h":[]},"mD":{"a2":[],"h":[]},"akk":{"aG":[]},"awb":{"aG":[]},"awa":{"aG":[]},"oV":{"aG":[]},"p2":{"aG":[]},"eF":{"aG":[]},"jk":{"aG":[]},"bX":{"aL":["1"]},"cB":{"aL":["1"],"aL.T":"1"},"ze":{"a7":["m_"]},"A2":{"a7":["mD"]},"JN":{"aL":["akk"],"aL.T":"akk"},"uN":{"aL":["aG"],"aL.T":"aG"},"EW":{"aL":["eF"]},"Ht":{"bX":["jk"],"aL":["jk"],"bX.T":"jk","aL.T":"jk"},"AD":{"bX":["1"],"rJ":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"AE":{"bX":["1"],"rJ":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"zA":{"aL":["1"],"aL.T":"1"},"tz":{"a2":[],"h":[]},"K9":{"a7":["tz"]},"K8":{"b_":[],"aj":[],"h":[]},"tG":{"b_":[],"aj":[],"h":[]},"za":{"a2":[],"h":[]},"Ci":{"a7":["za"],"cs":[]},"Dw":{"cs":[]},"vO":{"a4":[]},"Ns":{"aF":[],"h":[]},"fC":{"aX":[],"aM":[],"h":[]},"pg":{"b_":[],"aj":[],"h":[]},"pf":{"b_":[],"aj":[],"h":[]},"jB":{"b_":[],"aj":[],"h":[]},"pl":{"b_":[],"aj":[],"h":[]},"mc":{"b_":[],"aj":[],"h":[]},"vU":{"ff":["fL"],"aM":[],"h":[],"ff.T":"fL"},"aw_":{"aX":[],"aM":[],"h":[]},"kw":{"b_":[],"aj":[],"h":[]},"l6":{"b_":[],"aj":[],"h":[]},"QP":{"eK":[],"aW":[],"a1":[]},"QQ":{"aX":[],"aM":[],"h":[]},"H_":{"b_":[],"aj":[],"h":[]},"DE":{"b_":[],"aj":[],"h":[]},"uC":{"b_":[],"aj":[],"h":[]},"E8":{"b_":[],"aj":[],"h":[]},"He":{"b_":[],"aj":[],"h":[]},"Hf":{"b_":[],"aj":[],"h":[]},"Ek":{"b_":[],"aj":[],"h":[]},"Ft":{"b_":[],"aj":[],"h":[]},"em":{"b_":[],"aj":[],"h":[]},"k4":{"b_":[],"aj":[],"h":[]},"iQ":{"b_":[],"aj":[],"h":[]},"uB":{"eO":[],"aj":[],"h":[]},"ju":{"b_":[],"aj":[],"h":[]},"fy":{"b_":[],"aj":[],"h":[]},"Gq":{"b_":[],"aj":[],"h":[]},"GY":{"b_":[],"aj":[],"h":[]},"Nx":{"aH":[],"aW":[],"a1":[]},"Pr":{"b_":[],"aj":[],"h":[]},"yb":{"eO":[],"aj":[],"h":[]},"wQ":{"ff":["cU"],"aM":[],"h":[],"ff.T":"cU"},"Hn":{"aF":[],"h":[]},"Fn":{"eO":[],"aj":[],"h":[]},"Ej":{"eO":[],"aj":[],"h":[]},"I2":{"eO":[],"aj":[],"h":[]},"Gu":{"b_":[],"aj":[],"h":[]},"wi":{"b_":[],"aj":[],"h":[]},"ih":{"b_":[],"aj":[],"h":[]},"Dl":{"b_":[],"aj":[],"h":[]},"GI":{"b_":[],"aj":[],"h":[]},"DK":{"b_":[],"aj":[],"h":[]},"km":{"b_":[],"aj":[],"h":[]},"Gh":{"aF":[],"h":[]},"dU":{"aF":[],"h":[]},"Ei":{"b_":[],"aj":[],"h":[]},"AY":{"A":[],"aI":["A"],"D":[],"ae":[]},"xs":{"h":[]},"xq":{"aW":[],"a1":[]},"JV":{"ik":[],"ae":[]},"EC":{"b_":[],"aj":[],"h":[]},"Eq":{"aF":[],"h":[]},"Lo":{"a4":[]},"kj":{"cG":[],"aX":[],"aM":[],"h":[]},"Nt":{"aF":[],"h":[]},"EM":{"aF":[],"h":[]},"kk":{"a2":[],"h":[]},"zT":{"a7":["kk"]},"le":{"bV":["ce"],"a4":[]},"py":{"a2":[],"h":[]},"kl":{"a7":["py"],"cs":[]},"Bm":{"a2":[],"h":[]},"jV":{"rc":[],"d9":[]},"KM":{"b_":[],"aj":[],"h":[]},"OG":{"A":[],"aI":["A"],"D":[],"ae":[]},"zU":{"eO":[],"aj":[],"h":[]},"Pd":{"a7":["Bm"],"aoZ":[]},"jN":{"bX":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"C7":{"bX":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"C8":{"bX":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"Ce":{"cB":["1"],"aL":["1"],"aL.T":"1"},"Pk":{"bX":["js"],"aL":["js"],"bX.T":"js","aL.T":"js"},"L2":{"bX":["hO"],"aL":["hO"],"bX.T":"hO","aL.T":"hO"},"NE":{"bX":["jc"],"aL":["jc"],"bX.T":"jc","aL.T":"jc"},"R_":{"bV":["pi"],"a4":[],"cs":[]},"LQ":{"bX":["hR"],"aL":["hR"],"bX.T":"hR","aL.T":"hR"},"LR":{"bX":["hS"],"aL":["hS"],"bX.T":"hS","aL.T":"hS"},"cb":{"a4":[]},"iZ":{"cb":[],"a4":[]},"Kk":{"cs":[]},"vg":{"a4":[]},"mA":{"a2":[],"h":[]},"A0":{"hZ":["cb"],"aX":[],"aM":[],"h":[],"hZ.T":"cb"},"rq":{"a7":["mA"]},"vh":{"a2":[],"h":[]},"Mc":{"a2":[],"h":[]},"Mb":{"a7":["mA"]},"Fh":{"aF":[],"h":[]},"vi":{"a2":[],"h":[]},"ajW":{"aG":[]},"nj":{"aG":[]},"nA":{"aG":[]},"aj3":{"aG":[]},"A1":{"cb":[],"a4":[]},"Md":{"a7":["vi"]},"I_":{"aL":["ajW"],"aL.T":"ajW"},"GR":{"aL":["nj"],"aL.T":"nj"},"Hq":{"aL":["nA"],"aL.T":"nA"},"uL":{"aL":["aj3"],"aL.T":"aj3"},"hc":{"fH":[]},"bw":{"hc":["1"],"fH":[]},"aF":{"h":[]},"a2":{"h":[]},"aW":{"a1":[]},"hv":{"aW":[],"a1":[]},"nq":{"aW":[],"a1":[]},"eK":{"aW":[],"a1":[]},"mM":{"hc":["1"],"fH":[]},"aM":{"h":[]},"ff":{"aM":[],"h":[]},"aX":{"aM":[],"h":[]},"aj":{"h":[]},"Go":{"aj":[],"h":[]},"b_":{"aj":[],"h":[]},"eO":{"aj":[],"h":[]},"Ff":{"aj":[],"h":[]},"un":{"aW":[],"a1":[]},"IY":{"aW":[],"a1":[]},"wU":{"aW":[],"a1":[]},"aH":{"aW":[],"a1":[]},"Gn":{"aH":[],"aW":[],"a1":[]},"xZ":{"aH":[],"aW":[],"a1":[]},"ne":{"aH":[],"aW":[],"a1":[]},"HZ":{"aH":[],"aW":[],"a1":[]},"Nr":{"aW":[],"a1":[]},"Nu":{"h":[]},"hl":{"a2":[],"h":[]},"qm":{"a7":["hl"]},"bS":{"mL":["1"]},"Fy":{"aF":[],"h":[]},"Ml":{"b_":[],"aj":[],"h":[]},"anw":{"a2":[],"h":[]},"aq_":{"a7":["anw"]},"FH":{"ni":[]},"vu":{"aF":[],"h":[]},"mR":{"cG":[],"aX":[],"aM":[],"h":[]},"m5":{"aC":["ca?"],"av":["ca?"],"av.T":"ca?","aC.T":"ca?"},"oa":{"aC":["q"],"av":["q"],"av.T":"q","aC.T":"q"},"ty":{"a2":[],"h":[]},"tw":{"a2":[],"h":[]},"tv":{"a2":[],"h":[]},"tx":{"a2":[],"h":[]},"EG":{"aC":["h7"],"av":["h7"],"av.T":"h7","aC.T":"h7"},"G4":{"a2":[],"h":[]},"pL":{"a7":["1"]},"oX":{"a7":["1"]},"K7":{"a7":["ty"]},"K5":{"a7":["tw"]},"K4":{"a7":["tv"]},"K6":{"a7":["tx"]},"t5":{"aX":[],"aM":[],"h":[]},"G6":{"aF":[],"h":[]},"AO":{"eO":[],"aj":[],"h":[]},"MC":{"aH":[],"aW":[],"a1":[]},"eL":{"aX":[],"aM":[],"h":[]},"vC":{"eK":[],"aW":[],"a1":[]},"hZ":{"aX":[],"aM":[],"h":[]},"ry":{"eK":[],"aW":[],"a1":[]},"cG":{"aX":[],"aM":[],"h":[]},"ok":{"aF":[],"h":[]},"iK":{"aj":[],"h":[]},"rz":{"aH":[],"aW":[],"a1":[]},"Al":{"aX":[],"aM":[],"h":[]},"n5":{"a2":[],"h":[]},"pS":{"a4":[],"cs":[]},"R5":{"ej":["zb"],"ej.T":"zb"},"EO":{"zb":[]},"MW":{"a7":["n5"]},"pV":{"aX":[],"aM":[],"h":[]},"Hy":{"aF":[],"h":[]},"Np":{"a4":[]},"N_":{"b_":[],"aj":[],"h":[]},"OO":{"A":[],"aI":["A"],"D":[],"ae":[]},"kJ":{"eL":["ct"],"aX":[],"aM":[],"h":[],"eL.T":"ct"},"Aq":{"a2":[],"h":[]},"N8":{"a7":["Aq"],"cs":[]},"q3":{"aF":[],"h":[]},"rf":{"ck":[],"cp":[]},"Kg":{"mL":["rf"]},"Nd":{"aF":[],"h":[]},"GQ":{"aF":[],"h":[]},"aop":{"ij":[]},"mO":{"aX":[],"aM":[],"h":[]},"ww":{"a2":[],"h":[]},"hi":{"a7":["ww"]},"rG":{"lC":[]},"rF":{"lC":[]},"Ax":{"lC":[]},"Ay":{"lC":[]},"Mo":{"B":["fp"],"a4":[],"B.E":"fp"},"Mp":{"cH":["b5<G?,T<L>>?"],"a4":[]},"dG":{"aM":[],"h":[]},"AB":{"aW":[],"a1":[]},"kL":{"a4":[]},"jS":{"a2":[],"h":[]},"AC":{"a7":["jS"]},"qa":{"a2":[],"h":[]},"wG":{"a7":["qa"]},"oC":{"A":[],"aJ":["A","cU"],"D":[],"ae":[],"aJ.1":"cU","aJ.0":"A"},"wF":{"a2":[],"h":[]},"oz":{"fK":["oz"],"fK.E":"oz"},"oD":{"aX":[],"aM":[],"h":[]},"jU":{"A":[],"aI":["A"],"D":[],"ae":[],"fK":["jU"],"fK.E":"jU"},"B6":{"A":[],"aI":["A"],"D":[],"ae":[]},"rH":{"iK":["+(H,bf,H)"],"aj":[],"h":[],"iK.0":"+(H,bf,H)"},"BX":{"eO":[],"aj":[],"h":[]},"Qk":{"aH":[],"aW":[],"a1":[]},"t0":{"cU":[],"eA":[],"eB":["A"],"da":[]},"NB":{"a7":["wF"]},"rI":{"aj":[],"h":[]},"NA":{"aH":[],"aW":[],"a1":[]},"Lt":{"b_":[],"aj":[],"h":[]},"B5":{"dI":["+(H,bf,H)","A"],"A":[],"aI":["A"],"D":[],"ae":[],"dI.0":"+(H,bf,H)"},"vr":{"a2":[],"h":[]},"ye":{"a2":[],"h":[]},"A5":{"a7":["vr"]},"A4":{"a4":[]},"Mm":{"a4":[]},"BL":{"a7":["ye"]},"PK":{"a4":[]},"aor":{"iv":["1"],"fH":[]},"qd":{"aF":[],"h":[]},"wH":{"fb":["1"],"e7":["1"],"cy":["1"]},"wR":{"aX":[],"aM":[],"h":[]},"x_":{"a2":[],"h":[]},"jm":{"a7":["x_"]},"LW":{"b_":[],"aj":[],"h":[]},"OL":{"A":[],"aI":["A"],"D":[],"i7":[],"ae":[]},"l0":{"a2":[],"h":[]},"z1":{"aX":[],"aM":[],"h":[]},"xr":{"a2":[],"h":[]},"cH":{"a4":[]},"P0":{"a7":["l0"]},"Bg":{"a7":["xr"]},"bI":{"cH":["1"],"a4":[]},"hE":{"bI":["1"],"cH":["1"],"a4":[]},"Be":{"hE":["1"],"bI":["1"],"cH":["1"],"a4":[]},"xo":{"hE":["1"],"bI":["1"],"cH":["1"],"a4":[],"bI.T":"1","hE.T":"1"},"xn":{"hE":["I"],"bI":["I"],"cH":["I"],"a4":[],"bI.T":"I","hE.T":"I"},"nJ":{"cH":["1"],"a4":[]},"qt":{"cH":["1"],"a4":[]},"I1":{"cH":["le"],"a4":[]},"I6":{"a2":[],"h":[]},"aFo":{"aHK":["ay<I>"]},"rW":{"a7":["I6<1>"]},"P9":{"aX":[],"aM":[],"h":[]},"OY":{"bI":["l1?"],"cH":["l1?"],"a4":[],"bI.T":"l1?"},"As":{"eL":["lB"],"aX":[],"aM":[],"h":[],"eL.T":"lB"},"rE":{"a2":[],"h":[]},"ox":{"a7":["rE<1>"]},"qc":{"cy":["1"]},"e7":{"cy":["1"]},"LC":{"aL":["eF"],"aL.T":"eF"},"fb":{"e7":["1"],"cy":["1"]},"I8":{"aF":[],"h":[]},"xA":{"aX":[],"aM":[],"h":[]},"xB":{"a4":[]},"eo":{"f8":[]},"nQ":{"eo":[],"f8":[]},"l2":{"eo":[],"f8":[]},"i9":{"eo":[],"f8":[]},"hq":{"eo":[],"f8":[]},"JH":{"eo":[],"f8":[]},"Bo":{"aX":[],"aM":[],"h":[]},"jR":{"fK":["jR"],"fK.E":"jR"},"xD":{"a2":[],"h":[]},"Ir":{"a7":["xD"]},"jq":{"jG":[],"a4":[]},"xE":{"jq":[],"jG":[],"a4":[]},"xF":{"a2":[],"h":[]},"Bq":{"aX":[],"aM":[],"h":[]},"nR":{"a7":["xF"]},"Bs":{"a2":[],"h":[]},"Pf":{"a7":["Bs"]},"Br":{"a4":[]},"OZ":{"bI":["M?"],"cH":["M?"],"a4":[],"bI.T":"M?"},"dK":{"aG":[]},"xz":{"bX":["dK"],"aL":["dK"],"bX.T":"dK","aL.T":"dK"},"qo":{"a2":[],"h":[]},"iC":{"eS":[],"ck":[],"cp":[]},"lI":{"fn":[],"f1":[],"ck":[],"cp":[]},"lw":{"f6":[],"f1":[],"ck":[],"cp":[]},"qy":{"a4":[]},"ig":{"a7":["1"]},"azt":{"a2":[],"h":[]},"qF":{"a4":[]},"q4":{"a4":[]},"nS":{"a2":[],"h":[]},"qB":{"aX":[],"aM":[],"h":[]},"Po":{"dv":[],"a7":["nS"],"a4":[]},"Iu":{"a4":[]},"xW":{"a2":[],"h":[]},"Px":{"a7":["xW"]},"Py":{"eL":["L"],"aX":[],"aM":[],"h":[],"eL.T":"L"},"a0":{"qD":[]},"o_":{"a2":[],"h":[]},"xX":{"a2":[],"h":[]},"qE":{"a4":[]},"BE":{"a7":["o_"]},"xY":{"a4":[]},"BD":{"a7":["xX"]},"PB":{"aX":[],"aM":[],"h":[]},"IK":{"f8":[]},"IL":{"b_":[],"aj":[],"h":[]},"OT":{"A":[],"aI":["A"],"D":[],"ae":[]},"y4":{"hs":["1","2"],"aj":[],"h":[]},"y5":{"aH":[],"aW":[],"a1":[]},"y7":{"a4":[]},"IV":{"b_":[],"aj":[],"h":[]},"rT":{"A":[],"aI":["A"],"D":[],"ae":[]},"IU":{"a4":[]},"zM":{"a4":[]},"J1":{"aF":[],"h":[]},"yj":{"a2":[],"h":[]},"PS":{"a7":["yj"]},"FN":{"ei":[]},"FO":{"ei":[]},"FZ":{"ei":[]},"G0":{"ei":[]},"FY":{"ei":[]},"G_":{"ei":[]},"G1":{"ei":[]},"FX":{"ei":[]},"qs":{"A":[],"aI":["A"],"D":[],"ae":[]},"kZ":{"A":[],"aI":["A"],"D":[],"ae":[]},"qT":{"b_":[],"aj":[],"h":[]},"J9":{"b_":[],"aj":[],"h":[]},"LM":{"cp":[]},"ys":{"b_":[],"aj":[],"h":[]},"pt":{"cG":[],"aX":[],"aM":[],"h":[]},"aw2":{"cG":[],"aX":[],"aM":[],"h":[]},"Bw":{"a2":[],"h":[]},"Nv":{"aF":[],"h":[]},"qP":{"aF":[],"h":[]},"Pn":{"a7":["Bw"]},"P4":{"aF":[],"h":[]},"Pm":{"a4":[]},"uO":{"aG":[]},"mp":{"aG":[]},"mr":{"aG":[]},"mq":{"aG":[]},"uK":{"aG":[]},"iU":{"aG":[]},"iX":{"aG":[]},"mx":{"aG":[]},"mu":{"aG":[]},"mv":{"aG":[]},"f4":{"aG":[]},"kn":{"aG":[]},"iY":{"aG":[]},"iW":{"aG":[]},"mw":{"aG":[]},"iV":{"aG":[]},"jr":{"aG":[]},"js":{"aG":[]},"hO":{"aG":[]},"jc":{"aG":[]},"kW":{"aG":[]},"hm":{"aG":[]},"lj":{"aG":[]},"fR":{"aG":[]},"lh":{"aG":[]},"hR":{"aG":[]},"hS":{"aG":[]},"EV":{"aG":[]},"e6":{"eA":[],"eB":["A"],"da":[]},"lE":{"a2":[],"h":[]},"Bx":{"a2":[],"h":[]},"yE":{"a2":[],"h":[]},"Bz":{"a7":["lE"]},"By":{"a7":["Bx"]},"BU":{"a7":["yE"]},"uj":{"bV":["pi"],"a4":[],"cs":[]},"yL":{"a2":[],"h":[]},"zX":{"aX":[],"aM":[],"h":[]},"Qm":{"a7":["yL"]},"KN":{"a4":[]},"yP":{"a2":[],"h":[]},"Qo":{"a7":["yP"]},"tB":{"a2":[],"h":[]},"cZ":{"b_":[],"aj":[],"h":[]},"zf":{"a7":["tB"]},"IT":{"a2":[],"h":[]},"GD":{"a2":[],"h":[]},"Ib":{"a2":[],"h":[]},"I5":{"a2":[],"h":[]},"EE":{"a2":[],"h":[]},"i3":{"a2":[],"h":[]},"Ds":{"a2":[],"h":[]},"r2":{"a2":[],"h":[]},"r3":{"a7":["r2<1>"]},"z0":{"bV":["r4"],"a4":[]},"r7":{"a2":[],"h":[]},"oH":{"aX":[],"aM":[],"h":[]},"AJ":{"aX":[],"aM":[],"h":[]},"Cd":{"a7":["r7"],"cs":[]},"Hz":{"aF":[],"h":[]},"AR":{"aj":[],"h":[]},"AQ":{"aH":[],"aW":[],"a1":[]},"oy":{"h":[]},"JJ":{"oy":[],"h":[]},"JI":{"aF":[],"h":[]},"Ni":{"aW":[],"a1":[]},"zN":{"hc":["1"],"fH":[]},"rc":{"d9":[]},"R0":{"ff":["fP"],"aM":[],"h":[],"ff.T":"fP"},"Kq":{"b_":[],"aj":[],"h":[]},"Bb":{"A":[],"aI":["A"],"D":[],"ae":[]},"bK":{"ln":[]},"Kh":{"ln":[]},"JQ":{"z":[],"bA":["z"]},"Cf":{"z":[],"bA":["z"]},"JR":{"cR":[],"bA":["cR"]},"Cg":{"cR":[],"bA":["cR"]},"JP":{"aV":[],"bA":["aV?"]},"MR":{"bA":["aV?"]},"fZ":{"aV":[],"bA":["aV?"]},"JS":{"q":[],"bA":["q"]},"R2":{"q":[],"bA":["q"]},"Ai":{"bA":["1?"]},"c0":{"bA":["1"]},"jI":{"bA":["1"]},"bt":{"bA":["1"]},"JT":{"bV":["aT<bK>"],"a4":[]},"Ic":{"cX":[]},"Id":{"cX":[]},"Ie":{"cX":[]},"If":{"cX":[]},"Ig":{"cX":[]},"Ih":{"cX":[]},"Ii":{"cX":[]},"Ij":{"cX":[]},"Ik":{"cX":[]},"axN":{"a2":[],"h":[]},"awt":{"a2":[],"h":[]},"awu":{"a7":["awt"]},"azL":{"a2":[],"h":[]},"aBC":{"aX":[],"aM":[],"h":[]},"aAT":{"aX":[],"aM":[],"h":[]}}'))
+var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{y:"int",M:"double",dB:"num",G:"String",I:"bool",bj:"Null",T:"List",L:"Object",b5:"Map",az:"JSObject"},mangledNames:{},types:["~()","M(M)","~(az)","M(cX)","od(cX)","~(aQ)","uX(cX)","bj(~)","~(hK)","z(aT<bK>)","~(D)","~(L,hu)","~(aW)","~(np,f)","~(I)","I(m8,f)","~(L?)","dO(cX)","T<cO>()","~(px)","h(a1)","~(aZ)","~(d6?)","I(L?)","bj(L,hu)","I(cb)","aC<M>(@)","~(y)","M(B)","I(hW)","~(cT)","ay<~>()","I(G)","~(qN)","I(aW)","y(cb,cb)","H(B,al)","~(eG)","I(fe)","~(f2)","I()","~(@)","~(kQ)","~(cH<L?>,~())","bj()","M(B,M)","q(aT<bK>)","I(bC)","bj(az)","I(eo)","fk()","~(kP)","bj(@)","I(fp)","~(jg)","I(eK)","I(y)","~(~())","~(G)","hY(a1)","G(n8)","y(y)","ay<@>(hg)","G()","bA<z?>?(bb?)","~(qO)","f(f)","az(L?)","~(ni)","~(dv)","~(ym)","fw(@)","y(D,D)","~(mH)","h(a1)?(oT?)","~(ak1)","I(d9)","cZ(a1,c2<M>,h?)","I(D)","~(M)","bA<H?>?(bb?)","~(l7)","M()","y(bC,bC)","h(a1,h?)","ay<~>(hg)","bj(L)","z(z)","I(mD)","~(eS)","eS()","cR(aT<bK>)","az()","y(L?)","~(L?,L?)","@(@)","dd(dd)","G(y)","bj(I)","y()","az?(y)","I(eN)","I(L?,L?)","ay<~>(@)","lJ(a1,c2<M>,h?)","@()","~(G,@)","L?(L?)","jM()","~(L?,G,G)","az([az?])","~([aG?])","bj(L?)","ay<az>([az?])","bj(G)","eN()","~(L)","z?(z?)","~(r9)","~(h3)","G(G)","~(T<az>,az)","wO?()","T<az>()","G(L?)","~(eo)","bA<M?>?(bb?)","z?(aT<bK>)","h(a1,aT<bK>,h?)?(bb?)","~(kp)","p8(T<cT>)","aV(aT<bK>)","bf(M)","lK(a1,c2<M>,h?)","m_(a1)","I(fE<ae>)","~(mK)","I(nY)","M?(+(al,ld))","al(B)","cL(cT)","~(iB)","+boundaryEnd,boundaryStart(a_,a_)(a_)","~(T<kr>)","~(bC)","I(L,bC)","I(L,aT<bC>)","y(bC)","T<bC>(jW)","ay<d6?>(d6?)","~(cI)","b5<L?,L?>()","I(L)","I(ja)","ay<I>()","i0(cb,fI)","G(M,M,G)","M?(B,al,ld)","~([aQ?])","a_(a_,I,fk)","y(dv,dv)","d9(d9)","@(G)","y(d2,d2)","u(bf,u)","hf()","~(hf)","f6()","~(f6)","hk()","~(hk)","aC<@>?(aC<@>?,@,aC<@>(@))","B(y)","hB(aZ)","I(qv)","~(iS)","~(e5)","I(dv,M)","I(dv)","~(yp)","~(pU)","~(w3)","~(pT)","~(yo)","~(yq)","~(yn)","I(G?)","M(B,al)","~(Ju)","fQ()","aQ?(bb?)","I?(bb?)","m0?(bb?)","pN?(bb?)","ay<az>()","~(cN,y)","~(az,T<fN>)","aV?(aT<bK>)","u()","u()?(B)","~(aG?)","~(~)","I(kA?)","z(lv)","l6(a1)","G(G,z)","~({allowPlatformDefault:I})","~(B?)","I(cJ)","T<cT>()","ri()","~({allowPlatformDefault!I})","a2?(a1,n6,bV<j7>)","I(f8)","rM()","~(Te)","nZ(@)","~(j9)","nf()","~(pD)","kw(a1,c2<M>,h?)","ia?(eT)","h(a1,jT,kR?,kR?)","jB(a1,h?)","q3(a1,h?)","ay<~>([az?])","nn()","~(y,I(hW))","I(aT<bK>)","M(aT<bK>)","~(es,fO?)","mS(a1,h?)","l6(a1,h?)","ob(@)","k6()","~(T<L?>)","bm<L,it<@>>(L,it<@>)","I(bm<L,it<@>>)","f(qX)","cZ(a1,c2<M>)","cQ(cQ,bx)","bx(bx)","I(bx)","G(bx)","bj(x<L?>,az)","H8(dl)","u(dl)","Hc(dl)","I(y,I)","ks?()","mn(cC)","kG(kG)","I(y,y)","kt(f,y)","H()","M?()","H(al)","ay<~>(~)","~(es)","I(j2)","u(u?,dd)","ki()","T<ib>()","cR(i7)","~(i7,bf)","I(i7)","~(@,L?)","~(G,pB)","y(dy,dy)","~({curve:eD,descendant:D?,duration:aQ,rect:u?})","~(h9?,qS?)","~(T<cL>{isMergeUp:I})","cT?(cL)","mc(h)","T<cL>(T<cL>)","T<dy>(dy)","aT<cJ>?(cL)","aT<cJ>(aT<cJ>)","aW(y)","I(iB)","~(Gk)","+boundaryEnd,boundaryStart(a_,a_)(a_,G)","~(G?)","dq()","~(y,rs)","M(@)","~(T<cT>)","~(G,G?)","mG(@)","G?(G)","pF(G)","pI(@)","bC(oF)","nF()","nE?(iO,G,G)","bC(y)","aT<bC>()","~(cJ)","~(c_,~(L?))","d6(d6?)","jw<fJ>()","ay<G?>(G?)","m4(az)","ay<~>(d6?,~(d6?))","ay<b5<G,@>>(@)","~(jl)","aT<e>(e)","oc({from:M?})","wZ()","ay<+(G,eH?)>()","G(cp)","rt()","T<cI>()","T<cI>(T<cI>)","M(dB)","T<@>(G)","T<dB>(nU)","b5<G,@>(dZ)","rd(a1,h?)","~(wN)","aF(ako)","y(fT,fT)","r1()","~(aL<aG>)","~(H?)","M?(y)","cy<@>?(ij)","cy<@>(ij)","ay<l8>(G,b5<G,G>)","I(fN)","n5(a1,h?)","d1?(fN)","pf(a1)","G(M)","ay<I>(hg)","kj(a1)","~(dr)","~(rY)","b5<~(aZ),bf?>()","pa(no)","~(lh)","~(hm)","~(jr)","~(dK)","~(fR)","L?(eF)","ce(ce,o7)","~(~(aZ),bf?)","qT(a1)","~(jj)","~(ce)","I(ce?,ce)","ce(ce)","ay<~>(fe)","pl(a1,jG)","y(az)","~([cb?])","@(@,G)","I(vQ)","~(rr)","I(ro)","I(M?,M)","I(li)","aT<fC>(d2)","~(y,y,y)","T<fC>(a1)","u(d2)","bj(dq,dq)","T<d2>(d2,A<d2>)","I(d2)","hP<aW>(aW)","aW?(aW)","L?(y,aW?)","h8()","~(h8)","kg(cC)","pv(cC)","ou()","q_(u?,u?)","~(dq)","i5<0^>(ij,h(a1))<L?>","~(ji)","~(jo)","~(hv,L)","I(apZ)","mR(a1)","~(yr)","oa(@)","m5(@)","t5(y)","~(ke)","ay<@>(rL)","b5<fl,@>(T<@>)","b5<fl,@>(b5<fl,@>)","bj(b5<fl,@>)","kJ(a1)","I(cy<@>?)","ay<bj>(@)","I(kL)","bm<y,G>(bm<G,G>)","p9(nm)","fp(cy<@>)","bm<G?,T<L>>(@,@)","rH(a1)","oD()","hQ(cN)","~(al)","pg(a1,h?)","h(a1,+(H,bf,H))","I(jm)","bj(cI?)","~(cH<L?>)","dc<I>(I)","I(lB)","l0(a1,h?)","kw(a1,h?)","mP(aZ)","pW(aZ)","M(jO)","0^?(0^?(bb?))<L?>","bj(T<~>)","0^?(bA<0^>?(bb?))<L?>","z?()","fn()","~(fn)","~(yi,@)","~(G,L?)","~(f1)","lw()","lI()","iC()","~(iC)","~(jh)","bj(~())","bA<q?>?(bb?)","u(u)","I(u)","~(qD,aG)","T<lo>()","aL<aG>?()","dZ(ei)","I(kZ)","lE(a1)","ay<bj>()","bj(@,hu)","a2q(a2r)","bA<cQ?>?(bb?)","iO(L?)","bA<aV?>?(bb?)","bA<cx?>?(bb?)","cR?(aT<bK>)","cR?(bb?)","ip()","~(ip)","iq()","~(iq)","hb()","~(hb)","~(lj)","~(kW)","oH(a1,jd)","~(y,@)","y(fe,fe)","aT<0^>()<L?>","~(@,@)","y(f5,f5)","G(G,G)","az(y{params:L?})","0&(G,y?)","y(@,@)","T<G>()","T<G>(G,T<G>)","H?(H?,H?,M)","M?(dB?,dB?,M)","z?(z?,z?,M)","h(a1,f,f,h)","~(aO{forceReport:I})","cO(G)","ht?(G)","M(M,M,M)","z?(bb?)","h(a1,c2<M>)","I?(I?,I?,M)","h(a1,kl)","h(a1,h)","cx?(cx?,cx?,M)","cQ?(cQ?,cQ?,M)","q?(q?,q?,M)","y(BP<@>,BP<@>)","I({priority!y,scheduler!ik})","T<fJ>(G)","~(cb{alignment:M?,alignmentPolicy:nO?,curve:eD?,duration:aQ?})","y(aW,aW)","cF(cF?,cF?,M)","h?(a1,n6,bV<j7>)","T<cy<@>>(hi,G)","jH?(bb?)","n9?(bb?)","0^(0^,0^)<dB>","y(iy,iy)","axm?()"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.aa&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.Ou&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.Ov&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.AT&&a.b(c.a)&&b.b(c.b),"2;inside,outside":(a,b)=>c=>c instanceof A.Ow&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.Ox&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.Oy&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.Oz&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.iz&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.OA&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.OB&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.AU&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.AV&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.OC&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.OD&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.AW&&A.arY(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.AX&&A.arY(a,b.a)}}
+A.aBM(v.typeUniverse,JSON.parse('{"dq":"kF","Hj":"kF","jE":"kF","aGP":"q6","pc":{"a2q":[]},"p9":{"a26":[]},"pa":{"wC":[],"hQ":[]},"nm":{"u_":["az"]},"no":{"u_":["az"]},"cN":{"mj":[]},"nf":{"ra":[]},"nn":{"ra":[]},"nF":{"hQ":[]},"wC":{"hQ":[]},"eH":{"bO":[]},"ap3":{"dE":[]},"ib":{"dE":[]},"ZE":{"a2r":[]},"yw":{"fT":[]},"wK":{"fT":[]},"iT":{"XI":[]},"u6":{"Gk":[]},"E1":{"i1":[]},"ua":{"i1":[]},"md":{"Te":[]},"E2":{"i1":[]},"u7":{"i1":[]},"zr":{"i1":[]},"zt":{"i1":[]},"zs":{"i1":[]},"ud":{"of":["1"]},"u8":{"pp":["1","2"]},"me":{"H8":[]},"mf":{"ZE":[],"a2r":[]},"u9":{"kG":[]},"v3":{"i1":[]},"GW":{"jx":["a26","nm"],"jx.C":"a26"},"GZ":{"jx":["wC","no"],"jx.C":"wC"},"FL":{"any":[]},"FK":{"dn":[]},"vt":{"dn":[]},"on":{"A":["1"],"A.E":"1"},"Fs":{"eH":[],"bO":[]},"vk":{"eH":[],"bO":[]},"vl":{"eH":[],"bO":[]},"ur":{"dE":[]},"I3":{"dE":[]},"DF":{"dE":[],"amj":[]},"E7":{"dE":[],"amz":[]},"Ea":{"dE":[],"amC":[]},"E9":{"dE":[],"amA":[]},"H0":{"dE":[],"aoo":[]},"yW":{"dE":[],"aki":[]},"wz":{"dE":[],"aki":[],"aom":[]},"G3":{"dE":[],"anC":[]},"q5":{"A":["hh"],"A.E":"hh"},"Hh":{"xy":[]},"el":{"cd":[]},"bT":{"cd":[]},"Es":{"cd":[]},"Eo":{"cd":[]},"Dx":{"cd":[]},"Dy":{"cd":[]},"ey":{"cd":[]},"iM":{"cd":[]},"k3":{"cd":[]},"dj":{"cd":[]},"oW":{"cd":[]},"IJ":{"cd":[]},"Dp":{"cd":[]},"pj":{"cd":[]},"bg":{"Hc":[],"amE":[]},"qz":{"eQ":[]},"u3":{"eQ":[]},"p3":{"eQ":[]},"Fi":{"eQ":[]},"mC":{"eQ":[]},"Gi":{"eQ":[]},"kH":{"eQ":[]},"I0":{"eQ":[]},"IC":{"l5":[]},"Iz":{"l5":[]},"Iy":{"l5":[]},"nL":{"eQ":[]},"II":{"ak1":[]},"ir":{"eQ":[]},"t2":{"aE":["1"],"T":["1"],"ao":["1"],"A":["1"]},"MI":{"t2":["y"],"aE":["y"],"T":["y"],"ao":["y"],"A":["y"]},"Jx":{"t2":["y"],"aE":["y"],"T":["y"],"ao":["y"],"A":["y"],"aE.E":"y"},"Hk":{"dn":[]},"pE":{"kG":[]},"F6":{"fT":[]},"jz":{"n_":[]},"ic":{"n_":[]},"pA":{"jz":[],"n_":[]},"nr":{"qe":[]},"o9":{"qe":[]},"E_":{"qK":[]},"I4":{"qK":[]},"LT":{"iT":[],"XI":[]},"pC":{"iT":[],"XI":[]},"x":{"T":["1"],"ao":["1"],"bP":[],"az":[],"A":["1"]},"vJ":{"bP":[],"I":[],"bU":[]},"pP":{"bP":[],"bj":[],"bU":[]},"vM":{"bP":[],"az":[]},"kF":{"bP":[],"az":[]},"kD":{"bP":[]},"kE":{"bP":[]},"Ga":{"xu":[]},"Za":{"x":["1"],"T":["1"],"ao":["1"],"bP":[],"az":[],"A":["1"]},"kC":{"M":[],"dB":[],"bP":[]},"pO":{"M":[],"y":[],"dB":[],"bP":[],"bU":[]},"vL":{"M":[],"dB":[],"bP":[],"bU":[]},"j3":{"G":[],"bP":[],"bU":[]},"iw":{"A":["2"]},"m9":{"iw":["1","2"],"A":["2"],"A.E":"2"},"zY":{"m9":["1","2"],"iw":["1","2"],"ao":["2"],"A":["2"],"A.E":"2"},"zp":{"aE":["2"],"T":["2"],"iw":["1","2"],"ao":["2"],"A":["2"]},"dm":{"zp":["1","2"],"aE":["2"],"T":["2"],"iw":["1","2"],"ao":["2"],"A":["2"],"aE.E":"2","A.E":"2"},"mb":{"aT":["2"],"iw":["1","2"],"ao":["2"],"A":["2"],"A.E":"2"},"ma":{"bi":["3","4"],"b5":["3","4"],"bi.V":"4","bi.K":"3"},"he":{"bO":[]},"mg":{"aE":["y"],"T":["y"],"ao":["y"],"A":["y"],"aE.E":"y"},"ao":{"A":["1"]},"ah":{"ao":["1"],"A":["1"]},"hw":{"ah":["1"],"ao":["1"],"A":["1"],"A.E":"1","ah.E":"1"},"ek":{"A":["2"],"A.E":"2"},"ms":{"ek":["1","2"],"ao":["2"],"A":["2"],"A.E":"2"},"a5":{"ah":["2"],"ao":["2"],"A":["2"],"A.E":"2","ah.E":"2"},"b3":{"A":["1"],"A.E":"1"},"eg":{"A":["2"],"A.E":"2"},"o3":{"A":["1"],"A.E":"1"},"uZ":{"o3":["1"],"ao":["1"],"A":["1"],"A.E":"1"},"jv":{"A":["1"],"A.E":"1"},"pz":{"jv":["1"],"ao":["1"],"A":["1"],"A.E":"1"},"y1":{"A":["1"],"A.E":"1"},"f3":{"ao":["1"],"A":["1"],"A.E":"1"},"mE":{"A":["1"],"A.E":"1"},"bW":{"A":["1"],"A.E":"1"},"r5":{"aE":["1"],"T":["1"],"ao":["1"],"A":["1"]},"bZ":{"ah":["1"],"ao":["1"],"A":["1"],"A.E":"1","ah.E":"1"},"e1":{"yi":[]},"mk":{"og":["1","2"],"b5":["1","2"]},"po":{"b5":["1","2"]},"bB":{"po":["1","2"],"b5":["1","2"]},"ot":{"A":["1"],"A.E":"1"},"cE":{"po":["1","2"],"b5":["1","2"]},"up":{"il":["1"],"aT":["1"],"ao":["1"],"A":["1"]},"fx":{"il":["1"],"aT":["1"],"ao":["1"],"A":["1"]},"eh":{"il":["1"],"aT":["1"],"ao":["1"],"A":["1"]},"G9":{"j0":[]},"pM":{"j0":[]},"wx":{"jC":[],"bO":[]},"Gc":{"bO":[]},"JC":{"bO":[]},"GV":{"dn":[]},"BG":{"hu":[]},"kc":{"j0":[]},"Ee":{"j0":[]},"Ef":{"j0":[]},"Ja":{"j0":[]},"IZ":{"j0":[]},"p1":{"j0":[]},"I7":{"bO":[]},"eM":{"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"aR":{"ao":["1"],"A":["1"],"A.E":"1"},"be":{"ao":["1"],"A":["1"],"A.E":"1"},"f9":{"ao":["bm<1,2>"],"A":["bm<1,2>"],"A.E":"bm<1,2>"},"mW":{"eM":["1","2"],"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"rC":{"ajV":[],"w6":[]},"qH":{"w6":[]},"PL":{"A":["w6"],"A.E":"w6"},"j9":{"fd":[],"r1":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"],"bU":[],"aE.E":"y"},"q6":{"bP":[],"az":[],"iO":[],"bU":[]},"nh":{"bP":[],"az":[],"iO":[],"bU":[]},"wr":{"bP":[],"az":[]},"QU":{"iO":[]},"wm":{"d6":[],"bP":[],"az":[],"bU":[]},"q7":{"f7":["1"],"bP":[],"az":[]},"wq":{"aE":["M"],"T":["M"],"f7":["M"],"ao":["M"],"bP":[],"az":[],"A":["M"]},"fd":{"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"]},"wn":{"Xv":[],"aE":["M"],"T":["M"],"f7":["M"],"ao":["M"],"bP":[],"az":[],"A":["M"],"bU":[],"aE.E":"M"},"wo":{"Xw":[],"aE":["M"],"T":["M"],"f7":["M"],"ao":["M"],"bP":[],"az":[],"A":["M"],"bU":[],"aE.E":"M"},"GM":{"fd":[],"Z3":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"],"bU":[],"aE.E":"y"},"wp":{"fd":[],"Z4":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"],"bU":[],"aE.E":"y"},"GN":{"fd":[],"Z5":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"],"bU":[],"aE.E":"y"},"ws":{"fd":[],"a8n":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"],"bU":[],"aE.E":"y"},"GO":{"fd":[],"r0":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"],"bU":[],"aE.E":"y"},"q8":{"fd":[],"a8o":[],"aE":["y"],"T":["y"],"f7":["y"],"ao":["y"],"bP":[],"az":[],"A":["y"],"bU":[],"aE.E":"y"},"C_":{"fl":[]},"LU":{"bO":[]},"C0":{"jC":[],"bO":[]},"jJ":{"qG":["1"]},"BY":{"Ju":[]},"fq":{"A":["1"],"A.E":"1"},"cW":{"bO":[]},"cz":{"lr":["1"],"jw":["1"]},"rh":{"jJ":["1"],"qG":["1"]},"BN":{"lp":["1"]},"zi":{"lp":["1"]},"cf":{"KL":["1"]},"aP":{"ay":["1"]},"rg":{"BJ":["1"]},"lr":{"jw":["1"]},"rk":{"jJ":["1"],"qG":["1"]},"BK":{"jw":["1"]},"rp":{"qG":["1"]},"jQ":{"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"lx":{"jQ":["1","2"],"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"zK":{"jQ":["1","2"],"bi":["1","2"],"b5":["1","2"],"bi.V":"2","bi.K":"1"},"or":{"ao":["1"],"A":["1"],"A.E":"1"},"lu":{"rX":["1"],"il":["1"],"aT":["1"],"ao":["1"],"A":["1"]},"eW":{"rX":["1"],"il":["1"],"axE":["1"],"aT":["1"],"ao":["1"],"A":["1"]},"n2":{"A":["1"],"A.E":"1"},"aE":{"T":["1"],"ao":["1"],"A":["1"]},"bi":{"b5":["1","2"]},"Am":{"ao":["2"],"A":["2"],"A.E":"2"},"w4":{"b5":["1","2"]},"og":{"b5":["1","2"]},"zO":{"zP":["1"],"an7":["1"]},"zQ":{"zP":["1"]},"uT":{"ao":["1"],"A":["1"],"A.E":"1"},"vY":{"ah":["1"],"ao":["1"],"A":["1"],"A.E":"1","ah.E":"1"},"il":{"aT":["1"],"ao":["1"],"A":["1"]},"rX":{"il":["1"],"aT":["1"],"ao":["1"],"A":["1"]},"ML":{"bi":["G","@"],"b5":["G","@"],"bi.V":"@","bi.K":"G"},"MM":{"ah":["G"],"ao":["G"],"A":["G"],"A.E":"G","ah.E":"G"},"vN":{"bO":[]},"Gd":{"bO":[]},"M":{"dB":[]},"y":{"dB":[]},"T":{"ao":["1"],"A":["1"]},"ajV":{"w6":[]},"aT":{"ao":["1"],"A":["1"]},"m2":{"bO":[]},"jC":{"bO":[]},"ft":{"bO":[]},"wY":{"bO":[]},"vA":{"bO":[]},"GS":{"bO":[]},"z3":{"bO":[]},"JB":{"bO":[]},"eq":{"bO":[]},"En":{"bO":[]},"H3":{"bO":[]},"yd":{"bO":[]},"LV":{"dn":[]},"eJ":{"dn":[]},"A3":{"ah":["1"],"ao":["1"],"A":["1"],"A.E":"1","ah.E":"1"},"PN":{"hu":[]},"C9":{"JF":[]},"fX":{"JF":[]},"Lk":{"JF":[]},"GU":{"dn":[]},"Z5":{"T":["y"],"ao":["y"],"A":["y"]},"r1":{"T":["y"],"ao":["y"],"A":["y"]},"a8o":{"T":["y"],"ao":["y"],"A":["y"]},"Z3":{"T":["y"],"ao":["y"],"A":["y"]},"a8n":{"T":["y"],"ao":["y"],"A":["y"]},"Z4":{"T":["y"],"ao":["y"],"A":["y"]},"r0":{"T":["y"],"ao":["y"],"A":["y"]},"Xv":{"T":["M"],"ao":["M"],"A":["M"]},"Xw":{"T":["M"],"ao":["M"],"A":["M"]},"ie":{"rN":["ie"]},"nB":{"rN":["nB"]},"vo":{"a2":[],"h":[]},"Mj":{"a7":["vo"]},"e0":{"A":["G"],"A.E":"G"},"r6":{"lG":["1","A<1>"],"lG.E":"1"},"qC":{"lG":["1","aT<1>"],"lG.E":"1"},"c2":{"a4":[]},"oY":{"c2":["M"],"a4":[]},"K2":{"c2":["M"],"a4":[]},"K3":{"c2":["M"],"a4":[]},"qk":{"c2":["M"],"a4":[]},"ho":{"c2":["M"],"a4":[]},"uz":{"c2":["M"],"a4":[]},"oe":{"c2":["M"],"a4":[]},"pn":{"c2":["1"],"a4":[]},"tE":{"c2":["1"],"a4":[]},"Ak":{"eD":[]},"fG":{"eD":[]},"Jt":{"eD":[]},"e3":{"eD":[]},"yJ":{"eD":[]},"mz":{"eD":[]},"Lm":{"eD":[]},"aC":{"av":["1"],"av.T":"1","aC.T":"1"},"fw":{"aC":["z?"],"av":["z?"],"av.T":"z?","aC.T":"z?"},"at":{"c2":["1"],"a4":[]},"jL":{"av":["1"],"av.T":"1"},"IM":{"aC":["H?"],"av":["H?"],"av.T":"H?","aC.T":"H?"},"HB":{"aC":["u?"],"av":["u?"],"av.T":"u?","aC.T":"u?"},"mT":{"aC":["y"],"av":["y"],"av.T":"y","aC.T":"y"},"iP":{"av":["M"],"av.T":"M"},"z_":{"av":["1"],"av.T":"1"},"ut":{"a2":[],"h":[]},"zC":{"a7":["ut"]},"c3":{"z":[]},"L5":{"hx":[]},"Et":{"aF":[],"h":[]},"mn":{"a2":[],"h":[]},"zD":{"a7":["mn"]},"Eu":{"cF":[]},"avT":{"aX":[],"aM":[],"h":[]},"L8":{"ej":["uu"],"ej.T":"uu"},"EI":{"uu":[]},"uw":{"a2":[],"h":[]},"zF":{"a7":["uw"]},"Ev":{"aF":[],"h":[]},"uv":{"a2":[],"h":[]},"rm":{"a2":[],"h":[]},"L9":{"a7":["uv"]},"rn":{"a7":["rm<1>"]},"hD":{"h7":[]},"Ew":{"ia":[]},"pq":{"a2":[],"h":[]},"zE":{"ig":["pq"],"a7":["pq"]},"Lb":{"a4":[]},"Ex":{"hx":[]},"zH":{"a2":[],"h":[]},"Ey":{"aF":[],"h":[]},"Ld":{"b_":[],"aj":[],"h":[]},"OH":{"B":[],"aI":["B"],"D":[],"ae":[]},"zI":{"a7":["zH"]},"MQ":{"a4":[]},"P5":{"a4":[]},"L4":{"a4":[]},"zJ":{"aj":[],"h":[]},"Lc":{"aH":[],"aW":[],"a1":[]},"oB":{"d_":["B","e6"],"B":[],"aJ":["B","e6"],"D":[],"ae":[],"aJ.1":"e6","d_.1":"e6","aJ.0":"B"},"kg":{"a2":[],"h":[]},"zG":{"a7":["kg"]},"MU":{"a4":[]},"vB":{"cG":[],"aX":[],"aM":[],"h":[]},"uy":{"aF":[],"h":[]},"lt":{"cO":[]},"pF":{"lt":[],"cO":[]},"Fe":{"lt":[],"cO":[]},"Fd":{"lt":[],"cO":[]},"pH":{"m2":[],"bO":[]},"ES":{"cO":[]},"M4":{"cO":[]},"ee":{"a4":[]},"bV":{"a4":[]},"ov":{"a4":[]},"hP":{"cO":[]},"uH":{"cO":[]},"ER":{"cO":[]},"uI":{"cO":[]},"Gw":{"fH":[]},"lk":{"fH":[]},"iv":{"fH":[]},"vW":{"fJ":[]},"aY":{"A":["1"],"A.E":"1"},"dD":{"A":["1"],"A.E":"1"},"dc":{"ay":["1"]},"vf":{"aO":[]},"d1":{"aZ":[]},"jh":{"aZ":[]},"kP":{"aZ":[]},"kQ":{"aZ":[]},"jg":{"aZ":[]},"jj":{"aZ":[]},"e5":{"aZ":[]},"ji":{"aZ":[]},"JY":{"aZ":[]},"QC":{"aZ":[]},"ns":{"aZ":[]},"Qy":{"ns":[],"aZ":[]},"nx":{"aZ":[]},"QJ":{"nx":[],"aZ":[]},"QE":{"jh":[],"aZ":[]},"QB":{"kP":[],"aZ":[]},"QD":{"kQ":[],"aZ":[]},"QA":{"jg":[],"aZ":[]},"nu":{"aZ":[]},"QF":{"nu":[],"aZ":[]},"QN":{"jj":[],"aZ":[]},"ny":{"e5":[],"aZ":[]},"QL":{"ny":[],"e5":[],"aZ":[]},"nz":{"e5":[],"aZ":[]},"QM":{"nz":[],"e5":[],"aZ":[]},"Hm":{"e5":[],"aZ":[]},"QK":{"e5":[],"aZ":[]},"QH":{"ji":[],"aZ":[]},"nw":{"aZ":[]},"QI":{"nw":[],"aZ":[]},"nv":{"aZ":[]},"QG":{"nv":[],"aZ":[]},"nt":{"aZ":[]},"Qz":{"nt":[],"aZ":[]},"hb":{"ck":[],"cp":[]},"N7":{"t1":[]},"Nw":{"t1":[]},"hf":{"ck":[],"cp":[]},"f1":{"ck":[],"cp":[]},"fn":{"f1":[],"ck":[],"cp":[]},"f6":{"f1":[],"ck":[],"cp":[]},"hk":{"f1":[],"ck":[],"cp":[]},"h8":{"ck":[],"cp":[]},"ck":{"cp":[]},"wB":{"ck":[],"cp":[]},"qi":{"ck":[],"cp":[]},"eS":{"ck":[],"cp":[]},"DH":{"ck":[],"cp":[]},"ip":{"ck":[],"cp":[]},"iq":{"ck":[],"cp":[]},"tP":{"ck":[],"cp":[]},"mP":{"hB":[]},"pW":{"hB":[]},"JZ":{"aF":[],"h":[]},"oh":{"aF":[],"h":[]},"DD":{"aF":[],"h":[]},"DC":{"aF":[],"h":[]},"Ed":{"aF":[],"h":[]},"Ec":{"aF":[],"h":[]},"F2":{"aF":[],"h":[]},"F1":{"aF":[],"h":[]},"F9":{"aF":[],"h":[]},"F8":{"aF":[],"h":[]},"auT":{"cG":[],"aX":[],"aM":[],"h":[]},"Do":{"aF":[],"h":[]},"w9":{"a2":[],"h":[]},"An":{"a7":["w9"]},"tJ":{"a2":[],"h":[]},"Of":{"H":[]},"zh":{"a7":["tJ"]},"Kj":{"b_":[],"aj":[],"h":[]},"OF":{"B":[],"aI":["B"],"D":[],"ae":[]},"av2":{"cG":[],"aX":[],"aM":[],"h":[]},"q_":{"aC":["u?"],"av":["u?"],"av.T":"u?","aC.T":"u?"},"wb":{"aC":["f"],"av":["f"],"av.T":"f","aC.T":"f"},"axO":{"cG":[],"aX":[],"aM":[],"h":[]},"tZ":{"a2":[],"h":[]},"zn":{"a7":["tZ"]},"Ne":{"cR":[],"bA":["cR"]},"MH":{"b_":[],"aj":[],"h":[]},"B4":{"B":[],"aI":["B"],"D":[],"ae":[]},"pZ":{"kd":["y"],"z":[],"kd.T":"y"},"Lw":{"hx":[]},"EP":{"aF":[],"h":[]},"pv":{"aF":[],"h":[]},"vb":{"aX":[],"aM":[],"h":[]},"zg":{"c2":["1"],"a4":[]},"Bv":{"a2":[],"h":[]},"vv":{"aF":[],"h":[]},"Pl":{"a7":["Bv"]},"My":{"a2":[],"h":[]},"Mx":{"bb":[]},"M0":{"bb":[]},"M1":{"bb":[]},"Nz":{"bb":[]},"vw":{"cG":[],"aX":[],"aM":[],"h":[]},"kA":{"mU":[],"kz":[]},"vE":{"mU":[],"kz":[]},"mU":{"kz":[]},"AH":{"aX":[],"aM":[],"h":[]},"Ad":{"a2":[],"h":[]},"vD":{"aF":[],"h":[]},"Ac":{"a7":["Ad"],"aky":[]},"G7":{"aF":[],"h":[]},"fF":{"bx":[]},"hz":{"fF":[],"bx":[]},"fM":{"fF":[],"bx":[]},"zm":{"a2":[],"h":[]},"A7":{"a2":[],"h":[]},"mS":{"a2":[],"h":[]},"axs":{"cG":[],"aX":[],"aM":[],"h":[]},"Ae":{"a4":[]},"Af":{"aC":["fF"],"av":["fF"],"av.T":"fF","aC.T":"fF"},"MF":{"a4":[]},"Kv":{"a7":["zm"]},"A8":{"a7":["A7"]},"B_":{"B":[],"lb":["dQ","B"],"D":[],"ae":[]},"Lq":{"hs":["dQ","B"],"aj":[],"h":[],"hs.0":"dQ","hs.1":"B"},"Ag":{"a7":["mS"]},"yB":{"a2":[],"h":[]},"BS":{"a7":["yB"]},"Gy":{"aF":[],"h":[]},"w7":{"a2":[],"h":[]},"B3":{"B":[],"aI":["B"],"D":[],"ae":[]},"nZ":{"aC":["bx?"],"av":["bx?"],"av.T":"bx?","aC.T":"bx?"},"Ao":{"a2":[],"h":[]},"N5":{"a7":["w7"]},"ME":{"b_":[],"aj":[],"h":[]},"N2":{"a7":["Ao"]},"BB":{"aF":[],"h":[]},"BC":{"a4":[]},"N3":{"ej":["n8"],"ej.T":"n8"},"EK":{"n8":[]},"i5":{"GB":["1"],"wH":["1"],"fb":["1"],"e7":["1"],"cy":["1"]},"lJ":{"a2":[],"h":[]},"lK":{"a2":[],"h":[]},"rK":{"a2":[],"h":[]},"Rb":{"aF":[],"h":[]},"R9":{"a7":["lJ"]},"Ra":{"a7":["lK"]},"LY":{"aF":[],"h":[]},"JX":{"ia":[]},"AG":{"a7":["rK<1>"]},"Cr":{"a4":[]},"Cs":{"a4":[]},"AL":{"a2":[],"h":[]},"AM":{"a2":[],"h":[]},"Ho":{"ia":[]},"Od":{"a7":["AL"],"cs":[]},"Oe":{"a7":["AM"]},"xw":{"a2":[],"h":[]},"Bi":{"aX":[],"aM":[],"h":[]},"zZ":{"a2":[],"h":[]},"xv":{"a2":[],"h":[]},"xx":{"a7":["xv"],"cs":[]},"aBx":{"a2":[],"h":[]},"Ia":{"a7":["xw"]},"Pa":{"a4":[]},"zl":{"al":[],"ke":[]},"Ku":{"aF":[],"h":[]},"A_":{"a7":["zZ"]},"LB":{"aL":["eF"],"aL.T":"eF"},"Pb":{"aX":[],"aM":[],"h":[]},"Mq":{"aF":[],"h":[]},"rD":{"a2":[],"h":[]},"It":{"aF":[],"h":[]},"N4":{"ig":["rD"],"a7":["rD"]},"azm":{"cG":[],"aX":[],"aM":[],"h":[]},"azM":{"cG":[],"aX":[],"aM":[],"h":[]},"Jc":{"a2":[],"h":[]},"Q3":{"bb":[]},"aA2":{"cG":[],"aX":[],"aM":[],"h":[]},"yy":{"a2":[],"h":[]},"BQ":{"a7":["yy"]},"GC":{"hx":[]},"Q9":{"a4":[]},"aAa":{"cG":[],"aX":[],"aM":[],"h":[]},"BV":{"a2":[],"h":[]},"Jq":{"aF":[],"h":[]},"Qf":{"a7":["BV"]},"Qg":{"b_":[],"aj":[],"h":[]},"Qh":{"B":[],"aI":["B"],"D":[],"ae":[]},"Qc":{"eO":[],"aj":[],"h":[]},"Qd":{"aH":[],"aW":[],"a1":[]},"OW":{"B":[],"aJ":["B","e6"],"D":[],"ae":[],"aJ.1":"e6","aJ.0":"B"},"Qb":{"aF":[],"h":[]},"Qe":{"aF":[],"h":[]},"Js":{"aF":[],"h":[]},"Ab":{"cG":[],"aX":[],"aM":[],"h":[]},"ob":{"aC":["fQ"],"av":["fQ"],"av.T":"fQ","aC.T":"fQ"},"tA":{"a2":[],"h":[]},"yI":{"aF":[],"h":[]},"Ka":{"a7":["tA"]},"yT":{"a2":[],"h":[]},"yU":{"a7":["yT"]},"Qq":{"aF":[],"h":[]},"aAu":{"cG":[],"aX":[],"aM":[],"h":[]},"PT":{"a4":[]},"cx":{"bx":[]},"fU":{"bx":[]},"DO":{"bx":[]},"dk":{"bx":[]},"dT":{"bx":[]},"fv":{"h7":[]},"dl":{"l9":[]},"cM":{"cx":[],"bx":[]},"kd":{"z":[]},"b9":{"cQ":[]},"d7":{"cQ":[]},"lA":{"cQ":[]},"Hi":{"d9":[]},"cS":{"cx":[],"bx":[]},"ii":{"cx":[],"bx":[]},"rU":{"dR":["cS"],"cx":[],"bx":[],"dR.T":"cS"},"rV":{"dR":["ii"],"cx":[],"bx":[],"dR.T":"ii"},"dR":{"cx":[],"bx":[]},"hr":{"h7":[]},"ep":{"cx":[],"bx":[]},"e9":{"cx":[],"bx":[]},"ea":{"cx":[],"bx":[]},"re":{"fk":[]},"QV":{"fk":[]},"dM":{"d9":[],"i7":[],"ae":[]},"x4":{"B":[],"aI":["B"],"D":[],"ae":[]},"zk":{"a4":[]},"Lr":{"jd":[]},"P1":{"l_":[],"aI":["B"],"D":[],"ae":[]},"al":{"ke":[]},"m8":{"kt":[]},"B":{"D":[],"ae":[]},"m7":{"fE":["B"]},"eA":{"da":[]},"uq":{"eA":[],"eB":["1"],"da":[]},"fL":{"eA":[],"eB":["B"],"da":[]},"x8":{"d_":["B","fL"],"B":[],"aJ":["B","fL"],"D":[],"ae":[],"aJ.1":"fL","d_.1":"fL","aJ.0":"B"},"EA":{"a4":[]},"x9":{"B":[],"aI":["B"],"D":[],"ae":[]},"kX":{"a4":[]},"nG":{"B":[],"aJ":["B","fP"],"D":[],"ae":[],"aJ.1":"fP","aJ.0":"B"},"OJ":{"B":[],"D":[],"ae":[]},"BR":{"kX":[],"a4":[]},"zo":{"kX":[],"a4":[]},"rj":{"kX":[],"a4":[]},"xb":{"B":[],"D":[],"ae":[]},"hV":{"eA":[],"eB":["B"],"da":[]},"xc":{"d_":["B","hV"],"B":[],"aJ":["B","hV"],"D":[],"ae":[],"aJ.1":"hV","d_.1":"hV","aJ.0":"B"},"dV":{"dr":[]},"uh":{"dV":[],"dr":[]},"uf":{"dV":[],"dr":[]},"qY":{"hj":[],"dV":[],"dr":[]},"H1":{"hj":[],"dV":[],"dr":[]},"vV":{"dV":[],"dr":[]},"tH":{"dV":[],"dr":[]},"Hg":{"dr":[]},"hj":{"dV":[],"dr":[]},"ug":{"dV":[],"dr":[]},"vz":{"hj":[],"dV":[],"dr":[]},"tN":{"dV":[],"dr":[]},"vj":{"dV":[],"dr":[]},"GK":{"a4":[]},"D":{"ae":[]},"eB":{"da":[]},"dy":{"cL":[]},"Aa":{"cL":[]},"je":{"cJ":[]},"fP":{"eB":["B"],"da":[]},"iB":{"dv":[],"a4":[]},"kY":{"B":[],"aJ":["B","fP"],"D":[],"ae":[],"aJ.1":"fP","aJ.0":"B"},"la":{"a4":[]},"x2":{"B":[],"aI":["B"],"D":[],"ae":[]},"jo":{"B":[],"aI":["B"],"D":[],"ae":[]},"HU":{"B":[],"aI":["B"],"D":[],"ae":[]},"xk":{"B":[],"aI":["B"],"D":[],"ae":[]},"x7":{"B":[],"aI":["B"],"D":[],"ae":[]},"HP":{"B":[],"aI":["B"],"D":[],"ae":[]},"HQ":{"B":[],"aI":["B"],"D":[],"ae":[]},"HD":{"B":[],"aI":["B"],"D":[],"ae":[]},"HE":{"B":[],"aI":["B"],"D":[],"ae":[]},"uA":{"a4":[]},"rQ":{"B":[],"aI":["B"],"D":[],"ae":[]},"HI":{"B":[],"aI":["B"],"D":[],"ae":[]},"HH":{"B":[],"aI":["B"],"D":[],"ae":[]},"HG":{"B":[],"aI":["B"],"D":[],"ae":[]},"B8":{"B":[],"aI":["B"],"D":[],"ae":[]},"HR":{"B":[],"aI":["B"],"D":[],"ae":[]},"HS":{"B":[],"aI":["B"],"D":[],"ae":[]},"HJ":{"B":[],"aI":["B"],"D":[],"ae":[]},"HY":{"B":[],"aI":["B"],"D":[],"ae":[]},"HM":{"B":[],"aI":["B"],"D":[],"ae":[]},"HT":{"B":[],"aI":["B"],"D":[],"ae":[]},"xg":{"B":[],"aI":["B"],"D":[],"i7":[],"ae":[]},"HW":{"B":[],"aI":["B"],"D":[],"ae":[]},"xd":{"B":[],"aI":["B"],"D":[],"ae":[]},"xh":{"B":[],"aI":["B"],"D":[],"ae":[]},"xf":{"B":[],"aI":["B"],"D":[],"ae":[]},"HX":{"B":[],"aI":["B"],"D":[],"ae":[]},"HF":{"B":[],"aI":["B"],"D":[],"ae":[]},"HK":{"B":[],"aI":["B"],"D":[],"ae":[]},"HO":{"B":[],"aI":["B"],"D":[],"ae":[]},"HL":{"B":[],"aI":["B"],"D":[],"ae":[]},"x5":{"B":[],"aI":["B"],"D":[],"ae":[]},"dv":{"a4":[]},"nH":{"B":[],"aI":["B"],"D":[],"ae":[]},"xi":{"B":[],"aI":["B"],"D":[],"ae":[]},"HC":{"B":[],"aI":["B"],"D":[],"ae":[]},"xj":{"B":[],"aI":["B"],"D":[],"ae":[]},"xa":{"B":[],"aI":["B"],"D":[],"ae":[]},"cU":{"eA":[],"eB":["B"],"da":[]},"qr":{"d_":["B","cU"],"B":[],"aJ":["B","cU"],"D":[],"ae":[],"aJ.1":"cU","d_.1":"cU","aJ.0":"B"},"xe":{"d_":["B","cU"],"B":[],"aJ":["B","cU"],"D":[],"ae":[],"aJ.1":"cU","d_.1":"cU","aJ.0":"B"},"l_":{"aI":["B"],"D":[],"ae":[]},"jG":{"a4":[]},"oc":{"ay":["~"]},"yK":{"dn":[]},"Pt":{"cO":[]},"xT":{"a4":[]},"j4":{"fI":[]},"mY":{"fI":[]},"mX":{"fI":[]},"wM":{"dn":[]},"wg":{"dn":[]},"Lu":{"cR":[]},"PU":{"wh":[]},"lc":{"cR":[]},"kU":{"jl":[]},"qn":{"jl":[]},"xp":{"a4":[]},"p6":{"fk":[]},"pR":{"fk":[]},"kM":{"fk":[]},"uP":{"fk":[]},"Jf":{"lf":[]},"Je":{"lf":[]},"Jg":{"lf":[]},"qR":{"lf":[]},"Fm":{"o7":[]},"NG":{"yA":[]},"FP":{"dZ":[]},"FQ":{"dZ":[]},"FT":{"dZ":[]},"FV":{"dZ":[]},"FS":{"dZ":[]},"FU":{"dZ":[]},"FW":{"dZ":[]},"FR":{"dZ":[]},"rd":{"eL":["Cq"],"aX":[],"aM":[],"h":[],"eL.T":"Cq"},"zc":{"a2":[],"h":[]},"ET":{"aF":[],"h":[]},"JW":{"a4":[]},"R7":{"aX":[],"aM":[],"h":[]},"R6":{"a7":["zc"]},"m_":{"a2":[],"h":[]},"zd":{"aX":[],"aM":[],"h":[]},"mD":{"a2":[],"h":[]},"akk":{"aG":[]},"awb":{"aG":[]},"awa":{"aG":[]},"oV":{"aG":[]},"p2":{"aG":[]},"eF":{"aG":[]},"jk":{"aG":[]},"bX":{"aL":["1"]},"cB":{"aL":["1"],"aL.T":"1"},"ze":{"a7":["m_"]},"A2":{"a7":["mD"]},"JN":{"aL":["akk"],"aL.T":"akk"},"uN":{"aL":["aG"],"aL.T":"aG"},"EW":{"aL":["eF"]},"Ht":{"bX":["jk"],"aL":["jk"],"bX.T":"jk","aL.T":"jk"},"AD":{"bX":["1"],"rJ":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"AE":{"bX":["1"],"rJ":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"zA":{"aL":["1"],"aL.T":"1"},"tz":{"a2":[],"h":[]},"K9":{"a7":["tz"]},"K8":{"b_":[],"aj":[],"h":[]},"tG":{"b_":[],"aj":[],"h":[]},"za":{"a2":[],"h":[]},"Ci":{"a7":["za"],"cs":[]},"Dw":{"cs":[]},"vO":{"a4":[]},"Ns":{"aF":[],"h":[]},"fC":{"aX":[],"aM":[],"h":[]},"pg":{"b_":[],"aj":[],"h":[]},"pf":{"b_":[],"aj":[],"h":[]},"jB":{"b_":[],"aj":[],"h":[]},"pl":{"b_":[],"aj":[],"h":[]},"mc":{"b_":[],"aj":[],"h":[]},"vU":{"ff":["fL"],"aM":[],"h":[],"ff.T":"fL"},"aw_":{"aX":[],"aM":[],"h":[]},"kw":{"b_":[],"aj":[],"h":[]},"l6":{"b_":[],"aj":[],"h":[]},"QP":{"eK":[],"aW":[],"a1":[]},"QQ":{"aX":[],"aM":[],"h":[]},"H_":{"b_":[],"aj":[],"h":[]},"DE":{"b_":[],"aj":[],"h":[]},"uC":{"b_":[],"aj":[],"h":[]},"E8":{"b_":[],"aj":[],"h":[]},"He":{"b_":[],"aj":[],"h":[]},"Hf":{"b_":[],"aj":[],"h":[]},"Ek":{"b_":[],"aj":[],"h":[]},"Ft":{"b_":[],"aj":[],"h":[]},"em":{"b_":[],"aj":[],"h":[]},"k4":{"b_":[],"aj":[],"h":[]},"iQ":{"b_":[],"aj":[],"h":[]},"uB":{"eO":[],"aj":[],"h":[]},"ju":{"b_":[],"aj":[],"h":[]},"fy":{"b_":[],"aj":[],"h":[]},"Gq":{"b_":[],"aj":[],"h":[]},"GY":{"b_":[],"aj":[],"h":[]},"Nx":{"aH":[],"aW":[],"a1":[]},"Pr":{"b_":[],"aj":[],"h":[]},"yb":{"eO":[],"aj":[],"h":[]},"wQ":{"ff":["cU"],"aM":[],"h":[],"ff.T":"cU"},"Hn":{"aF":[],"h":[]},"Fn":{"eO":[],"aj":[],"h":[]},"Ej":{"eO":[],"aj":[],"h":[]},"I2":{"eO":[],"aj":[],"h":[]},"Gu":{"b_":[],"aj":[],"h":[]},"wi":{"b_":[],"aj":[],"h":[]},"ih":{"b_":[],"aj":[],"h":[]},"Dl":{"b_":[],"aj":[],"h":[]},"GI":{"b_":[],"aj":[],"h":[]},"DK":{"b_":[],"aj":[],"h":[]},"km":{"b_":[],"aj":[],"h":[]},"Gh":{"aF":[],"h":[]},"dU":{"aF":[],"h":[]},"Ei":{"b_":[],"aj":[],"h":[]},"AY":{"B":[],"aI":["B"],"D":[],"ae":[]},"xs":{"h":[]},"xq":{"aW":[],"a1":[]},"JV":{"ik":[],"ae":[]},"EC":{"b_":[],"aj":[],"h":[]},"Eq":{"aF":[],"h":[]},"Lo":{"a4":[]},"kj":{"cG":[],"aX":[],"aM":[],"h":[]},"Nt":{"aF":[],"h":[]},"EM":{"aF":[],"h":[]},"kk":{"a2":[],"h":[]},"zT":{"a7":["kk"]},"le":{"bV":["ce"],"a4":[]},"py":{"a2":[],"h":[]},"kl":{"a7":["py"],"cs":[]},"Bm":{"a2":[],"h":[]},"jV":{"rc":[],"d9":[]},"KM":{"b_":[],"aj":[],"h":[]},"OG":{"B":[],"aI":["B"],"D":[],"ae":[]},"zU":{"eO":[],"aj":[],"h":[]},"Pd":{"a7":["Bm"],"aoZ":[]},"jN":{"bX":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"C7":{"bX":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"C8":{"bX":["1"],"aL":["1"],"bX.T":"1","aL.T":"1"},"Ce":{"cB":["1"],"aL":["1"],"aL.T":"1"},"Pk":{"bX":["js"],"aL":["js"],"bX.T":"js","aL.T":"js"},"L2":{"bX":["hO"],"aL":["hO"],"bX.T":"hO","aL.T":"hO"},"NE":{"bX":["jc"],"aL":["jc"],"bX.T":"jc","aL.T":"jc"},"R_":{"bV":["pi"],"a4":[],"cs":[]},"LQ":{"bX":["hR"],"aL":["hR"],"bX.T":"hR","aL.T":"hR"},"LR":{"bX":["hS"],"aL":["hS"],"bX.T":"hS","aL.T":"hS"},"cb":{"a4":[]},"iZ":{"cb":[],"a4":[]},"Kk":{"cs":[]},"vg":{"a4":[]},"mA":{"a2":[],"h":[]},"A0":{"hZ":["cb"],"aX":[],"aM":[],"h":[],"hZ.T":"cb"},"rq":{"a7":["mA"]},"vh":{"a2":[],"h":[]},"Mc":{"a2":[],"h":[]},"Mb":{"a7":["mA"]},"Fh":{"aF":[],"h":[]},"vi":{"a2":[],"h":[]},"ajW":{"aG":[]},"nj":{"aG":[]},"nA":{"aG":[]},"aj3":{"aG":[]},"A1":{"cb":[],"a4":[]},"Md":{"a7":["vi"]},"I_":{"aL":["ajW"],"aL.T":"ajW"},"GR":{"aL":["nj"],"aL.T":"nj"},"Hq":{"aL":["nA"],"aL.T":"nA"},"uL":{"aL":["aj3"],"aL.T":"aj3"},"hc":{"fH":[]},"bw":{"hc":["1"],"fH":[]},"aF":{"h":[]},"a2":{"h":[]},"aW":{"a1":[]},"hv":{"aW":[],"a1":[]},"nq":{"aW":[],"a1":[]},"eK":{"aW":[],"a1":[]},"mM":{"hc":["1"],"fH":[]},"aM":{"h":[]},"ff":{"aM":[],"h":[]},"aX":{"aM":[],"h":[]},"aj":{"h":[]},"Go":{"aj":[],"h":[]},"b_":{"aj":[],"h":[]},"eO":{"aj":[],"h":[]},"Ff":{"aj":[],"h":[]},"un":{"aW":[],"a1":[]},"IY":{"aW":[],"a1":[]},"wU":{"aW":[],"a1":[]},"aH":{"aW":[],"a1":[]},"Gn":{"aH":[],"aW":[],"a1":[]},"xZ":{"aH":[],"aW":[],"a1":[]},"ne":{"aH":[],"aW":[],"a1":[]},"HZ":{"aH":[],"aW":[],"a1":[]},"Nr":{"aW":[],"a1":[]},"Nu":{"h":[]},"hl":{"a2":[],"h":[]},"qm":{"a7":["hl"]},"bS":{"mL":["1"]},"Fy":{"aF":[],"h":[]},"Ml":{"b_":[],"aj":[],"h":[]},"anw":{"a2":[],"h":[]},"aq_":{"a7":["anw"]},"FH":{"ni":[]},"vu":{"aF":[],"h":[]},"mR":{"cG":[],"aX":[],"aM":[],"h":[]},"m5":{"aC":["ca?"],"av":["ca?"],"av.T":"ca?","aC.T":"ca?"},"oa":{"aC":["q"],"av":["q"],"av.T":"q","aC.T":"q"},"ty":{"a2":[],"h":[]},"tw":{"a2":[],"h":[]},"tv":{"a2":[],"h":[]},"tx":{"a2":[],"h":[]},"EG":{"aC":["h7"],"av":["h7"],"av.T":"h7","aC.T":"h7"},"G4":{"a2":[],"h":[]},"pL":{"a7":["1"]},"oX":{"a7":["1"]},"K7":{"a7":["ty"]},"K5":{"a7":["tw"]},"K4":{"a7":["tv"]},"K6":{"a7":["tx"]},"t5":{"aX":[],"aM":[],"h":[]},"G6":{"aF":[],"h":[]},"AO":{"eO":[],"aj":[],"h":[]},"MC":{"aH":[],"aW":[],"a1":[]},"eL":{"aX":[],"aM":[],"h":[]},"vC":{"eK":[],"aW":[],"a1":[]},"hZ":{"aX":[],"aM":[],"h":[]},"ry":{"eK":[],"aW":[],"a1":[]},"cG":{"aX":[],"aM":[],"h":[]},"ok":{"aF":[],"h":[]},"iK":{"aj":[],"h":[]},"rz":{"aH":[],"aW":[],"a1":[]},"Al":{"aX":[],"aM":[],"h":[]},"n5":{"a2":[],"h":[]},"pS":{"a4":[],"cs":[]},"R5":{"ej":["zb"],"ej.T":"zb"},"EO":{"zb":[]},"MW":{"a7":["n5"]},"pV":{"aX":[],"aM":[],"h":[]},"Hy":{"aF":[],"h":[]},"Np":{"a4":[]},"N_":{"b_":[],"aj":[],"h":[]},"OO":{"B":[],"aI":["B"],"D":[],"ae":[]},"kJ":{"eL":["ct"],"aX":[],"aM":[],"h":[],"eL.T":"ct"},"Aq":{"a2":[],"h":[]},"N8":{"a7":["Aq"],"cs":[]},"q3":{"aF":[],"h":[]},"rf":{"ck":[],"cp":[]},"Kg":{"mL":["rf"]},"Nd":{"aF":[],"h":[]},"GQ":{"aF":[],"h":[]},"aop":{"ij":[]},"mO":{"aX":[],"aM":[],"h":[]},"ww":{"a2":[],"h":[]},"hi":{"a7":["ww"]},"rG":{"lC":[]},"rF":{"lC":[]},"Ax":{"lC":[]},"Ay":{"lC":[]},"Mo":{"A":["fp"],"a4":[],"A.E":"fp"},"Mp":{"cH":["b5<G?,T<L>>?"],"a4":[]},"dG":{"aM":[],"h":[]},"AB":{"aW":[],"a1":[]},"kL":{"a4":[]},"jS":{"a2":[],"h":[]},"AC":{"a7":["jS"]},"qa":{"a2":[],"h":[]},"wG":{"a7":["qa"]},"oC":{"B":[],"aJ":["B","cU"],"D":[],"ae":[],"aJ.1":"cU","aJ.0":"B"},"wF":{"a2":[],"h":[]},"oz":{"fK":["oz"],"fK.E":"oz"},"oD":{"aX":[],"aM":[],"h":[]},"jU":{"B":[],"aI":["B"],"D":[],"ae":[],"fK":["jU"],"fK.E":"jU"},"B6":{"B":[],"aI":["B"],"D":[],"ae":[]},"rH":{"iK":["+(H,bf,H)"],"aj":[],"h":[],"iK.0":"+(H,bf,H)"},"BX":{"eO":[],"aj":[],"h":[]},"Qk":{"aH":[],"aW":[],"a1":[]},"t0":{"cU":[],"eA":[],"eB":["B"],"da":[]},"NB":{"a7":["wF"]},"rI":{"aj":[],"h":[]},"NA":{"aH":[],"aW":[],"a1":[]},"Lt":{"b_":[],"aj":[],"h":[]},"B5":{"dI":["+(H,bf,H)","B"],"B":[],"aI":["B"],"D":[],"ae":[],"dI.0":"+(H,bf,H)"},"vr":{"a2":[],"h":[]},"ye":{"a2":[],"h":[]},"A5":{"a7":["vr"]},"A4":{"a4":[]},"Mm":{"a4":[]},"BL":{"a7":["ye"]},"PK":{"a4":[]},"aor":{"iv":["1"],"fH":[]},"qd":{"aF":[],"h":[]},"wH":{"fb":["1"],"e7":["1"],"cy":["1"]},"wR":{"aX":[],"aM":[],"h":[]},"x_":{"a2":[],"h":[]},"jm":{"a7":["x_"]},"LW":{"b_":[],"aj":[],"h":[]},"OL":{"B":[],"aI":["B"],"D":[],"i7":[],"ae":[]},"l0":{"a2":[],"h":[]},"z1":{"aX":[],"aM":[],"h":[]},"xr":{"a2":[],"h":[]},"cH":{"a4":[]},"P0":{"a7":["l0"]},"Bg":{"a7":["xr"]},"bI":{"cH":["1"],"a4":[]},"hE":{"bI":["1"],"cH":["1"],"a4":[]},"Be":{"hE":["1"],"bI":["1"],"cH":["1"],"a4":[]},"xo":{"hE":["1"],"bI":["1"],"cH":["1"],"a4":[],"bI.T":"1","hE.T":"1"},"xn":{"hE":["I"],"bI":["I"],"cH":["I"],"a4":[],"bI.T":"I","hE.T":"I"},"nJ":{"cH":["1"],"a4":[]},"qt":{"cH":["1"],"a4":[]},"I1":{"cH":["le"],"a4":[]},"I6":{"a2":[],"h":[]},"aFo":{"aHK":["ay<I>"]},"rW":{"a7":["I6<1>"]},"P9":{"aX":[],"aM":[],"h":[]},"OY":{"bI":["l1?"],"cH":["l1?"],"a4":[],"bI.T":"l1?"},"As":{"eL":["lB"],"aX":[],"aM":[],"h":[],"eL.T":"lB"},"rE":{"a2":[],"h":[]},"ox":{"a7":["rE<1>"]},"qc":{"cy":["1"]},"e7":{"cy":["1"]},"LC":{"aL":["eF"],"aL.T":"eF"},"fb":{"e7":["1"],"cy":["1"]},"I8":{"aF":[],"h":[]},"xA":{"aX":[],"aM":[],"h":[]},"xB":{"a4":[]},"eo":{"f8":[]},"nQ":{"eo":[],"f8":[]},"l2":{"eo":[],"f8":[]},"i9":{"eo":[],"f8":[]},"hq":{"eo":[],"f8":[]},"JH":{"eo":[],"f8":[]},"Bo":{"aX":[],"aM":[],"h":[]},"jR":{"fK":["jR"],"fK.E":"jR"},"xD":{"a2":[],"h":[]},"Ir":{"a7":["xD"]},"jq":{"jG":[],"a4":[]},"xE":{"jq":[],"jG":[],"a4":[]},"xF":{"a2":[],"h":[]},"Bq":{"aX":[],"aM":[],"h":[]},"nR":{"a7":["xF"]},"Bs":{"a2":[],"h":[]},"Pf":{"a7":["Bs"]},"Br":{"a4":[]},"OZ":{"bI":["M?"],"cH":["M?"],"a4":[],"bI.T":"M?"},"dK":{"aG":[]},"xz":{"bX":["dK"],"aL":["dK"],"bX.T":"dK","aL.T":"dK"},"qo":{"a2":[],"h":[]},"iC":{"eS":[],"ck":[],"cp":[]},"lI":{"fn":[],"f1":[],"ck":[],"cp":[]},"lw":{"f6":[],"f1":[],"ck":[],"cp":[]},"qy":{"a4":[]},"ig":{"a7":["1"]},"azt":{"a2":[],"h":[]},"qF":{"a4":[]},"q4":{"a4":[]},"nS":{"a2":[],"h":[]},"qB":{"aX":[],"aM":[],"h":[]},"Po":{"dv":[],"a7":["nS"],"a4":[]},"Iu":{"a4":[]},"xW":{"a2":[],"h":[]},"Px":{"a7":["xW"]},"Py":{"eL":["L"],"aX":[],"aM":[],"h":[],"eL.T":"L"},"a0":{"qD":[]},"o_":{"a2":[],"h":[]},"xX":{"a2":[],"h":[]},"qE":{"a4":[]},"BE":{"a7":["o_"]},"xY":{"a4":[]},"BD":{"a7":["xX"]},"PB":{"aX":[],"aM":[],"h":[]},"IK":{"f8":[]},"IL":{"b_":[],"aj":[],"h":[]},"OT":{"B":[],"aI":["B"],"D":[],"ae":[]},"y4":{"hs":["1","2"],"aj":[],"h":[]},"y5":{"aH":[],"aW":[],"a1":[]},"y7":{"a4":[]},"IV":{"b_":[],"aj":[],"h":[]},"rT":{"B":[],"aI":["B"],"D":[],"ae":[]},"IU":{"a4":[]},"zM":{"a4":[]},"J1":{"aF":[],"h":[]},"yj":{"a2":[],"h":[]},"PS":{"a7":["yj"]},"FN":{"ei":[]},"FO":{"ei":[]},"FZ":{"ei":[]},"G0":{"ei":[]},"FY":{"ei":[]},"G_":{"ei":[]},"G1":{"ei":[]},"FX":{"ei":[]},"qs":{"B":[],"aI":["B"],"D":[],"ae":[]},"kZ":{"B":[],"aI":["B"],"D":[],"ae":[]},"qT":{"b_":[],"aj":[],"h":[]},"J9":{"b_":[],"aj":[],"h":[]},"LM":{"cp":[]},"ys":{"b_":[],"aj":[],"h":[]},"pt":{"cG":[],"aX":[],"aM":[],"h":[]},"aw2":{"cG":[],"aX":[],"aM":[],"h":[]},"Bw":{"a2":[],"h":[]},"Nv":{"aF":[],"h":[]},"qP":{"aF":[],"h":[]},"Pn":{"a7":["Bw"]},"P4":{"aF":[],"h":[]},"Pm":{"a4":[]},"uO":{"aG":[]},"mp":{"aG":[]},"mr":{"aG":[]},"mq":{"aG":[]},"uK":{"aG":[]},"iU":{"aG":[]},"iX":{"aG":[]},"mx":{"aG":[]},"mu":{"aG":[]},"mv":{"aG":[]},"f4":{"aG":[]},"kn":{"aG":[]},"iY":{"aG":[]},"iW":{"aG":[]},"mw":{"aG":[]},"iV":{"aG":[]},"jr":{"aG":[]},"js":{"aG":[]},"hO":{"aG":[]},"jc":{"aG":[]},"kW":{"aG":[]},"hm":{"aG":[]},"lj":{"aG":[]},"fR":{"aG":[]},"lh":{"aG":[]},"hR":{"aG":[]},"hS":{"aG":[]},"EV":{"aG":[]},"e6":{"eA":[],"eB":["B"],"da":[]},"lE":{"a2":[],"h":[]},"Bx":{"a2":[],"h":[]},"yE":{"a2":[],"h":[]},"Bz":{"a7":["lE"]},"By":{"a7":["Bx"]},"BU":{"a7":["yE"]},"uj":{"bV":["pi"],"a4":[],"cs":[]},"yL":{"a2":[],"h":[]},"zX":{"aX":[],"aM":[],"h":[]},"Qm":{"a7":["yL"]},"KN":{"a4":[]},"yP":{"a2":[],"h":[]},"Qo":{"a7":["yP"]},"tB":{"a2":[],"h":[]},"cZ":{"b_":[],"aj":[],"h":[]},"zf":{"a7":["tB"]},"IT":{"a2":[],"h":[]},"GD":{"a2":[],"h":[]},"Ib":{"a2":[],"h":[]},"I5":{"a2":[],"h":[]},"EE":{"a2":[],"h":[]},"i3":{"a2":[],"h":[]},"Ds":{"a2":[],"h":[]},"r2":{"a2":[],"h":[]},"r3":{"a7":["r2<1>"]},"z0":{"bV":["r4"],"a4":[]},"r7":{"a2":[],"h":[]},"oH":{"aX":[],"aM":[],"h":[]},"AJ":{"aX":[],"aM":[],"h":[]},"Cd":{"a7":["r7"],"cs":[]},"Hz":{"aF":[],"h":[]},"AR":{"aj":[],"h":[]},"AQ":{"aH":[],"aW":[],"a1":[]},"oy":{"h":[]},"JJ":{"oy":[],"h":[]},"JI":{"aF":[],"h":[]},"Ni":{"aW":[],"a1":[]},"zN":{"hc":["1"],"fH":[]},"rc":{"d9":[]},"R0":{"ff":["fP"],"aM":[],"h":[],"ff.T":"fP"},"Kq":{"b_":[],"aj":[],"h":[]},"Bb":{"B":[],"aI":["B"],"D":[],"ae":[]},"bK":{"ln":[]},"Kh":{"ln":[]},"JQ":{"z":[],"bA":["z"]},"Cf":{"z":[],"bA":["z"]},"JR":{"cR":[],"bA":["cR"]},"Cg":{"cR":[],"bA":["cR"]},"JP":{"aV":[],"bA":["aV?"]},"MR":{"bA":["aV?"]},"fZ":{"aV":[],"bA":["aV?"]},"JS":{"q":[],"bA":["q"]},"R2":{"q":[],"bA":["q"]},"Ai":{"bA":["1?"]},"c0":{"bA":["1"]},"jI":{"bA":["1"]},"bt":{"bA":["1"]},"JT":{"bV":["aT<bK>"],"a4":[]},"Ic":{"cX":[]},"Id":{"cX":[]},"Ie":{"cX":[]},"If":{"cX":[]},"Ig":{"cX":[]},"Ih":{"cX":[]},"Ii":{"cX":[]},"Ij":{"cX":[]},"Ik":{"cX":[]},"axN":{"a2":[],"h":[]},"awt":{"a2":[],"h":[]},"awu":{"a7":["awt"]},"azL":{"a2":[],"h":[]},"aBC":{"aX":[],"aM":[],"h":[]},"aAT":{"aX":[],"aM":[],"h":[]}}'))
 A.aBL(v.typeUniverse,JSON.parse('{"Gm":1,"rb":1,"IR":1,"IS":1,"F7":1,"Fr":1,"va":1,"JE":1,"r5":1,"Cw":2,"up":1,"e4":1,"cq":1,"q7":1,"qG":1,"jJ":1,"hF":1,"Kp":1,"rk":1,"BK":1,"Lv":1,"om":1,"AI":1,"rp":1,"PJ":1,"QT":2,"w4":2,"C6":2,"E0":1,"Eg":2,"us":2,"Mi":3,"BM":1,"oI":1,"v6":1,"EJ":1,"tF":1,"pn":1,"zw":1,"zx":1,"zy":1,"wI":1,"Ct":1,"zB":1,"bV":1,"hP":1,"uH":1,"wJ":2,"Ap":1,"t6":1,"uq":1,"zz":1,"Gl":1,"eB":1,"dJ":1,"x3":1,"uA":1,"rQ":1,"B8":1,"BP":1,"CF":1,"CG":1,"p_":1,"pL":1,"oX":1,"rx":1,"Jw":1,"EN":1,"aor":1,"cH":1,"hn":1,"Be":1,"nJ":1,"qt":1,"t7":1,"ayC":1,"qc":1,"Gv":1,"ow":1,"rO":1,"y4":2,"BF":2,"eR":1,"df":1,"C1":1}'))
 var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",r:'"recorder" must not already be associated with another Canvas.',T:"% of the way to being a CircleBorder that is ",z:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",q:"Called rasterize() with a different number of canvases and pictures.",c:"Cannot fire new event. Controller is already firing an event",l:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",p:"SystemChrome.setApplicationSwitcherDescription",s:"TextInputClient.updateEditingStateWithDeltas",w:"TextInputClient.updateEditingStateWithTag",i:"The downloaded CanvasKit version does not support WebParagraph",u:"There was a problem trying to load FontManifest.json",K:"Windowing APIs are not enabled.\n\nWindowing APIs are currently experimental. Do not use windowing APIs in\nproduction applications or plugins published to pub.dev.\n\nTo try experimental windowing APIs:\n1. Switch to Flutter's main release channel.\n2. Turn on the windowing feature flag.\n\nSee: https://github.com/flutter/flutter/issues/30701.\n",C:"while dispatching notifications for WidgetsBindingObserver.didPushRouteInformation",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c"}
 var t=(function rtii(){var s=A.an
-return{S6:s("@<ln>"),vH:s("auT"),od:s("aL<aG>"),gj:s("auX<L>"),pC:s("m0"),so:s("c2<f>"),ve:s("c2<M>"),ph:s("tG<io>"),qH:s("av2"),s1:s("tK"),vp:s("m2"),S7:s("tM"),u2:s("Te"),Al:s("k8<L?>"),m_:s("ca"),hK:s("al"),q:s("eA"),pI:s("iO"),V4:s("d6"),wY:s("cB<oV>"),nz:s("cB<p2>"),OX:s("cB<eF>"),fN:s("cB<kW>"),Tx:s("cB<hm>"),fn:s("cB<dK>"),j5:s("cB<lh>"),_n:s("cB<lj>"),ZQ:s("cB<fR>"),d0:s("dm<cy<@>?,cy<@>>"),Ub:s("md"),m6:s("ub"),Bn:s("pc"),S3:s("uc"),BQ:s("pd"),nR:s("ue"),Hz:s("mg"),G:s("z"),Ss:s("cN"),id:s("mj"),qO:s("mk<yi,@>"),li:s("bB<G,G>"),eL:s("bB<G,y>"),VJ:s("bB<G,T<G>>"),fF:s("fx<G>"),Nq:s("ke"),vn:s("ur"),pU:s("aJ<D,eB<D>>"),ho:s("uu"),H5:s("avT"),HY:s("iP"),ip:s("uC"),I7:s("aFr"),l4:s("aw_"),Uf:s("kj"),XP:s("aw2"),yS:s("pt"),Je:s("aFG"),EX:s("cO"),I:s("fC"),ra:s("aFH"),xm:s("eF"),YH:s("EZ<az>"),uL:s("f2"),zk:s("px"),Tu:s("aQ"),ML:s("cX"),Zi:s("hR"),Rz:s("hS"),Ee:s("ao<@>"),h:s("aW"),GB:s("aFL"),lz:s("iT"),ay:s("pD"),sB:s("bg"),Lt:s("bO"),VI:s("dn"),IX:s("eg<jW,bC>"),bh:s("mu"),oB:s("mv"),_w:s("iU"),HH:s("iV"),OO:s("f4"),cP:s("iW"),b5:s("mw"),P9:s("iX"),eI:s("mx"),Ie:s("pG"),PA:s("v8"),US:s("hV"),N8:s("vb"),s4:s("Xv"),OE:s("Xw"),Kw:s("XI"),mx:s("cb"),l5:s("iZ"),zq:s("pI"),ia:s("mF"),VW:s("mG"),FK:s("eH"),jT:s("vm"),kr:s("hX"),_8:s("j0"),Z9:s("ay<l8>"),Ev:s("ay<I>()"),L0:s("ay<@>"),T8:s("ay<d6?>"),uz:s("ay<~>"),Fp:s("cE<qD,aG>"),pl:s("cE<y,z>"),Lu:s("eh<id>"),E:s("Fx"),cD:s("ck"),uA:s("bS<h8>"),C1:s("bS<hb>"),Uv:s("bS<f6>"),jn:s("bS<hf>"),YC:s("bS<hk>"),hg:s("bS<ip>"),Qm:s("bS<iq>"),UN:s("bS<eS>"),ok:s("bS<fn>"),lh:s("bS<lw>"),Bk:s("bS<iC>"),Pw:s("bS<lI>"),xR:s("mL<ck>"),yi:s("hc<a7<a2>>"),TX:s("mM<hi>"),bT:s("mM<a7<a2>>"),rQ:s("aFX"),GF:s("dD<i0(fI)>"),PD:s("dD<~()>"),op:s("dD<~(kp)>"),bq:s("f5"),G7:s("FG<BP<@>>"),rA:s("anw"),mS:s("mO"),AL:s("fE<ae>"),Fn:s("kt"),zE:s("ae"),Lk:s("any"),g5:s("vw"),Oh:s("mR"),Bc:s("ky<aW?>"),ri:s("vB"),IS:s("eK"),og:s("cG"),WB:s("aX"),U1:s("fF"),lA:s("axs"),JZ:s("Z3"),XO:s("Z4"),pT:s("Z5"),gD:s("mT"),r:s("aG"),nQ:s("mU"),Ya:s("pN"),ud:s("bP"),JY:s("B<@>"),lY:s("x<auX<L>>"),QP:s("x<h3>"),NS:s("x<ch>"),tM:s("x<m4>"),sq:s("x<dl>"),AT:s("x<pd>"),s8:s("x<amE>"),t_:s("x<z>"),EV:s("x<mj>"),KV:s("x<dV>"),ZD:s("x<cC>"),p:s("x<cO>"),vl:s("x<fC>"),Up:s("x<F_>"),lX:s("x<aW>"),LE:s("x<Fb>"),_m:s("x<pG>"),bp:s("x<cb>"),z8:s("x<mG>"),uf:s("x<hX>"),no:s("x<kr>"),wQ:s("x<ay<mF>>"),Rh:s("x<ay<+(G,eH?)>>"),mo:s("x<ay<~>>"),iQ:s("x<cp>"),DU:s("x<f5>"),om:s("x<fE<ae>>"),kt:s("x<ei>"),Fa:s("x<eK>"),fJ:s("x<cG>"),VB:s("x<kz>"),VO:s("x<d9>"),O_:s("x<j2>"),O:s("x<az>"),DS:s("x<dq>"),K0:s("x<fI>"),CE:s("x<i0>"),k5:s("x<dE>"),k_:s("x<Gk>"),HU:s("x<i1>"),xj:s("x<ZE>"),s9:s("x<vU>"),Y4:s("x<fJ>"),MH:s("x<n_>"),_f:s("x<n0>"),ER:s("x<kG>"),X_:s("x<T<cT>>"),fQ:s("x<T<cL>>"),zg:s("x<T<M>>"),Eo:s("x<a4>"),H8:s("x<Gt>"),ss:s("x<n4>"),a9:s("x<ej<@>>"),IO:s("x<ej<L?>>"),en:s("x<e>"),H7:s("x<b5<G,@>>"),Xr:s("x<bf>"),YE:s("x<hh>"),tc:s("x<ni>"),Qg:s("x<fe>"),jl:s("x<L>"),Rd:s("x<a26>"),sF:s("x<wC>"),wi:s("x<kL>"),g8:s("x<aor<@>>"),zY:s("x<qe>"),OM:s("x<nq<da>>"),v:s("x<cd>"),RR:s("x<ib>"),tg:s("x<wK>"),tZ:s("x<qf>"),D9:s("x<fN>"),RW:s("x<qj>"),L7:s("x<+representation,targetSize(y0,H)>"),Co:s("x<+(G,z2)>"),lN:s("x<+data,event,timeStamp(T<fN>,az,aQ)>"),Nt:s("x<+domSize,representation,targetSize(H,y0,H)>"),AO:s("x<u>"),Pc:s("x<nE>"),Ik:s("x<A>"),xT:s("x<kX>"),TT:s("x<D>"),QT:s("x<cI>"),y8:s("x<xy>"),ZP:s("x<jq>"),D1:s("x<dv>"),u1:s("x<nU>"),JO:s("x<eQ>"),q1:s("x<cT>"),QF:s("x<bC>"),o4:s("x<IG>"),Qo:s("x<nY>"),Ay:s("x<ap3>"),kO:s("x<l9>"),N_:s("x<bx>"),Gl:s("x<qG<~>>"),s:s("x<G>"),oU:s("x<azS>"),PL:s("x<qK>"),bt:s("x<qL>"),Lx:s("x<dd>"),bG:s("x<yw>"),sD:s("x<lf>"),VS:s("x<o7>"),zs:s("x<Jm>"),AS:s("x<o8>"),Ne:s("x<dM>"),FO:s("x<it<it<@>>>"),LX:s("x<z2>"),Uu:s("x<fT>"),J:s("x<h>"),GA:s("x<cs>"),my:s("x<ako>"),Na:s("x<lo>"),SW:s("x<Kr>"),TV:s("x<oj>"),Kj:s("x<ro>"),mz:s("x<MK>"),zj:s("x<jS>"),IR:s("x<aky>"),m3:s("x<rL>"),jE:s("x<iy>"),qi:s("x<d2>"),z_:s("x<dy>"),uD:s("x<fp>"),s6:s("x<jV>"),lb:s("x<iB>"),bd:s("x<cL>"),YK:s("x<jW>"),Z4:s("x<aBx>"),cR:s("x<t1>"),NM:s("x<oF>"),HZ:s("x<I>"),n:s("x<M>"),ee:s("x<@>"),t:s("x<y>"),L:s("x<e?>"),iG:s("x<A?>"),ny:s("x<cy<@>?>"),Fi:s("x<bx?>"),XS:s("x<G?>"),Z:s("x<y?>"),a0:s("x<dB>"),Zt:s("x<ay<I>()>"),iL:s("x<jw<fJ>()>"),sA:s("x<I(fI)>"),qj:s("x<~()>"),k:s("x<~(aL<aG>)>"),A:s("x<~(hK)>"),LY:s("x<~(h3)>"),j1:s("x<~(aQ)>"),s2:s("x<~(mK)>"),Jh:s("x<~(T<kr>)>"),hh:s("x<~(l7)>"),bz:s("pP"),m:s("az"),lT:s("dq"),dC:s("f7<@>"),Hf:s("eM<yi,@>"),D2:s("fH"),XU:s("i0(fI)"),SQ:s("pQ"),Di:s("mZ"),jk:s("bw<awu>"),NE:s("bw<kl>"),ku:s("bw<wG>"),hA:s("bw<qm>"),cF:s("bw<jm>"),F:s("bw<a7<a2>>"),af:s("bw<AC>"),E9:s("Gk"),Cc:s("ZE"),rf:s("vV"),JB:s("fK<@>"),y3:s("n2<jR>"),oM:s("n2<oz>"),cb:s("T<pG>"),Lc:s("T<az>"),qC:s("T<fJ>"),UX:s("T<L>"),gm:s("T<ib>"),jQ:s("T<qj>"),I1:s("T<cI>"),lD:s("T<cT>"),V1:s("T<bC>"),yp:s("T<G>"),Xw:s("T<lo>"),rg:s("T<cL>"),Ly:s("T<M>"),j:s("T<@>"),Dn:s("T<L?>"),da:s("n4"),C:s("e"),bS:s("pV"),tO:s("bm<f,Z>"),UH:s("bm<Z,l4>"),DC:s("bm<y,f>"),q9:s("bm<y,G>"),sw:s("bm<L,it<@>>"),qE:s("bm<G?,T<L>>"),Dx:s("n7<@,@>"),kY:s("b5<qD,aG>"),GU:s("b5<G,G>"),a:s("b5<G,@>"),_P:s("b5<G,y>"),e3:s("b5<fl,@>"),f:s("b5<@,@>"),xE:s("b5<G,L?>"),pE:s("b5<L?,L?>"),rr:s("b5<~(aZ),bf?>"),C9:s("ek<G,ht?>"),Gf:s("a5<G,@>"),rB:s("a5<oF,bC>"),qn:s("a5<y,bC>"),gn:s("a5<y,G>"),Tr:s("a5<eT,ia?>"),iB:s("axO"),c4:s("n8"),i1:s("n9"),xV:s("bf"),w:s("kJ"),xS:s("fc"),Pb:s("cR"),ZA:s("wh"),_h:s("i7"),Wz:s("fL"),Lb:s("eO"),Es:s("nf"),LZ:s("nh"),A3:s("fd"),u9:s("j9"),uK:s("hi"),Tm:s("dG<f8>"),w3:s("dG<ja>"),ji:s("dG<qv>"),WA:s("dG<eo>"),Te:s("fe"),P:s("bj"),K:s("L"),xA:s("L(y)"),_a:s("L(y{params:L?})"),yw:s("aY<aky>"),c:s("aY<~(aL<aG>)>"),Q:s("aY<~(hK)>"),Xx:s("aY<~(l7)>"),pw:s("nn"),o:s("f"),gY:s("hj"),Fj:s("wC"),Ms:s("kL"),Mf:s("qd"),sd:s("aop<L?>"),Q2:s("H8"),IL:s("ff<da>"),ke:s("Hc"),Ud:s("cd"),v3:s("j"),sT:s("ib"),sv:s("jd"),mX:s("nr"),qa:s("aGR"),ge:s("ns"),Ko:s("nt"),Au:s("id"),pY:s("jg"),qL:s("aZ"),GG:s("aGX"),XA:s("jh"),V:s("nu"),WQ:s("nv"),w5:s("ji"),DB:s("nw"),PB:s("nx"),Mj:s("ny"),xb:s("nz"),ks:s("e5"),e:s("jj"),f9:s("ayC<L?>"),bb:s("wR"),yH:s("aM"),jU:s("qo"),pK:s("aH1"),Rp:s("+()"),BZ:s("+(G,eH?)"),Yr:s("+(os,M)"),mi:s("+(L?,L?)"),YT:s("u"),Qz:s("ajV"),CZ:s("x2"),x:s("A"),vz:s("nF"),DW:s("nG"),f1:s("xd"),kQ:s("xf"),I9:s("D"),F5:s("aj"),GM:s("aI<D>"),Wx:s("jo"),Cn:s("kZ"),dw:s("qs"),Ju:s("l_"),UM:s("hm"),dZ:s("xo<y>"),yb:s("cH<L?>"),z4:s("cI"),k2:s("aH6<u?>"),hF:s("bZ<mj>"),MV:s("bZ<jS>"),o_:s("bZ<jW>"),ad:s("xs"),oj:s("qu"),pO:s("cy<@>(a1,L?)"),nY:s("aze<axN,aG1>"),BL:s("aze<azL,aHg>"),Np:s("xx"),Cy:s("xA"),gt:s("jq"),Lm:s("nR"),sm:s("qy"),NF:s("azm"),qd:s("aH8"),NU:s("aH9"),hI:s("aHa"),x9:s("dv"),mb:s("xK"),Wu:s("qB"),iN:s("l5"),_S:s("c_"),ZX:s("cT"),bu:s("bC"),UF:s("nY"),g3:s("cJ"),HS:s("l8"),n5:s("qC<@>"),hi:s("aT<kZ>"),p7:s("aT<bC>"),Ro:s("aT<@>"),uy:s("ap3"),RY:s("bx"),jH:s("la"),W:s("qD"),yE:s("aHf"),Mp:s("b_"),FW:s("H"),Vr:s("IQ"),Ws:s("y1<G>"),fO:s("azM"),B:s("cU"),Km:s("hu"),d1:s("a2"),Iz:s("aF"),N:s("G"),Vc:s("azS"),u4:s("dc<uu>"),re:s("dc<b5<fl,@>>"),az:s("dc<n8>"),E8:s("dc<zb>"),d9:s("dc<I>"),hr:s("dc<cI?>"),ZC:s("lc"),lu:s("io"),NJ:s("jz"),if:s("aA2"),iy:s("yD"),g:s("fP"),l:s("hx"),bZ:s("aAa"),fm:s("o9"),E6:s("dM"),em:s("q"),we:s("fQ"),ZM:s("ob"),ZF:s("it<it<@>>"),Ag:s("it<@>"),qe:s("Ju"),D:s("e6"),U2:s("aAu"),zW:s("bU"),Ni:s("aC<f>"),Y:s("aC<M>"),u:s("fl"),ns:s("jC"),w7:s("a8n"),rd:s("r0"),Po:s("a8o"),H3:s("r1"),pm:s("r2<ce>"),wV:s("of<@>"),kk:s("jE"),lQ:s("z1"),N2:s("r6<@>"),gU:s("fR"),Xu:s("JF"),xc:s("iv<L>"),A9:s("iv<o1>"),GY:s("hB"),JH:s("aHB"),X3:s("jH"),v6:s("z7"),Vu:s("z9"),Hd:s("b3<G>"),SF:s("bW<cN>"),FI:s("bW<aZ>"),t5:s("bW<cT>"),X5:s("bW<aT<cJ>>"),ZK:s("bW<ht>"),Ri:s("bW<G>"),ow:s("bW<lt>"),b7:s("bW<dy>"),Pi:s("hC<iZ>"),Zw:s("hC<dy>"),l7:s("h"),a7:s("rc"),EK:s("bK"),GC:s("jI<z?>"),VP:s("jI<cR?>"),y2:s("bt<aV>"),De:s("bt<z>"),mD:s("bt<cQ>"),dy:s("bt<cx>"),W7:s("bt<H>"),uE:s("bt<q>"),XR:s("bt<M>"),rc:s("bt<z?>"),RP:s("bt<q?>"),zo:s("ln"),QN:s("h(a1,aT<bK>,h?)"),T:s("cs"),Uh:s("zb"),nL:s("ako"),L1:s("zd"),JX:s("lo"),yB:s("cf<d6?>"),EZ:s("cf<cI?>"),R:s("cf<~>"),J2:s("rg<fJ>"),BY:s("aAT"),ZW:s("ri"),B6:s("aHJ"),bY:s("zJ"),TC:s("ol"),uC:s("dQ"),dA:s("jN<mp>"),Fb:s("jN<mq>"),Uy:s("jN<mr>"),Q8:s("zN<a7<a2>>"),UJ:s("LA"),rM:s("ls<az>"),s5:s("on<az>"),l3:s("zX"),Eh:s("A0"),fk:s("rr"),h1:s("rs"),LR:s("aP<@>"),wJ:s("aP<y>"),gg:s("aP<d6?>"),X6:s("aP<cI?>"),U:s("aP<~>"),cK:s("rt"),Qu:s("apZ"),U3:s("aq_"),R9:s("lv"),Fy:s("lx<L?,L?>"),Nr:s("Ab"),Sx:s("jR"),pt:s("aHT"),Gk:s("Al"),PJ:s("rB"),Fe:s("As"),xg:s("Ng"),mG:s("oy"),Tp:s("lC"),KJ:s("jS"),eU:s("rI"),sZ:s("AH"),Sc:s("aHV"),Li:s("AJ"),c_:s("AO"),bR:s("AR"),h7:s("iy"),zP:s("d2"),d:s("AS"),rj:s("AY"),l0:s("oB"),Lj:s("jU"),zd:s("B3"),SN:s("B6"),ju:s("dy"),xL:s("rT"),im:s("oC"),pR:s("oD"),Ez:s("fp"),Pu:s("Bi"),yd:s("Bo"),jF:s("Bq"),vC:s("cL"),kS:s("PD<L?>"),S8:s("BI"),CG:s("fq<+(fT,I)>"),bm:s("fq<A>"),dQ:s("fq<jU>"),HE:s("rY"),f2:s("BX"),i9:s("t0"),tH:s("aBC"),Wp:s("C8<uK>"),_l:s("oH"),nH:s("Ce<jr>"),mN:s("c0<z>"),Dm:s("c0<I>"),N5:s("c0<M>"),jY:s("c0<aV?>"),b:s("c0<z?>"),DH:s("R4"),y:s("I"),i:s("M"),z:s("@"),C_:s("@(L)"),Hg:s("@(L,hu)"),S:s("y"),tX:s("amj?"),m2:s("tN?"),Vx:s("dk?"),sa:s("dT?"),eJ:s("m5?"),oI:s("aV?"),CD:s("d6?"),L5:s("amz?"),JG:s("uf?"),cW:s("amA?"),eG:s("ug?"),e4:s("amC?"),EM:s("uh?"),ZU:s("ph?"),_:s("z?"),YJ:s("fw?"),V2:s("fC?"),pc:s("cQ?"),e8:s("pC?"),pk:s("cb?"),RC:s("vj?"),U5:s("eH?"),uZ:s("ay<bj>?"),_I:s("mO?"),gx:s("f6?"),lF:s("cF?"),C6:s("anC?"),Pr:s("kA?"),Ef:s("fF?"),NX:s("az?"),kc:s("T<@>?"),wh:s("T<L?>?"),y6:s("e?"),qA:s("hf?"),nA:s("b5<G,@>?"),Xy:s("b5<@,@>?"),J1:s("b5<L?,L?>?"),iD:s("bf?"),WV:s("cR?"),X:s("L?"),Ff:s("aom?"),dJ:s("hj?"),Zr:s("aoo?"),KX:s("cx?"),uR:s("hk?"),Qv:s("A?"),xP:s("A?(A)"),CA:s("nG?"),p2:s("aH?"),ym:s("jo?"),_N:s("nR?"),LQ:s("bC?"),wW:s("aT<cJ>?"),TZ:s("nZ?"),pg:s("hr?"),tW:s("H?"),lE:s("hv?"),ob:s("G?"),f3:s("eS?"),p8:s("q?"),Dh:s("oa?"),qf:s("aki?"),zV:s("qY?"),ir:s("aC<M>?"),nc:s("r1?"),Wn:s("fn?"),BM:s("z8?"),av:s("AK?"),JI:s("BP<@>?"),X7:s("I?"),PM:s("M?"),bo:s("y?"),R7:s("dB?"),Nw:s("~()?"),Ci:s("dB"),H:s("~"),M:s("~()"),zv:s("~(aQ)"),Su:s("~(kp)"),xt:s("~(T<kr>)"),lO:s("~(L)"),MM:s("~(L,hu)"),Ld:s("~(aZ)"),iS:s("~(jl)"),HT:s("~(L?)")}})();(function constants(){var s=hunkHelpers.makeConstList
+return{S6:s("@<ln>"),vH:s("auT"),od:s("aL<aG>"),gj:s("auX<L>"),pC:s("m0"),so:s("c2<f>"),ve:s("c2<M>"),ph:s("tG<io>"),qH:s("av2"),s1:s("tK"),vp:s("m2"),S7:s("tM"),u2:s("Te"),Al:s("k8<L?>"),m_:s("ca"),hK:s("al"),q:s("eA"),pI:s("iO"),V4:s("d6"),wY:s("cB<oV>"),nz:s("cB<p2>"),OX:s("cB<eF>"),fN:s("cB<kW>"),Tx:s("cB<hm>"),fn:s("cB<dK>"),j5:s("cB<lh>"),_n:s("cB<lj>"),ZQ:s("cB<fR>"),d0:s("dm<cy<@>?,cy<@>>"),Ub:s("md"),m6:s("ub"),Bn:s("pc"),S3:s("uc"),BQ:s("pd"),nR:s("ue"),Hz:s("mg"),G:s("z"),Ss:s("cN"),id:s("mj"),qO:s("mk<yi,@>"),li:s("bB<G,G>"),eL:s("bB<G,y>"),VJ:s("bB<G,T<G>>"),fF:s("fx<G>"),Nq:s("ke"),vn:s("ur"),pU:s("aJ<D,eB<D>>"),ho:s("uu"),H5:s("avT"),HY:s("iP"),ip:s("uC"),I7:s("aFr"),l4:s("aw_"),Uf:s("kj"),XP:s("aw2"),yS:s("pt"),Je:s("aFG"),EX:s("cO"),I:s("fC"),ra:s("aFH"),xm:s("eF"),YH:s("EZ<az>"),uL:s("f2"),zk:s("px"),Tu:s("aQ"),ML:s("cX"),Zi:s("hR"),Rz:s("hS"),Ee:s("ao<@>"),h:s("aW"),GB:s("aFL"),lz:s("iT"),ay:s("pD"),sB:s("bg"),Lt:s("bO"),VI:s("dn"),IX:s("eg<jW,bC>"),bh:s("mu"),oB:s("mv"),_w:s("iU"),HH:s("iV"),OO:s("f4"),cP:s("iW"),b5:s("mw"),P9:s("iX"),eI:s("mx"),Ie:s("pG"),PA:s("v8"),US:s("hV"),N8:s("vb"),s4:s("Xv"),OE:s("Xw"),Kw:s("XI"),mx:s("cb"),l5:s("iZ"),zq:s("pI"),ia:s("mF"),VW:s("mG"),FK:s("eH"),jT:s("vm"),kr:s("hX"),_8:s("j0"),Z9:s("ay<l8>"),Ev:s("ay<I>()"),L0:s("ay<@>"),T8:s("ay<d6?>"),uz:s("ay<~>"),Fp:s("cE<qD,aG>"),pl:s("cE<y,z>"),Lu:s("eh<id>"),E:s("Fx"),cD:s("ck"),uA:s("bS<h8>"),C1:s("bS<hb>"),Uv:s("bS<f6>"),jn:s("bS<hf>"),YC:s("bS<hk>"),hg:s("bS<ip>"),Qm:s("bS<iq>"),UN:s("bS<eS>"),ok:s("bS<fn>"),lh:s("bS<lw>"),Bk:s("bS<iC>"),Pw:s("bS<lI>"),xR:s("mL<ck>"),yi:s("hc<a7<a2>>"),TX:s("mM<hi>"),bT:s("mM<a7<a2>>"),rQ:s("aFX"),GF:s("dD<i0(fI)>"),PD:s("dD<~()>"),op:s("dD<~(kp)>"),bq:s("f5"),G7:s("FG<BP<@>>"),rA:s("anw"),mS:s("mO"),AL:s("fE<ae>"),Fn:s("kt"),zE:s("ae"),Lk:s("any"),g5:s("vw"),Oh:s("mR"),Bc:s("ky<aW?>"),ri:s("vB"),IS:s("eK"),og:s("cG"),WB:s("aX"),U1:s("fF"),lA:s("axs"),JZ:s("Z3"),XO:s("Z4"),pT:s("Z5"),gD:s("mT"),r:s("aG"),nQ:s("mU"),Ya:s("pN"),ud:s("bP"),JY:s("A<@>"),lY:s("x<auX<L>>"),QP:s("x<h3>"),NS:s("x<ch>"),tM:s("x<m4>"),sq:s("x<dl>"),AT:s("x<pd>"),s8:s("x<amE>"),t_:s("x<z>"),EV:s("x<mj>"),KV:s("x<dV>"),ZD:s("x<cC>"),p:s("x<cO>"),vl:s("x<fC>"),Up:s("x<F_>"),lX:s("x<aW>"),LE:s("x<Fb>"),_m:s("x<pG>"),bp:s("x<cb>"),z8:s("x<mG>"),uf:s("x<hX>"),no:s("x<kr>"),wQ:s("x<ay<mF>>"),Rh:s("x<ay<+(G,eH?)>>"),mo:s("x<ay<~>>"),iQ:s("x<cp>"),DU:s("x<f5>"),om:s("x<fE<ae>>"),kt:s("x<ei>"),Fa:s("x<eK>"),fJ:s("x<cG>"),VB:s("x<kz>"),VO:s("x<d9>"),O_:s("x<j2>"),O:s("x<az>"),DS:s("x<dq>"),K0:s("x<fI>"),CE:s("x<i0>"),k5:s("x<dE>"),k_:s("x<Gk>"),HU:s("x<i1>"),xj:s("x<ZE>"),s9:s("x<vU>"),Y4:s("x<fJ>"),MH:s("x<n_>"),_f:s("x<n0>"),ER:s("x<kG>"),X_:s("x<T<cT>>"),fQ:s("x<T<cL>>"),zg:s("x<T<M>>"),Eo:s("x<a4>"),H8:s("x<Gt>"),ss:s("x<n4>"),a9:s("x<ej<@>>"),IO:s("x<ej<L?>>"),en:s("x<e>"),H7:s("x<b5<G,@>>"),Xr:s("x<bf>"),YE:s("x<hh>"),tc:s("x<ni>"),Qg:s("x<fe>"),jl:s("x<L>"),Rd:s("x<a26>"),sF:s("x<wC>"),wi:s("x<kL>"),g8:s("x<aor<@>>"),zY:s("x<qe>"),OM:s("x<nq<da>>"),v:s("x<cd>"),RR:s("x<ib>"),tg:s("x<wK>"),tZ:s("x<qf>"),D9:s("x<fN>"),RW:s("x<qj>"),L7:s("x<+representation,targetSize(y0,H)>"),Co:s("x<+(G,z2)>"),lN:s("x<+data,event,timeStamp(T<fN>,az,aQ)>"),Nt:s("x<+domSize,representation,targetSize(H,y0,H)>"),AO:s("x<u>"),Pc:s("x<nE>"),Ik:s("x<B>"),xT:s("x<kX>"),TT:s("x<D>"),QT:s("x<cI>"),y8:s("x<xy>"),ZP:s("x<jq>"),D1:s("x<dv>"),u1:s("x<nU>"),JO:s("x<eQ>"),q1:s("x<cT>"),QF:s("x<bC>"),o4:s("x<IG>"),Qo:s("x<nY>"),Ay:s("x<ap3>"),kO:s("x<l9>"),N_:s("x<bx>"),Gl:s("x<qG<~>>"),s:s("x<G>"),oU:s("x<azS>"),PL:s("x<qK>"),bt:s("x<qL>"),Lx:s("x<dd>"),bG:s("x<yw>"),sD:s("x<lf>"),VS:s("x<o7>"),zs:s("x<Jm>"),AS:s("x<o8>"),Ne:s("x<dM>"),FO:s("x<it<it<@>>>"),LX:s("x<z2>"),Uu:s("x<fT>"),J:s("x<h>"),GA:s("x<cs>"),my:s("x<ako>"),Na:s("x<lo>"),SW:s("x<Kr>"),TV:s("x<oj>"),Kj:s("x<ro>"),mz:s("x<MK>"),zj:s("x<jS>"),IR:s("x<aky>"),m3:s("x<rL>"),jE:s("x<iy>"),qi:s("x<d2>"),z_:s("x<dy>"),uD:s("x<fp>"),s6:s("x<jV>"),lb:s("x<iB>"),bd:s("x<cL>"),YK:s("x<jW>"),Z4:s("x<aBx>"),cR:s("x<t1>"),NM:s("x<oF>"),HZ:s("x<I>"),n:s("x<M>"),ee:s("x<@>"),t:s("x<y>"),L:s("x<e?>"),iG:s("x<B?>"),ny:s("x<cy<@>?>"),Fi:s("x<bx?>"),XS:s("x<G?>"),Z:s("x<y?>"),a0:s("x<dB>"),Zt:s("x<ay<I>()>"),iL:s("x<jw<fJ>()>"),sA:s("x<I(fI)>"),qj:s("x<~()>"),k:s("x<~(aL<aG>)>"),A:s("x<~(hK)>"),LY:s("x<~(h3)>"),j1:s("x<~(aQ)>"),s2:s("x<~(mK)>"),Jh:s("x<~(T<kr>)>"),hh:s("x<~(l7)>"),bz:s("pP"),m:s("az"),lT:s("dq"),dC:s("f7<@>"),Hf:s("eM<yi,@>"),D2:s("fH"),XU:s("i0(fI)"),SQ:s("pQ"),Di:s("mZ"),jk:s("bw<awu>"),NE:s("bw<kl>"),ku:s("bw<wG>"),hA:s("bw<qm>"),cF:s("bw<jm>"),F:s("bw<a7<a2>>"),af:s("bw<AC>"),E9:s("Gk"),Cc:s("ZE"),rf:s("vV"),JB:s("fK<@>"),y3:s("n2<jR>"),oM:s("n2<oz>"),cb:s("T<pG>"),Lc:s("T<az>"),qC:s("T<fJ>"),UX:s("T<L>"),gm:s("T<ib>"),jQ:s("T<qj>"),I1:s("T<cI>"),lD:s("T<cT>"),V1:s("T<bC>"),yp:s("T<G>"),Xw:s("T<lo>"),rg:s("T<cL>"),Ly:s("T<M>"),j:s("T<@>"),Dn:s("T<L?>"),da:s("n4"),C:s("e"),bS:s("pV"),tO:s("bm<f,a_>"),UH:s("bm<a_,l4>"),DC:s("bm<y,f>"),q9:s("bm<y,G>"),sw:s("bm<L,it<@>>"),qE:s("bm<G?,T<L>>"),Dx:s("n7<@,@>"),kY:s("b5<qD,aG>"),GU:s("b5<G,G>"),a:s("b5<G,@>"),_P:s("b5<G,y>"),e3:s("b5<fl,@>"),f:s("b5<@,@>"),xE:s("b5<G,L?>"),pE:s("b5<L?,L?>"),rr:s("b5<~(aZ),bf?>"),C9:s("ek<G,ht?>"),Gf:s("a5<G,@>"),rB:s("a5<oF,bC>"),qn:s("a5<y,bC>"),gn:s("a5<y,G>"),Tr:s("a5<eT,ia?>"),iB:s("axO"),c4:s("n8"),i1:s("n9"),xV:s("bf"),w:s("kJ"),xS:s("fc"),Pb:s("cR"),ZA:s("wh"),_h:s("i7"),Wz:s("fL"),Lb:s("eO"),Es:s("nf"),LZ:s("nh"),A3:s("fd"),u9:s("j9"),uK:s("hi"),Tm:s("dG<f8>"),w3:s("dG<ja>"),ji:s("dG<qv>"),WA:s("dG<eo>"),Te:s("fe"),P:s("bj"),K:s("L"),xA:s("L(y)"),_a:s("L(y{params:L?})"),yw:s("aY<aky>"),c:s("aY<~(aL<aG>)>"),Q:s("aY<~(hK)>"),Xx:s("aY<~(l7)>"),pw:s("nn"),o:s("f"),gY:s("hj"),Fj:s("wC"),Ms:s("kL"),Mf:s("qd"),sd:s("aop<L?>"),Q2:s("H8"),IL:s("ff<da>"),ke:s("Hc"),Ud:s("cd"),v3:s("j"),sT:s("ib"),sv:s("jd"),mX:s("nr"),qa:s("aGR"),ge:s("ns"),Ko:s("nt"),Au:s("id"),pY:s("jg"),qL:s("aZ"),GG:s("aGX"),XA:s("jh"),V:s("nu"),WQ:s("nv"),w5:s("ji"),DB:s("nw"),PB:s("nx"),Mj:s("ny"),xb:s("nz"),ks:s("e5"),e:s("jj"),f9:s("ayC<L?>"),bb:s("wR"),yH:s("aM"),jU:s("qo"),pK:s("aH1"),Rp:s("+()"),BZ:s("+(G,eH?)"),Yr:s("+(os,M)"),mi:s("+(L?,L?)"),YT:s("u"),Qz:s("ajV"),CZ:s("x2"),x:s("B"),vz:s("nF"),DW:s("nG"),f1:s("xd"),kQ:s("xf"),I9:s("D"),F5:s("aj"),GM:s("aI<D>"),Wx:s("jo"),Cn:s("kZ"),dw:s("qs"),Ju:s("l_"),UM:s("hm"),dZ:s("xo<y>"),yb:s("cH<L?>"),z4:s("cI"),k2:s("aH6<u?>"),hF:s("bZ<mj>"),MV:s("bZ<jS>"),o_:s("bZ<jW>"),ad:s("xs"),oj:s("qu"),pO:s("cy<@>(a1,L?)"),nY:s("aze<axN,aG1>"),BL:s("aze<azL,aHg>"),Np:s("xx"),Cy:s("xA"),gt:s("jq"),Lm:s("nR"),sm:s("qy"),NF:s("azm"),qd:s("aH8"),NU:s("aH9"),hI:s("aHa"),x9:s("dv"),mb:s("xK"),Wu:s("qB"),iN:s("l5"),_S:s("c_"),ZX:s("cT"),bu:s("bC"),UF:s("nY"),g3:s("cJ"),HS:s("l8"),n5:s("qC<@>"),hi:s("aT<kZ>"),p7:s("aT<bC>"),Ro:s("aT<@>"),uy:s("ap3"),RY:s("bx"),jH:s("la"),W:s("qD"),yE:s("aHf"),Mp:s("b_"),FW:s("H"),Vr:s("IQ"),Ws:s("y1<G>"),fO:s("azM"),B:s("cU"),Km:s("hu"),d1:s("a2"),Iz:s("aF"),N:s("G"),Vc:s("azS"),u4:s("dc<uu>"),re:s("dc<b5<fl,@>>"),az:s("dc<n8>"),E8:s("dc<zb>"),d9:s("dc<I>"),hr:s("dc<cI?>"),ZC:s("lc"),lu:s("io"),NJ:s("jz"),if:s("aA2"),iy:s("yD"),g:s("fP"),l:s("hx"),bZ:s("aAa"),fm:s("o9"),E6:s("dM"),em:s("q"),we:s("fQ"),ZM:s("ob"),ZF:s("it<it<@>>"),Ag:s("it<@>"),qe:s("Ju"),D:s("e6"),U2:s("aAu"),zW:s("bU"),Ni:s("aC<f>"),Y:s("aC<M>"),u:s("fl"),ns:s("jC"),w7:s("a8n"),rd:s("r0"),Po:s("a8o"),H3:s("r1"),pm:s("r2<ce>"),wV:s("of<@>"),kk:s("jE"),lQ:s("z1"),N2:s("r6<@>"),gU:s("fR"),Xu:s("JF"),xc:s("iv<L>"),A9:s("iv<o1>"),GY:s("hB"),JH:s("aHB"),X3:s("jH"),v6:s("z7"),Vu:s("z9"),Hd:s("b3<G>"),SF:s("bW<cN>"),FI:s("bW<aZ>"),t5:s("bW<cT>"),X5:s("bW<aT<cJ>>"),ZK:s("bW<ht>"),Ri:s("bW<G>"),ow:s("bW<lt>"),b7:s("bW<dy>"),Pi:s("hC<iZ>"),Zw:s("hC<dy>"),l7:s("h"),a7:s("rc"),EK:s("bK"),GC:s("jI<z?>"),VP:s("jI<cR?>"),y2:s("bt<aV>"),De:s("bt<z>"),mD:s("bt<cQ>"),dy:s("bt<cx>"),W7:s("bt<H>"),uE:s("bt<q>"),XR:s("bt<M>"),rc:s("bt<z?>"),RP:s("bt<q?>"),zo:s("ln"),QN:s("h(a1,aT<bK>,h?)"),T:s("cs"),Uh:s("zb"),nL:s("ako"),L1:s("zd"),JX:s("lo"),yB:s("cf<d6?>"),EZ:s("cf<cI?>"),R:s("cf<~>"),J2:s("rg<fJ>"),BY:s("aAT"),ZW:s("ri"),B6:s("aHJ"),bY:s("zJ"),TC:s("ol"),uC:s("dQ"),dA:s("jN<mp>"),Fb:s("jN<mq>"),Uy:s("jN<mr>"),Q8:s("zN<a7<a2>>"),UJ:s("LA"),rM:s("ls<az>"),s5:s("on<az>"),l3:s("zX"),Eh:s("A0"),fk:s("rr"),h1:s("rs"),LR:s("aP<@>"),wJ:s("aP<y>"),gg:s("aP<d6?>"),X6:s("aP<cI?>"),U:s("aP<~>"),cK:s("rt"),Qu:s("apZ"),U3:s("aq_"),R9:s("lv"),Fy:s("lx<L?,L?>"),Nr:s("Ab"),Sx:s("jR"),pt:s("aHT"),Gk:s("Al"),PJ:s("rB"),Fe:s("As"),xg:s("Ng"),mG:s("oy"),Tp:s("lC"),KJ:s("jS"),eU:s("rI"),sZ:s("AH"),Sc:s("aHV"),Li:s("AJ"),c_:s("AO"),bR:s("AR"),h7:s("iy"),zP:s("d2"),d:s("AS"),rj:s("AY"),l0:s("oB"),Lj:s("jU"),zd:s("B3"),SN:s("B6"),ju:s("dy"),xL:s("rT"),im:s("oC"),pR:s("oD"),Ez:s("fp"),Pu:s("Bi"),yd:s("Bo"),jF:s("Bq"),vC:s("cL"),kS:s("PD<L?>"),S8:s("BI"),CG:s("fq<+(fT,I)>"),bm:s("fq<B>"),dQ:s("fq<jU>"),HE:s("rY"),f2:s("BX"),i9:s("t0"),tH:s("aBC"),Wp:s("C8<uK>"),_l:s("oH"),nH:s("Ce<jr>"),mN:s("c0<z>"),Dm:s("c0<I>"),N5:s("c0<M>"),jY:s("c0<aV?>"),b:s("c0<z?>"),DH:s("R4"),y:s("I"),i:s("M"),z:s("@"),C_:s("@(L)"),Hg:s("@(L,hu)"),S:s("y"),tX:s("amj?"),m2:s("tN?"),Vx:s("dk?"),sa:s("dT?"),eJ:s("m5?"),oI:s("aV?"),CD:s("d6?"),L5:s("amz?"),JG:s("uf?"),cW:s("amA?"),eG:s("ug?"),e4:s("amC?"),EM:s("uh?"),ZU:s("ph?"),_:s("z?"),YJ:s("fw?"),V2:s("fC?"),pc:s("cQ?"),e8:s("pC?"),pk:s("cb?"),RC:s("vj?"),U5:s("eH?"),uZ:s("ay<bj>?"),_I:s("mO?"),gx:s("f6?"),lF:s("cF?"),C6:s("anC?"),Pr:s("kA?"),Ef:s("fF?"),NX:s("az?"),kc:s("T<@>?"),wh:s("T<L?>?"),y6:s("e?"),qA:s("hf?"),nA:s("b5<G,@>?"),Xy:s("b5<@,@>?"),J1:s("b5<L?,L?>?"),iD:s("bf?"),WV:s("cR?"),X:s("L?"),Ff:s("aom?"),dJ:s("hj?"),Zr:s("aoo?"),KX:s("cx?"),uR:s("hk?"),Qv:s("B?"),xP:s("B?(B)"),CA:s("nG?"),p2:s("aH?"),ym:s("jo?"),_N:s("nR?"),LQ:s("bC?"),wW:s("aT<cJ>?"),TZ:s("nZ?"),pg:s("hr?"),tW:s("H?"),lE:s("hv?"),ob:s("G?"),f3:s("eS?"),p8:s("q?"),Dh:s("oa?"),qf:s("aki?"),zV:s("qY?"),ir:s("aC<M>?"),nc:s("r1?"),Wn:s("fn?"),BM:s("z8?"),av:s("AK?"),JI:s("BP<@>?"),X7:s("I?"),PM:s("M?"),bo:s("y?"),R7:s("dB?"),Nw:s("~()?"),Ci:s("dB"),H:s("~"),M:s("~()"),zv:s("~(aQ)"),Su:s("~(kp)"),xt:s("~(T<kr>)"),lO:s("~(L)"),MM:s("~(L,hu)"),Ld:s("~(aZ)"),iS:s("~(jl)"),HT:s("~(L?)")}})();(function constants(){var s=hunkHelpers.makeConstList
 B.D7=J.bP.prototype
 B.b=J.x.prototype
 B.mu=J.vJ.prototype
@@ -77751,7 +77757,7 @@ B.n=new A.uO()
 B.zb=new A.Vq()
 B.zc=new A.WE()
 B.l7=new A.f3(A.an("f3<cb>"))
-B.l8=new A.f3(A.an("f3<A>"))
+B.l8=new A.f3(A.an("f3<B>"))
 B.dy=new A.F7()
 B.zd=new A.Fa()
 B.ah=new A.Fa()
@@ -79958,7 +79964,7 @@ B.MC=new A.is(7,null,null)
 B.p=new A.Jl(1,"even")
 B.aF=new A.yC(2,"ellipsis")
 B.MD=new A.yC(3,"visible")
-B.cz=new A.Z(0,B.i)
+B.cz=new A.a_(0,B.i)
 B.ME=new A.b7(0,0)
 B.MF=new A.yG(null,null,null)
 B.MG=new A.yH(B.h,null)
@@ -80747,8 +80753,8 @@ s($,"aHM","Dg",()=>new A.lq(0,$.atr()))
 s($,"aHL","atr",()=>A.aD5(0))
 s($,"aHG","atp",()=>A.aof(8))
 s($,"aHi","at8",()=>A.jn("^\\s*at ([^\\s]+).*$",!1))
-s($,"aJC","alY",()=>A.aR(4294967295))
-s($,"aJB","alX",()=>A.aR(3707764736))
+s($,"aJC","alY",()=>A.aS(4294967295))
+s($,"aJB","alX",()=>A.aS(3707764736))
 s($,"aJy","alW",()=>new A.Lw())
 s($,"aHY","atz",()=>A.dP(0.75,1,t.i))
 s($,"aHZ","atA",()=>A.eE(B.zZ))
